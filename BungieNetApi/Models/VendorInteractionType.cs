@@ -85,7 +85,7 @@ namespace GhostSharp.BungieNetApi.Model
 		Start = 10,
 
 		///value not found fallback
-		[EnumMember(Value = 999999999)]
+		[EnumMember(Value = "999999999")]
 		ProtectedInvalidEnumValue = 999999999
 	}
 }

@@ -67,7 +67,7 @@ namespace GhostSharp.BungieNetApi.Model
 		Careers = 256,
 
 		///value not found fallback
-		[EnumMember(Value = 999999999)]
+		[EnumMember(Value = "999999999")]
 		ProtectedInvalidEnumValue = 999999999
 	}
 }

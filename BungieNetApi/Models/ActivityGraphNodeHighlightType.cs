@@ -39,7 +39,7 @@ namespace GhostSharp.BungieNetApi.Model
 		RiseOfIron = 4,
 
 		///value not found fallback
-		[EnumMember(Value = 999999999)]
+		[EnumMember(Value = "999999999")]
 		ProtectedInvalidEnumValue = 999999999
 	}
 }

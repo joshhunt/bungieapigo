@@ -69,7 +69,7 @@ namespace GhostSharp.BungieNetApi.Model
 		PurchaseDisabled = 64,
 
 		///value not found fallback
-		[EnumMember(Value = 999999999)]
+		[EnumMember(Value = "999999999")]
 		ProtectedInvalidEnumValue = 999999999
 	}
 }
