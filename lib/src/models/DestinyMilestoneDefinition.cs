@@ -245,37 +245,6 @@ namespace BungieNetApi.Model {
                     (Redacted != null && Redacted.Equals(input.Redacted))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayPreference.GetHashCode();
-				hashCode = hashCode * 59 + this.Image.GetHashCode();
-				hashCode = hashCode * 59 + this.MilestoneType.GetHashCode();
-				hashCode = hashCode * 59 + this.Recruitable.GetHashCode();
-				hashCode = hashCode * 59 + this.FriendlyName.GetHashCode();
-				hashCode = hashCode * 59 + this.ShowInExplorer.GetHashCode();
-				hashCode = hashCode * 59 + this.ShowInMilestones.GetHashCode();
-				hashCode = hashCode * 59 + this.ExplorePrioritizesActivityImage.GetHashCode();
-				hashCode = hashCode * 59 + this.HasPredictableDates.GetHashCode();
-				hashCode = hashCode * 59 + this.Quests.GetHashCode();
-				hashCode = hashCode * 59 + this.Rewards.GetHashCode();
-				hashCode = hashCode * 59 + this.VendorsDisplayTitle.GetHashCode();
-				hashCode = hashCode * 59 + this.Vendors.GetHashCode();
-				hashCode = hashCode * 59 + this.Values.GetHashCode();
-				hashCode = hashCode * 59 + this.IsInGameMilestone.GetHashCode();
-				hashCode = hashCode * 59 + this.Activities.GetHashCode();
-				hashCode = hashCode * 59 + this.DefaultOrder.GetHashCode();
-				hashCode = hashCode * 59 + this.Hash.GetHashCode();
-				hashCode = hashCode * 59 + this.Index.GetHashCode();
-				hashCode = hashCode * 59 + this.Redacted.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -114,30 +114,6 @@ namespace BungieNetApi.Model {
                     (Locale != null && Locale.Equals(input.Locale))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.LastReplyTimestamp.GetHashCode();
-				hashCode = hashCode * 59 + this.IsPinned.GetHashCode();
-				hashCode = hashCode * 59 + this.UrlMediaType.GetHashCode();
-				hashCode = hashCode * 59 + this.Thumbnail.GetHashCode();
-				hashCode = hashCode * 59 + this.Popularity.GetHashCode();
-				hashCode = hashCode * 59 + this.IsActive.GetHashCode();
-				hashCode = hashCode * 59 + this.IsAnnouncement.GetHashCode();
-				hashCode = hashCode * 59 + this.UserRating.GetHashCode();
-				hashCode = hashCode * 59 + this.UserHasRated.GetHashCode();
-				hashCode = hashCode * 59 + this.UserHasMutedPost.GetHashCode();
-				hashCode = hashCode * 59 + this.LatestReplyPostId.GetHashCode();
-				hashCode = hashCode * 59 + this.LatestReplyAuthorId.GetHashCode();
-				hashCode = hashCode * 59 + this.IgnoreStatus.GetHashCode();
-				hashCode = hashCode * 59 + this.Locale.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

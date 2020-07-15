@@ -119,26 +119,6 @@ namespace BungieNetApi.Model {
                     (DisplayAsStatTracker != null && DisplayAsStatTracker.Equals(input.DisplayAsStatTracker))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ObjectiveHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayActivityHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.RequireFullObjectiveCompletion.GetHashCode();
-				hashCode = hashCode * 59 + this.QuestlineItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Narrative.GetHashCode();
-				hashCode = hashCode * 59 + this.ObjectiveVerbName.GetHashCode();
-				hashCode = hashCode * 59 + this.QuestTypeIdentifier.GetHashCode();
-				hashCode = hashCode * 59 + this.QuestTypeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.PerObjectiveDisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayAsStatTracker.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

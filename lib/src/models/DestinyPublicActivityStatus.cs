@@ -54,19 +54,6 @@ namespace BungieNetApi.Model {
                     (RewardTooltipItems != null && RewardTooltipItems.Equals(input.RewardTooltipItems))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ChallengeObjectiveHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.ModifierHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.RewardTooltipItems.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

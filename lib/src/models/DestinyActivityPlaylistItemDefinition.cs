@@ -68,21 +68,6 @@ namespace BungieNetApi.Model {
                     (ActivityModeTypes != null && ActivityModeTypes.Equals(input.ActivityModeTypes))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ActivityHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DirectActivityModeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DirectActivityModeType.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityModeHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityModeTypes.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

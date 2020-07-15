@@ -40,19 +40,6 @@ namespace BungieNetApi.Model {
                     (TitlesByGenderHash != null && TitlesByGenderHash.Equals(input.TitlesByGenderHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.HasTitle.GetHashCode();
-				hashCode = hashCode * 59 + this.TitlesByGender.GetHashCode();
-				hashCode = hashCode * 59 + this.TitlesByGenderHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

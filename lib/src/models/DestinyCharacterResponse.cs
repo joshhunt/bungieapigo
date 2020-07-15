@@ -193,30 +193,6 @@ namespace BungieNetApi.Model {
                     (CurrencyLookups != null && CurrencyLookups.Equals(input.CurrencyLookups))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Inventory.GetHashCode();
-				hashCode = hashCode * 59 + this.Character.GetHashCode();
-				hashCode = hashCode * 59 + this.Progressions.GetHashCode();
-				hashCode = hashCode * 59 + this.RenderData.GetHashCode();
-				hashCode = hashCode * 59 + this.Activities.GetHashCode();
-				hashCode = hashCode * 59 + this.Equipment.GetHashCode();
-				hashCode = hashCode * 59 + this.Kiosks.GetHashCode();
-				hashCode = hashCode * 59 + this.PlugSets.GetHashCode();
-				hashCode = hashCode * 59 + this.PresentationNodes.GetHashCode();
-				hashCode = hashCode * 59 + this.Records.GetHashCode();
-				hashCode = hashCode * 59 + this.Collectibles.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemComponents.GetHashCode();
-				hashCode = hashCode * 59 + this.UninstancedItemComponents.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrencyLookups.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -23,17 +23,6 @@ namespace BungieNetApi.Model {
                     (MembershipType != null && MembershipType.Equals(input.MembershipType))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.MembershipType.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

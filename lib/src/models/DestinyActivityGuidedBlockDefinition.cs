@@ -47,19 +47,6 @@ namespace BungieNetApi.Model {
                     (GuidedDisbandCount != null && GuidedDisbandCount.Equals(input.GuidedDisbandCount))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.GuidedMaxLobbySize.GetHashCode();
-				hashCode = hashCode * 59 + this.GuidedMinLobbySize.GetHashCode();
-				hashCode = hashCode * 59 + this.GuidedDisbandCount.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

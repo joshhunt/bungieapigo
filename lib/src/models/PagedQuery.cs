@@ -37,19 +37,6 @@ namespace BungieNetApi.Model {
                     (RequestContinuationToken != null && RequestContinuationToken.Equals(input.RequestContinuationToken))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ItemsPerPage.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentPage.GetHashCode();
-				hashCode = hashCode * 59 + this.RequestContinuationToken.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

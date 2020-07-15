@@ -38,18 +38,6 @@ namespace BungieNetApi.Model {
                     (InfoCard != null && InfoCard.Equals(input.InfoCard))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ErrorCode.GetHashCode();
-				hashCode = hashCode * 59 + this.InfoCard.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

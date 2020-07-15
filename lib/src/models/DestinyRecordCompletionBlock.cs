@@ -47,20 +47,6 @@ namespace BungieNetApi.Model {
                     (ToastStyle != null && ToastStyle.Equals(input.ToastStyle))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.PartialCompletionObjectiveCountThreshold.GetHashCode();
-				hashCode = hashCode * 59 + this.ScoreValue.GetHashCode();
-				hashCode = hashCode * 59 + this.ShouldFireToast.GetHashCode();
-				hashCode = hashCode * 59 + this.ToastStyle.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -23,17 +23,6 @@ namespace BungieNetApi.Model {
                     (Objectives != null && Objectives.Equals(input.Objectives))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Objectives.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

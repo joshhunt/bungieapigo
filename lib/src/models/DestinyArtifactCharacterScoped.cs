@@ -45,20 +45,6 @@ namespace BungieNetApi.Model {
                     (Tiers != null && Tiers.Equals(input.Tiers))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ArtifactHash.GetHashCode();
-				hashCode = hashCode * 59 + this.PointsUsed.GetHashCode();
-				hashCode = hashCode * 59 + this.ResetCount.GetHashCode();
-				hashCode = hashCode * 59 + this.Tiers.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

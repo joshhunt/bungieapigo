@@ -23,17 +23,6 @@ namespace BungieNetApi.Model {
                     (RecordHash != null && RecordHash.Equals(input.RecordHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.RecordHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

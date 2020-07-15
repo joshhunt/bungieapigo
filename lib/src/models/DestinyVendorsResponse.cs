@@ -98,22 +98,6 @@ namespace BungieNetApi.Model {
                     (CurrencyLookups != null && CurrencyLookups.Equals(input.CurrencyLookups))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.VendorGroups.GetHashCode();
-				hashCode = hashCode * 59 + this.Vendors.GetHashCode();
-				hashCode = hashCode * 59 + this.Categories.GetHashCode();
-				hashCode = hashCode * 59 + this.Sales.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemComponents.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrencyLookups.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

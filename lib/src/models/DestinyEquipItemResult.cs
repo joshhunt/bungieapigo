@@ -37,18 +37,6 @@ namespace BungieNetApi.Model {
                     (EquipStatus != null && EquipStatus.Equals(input.EquipStatus))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ItemInstanceId.GetHashCode();
-				hashCode = hashCode * 59 + this.EquipStatus.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

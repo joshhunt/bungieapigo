@@ -38,18 +38,6 @@ namespace BungieNetApi.Model {
                     (IsSet != null && IsSet.Equals(input.IsSet))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.UnlockHash.GetHashCode();
-				hashCode = hashCode * 59 + this.IsSet.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -36,18 +36,6 @@ namespace BungieNetApi.Model {
                     (DisplayOnItemPreviewScreen != null && DisplayOnItemPreviewScreen.Equals(input.DisplayOnItemPreviewScreen))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ActivityHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayOnItemPreviewScreen.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

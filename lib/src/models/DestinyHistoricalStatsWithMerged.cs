@@ -30,18 +30,6 @@ namespace BungieNetApi.Model {
                     (Merged != null && Merged.Equals(input.Merged))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Results.GetHashCode();
-				hashCode = hashCode * 59 + this.Merged.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

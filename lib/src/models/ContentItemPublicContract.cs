@@ -131,31 +131,6 @@ namespace BungieNetApi.Model {
                     (CommentSummary != null && CommentSummary.Equals(input.CommentSummary))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ContentId.GetHashCode();
-				hashCode = hashCode * 59 + this.CType.GetHashCode();
-				hashCode = hashCode * 59 + this.CmsPath.GetHashCode();
-				hashCode = hashCode * 59 + this.CreationDate.GetHashCode();
-				hashCode = hashCode * 59 + this.ModifyDate.GetHashCode();
-				hashCode = hashCode * 59 + this.AllowComments.GetHashCode();
-				hashCode = hashCode * 59 + this.HasAgeGate.GetHashCode();
-				hashCode = hashCode * 59 + this.MinimumAge.GetHashCode();
-				hashCode = hashCode * 59 + this.RatingImagePath.GetHashCode();
-				hashCode = hashCode * 59 + this.Author.GetHashCode();
-				hashCode = hashCode * 59 + this.AutoEnglishPropertyFallback.GetHashCode();
-				hashCode = hashCode * 59 + this.Properties.GetHashCode();
-				hashCode = hashCode * 59 + this.Representations.GetHashCode();
-				hashCode = hashCode * 59 + this.Tags.GetHashCode();
-				hashCode = hashCode * 59 + this.CommentSummary.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

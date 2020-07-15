@@ -63,21 +63,6 @@ namespace BungieNetApi.Model {
                     (RecordSealsRootNodeHash != null && RecordSealsRootNodeHash.Equals(input.RecordSealsRootNodeHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Score.GetHashCode();
-				hashCode = hashCode * 59 + this.TrackedRecordHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Records.GetHashCode();
-				hashCode = hashCode * 59 + this.RecordCategoriesRootNodeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.RecordSealsRootNodeHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

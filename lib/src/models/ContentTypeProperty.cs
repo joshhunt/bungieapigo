@@ -311,58 +311,6 @@ namespace BungieNetApi.Model {
                     (IsImage != null && IsImage.Equals(input.IsImage))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Name.GetHashCode();
-				hashCode = hashCode * 59 + this.RootPropertyName.GetHashCode();
-				hashCode = hashCode * 59 + this.ReadableName.GetHashCode();
-				hashCode = hashCode * 59 + this.Value.GetHashCode();
-				hashCode = hashCode * 59 + this.PropertyDescription.GetHashCode();
-				hashCode = hashCode * 59 + this.Localizable.GetHashCode();
-				hashCode = hashCode * 59 + this.Fallback.GetHashCode();
-				hashCode = hashCode * 59 + this.Enabled.GetHashCode();
-				hashCode = hashCode * 59 + this.Order.GetHashCode();
-				hashCode = hashCode * 59 + this.Visible.GetHashCode();
-				hashCode = hashCode * 59 + this.IsTitle.GetHashCode();
-				hashCode = hashCode * 59 + this.Required.GetHashCode();
-				hashCode = hashCode * 59 + this.MaxLength.GetHashCode();
-				hashCode = hashCode * 59 + this.MaxByteLength.GetHashCode();
-				hashCode = hashCode * 59 + this.MaxFileSize.GetHashCode();
-				hashCode = hashCode * 59 + this.Regexp.GetHashCode();
-				hashCode = hashCode * 59 + this.ValidateAs.GetHashCode();
-				hashCode = hashCode * 59 + this.RssAttribute.GetHashCode();
-				hashCode = hashCode * 59 + this.VisibleDependency.GetHashCode();
-				hashCode = hashCode * 59 + this.VisibleOn.GetHashCode();
-				hashCode = hashCode * 59 + this.Datatype.GetHashCode();
-				hashCode = hashCode * 59 + this.Attributes.GetHashCode();
-				hashCode = hashCode * 59 + this.ChildProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.ContentTypeAllowed.GetHashCode();
-				hashCode = hashCode * 59 + this.BindToProperty.GetHashCode();
-				hashCode = hashCode * 59 + this.BoundRegex.GetHashCode();
-				hashCode = hashCode * 59 + this.RepresentationSelection.GetHashCode();
-				hashCode = hashCode * 59 + this.DefaultValues.GetHashCode();
-				hashCode = hashCode * 59 + this.IsExternalAllowed.GetHashCode();
-				hashCode = hashCode * 59 + this.PropertySection.GetHashCode();
-				hashCode = hashCode * 59 + this.Weight.GetHashCode();
-				hashCode = hashCode * 59 + this.Entitytype.GetHashCode();
-				hashCode = hashCode * 59 + this.IsCombo.GetHashCode();
-				hashCode = hashCode * 59 + this.SuppressProperty.GetHashCode();
-				hashCode = hashCode * 59 + this.LegalContentTypes.GetHashCode();
-				hashCode = hashCode * 59 + this.RepresentationValidationString.GetHashCode();
-				hashCode = hashCode * 59 + this.MinWidth.GetHashCode();
-				hashCode = hashCode * 59 + this.MaxWidth.GetHashCode();
-				hashCode = hashCode * 59 + this.MinHeight.GetHashCode();
-				hashCode = hashCode * 59 + this.MaxHeight.GetHashCode();
-				hashCode = hashCode * 59 + this.IsVideo.GetHashCode();
-				hashCode = hashCode * 59 + this.IsImage.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

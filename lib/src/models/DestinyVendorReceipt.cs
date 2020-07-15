@@ -98,24 +98,6 @@ namespace BungieNetApi.Model {
                     (ExpiresOn != null && ExpiresOn.Equals(input.ExpiresOn))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.CurrencyPaid.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemReceived.GetHashCode();
-				hashCode = hashCode * 59 + this.LicenseUnlockHash.GetHashCode();
-				hashCode = hashCode * 59 + this.PurchasedByCharacterId.GetHashCode();
-				hashCode = hashCode * 59 + this.RefundPolicy.GetHashCode();
-				hashCode = hashCode * 59 + this.SequenceNumber.GetHashCode();
-				hashCode = hashCode * 59 + this.TimeToExpiration.GetHashCode();
-				hashCode = hashCode * 59 + this.ExpiresOn.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

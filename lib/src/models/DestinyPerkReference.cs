@@ -58,20 +58,6 @@ namespace BungieNetApi.Model {
                     (Visible != null && Visible.Equals(input.Visible))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.PerkHash.GetHashCode();
-				hashCode = hashCode * 59 + this.IconPath.GetHashCode();
-				hashCode = hashCode * 59 + this.IsActive.GetHashCode();
-				hashCode = hashCode * 59 + this.Visible.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

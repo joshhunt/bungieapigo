@@ -26,17 +26,6 @@ namespace BungieNetApi.Model {
                     (VendorGroupHash != null && VendorGroupHash.Equals(input.VendorGroupHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.VendorGroupHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

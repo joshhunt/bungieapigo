@@ -30,17 +30,6 @@ namespace BungieNetApi.Model {
                     (KioskItems != null && KioskItems.Equals(input.KioskItems))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.KioskItems.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

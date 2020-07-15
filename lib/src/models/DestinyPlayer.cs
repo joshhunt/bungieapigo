@@ -117,27 +117,6 @@ namespace BungieNetApi.Model {
                     (EmblemHash != null && EmblemHash.Equals(input.EmblemHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DestinyUserInfo.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterClass.GetHashCode();
-				hashCode = hashCode * 59 + this.ClassHash.GetHashCode();
-				hashCode = hashCode * 59 + this.RaceHash.GetHashCode();
-				hashCode = hashCode * 59 + this.GenderHash.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.LightLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.BungieNetUserInfo.GetHashCode();
-				hashCode = hashCode * 59 + this.ClanName.GetHashCode();
-				hashCode = hashCode * 59 + this.ClanTag.GetHashCode();
-				hashCode = hashCode * 59 + this.EmblemHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

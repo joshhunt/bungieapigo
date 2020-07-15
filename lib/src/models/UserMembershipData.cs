@@ -47,19 +47,6 @@ namespace BungieNetApi.Model {
                     (BungieNetUser != null && BungieNetUser.Equals(input.BungieNetUser))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DestinyMemberships.GetHashCode();
-				hashCode = hashCode * 59 + this.PrimaryMembershipId.GetHashCode();
-				hashCode = hashCode * 59 + this.BungieNetUser.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

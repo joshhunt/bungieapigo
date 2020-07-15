@@ -47,19 +47,6 @@ namespace BungieNetApi.Model {
                     (ThrottledRequests != null && ThrottledRequests.Equals(input.ThrottledRequests))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Range.GetHashCode();
-				hashCode = hashCode * 59 + this.ApiCalls.GetHashCode();
-				hashCode = hashCode * 59 + this.ThrottledRequests.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

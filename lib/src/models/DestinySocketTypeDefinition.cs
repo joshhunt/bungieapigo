@@ -150,30 +150,6 @@ namespace BungieNetApi.Model {
                     (Redacted != null && Redacted.Equals(input.Redacted))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.InsertAction.GetHashCode();
-				hashCode = hashCode * 59 + this.PlugWhitelist.GetHashCode();
-				hashCode = hashCode * 59 + this.SocketCategoryHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Visibility.GetHashCode();
-				hashCode = hashCode * 59 + this.AlwaysRandomizeSockets.GetHashCode();
-				hashCode = hashCode * 59 + this.IsPreviewEnabled.GetHashCode();
-				hashCode = hashCode * 59 + this.HideDuplicateReusablePlugs.GetHashCode();
-				hashCode = hashCode * 59 + this.OverridesUiAppearance.GetHashCode();
-				hashCode = hashCode * 59 + this.AvoidDuplicatesOnInitialization.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrencyScalars.GetHashCode();
-				hashCode = hashCode * 59 + this.Hash.GetHashCode();
-				hashCode = hashCode * 59 + this.Index.GetHashCode();
-				hashCode = hashCode * 59 + this.Redacted.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

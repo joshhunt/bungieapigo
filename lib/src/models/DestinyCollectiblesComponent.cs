@@ -43,19 +43,6 @@ namespace BungieNetApi.Model {
                     (CollectionBadgesRootNodeHash != null && CollectionBadgesRootNodeHash.Equals(input.CollectionBadgesRootNodeHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Collectibles.GetHashCode();
-				hashCode = hashCode * 59 + this.CollectionCategoriesRootNodeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.CollectionBadgesRootNodeHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

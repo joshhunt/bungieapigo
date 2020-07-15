@@ -47,19 +47,6 @@ namespace BungieNetApi.Model {
                     (PerkVisibility != null && PerkVisibility.Equals(input.PerkVisibility))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.RequirementDisplayString.GetHashCode();
-				hashCode = hashCode * 59 + this.PerkHash.GetHashCode();
-				hashCode = hashCode * 59 + this.PerkVisibility.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

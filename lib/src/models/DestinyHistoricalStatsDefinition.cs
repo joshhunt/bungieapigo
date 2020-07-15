@@ -157,30 +157,6 @@ namespace BungieNetApi.Model {
                     (MedalTierHash != null && MedalTierHash.Equals(input.MedalTierHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.StatId.GetHashCode();
-				hashCode = hashCode * 59 + this.Group.GetHashCode();
-				hashCode = hashCode * 59 + this.PeriodTypes.GetHashCode();
-				hashCode = hashCode * 59 + this.Modes.GetHashCode();
-				hashCode = hashCode * 59 + this.Category.GetHashCode();
-				hashCode = hashCode * 59 + this.StatName.GetHashCode();
-				hashCode = hashCode * 59 + this.StatNameAbbr.GetHashCode();
-				hashCode = hashCode * 59 + this.StatDescription.GetHashCode();
-				hashCode = hashCode * 59 + this.UnitType.GetHashCode();
-				hashCode = hashCode * 59 + this.IconImage.GetHashCode();
-				hashCode = hashCode * 59 + this.MergeMethod.GetHashCode();
-				hashCode = hashCode * 59 + this.UnitLabel.GetHashCode();
-				hashCode = hashCode * 59 + this.Weight.GetHashCode();
-				hashCode = hashCode * 59 + this.MedalTierHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

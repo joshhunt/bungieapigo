@@ -83,21 +83,6 @@ namespace BungieNetApi.Model {
                     (DisplayMaximum != null && DisplayMaximum.Equals(input.DisplayMaximum))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.StatHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Value.GetHashCode();
-				hashCode = hashCode * 59 + this.Minimum.GetHashCode();
-				hashCode = hashCode * 59 + this.Maximum.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayMaximum.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

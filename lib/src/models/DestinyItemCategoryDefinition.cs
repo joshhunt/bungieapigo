@@ -228,35 +228,6 @@ namespace BungieNetApi.Model {
                     (Redacted != null && Redacted.Equals(input.Redacted))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.Visible.GetHashCode();
-				hashCode = hashCode * 59 + this.Deprecated.GetHashCode();
-				hashCode = hashCode * 59 + this.ShortTitle.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemTypeRegex.GetHashCode();
-				hashCode = hashCode * 59 + this.GrantDestinyBreakerType.GetHashCode();
-				hashCode = hashCode * 59 + this.PlugCategoryIdentifier.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemTypeRegexNot.GetHashCode();
-				hashCode = hashCode * 59 + this.OriginBucketIdentifier.GetHashCode();
-				hashCode = hashCode * 59 + this.GrantDestinyItemType.GetHashCode();
-				hashCode = hashCode * 59 + this.GrantDestinySubType.GetHashCode();
-				hashCode = hashCode * 59 + this.GrantDestinyClass.GetHashCode();
-				hashCode = hashCode * 59 + this.TraitId.GetHashCode();
-				hashCode = hashCode * 59 + this.GroupedCategoryHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.ParentCategoryHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.GroupCategoryOnly.GetHashCode();
-				hashCode = hashCode * 59 + this.Hash.GetHashCode();
-				hashCode = hashCode * 59 + this.Index.GetHashCode();
-				hashCode = hashCode * 59 + this.Redacted.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

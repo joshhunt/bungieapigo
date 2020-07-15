@@ -45,20 +45,6 @@ namespace BungieNetApi.Model {
                     (IntervalsRedeemedCount != null && IntervalsRedeemedCount.Equals(input.IntervalsRedeemedCount))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.State.GetHashCode();
-				hashCode = hashCode * 59 + this.Objectives.GetHashCode();
-				hashCode = hashCode * 59 + this.IntervalObjectives.GetHashCode();
-				hashCode = hashCode * 59 + this.IntervalsRedeemedCount.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

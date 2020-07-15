@@ -57,20 +57,6 @@ namespace BungieNetApi.Model {
                     (Weight != null && Weight.Equals(input.Weight))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Hash.GetHashCode();
-				hashCode = hashCode * 59 + this.EntityType.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.Weight.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

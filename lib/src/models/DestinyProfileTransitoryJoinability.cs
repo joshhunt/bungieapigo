@@ -47,19 +47,6 @@ namespace BungieNetApi.Model {
                     (ClosedReasons != null && ClosedReasons.Equals(input.ClosedReasons))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.OpenSlots.GetHashCode();
-				hashCode = hashCode * 59 + this.PrivacySetting.GetHashCode();
-				hashCode = hashCode * 59 + this.ClosedReasons.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -30,18 +30,6 @@ namespace BungieNetApi.Model {
                     (ScalarValue != null && ScalarValue.Equals(input.ScalarValue))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.CurrencyItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ScalarValue.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

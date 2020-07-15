@@ -46,18 +46,6 @@ namespace BungieNetApi.Model {
                     (CollectibleItemComponents != null && CollectibleItemComponents.Equals(input.CollectibleItemComponents))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Collectibles.GetHashCode();
-				hashCode = hashCode * 59 + this.CollectibleItemComponents.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

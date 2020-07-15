@@ -184,32 +184,6 @@ namespace BungieNetApi.Model {
                     (VersionNumber != null && VersionNumber.Equals(input.VersionNumber))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemInstanceId.GetHashCode();
-				hashCode = hashCode * 59 + this.Quantity.GetHashCode();
-				hashCode = hashCode * 59 + this.BindStatus.GetHashCode();
-				hashCode = hashCode * 59 + this.Location.GetHashCode();
-				hashCode = hashCode * 59 + this.BucketHash.GetHashCode();
-				hashCode = hashCode * 59 + this.TransferStatus.GetHashCode();
-				hashCode = hashCode * 59 + this.Lockable.GetHashCode();
-				hashCode = hashCode * 59 + this.State.GetHashCode();
-				hashCode = hashCode * 59 + this.OverrideStyleItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ExpirationDate.GetHashCode();
-				hashCode = hashCode * 59 + this.IsWrapper.GetHashCode();
-				hashCode = hashCode * 59 + this.TooltipNotificationIndexes.GetHashCode();
-				hashCode = hashCode * 59 + this.MetricHash.GetHashCode();
-				hashCode = hashCode * 59 + this.MetricObjective.GetHashCode();
-				hashCode = hashCode * 59 + this.VersionNumber.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

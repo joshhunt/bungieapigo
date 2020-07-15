@@ -37,19 +37,6 @@ namespace BungieNetApi.Model {
                     (GlobalIgnoreEndDate != null && GlobalIgnoreEndDate.Equals(input.GlobalIgnoreEndDate))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.IsFollowing.GetHashCode();
-				hashCode = hashCode * 59 + this.IgnoreStatus.GetHashCode();
-				hashCode = hashCode * 59 + this.GlobalIgnoreEndDate.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

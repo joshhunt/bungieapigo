@@ -66,22 +66,6 @@ namespace BungieNetApi.Model {
                     (Overview != null && Overview.Equals(input.Overview))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Description.GetHashCode();
-				hashCode = hashCode * 59 + this.Name.GetHashCode();
-				hashCode = hashCode * 59 + this.UnlockExpression.GetHashCode();
-				hashCode = hashCode * 59 + this.LinkedGraphId.GetHashCode();
-				hashCode = hashCode * 59 + this.LinkedGraphs.GetHashCode();
-				hashCode = hashCode * 59 + this.Overview.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

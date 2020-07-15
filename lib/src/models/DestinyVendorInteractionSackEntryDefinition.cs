@@ -24,17 +24,6 @@ namespace BungieNetApi.Model {
                     (SackType != null && SackType.Equals(input.SackType))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.SackType.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -167,37 +167,6 @@ namespace BungieNetApi.Model {
                     (FireteamActivities != null && FireteamActivities.Equals(input.FireteamActivities))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Environment.GetHashCode();
-				hashCode = hashCode * 59 + this.Systems.GetHashCode();
-				hashCode = hashCode * 59 + this.IgnoreReasons.GetHashCode();
-				hashCode = hashCode * 59 + this.ForumCategories.GetHashCode();
-				hashCode = hashCode * 59 + this.GroupAvatars.GetHashCode();
-				hashCode = hashCode * 59 + this.DestinyMembershipTypes.GetHashCode();
-				hashCode = hashCode * 59 + this.RecruitmentPlatformTags.GetHashCode();
-				hashCode = hashCode * 59 + this.RecruitmentMiscTags.GetHashCode();
-				hashCode = hashCode * 59 + this.RecruitmentActivities.GetHashCode();
-				hashCode = hashCode * 59 + this.UserContentLocales.GetHashCode();
-				hashCode = hashCode * 59 + this.SystemContentLocales.GetHashCode();
-				hashCode = hashCode * 59 + this.ClanBannerDecals.GetHashCode();
-				hashCode = hashCode * 59 + this.ClanBannerDecalColors.GetHashCode();
-				hashCode = hashCode * 59 + this.ClanBannerGonfalons.GetHashCode();
-				hashCode = hashCode * 59 + this.ClanBannerGonfalonColors.GetHashCode();
-				hashCode = hashCode * 59 + this.ClanBannerGonfalonDetails.GetHashCode();
-				hashCode = hashCode * 59 + this.ClanBannerGonfalonDetailColors.GetHashCode();
-				hashCode = hashCode * 59 + this.ClanBannerStandards.GetHashCode();
-				hashCode = hashCode * 59 + this.Destiny2CoreSettings.GetHashCode();
-				hashCode = hashCode * 59 + this.EmailSettings.GetHashCode();
-				hashCode = hashCode * 59 + this.FireteamActivities.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

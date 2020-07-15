@@ -118,26 +118,6 @@ namespace BungieNetApi.Model {
                     (NodeStatsBlock != null && NodeStatsBlock.Equals(input.NodeStatsBlock))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.NodeIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.NodeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.State.GetHashCode();
-				hashCode = hashCode * 59 + this.IsActivated.GetHashCode();
-				hashCode = hashCode * 59 + this.StepIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.MaterialsToUpgrade.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivationGridLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.ProgressPercent.GetHashCode();
-				hashCode = hashCode * 59 + this.Hidden.GetHashCode();
-				hashCode = hashCode * 59 + this.NodeStatsBlock.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

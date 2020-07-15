@@ -58,22 +58,6 @@ namespace BungieNetApi.Model {
                     (UseSetId != null && UseSetId.Equals(input.UseSetId))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Name.GetHashCode();
-				hashCode = hashCode * 59 + this.Path.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemInSet.GetHashCode();
-				hashCode = hashCode * 59 + this.SetTag.GetHashCode();
-				hashCode = hashCode * 59 + this.SetNesting.GetHashCode();
-				hashCode = hashCode * 59 + this.UseSetId.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

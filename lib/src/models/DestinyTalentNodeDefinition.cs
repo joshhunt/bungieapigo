@@ -237,35 +237,6 @@ namespace BungieNetApi.Model {
                     (IgnoreForCompletion != null && IgnoreForCompletion.Equals(input.IgnoreForCompletion))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.NodeIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.NodeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Row.GetHashCode();
-				hashCode = hashCode * 59 + this.Column.GetHashCode();
-				hashCode = hashCode * 59 + this.PrerequisiteNodeIndexes.GetHashCode();
-				hashCode = hashCode * 59 + this.BinaryPairNodeIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.AutoUnlocks.GetHashCode();
-				hashCode = hashCode * 59 + this.LastStepRepeats.GetHashCode();
-				hashCode = hashCode * 59 + this.IsRandom.GetHashCode();
-				hashCode = hashCode * 59 + this.RandomActivationRequirement.GetHashCode();
-				hashCode = hashCode * 59 + this.IsRandomRepurchasable.GetHashCode();
-				hashCode = hashCode * 59 + this.Steps.GetHashCode();
-				hashCode = hashCode * 59 + this.ExclusiveWithNodeHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.RandomStartProgressionBarAtProgression.GetHashCode();
-				hashCode = hashCode * 59 + this.LayoutIdentifier.GetHashCode();
-				hashCode = hashCode * 59 + this.GroupHash.GetHashCode();
-				hashCode = hashCode * 59 + this.LoreHash.GetHashCode();
-				hashCode = hashCode * 59 + this.NodeStyleIdentifier.GetHashCode();
-				hashCode = hashCode * 59 + this.IgnoreForCompletion.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

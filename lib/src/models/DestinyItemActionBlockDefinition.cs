@@ -158,30 +158,6 @@ namespace BungieNetApi.Model {
                     (UseOnAcquire != null && UseOnAcquire.Equals(input.UseOnAcquire))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.VerbName.GetHashCode();
-				hashCode = hashCode * 59 + this.VerbDescription.GetHashCode();
-				hashCode = hashCode * 59 + this.IsPositive.GetHashCode();
-				hashCode = hashCode * 59 + this.OverlayScreenName.GetHashCode();
-				hashCode = hashCode * 59 + this.OverlayIcon.GetHashCode();
-				hashCode = hashCode * 59 + this.RequiredCooldownSeconds.GetHashCode();
-				hashCode = hashCode * 59 + this.RequiredItems.GetHashCode();
-				hashCode = hashCode * 59 + this.ProgressionRewards.GetHashCode();
-				hashCode = hashCode * 59 + this.ActionTypeLabel.GetHashCode();
-				hashCode = hashCode * 59 + this.RequiredLocation.GetHashCode();
-				hashCode = hashCode * 59 + this.RequiredCooldownHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DeleteOnAction.GetHashCode();
-				hashCode = hashCode * 59 + this.ConsumeEntireStack.GetHashCode();
-				hashCode = hashCode * 59 + this.UseOnAcquire.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

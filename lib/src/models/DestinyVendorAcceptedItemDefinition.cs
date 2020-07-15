@@ -39,18 +39,6 @@ namespace BungieNetApi.Model {
                     (DestinationInventoryBucketHash != null && DestinationInventoryBucketHash.Equals(input.DestinationInventoryBucketHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.AcceptedInventoryBucketHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DestinationInventoryBucketHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -153,29 +153,6 @@ namespace BungieNetApi.Model {
                     (Energy != null && Energy.Equals(input.Energy))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DamageType.GetHashCode();
-				hashCode = hashCode * 59 + this.DamageTypeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.PrimaryStat.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.Quality.GetHashCode();
-				hashCode = hashCode * 59 + this.IsEquipped.GetHashCode();
-				hashCode = hashCode * 59 + this.CanEquip.GetHashCode();
-				hashCode = hashCode * 59 + this.EquipRequiredLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.UnlockHashesRequiredToEquip.GetHashCode();
-				hashCode = hashCode * 59 + this.CannotEquipReason.GetHashCode();
-				hashCode = hashCode * 59 + this.BreakerType.GetHashCode();
-				hashCode = hashCode * 59 + this.BreakerTypeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Energy.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

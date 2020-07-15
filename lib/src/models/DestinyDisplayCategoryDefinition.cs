@@ -104,25 +104,6 @@ namespace BungieNetApi.Model {
                     (DisplayStyleIdentifier != null && DisplayStyleIdentifier.Equals(input.DisplayStyleIdentifier))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Index.GetHashCode();
-				hashCode = hashCode * 59 + this.Identifier.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayCategoryHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayInBanner.GetHashCode();
-				hashCode = hashCode * 59 + this.ProgressionHash.GetHashCode();
-				hashCode = hashCode * 59 + this.SortOrder.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayStyleHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayStyleIdentifier.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -78,24 +78,6 @@ namespace BungieNetApi.Model {
                     (EventContent != null && EventContent.Equals(input.EventContent))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Image.GetHashCode();
-				hashCode = hashCode * 59 + this.Icon.GetHashCode();
-				hashCode = hashCode * 59 + this.Title.GetHashCode();
-				hashCode = hashCode * 59 + this.Subtitle.GetHashCode();
-				hashCode = hashCode * 59 + this.DateStart.GetHashCode();
-				hashCode = hashCode * 59 + this.DateEnd.GetHashCode();
-				hashCode = hashCode * 59 + this.MilestoneDetails.GetHashCode();
-				hashCode = hashCode * 59 + this.EventContent.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

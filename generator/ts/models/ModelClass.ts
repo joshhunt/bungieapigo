@@ -48,23 +48,6 @@ export class ModelClass {
   }
 
   imports() {
-    // let filename = camelcaseToUnderscore(this.className);
-    // let imports = chain(this.data.properties)
-    //   .map((prop) => {
-    //     return ApiDocHelper.getImportInfo(prop);
-    //   })
-    //   .filter(Boolean)
-    //   .filter((importInfo: ImportInfo) => importInfo.filename() != filename)
-    //   .uniqBy((item: any) => item.filename())
-    //   .map((item: ImportInfo) => {
-    //     if (item.type == "models") {
-    //       return item.filename();
-    //     } else {
-    //       return `../${item.type}/${item.filename()}`;
-    //     }
-    //   })
-    //   .value();
-    // return imports;
     const baseImports = ["System.Runtime.Serialization"];
 
     const propertyImports = this.properties()

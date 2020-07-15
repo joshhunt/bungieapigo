@@ -41,18 +41,6 @@ namespace BungieNetApi.Model {
                     (SeasonalArtifact != null && SeasonalArtifact.Equals(input.SeasonalArtifact))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Checklists.GetHashCode();
-				hashCode = hashCode * 59 + this.SeasonalArtifact.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

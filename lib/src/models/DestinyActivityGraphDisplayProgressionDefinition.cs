@@ -31,18 +31,6 @@ namespace BungieNetApi.Model {
                     (ProgressionHash != null && ProgressionHash.Equals(input.ProgressionHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Id.GetHashCode();
-				hashCode = hashCode * 59 + this.ProgressionHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

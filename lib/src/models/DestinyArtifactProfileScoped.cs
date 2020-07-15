@@ -59,21 +59,6 @@ namespace BungieNetApi.Model {
                     (PowerBonus != null && PowerBonus.Equals(input.PowerBonus))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ArtifactHash.GetHashCode();
-				hashCode = hashCode * 59 + this.PointProgression.GetHashCode();
-				hashCode = hashCode * 59 + this.PointsAcquired.GetHashCode();
-				hashCode = hashCode * 59 + this.PowerBonusProgression.GetHashCode();
-				hashCode = hashCode * 59 + this.PowerBonus.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

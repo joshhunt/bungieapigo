@@ -65,23 +65,6 @@ namespace BungieNetApi.Model {
                     (StreamInfo != null && StreamInfo.Equals(input.StreamInfo))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.AlertKey.GetHashCode();
-				hashCode = hashCode * 59 + this.AlertHtml.GetHashCode();
-				hashCode = hashCode * 59 + this.AlertTimestamp.GetHashCode();
-				hashCode = hashCode * 59 + this.AlertLink.GetHashCode();
-				hashCode = hashCode * 59 + this.AlertLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.AlertType.GetHashCode();
-				hashCode = hashCode * 59 + this.StreamInfo.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

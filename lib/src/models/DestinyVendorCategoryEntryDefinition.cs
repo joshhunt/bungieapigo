@@ -172,32 +172,6 @@ namespace BungieNetApi.Model {
                     (ResetOffsetMinutesOverride != null && ResetOffsetMinutesOverride.Equals(input.ResetOffsetMinutesOverride))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.CategoryIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.SortValue.GetHashCode();
-				hashCode = hashCode * 59 + this.CategoryHash.GetHashCode();
-				hashCode = hashCode * 59 + this.QuantityAvailable.GetHashCode();
-				hashCode = hashCode * 59 + this.ShowUnavailableItems.GetHashCode();
-				hashCode = hashCode * 59 + this.HideIfNoCurrency.GetHashCode();
-				hashCode = hashCode * 59 + this.HideFromRegularPurchase.GetHashCode();
-				hashCode = hashCode * 59 + this.BuyStringOverride.GetHashCode();
-				hashCode = hashCode * 59 + this.DisabledDescription.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayTitle.GetHashCode();
-				hashCode = hashCode * 59 + this.Overlay.GetHashCode();
-				hashCode = hashCode * 59 + this.VendorItemIndexes.GetHashCode();
-				hashCode = hashCode * 59 + this.IsPreview.GetHashCode();
-				hashCode = hashCode * 59 + this.IsDisplayOnly.GetHashCode();
-				hashCode = hashCode * 59 + this.ResetIntervalMinutesOverride.GetHashCode();
-				hashCode = hashCode * 59 + this.ResetOffsetMinutesOverride.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

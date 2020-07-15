@@ -30,18 +30,6 @@ namespace BungieNetApi.Model {
                     (CommentCount != null && CommentCount.Equals(input.CommentCount))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.TopicId.GetHashCode();
-				hashCode = hashCode * 59 + this.CommentCount.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

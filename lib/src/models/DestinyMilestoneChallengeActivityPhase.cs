@@ -26,17 +26,6 @@ namespace BungieNetApi.Model {
                     (PhaseHash != null && PhaseHash.Equals(input.PhaseHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.PhaseHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

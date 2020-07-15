@@ -23,17 +23,6 @@ namespace BungieNetApi.Model {
                     (ChannelName != null && ChannelName.Equals(input.ChannelName))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ChannelName.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

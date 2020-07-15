@@ -37,19 +37,6 @@ namespace BungieNetApi.Model {
                     (TransactionId != null && TransactionId.Equals(input.TransactionId))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.PartnerOfferId.GetHashCode();
-				hashCode = hashCode * 59 + this.BungieNetMembershipId.GetHashCode();
-				hashCode = hashCode * 59 + this.TransactionId.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

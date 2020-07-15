@@ -44,20 +44,6 @@ namespace BungieNetApi.Model {
                     (CrossSaveOverriddenMembershipId != null && CrossSaveOverriddenMembershipId.Equals(input.CrossSaveOverriddenMembershipId))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.MembershipType.GetHashCode();
-				hashCode = hashCode * 59 + this.MembershipId.GetHashCode();
-				hashCode = hashCode * 59 + this.CrossSaveOverriddenType.GetHashCode();
-				hashCode = hashCode * 59 + this.CrossSaveOverriddenMembershipId.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

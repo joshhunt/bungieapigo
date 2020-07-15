@@ -51,19 +51,6 @@ namespace BungieNetApi.Model {
                     (DateCompleted != null && DateCompleted.Equals(input.DateCompleted))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Objectives.GetHashCode();
-				hashCode = hashCode * 59 + this.FlavorObjective.GetHashCode();
-				hashCode = hashCode * 59 + this.DateCompleted.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

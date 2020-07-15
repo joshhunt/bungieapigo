@@ -68,21 +68,6 @@ namespace BungieNetApi.Model {
                     (QuestLineName != null && QuestLineName.Equals(input.QuestLineName))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ItemList.GetHashCode();
-				hashCode = hashCode * 59 + this.RequireOrderedSetItemAdd.GetHashCode();
-				hashCode = hashCode * 59 + this.SetIsFeatured.GetHashCode();
-				hashCode = hashCode * 59 + this.SetType.GetHashCode();
-				hashCode = hashCode * 59 + this.QuestLineName.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

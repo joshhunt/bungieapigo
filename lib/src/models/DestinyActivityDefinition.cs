@@ -346,48 +346,6 @@ namespace BungieNetApi.Model {
                     (Redacted != null && Redacted.Equals(input.Redacted))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.OriginalDisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.SelectionScreenDisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.ReleaseIcon.GetHashCode();
-				hashCode = hashCode * 59 + this.ReleaseTime.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityLightLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.DestinationHash.GetHashCode();
-				hashCode = hashCode * 59 + this.PlaceHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityTypeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Tier.GetHashCode();
-				hashCode = hashCode * 59 + this.PgcrImage.GetHashCode();
-				hashCode = hashCode * 59 + this.Rewards.GetHashCode();
-				hashCode = hashCode * 59 + this.Modifiers.GetHashCode();
-				hashCode = hashCode * 59 + this.IsPlaylist.GetHashCode();
-				hashCode = hashCode * 59 + this.Challenges.GetHashCode();
-				hashCode = hashCode * 59 + this.OptionalUnlockStrings.GetHashCode();
-				hashCode = hashCode * 59 + this.PlaylistItems.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityGraphList.GetHashCode();
-				hashCode = hashCode * 59 + this.Matchmaking.GetHashCode();
-				hashCode = hashCode * 59 + this.GuidedGame.GetHashCode();
-				hashCode = hashCode * 59 + this.DirectActivityModeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DirectActivityModeType.GetHashCode();
-				hashCode = hashCode * 59 + this.Loadouts.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityModeHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityModeTypes.GetHashCode();
-				hashCode = hashCode * 59 + this.IsPvP.GetHashCode();
-				hashCode = hashCode * 59 + this.InsertionPoints.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityLocationMappings.GetHashCode();
-				hashCode = hashCode * 59 + this.Hash.GetHashCode();
-				hashCode = hashCode * 59 + this.Index.GetHashCode();
-				hashCode = hashCode * 59 + this.Redacted.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -30,17 +30,6 @@ namespace BungieNetApi.Model {
                     (Perks != null && Perks.Equals(input.Perks))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Perks.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

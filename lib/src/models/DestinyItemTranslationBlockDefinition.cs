@@ -67,23 +67,6 @@ namespace BungieNetApi.Model {
                     (HasGeometry != null && HasGeometry.Equals(input.HasGeometry))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.WeaponPatternIdentifier.GetHashCode();
-				hashCode = hashCode * 59 + this.WeaponPatternHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DefaultDyes.GetHashCode();
-				hashCode = hashCode * 59 + this.LockedDyes.GetHashCode();
-				hashCode = hashCode * 59 + this.CustomDyes.GetHashCode();
-				hashCode = hashCode * 59 + this.Arrangements.GetHashCode();
-				hashCode = hashCode * 59 + this.HasGeometry.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

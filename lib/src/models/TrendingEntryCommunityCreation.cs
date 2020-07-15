@@ -65,23 +65,6 @@ namespace BungieNetApi.Model {
                     (Upvotes != null && Upvotes.Equals(input.Upvotes))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Media.GetHashCode();
-				hashCode = hashCode * 59 + this.Title.GetHashCode();
-				hashCode = hashCode * 59 + this.Author.GetHashCode();
-				hashCode = hashCode * 59 + this.AuthorMembershipId.GetHashCode();
-				hashCode = hashCode * 59 + this.PostId.GetHashCode();
-				hashCode = hashCode * 59 + this.Body.GetHashCode();
-				hashCode = hashCode * 59 + this.Upvotes.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -66,23 +66,6 @@ namespace BungieNetApi.Model {
                     (SkuOffers != null && SkuOffers.Equals(input.SkuOffers))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.SkuIdentifier.GetHashCode();
-				hashCode = hashCode * 59 + this.LocalizedName.GetHashCode();
-				hashCode = hashCode * 59 + this.LocalizedDescription.GetHashCode();
-				hashCode = hashCode * 59 + this.ClaimDate.GetHashCode();
-				hashCode = hashCode * 59 + this.AllOffersApplied.GetHashCode();
-				hashCode = hashCode * 59 + this.TransactionId.GetHashCode();
-				hashCode = hashCode * 59 + this.SkuOffers.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

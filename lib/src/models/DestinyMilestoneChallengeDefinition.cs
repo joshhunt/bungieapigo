@@ -26,17 +26,6 @@ namespace BungieNetApi.Model {
                     (ChallengeObjectiveHash != null && ChallengeObjectiveHash.Equals(input.ChallengeObjectiveHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ChallengeObjectiveHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

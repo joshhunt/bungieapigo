@@ -31,18 +31,6 @@ namespace BungieNetApi.Model {
                     (PipIcon != null && PipIcon.Equals(input.PipIcon))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.AdditionalEquipRequirementsDisplayStrings.GetHashCode();
-				hashCode = hashCode * 59 + this.PipIcon.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

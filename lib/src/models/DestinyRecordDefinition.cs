@@ -193,36 +193,6 @@ namespace BungieNetApi.Model {
                     (Redacted != null && Redacted.Equals(input.Redacted))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.Scope.GetHashCode();
-				hashCode = hashCode * 59 + this.PresentationInfo.GetHashCode();
-				hashCode = hashCode * 59 + this.LoreHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ObjectiveHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.RecordValueStyle.GetHashCode();
-				hashCode = hashCode * 59 + this.TitleInfo.GetHashCode();
-				hashCode = hashCode * 59 + this.CompletionInfo.GetHashCode();
-				hashCode = hashCode * 59 + this.StateInfo.GetHashCode();
-				hashCode = hashCode * 59 + this.Requirements.GetHashCode();
-				hashCode = hashCode * 59 + this.ExpirationInfo.GetHashCode();
-				hashCode = hashCode * 59 + this.IntervalInfo.GetHashCode();
-				hashCode = hashCode * 59 + this.RewardItems.GetHashCode();
-				hashCode = hashCode * 59 + this.PresentationNodeType.GetHashCode();
-				hashCode = hashCode * 59 + this.TraitIds.GetHashCode();
-				hashCode = hashCode * 59 + this.TraitHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.ParentNodeHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.Hash.GetHashCode();
-				hashCode = hashCode * 59 + this.Index.GetHashCode();
-				hashCode = hashCode * 59 + this.Redacted.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

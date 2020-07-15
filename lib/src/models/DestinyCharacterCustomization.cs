@@ -103,28 +103,6 @@ namespace BungieNetApi.Model {
                     (DecalIndex != null && DecalIndex.Equals(input.DecalIndex))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Personality.GetHashCode();
-				hashCode = hashCode * 59 + this.Face.GetHashCode();
-				hashCode = hashCode * 59 + this.SkinColor.GetHashCode();
-				hashCode = hashCode * 59 + this.LipColor.GetHashCode();
-				hashCode = hashCode * 59 + this.EyeColor.GetHashCode();
-				hashCode = hashCode * 59 + this.HairColors.GetHashCode();
-				hashCode = hashCode * 59 + this.FeatureColors.GetHashCode();
-				hashCode = hashCode * 59 + this.DecalColor.GetHashCode();
-				hashCode = hashCode * 59 + this.WearHelmet.GetHashCode();
-				hashCode = hashCode * 59 + this.HairIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.FeatureIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.DecalIndex.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

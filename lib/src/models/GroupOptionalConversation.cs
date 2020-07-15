@@ -51,21 +51,6 @@ namespace BungieNetApi.Model {
                     (ChatSecurity != null && ChatSecurity.Equals(input.ChatSecurity))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.GroupId.GetHashCode();
-				hashCode = hashCode * 59 + this.ConversationId.GetHashCode();
-				hashCode = hashCode * 59 + this.ChatEnabled.GetHashCode();
-				hashCode = hashCode * 59 + this.ChatName.GetHashCode();
-				hashCode = hashCode * 59 + this.ChatSecurity.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

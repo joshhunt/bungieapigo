@@ -198,33 +198,6 @@ namespace BungieNetApi.Model {
                     (EnergyCost != null && EnergyCost.Equals(input.EnergyCost))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.InsertionRules.GetHashCode();
-				hashCode = hashCode * 59 + this.PlugCategoryIdentifier.GetHashCode();
-				hashCode = hashCode * 59 + this.PlugCategoryHash.GetHashCode();
-				hashCode = hashCode * 59 + this.OnActionRecreateSelf.GetHashCode();
-				hashCode = hashCode * 59 + this.InsertionMaterialRequirementHash.GetHashCode();
-				hashCode = hashCode * 59 + this.PreviewItemOverrideHash.GetHashCode();
-				hashCode = hashCode * 59 + this.EnabledMaterialRequirementHash.GetHashCode();
-				hashCode = hashCode * 59 + this.EnabledRules.GetHashCode();
-				hashCode = hashCode * 59 + this.UiPlugLabel.GetHashCode();
-				hashCode = hashCode * 59 + this.PlugStyle.GetHashCode();
-				hashCode = hashCode * 59 + this.PlugAvailability.GetHashCode();
-				hashCode = hashCode * 59 + this.AlternateUiPlugLabel.GetHashCode();
-				hashCode = hashCode * 59 + this.AlternatePlugStyle.GetHashCode();
-				hashCode = hashCode * 59 + this.IsDummyPlug.GetHashCode();
-				hashCode = hashCode * 59 + this.ParentItemOverride.GetHashCode();
-				hashCode = hashCode * 59 + this.EnergyCapacity.GetHashCode();
-				hashCode = hashCode * 59 + this.EnergyCost.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

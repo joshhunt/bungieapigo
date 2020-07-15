@@ -90,25 +90,6 @@ namespace BungieNetApi.Model {
                     (IconImagePyramidInfo != null && IconImagePyramidInfo.Equals(input.IconImagePyramidInfo))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Version.GetHashCode();
-				hashCode = hashCode * 59 + this.MobileAssetContentPath.GetHashCode();
-				hashCode = hashCode * 59 + this.MobileGearAssetDataBases.GetHashCode();
-				hashCode = hashCode * 59 + this.MobileWorldContentPaths.GetHashCode();
-				hashCode = hashCode * 59 + this.JsonWorldContentPaths.GetHashCode();
-				hashCode = hashCode * 59 + this.JsonWorldComponentContentPaths.GetHashCode();
-				hashCode = hashCode * 59 + this.MobileClanBannerDatabasePath.GetHashCode();
-				hashCode = hashCode * 59 + this.MobileGearCdn.GetHashCode();
-				hashCode = hashCode * 59 + this.IconImagePyramidInfo.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

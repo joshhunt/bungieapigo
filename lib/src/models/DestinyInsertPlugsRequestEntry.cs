@@ -51,19 +51,6 @@ namespace BungieNetApi.Model {
                     (PlugItemHash != null && PlugItemHash.Equals(input.PlugItemHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.SocketIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.SocketArrayType.GetHashCode();
-				hashCode = hashCode * 59 + this.PlugItemHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

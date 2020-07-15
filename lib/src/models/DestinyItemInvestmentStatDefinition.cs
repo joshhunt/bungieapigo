@@ -48,19 +48,6 @@ namespace BungieNetApi.Model {
                     (IsConditionallyActive != null && IsConditionallyActive.Equals(input.IsConditionallyActive))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.StatTypeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Value.GetHashCode();
-				hashCode = hashCode * 59 + this.IsConditionallyActive.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

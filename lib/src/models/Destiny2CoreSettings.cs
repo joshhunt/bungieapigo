@@ -115,30 +115,6 @@ namespace BungieNetApi.Model {
                     (PastSeasonHashes != null && PastSeasonHashes.Equals(input.PastSeasonHashes))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.CollectionRootNode.GetHashCode();
-				hashCode = hashCode * 59 + this.BadgesRootNode.GetHashCode();
-				hashCode = hashCode * 59 + this.RecordsRootNode.GetHashCode();
-				hashCode = hashCode * 59 + this.MedalsRootNode.GetHashCode();
-				hashCode = hashCode * 59 + this.MetricsRootNode.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentRankProgressionHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.UndiscoveredCollectibleImage.GetHashCode();
-				hashCode = hashCode * 59 + this.AmmoTypeHeavyIcon.GetHashCode();
-				hashCode = hashCode * 59 + this.AmmoTypeSpecialIcon.GetHashCode();
-				hashCode = hashCode * 59 + this.AmmoTypePrimaryIcon.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentSeasonalArtifactHash.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentSeasonHash.GetHashCode();
-				hashCode = hashCode * 59 + this.FutureSeasonHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.PastSeasonHashes.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

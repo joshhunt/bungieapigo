@@ -68,21 +68,6 @@ namespace BungieNetApi.Model {
                     (OpposingNodeHashes != null && OpposingNodeHashes.Equals(input.OpposingNodeHashes))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.GroupHash.GetHashCode();
-				hashCode = hashCode * 59 + this.LoreHash.GetHashCode();
-				hashCode = hashCode * 59 + this.NodeHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.OpposingGroupHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.OpposingNodeHashes.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

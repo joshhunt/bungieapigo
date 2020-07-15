@@ -23,17 +23,6 @@ namespace BungieNetApi.Model {
                     (PresentationNodeHash != null && PresentationNodeHash.Equals(input.PresentationNodeHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.PresentationNodeHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

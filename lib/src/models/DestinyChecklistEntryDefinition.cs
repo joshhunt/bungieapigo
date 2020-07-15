@@ -103,26 +103,6 @@ namespace BungieNetApi.Model {
                     (Scope != null && Scope.Equals(input.Scope))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Hash.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.DestinationHash.GetHashCode();
-				hashCode = hashCode * 59 + this.LocationHash.GetHashCode();
-				hashCode = hashCode * 59 + this.BubbleHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.VendorHash.GetHashCode();
-				hashCode = hashCode * 59 + this.VendorInteractionIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.Scope.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

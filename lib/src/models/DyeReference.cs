@@ -30,18 +30,6 @@ namespace BungieNetApi.Model {
                     (DyeHash != null && DyeHash.Equals(input.DyeHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ChannelHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DyeHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

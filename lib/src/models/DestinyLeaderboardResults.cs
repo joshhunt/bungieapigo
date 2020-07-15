@@ -36,18 +36,6 @@ namespace BungieNetApi.Model {
                     (FocusCharacterId != null && FocusCharacterId.Equals(input.FocusCharacterId))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.FocusMembershipId.GetHashCode();
-				hashCode = hashCode * 59 + this.FocusCharacterId.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

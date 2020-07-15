@@ -58,20 +58,6 @@ namespace BungieNetApi.Model {
                     (ItemCategories != null && ItemCategories.Equals(input.ItemCategories))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.About.GetHashCode();
-				hashCode = hashCode * 59 + this.Status.GetHashCode();
-				hashCode = hashCode * 59 + this.Tips.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemCategories.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

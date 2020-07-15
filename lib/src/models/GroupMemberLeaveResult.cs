@@ -30,18 +30,6 @@ namespace BungieNetApi.Model {
                     (GroupDeleted != null && GroupDeleted.Equals(input.GroupDeleted))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Group.GetHashCode();
-				hashCode = hashCode * 59 + this.GroupDeleted.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

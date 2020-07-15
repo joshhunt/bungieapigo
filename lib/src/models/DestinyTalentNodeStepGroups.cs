@@ -52,21 +52,6 @@ namespace BungieNetApi.Model {
                     (DamageTypes != null && DamageTypes.Equals(input.DamageTypes))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.WeaponPerformance.GetHashCode();
-				hashCode = hashCode * 59 + this.ImpactEffects.GetHashCode();
-				hashCode = hashCode * 59 + this.GuardianAttributes.GetHashCode();
-				hashCode = hashCode * 59 + this.LightAbilities.GetHashCode();
-				hashCode = hashCode * 59 + this.DamageTypes.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

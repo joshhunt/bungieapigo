@@ -66,21 +66,6 @@ namespace BungieNetApi.Model {
                     (EnergyUnused != null && EnergyUnused.Equals(input.EnergyUnused))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.EnergyTypeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.EnergyType.GetHashCode();
-				hashCode = hashCode * 59 + this.EnergyCapacity.GetHashCode();
-				hashCode = hashCode * 59 + this.EnergyUsed.GetHashCode();
-				hashCode = hashCode * 59 + this.EnergyUnused.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

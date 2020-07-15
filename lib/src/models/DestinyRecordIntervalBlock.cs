@@ -31,18 +31,6 @@ namespace BungieNetApi.Model {
                     (OriginalObjectiveArrayInsertionIndex != null && OriginalObjectiveArrayInsertionIndex.Equals(input.OriginalObjectiveArrayInsertionIndex))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.IntervalObjectives.GetHashCode();
-				hashCode = hashCode * 59 + this.OriginalObjectiveArrayInsertionIndex.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

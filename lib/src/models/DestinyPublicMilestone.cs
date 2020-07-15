@@ -98,24 +98,6 @@ namespace BungieNetApi.Model {
                     (Order != null && Order.Equals(input.Order))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.MilestoneHash.GetHashCode();
-				hashCode = hashCode * 59 + this.AvailableQuests.GetHashCode();
-				hashCode = hashCode * 59 + this.Activities.GetHashCode();
-				hashCode = hashCode * 59 + this.VendorHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.Vendors.GetHashCode();
-				hashCode = hashCode * 59 + this.StartDate.GetHashCode();
-				hashCode = hashCode * 59 + this.EndDate.GetHashCode();
-				hashCode = hashCode * 59 + this.Order.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -249,38 +249,6 @@ namespace BungieNetApi.Model {
                     (TitleRecordHash != null && TitleRecordHash.Equals(input.TitleRecordHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.MembershipId.GetHashCode();
-				hashCode = hashCode * 59 + this.MembershipType.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterId.GetHashCode();
-				hashCode = hashCode * 59 + this.DateLastPlayed.GetHashCode();
-				hashCode = hashCode * 59 + this.MinutesPlayedThisSession.GetHashCode();
-				hashCode = hashCode * 59 + this.MinutesPlayedTotal.GetHashCode();
-				hashCode = hashCode * 59 + this.Light.GetHashCode();
-				hashCode = hashCode * 59 + this.Stats.GetHashCode();
-				hashCode = hashCode * 59 + this.RaceHash.GetHashCode();
-				hashCode = hashCode * 59 + this.GenderHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ClassHash.GetHashCode();
-				hashCode = hashCode * 59 + this.RaceType.GetHashCode();
-				hashCode = hashCode * 59 + this.ClassType.GetHashCode();
-				hashCode = hashCode * 59 + this.GenderType.GetHashCode();
-				hashCode = hashCode * 59 + this.EmblemPath.GetHashCode();
-				hashCode = hashCode * 59 + this.EmblemBackgroundPath.GetHashCode();
-				hashCode = hashCode * 59 + this.EmblemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.EmblemColor.GetHashCode();
-				hashCode = hashCode * 59 + this.LevelProgression.GetHashCode();
-				hashCode = hashCode * 59 + this.BaseCharacterLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.PercentToNextLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.TitleRecordHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -72,24 +72,6 @@ namespace BungieNetApi.Model {
                     (ApplyDate != null && ApplyDate.Equals(input.ApplyDate))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.PartnerOfferKey.GetHashCode();
-				hashCode = hashCode * 59 + this.MembershipId.GetHashCode();
-				hashCode = hashCode * 59 + this.MembershipType.GetHashCode();
-				hashCode = hashCode * 59 + this.LocalizedName.GetHashCode();
-				hashCode = hashCode * 59 + this.LocalizedDescription.GetHashCode();
-				hashCode = hashCode * 59 + this.IsConsumable.GetHashCode();
-				hashCode = hashCode * 59 + this.QuantityApplied.GetHashCode();
-				hashCode = hashCode * 59 + this.ApplyDate.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

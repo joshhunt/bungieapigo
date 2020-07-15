@@ -68,20 +68,6 @@ namespace BungieNetApi.Model {
                     (EnableFailIndexes != null && EnableFailIndexes.Equals(input.EnableFailIndexes))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.PlugHash.GetHashCode();
-				hashCode = hashCode * 59 + this.IsEnabled.GetHashCode();
-				hashCode = hashCode * 59 + this.IsVisible.GetHashCode();
-				hashCode = hashCode * 59 + this.EnableFailIndexes.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

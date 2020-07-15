@@ -73,20 +73,6 @@ namespace BungieNetApi.Model {
                     (GridProgression != null && GridProgression.Equals(input.GridProgression))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.TalentGridHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Nodes.GetHashCode();
-				hashCode = hashCode * 59 + this.IsGridComplete.GetHashCode();
-				hashCode = hashCode * 59 + this.GridProgression.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -57,20 +57,6 @@ namespace BungieNetApi.Model {
                     (FlavorObjective != null && FlavorObjective.Equals(input.FlavorObjective))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Index.GetHashCode();
-				hashCode = hashCode * 59 + this.CanAcquire.GetHashCode();
-				hashCode = hashCode * 59 + this.FailureIndexes.GetHashCode();
-				hashCode = hashCode * 59 + this.FlavorObjective.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

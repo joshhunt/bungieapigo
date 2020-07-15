@@ -58,20 +58,6 @@ namespace BungieNetApi.Model {
                     (Challenges != null && Challenges.Equals(input.Challenges))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.QuestItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Status.GetHashCode();
-				hashCode = hashCode * 59 + this.Activity.GetHashCode();
-				hashCode = hashCode * 59 + this.Challenges.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

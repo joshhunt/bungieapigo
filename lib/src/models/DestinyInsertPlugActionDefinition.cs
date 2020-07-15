@@ -37,18 +37,6 @@ namespace BungieNetApi.Model {
                     (ActionType != null && ActionType.Equals(input.ActionType))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ActionExecuteSeconds.GetHashCode();
-				hashCode = hashCode * 59 + this.ActionType.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -165,30 +165,6 @@ namespace BungieNetApi.Model {
                     (Redacted != null && Redacted.Equals(input.Redacted))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.PgcrImage.GetHashCode();
-				hashCode = hashCode * 59 + this.ModeType.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityModeCategory.GetHashCode();
-				hashCode = hashCode * 59 + this.IsTeamBased.GetHashCode();
-				hashCode = hashCode * 59 + this.IsAggregateMode.GetHashCode();
-				hashCode = hashCode * 59 + this.ParentHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.FriendlyName.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityModeMappings.GetHashCode();
-				hashCode = hashCode * 59 + this.Display.GetHashCode();
-				hashCode = hashCode * 59 + this.Order.GetHashCode();
-				hashCode = hashCode * 59 + this.Hash.GetHashCode();
-				hashCode = hashCode * 59 + this.Index.GetHashCode();
-				hashCode = hashCode * 59 + this.Redacted.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

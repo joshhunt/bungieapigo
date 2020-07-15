@@ -82,22 +82,6 @@ namespace BungieNetApi.Model {
                     (TrackedDate != null && TrackedDate.Equals(input.TrackedDate))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.LocationHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ObjectiveHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityHash.GetHashCode();
-				hashCode = hashCode * 59 + this.QuestlineItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.TrackedDate.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

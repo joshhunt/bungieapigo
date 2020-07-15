@@ -290,42 +290,6 @@ namespace BungieNetApi.Model {
                     (Unpurchasable != null && Unpurchasable.Equals(input.Unpurchasable))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.VendorItemIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Quantity.GetHashCode();
-				hashCode = hashCode * 59 + this.FailureIndexes.GetHashCode();
-				hashCode = hashCode * 59 + this.Currencies.GetHashCode();
-				hashCode = hashCode * 59 + this.RefundPolicy.GetHashCode();
-				hashCode = hashCode * 59 + this.RefundTimeLimit.GetHashCode();
-				hashCode = hashCode * 59 + this.CreationLevels.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayCategoryIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.CategoryIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.OriginalCategoryIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.MinimumLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.MaximumLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.Action.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayCategory.GetHashCode();
-				hashCode = hashCode * 59 + this.InventoryBucketHash.GetHashCode();
-				hashCode = hashCode * 59 + this.VisibilityScope.GetHashCode();
-				hashCode = hashCode * 59 + this.PurchasableScope.GetHashCode();
-				hashCode = hashCode * 59 + this.Exclusivity.GetHashCode();
-				hashCode = hashCode * 59 + this.IsOffer.GetHashCode();
-				hashCode = hashCode * 59 + this.IsCrm.GetHashCode();
-				hashCode = hashCode * 59 + this.SortValue.GetHashCode();
-				hashCode = hashCode * 59 + this.ExpirationTooltip.GetHashCode();
-				hashCode = hashCode * 59 + this.RedirectToSaleIndexes.GetHashCode();
-				hashCode = hashCode * 59 + this.SocketOverrides.GetHashCode();
-				hashCode = hashCode * 59 + this.Unpurchasable.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

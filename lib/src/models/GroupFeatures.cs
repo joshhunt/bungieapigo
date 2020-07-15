@@ -137,25 +137,6 @@ namespace BungieNetApi.Model {
                     (JoinLevel != null && JoinLevel.Equals(input.JoinLevel))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.MaximumMembers.GetHashCode();
-				hashCode = hashCode * 59 + this.MaximumMembershipsOfGroupType.GetHashCode();
-				hashCode = hashCode * 59 + this.Capabilities.GetHashCode();
-				hashCode = hashCode * 59 + this.MembershipTypes.GetHashCode();
-				hashCode = hashCode * 59 + this.InvitePermissionOverride.GetHashCode();
-				hashCode = hashCode * 59 + this.UpdateCulturePermissionOverride.GetHashCode();
-				hashCode = hashCode * 59 + this.HostGuidedGamePermissionOverride.GetHashCode();
-				hashCode = hashCode * 59 + this.UpdateBannerPermissionOverride.GetHashCode();
-				hashCode = hashCode * 59 + this.JoinLevel.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

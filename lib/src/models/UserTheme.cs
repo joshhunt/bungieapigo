@@ -37,19 +37,6 @@ namespace BungieNetApi.Model {
                     (UserThemeDescription != null && UserThemeDescription.Equals(input.UserThemeDescription))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.UserThemeId.GetHashCode();
-				hashCode = hashCode * 59 + this.UserThemeName.GetHashCode();
-				hashCode = hashCode * 59 + this.UserThemeDescription.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

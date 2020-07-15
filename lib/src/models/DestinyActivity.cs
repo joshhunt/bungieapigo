@@ -158,29 +158,6 @@ namespace BungieNetApi.Model {
                     (LoadoutRequirementIndex != null && LoadoutRequirementIndex.Equals(input.LoadoutRequirementIndex))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ActivityHash.GetHashCode();
-				hashCode = hashCode * 59 + this.IsNew.GetHashCode();
-				hashCode = hashCode * 59 + this.CanLead.GetHashCode();
-				hashCode = hashCode * 59 + this.CanJoin.GetHashCode();
-				hashCode = hashCode * 59 + this.IsCompleted.GetHashCode();
-				hashCode = hashCode * 59 + this.IsVisible.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.RecommendedLight.GetHashCode();
-				hashCode = hashCode * 59 + this.DifficultyTier.GetHashCode();
-				hashCode = hashCode * 59 + this.Challenges.GetHashCode();
-				hashCode = hashCode * 59 + this.ModifierHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.BooleanActivityOptions.GetHashCode();
-				hashCode = hashCode * 59 + this.LoadoutRequirementIndex.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

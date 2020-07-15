@@ -69,21 +69,6 @@ namespace BungieNetApi.Model {
                     (DerivedItemCategories != null && DerivedItemCategories.Equals(input.DerivedItemCategories))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ScreenStyle.GetHashCode();
-				hashCode = hashCode * 59 + this.PreviewVendorHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ArtifactHash.GetHashCode();
-				hashCode = hashCode * 59 + this.PreviewActionString.GetHashCode();
-				hashCode = hashCode * 59 + this.DerivedItemCategories.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

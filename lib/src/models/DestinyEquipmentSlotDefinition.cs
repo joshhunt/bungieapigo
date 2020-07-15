@@ -103,24 +103,6 @@ namespace BungieNetApi.Model {
                     (Redacted != null && Redacted.Equals(input.Redacted))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.EquipmentCategoryHash.GetHashCode();
-				hashCode = hashCode * 59 + this.BucketTypeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ApplyCustomArtDyes.GetHashCode();
-				hashCode = hashCode * 59 + this.ArtDyeChannels.GetHashCode();
-				hashCode = hashCode * 59 + this.Hash.GetHashCode();
-				hashCode = hashCode * 59 + this.Index.GetHashCode();
-				hashCode = hashCode * 59 + this.Redacted.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

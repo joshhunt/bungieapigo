@@ -390,50 +390,6 @@ namespace BungieNetApi.Model {
                     (Redacted != null && Redacted.Equals(input.Redacted))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.BuyString.GetHashCode();
-				hashCode = hashCode * 59 + this.SellString.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.InhibitBuying.GetHashCode();
-				hashCode = hashCode * 59 + this.InhibitSelling.GetHashCode();
-				hashCode = hashCode * 59 + this.FactionHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ResetIntervalMinutes.GetHashCode();
-				hashCode = hashCode * 59 + this.ResetOffsetMinutes.GetHashCode();
-				hashCode = hashCode * 59 + this.FailureStrings.GetHashCode();
-				hashCode = hashCode * 59 + this.UnlockRanges.GetHashCode();
-				hashCode = hashCode * 59 + this.VendorIdentifier.GetHashCode();
-				hashCode = hashCode * 59 + this.VendorPortrait.GetHashCode();
-				hashCode = hashCode * 59 + this.VendorBanner.GetHashCode();
-				hashCode = hashCode * 59 + this.Enabled.GetHashCode();
-				hashCode = hashCode * 59 + this.Visible.GetHashCode();
-				hashCode = hashCode * 59 + this.VendorSubcategoryIdentifier.GetHashCode();
-				hashCode = hashCode * 59 + this.ConsolidateCategories.GetHashCode();
-				hashCode = hashCode * 59 + this.Actions.GetHashCode();
-				hashCode = hashCode * 59 + this.Categories.GetHashCode();
-				hashCode = hashCode * 59 + this.OriginalCategories.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayCategories.GetHashCode();
-				hashCode = hashCode * 59 + this.Interactions.GetHashCode();
-				hashCode = hashCode * 59 + this.InventoryFlyouts.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemList.GetHashCode();
-				hashCode = hashCode * 59 + this.Services.GetHashCode();
-				hashCode = hashCode * 59 + this.AcceptedItems.GetHashCode();
-				hashCode = hashCode * 59 + this.ReturnWithVendorRequest.GetHashCode();
-				hashCode = hashCode * 59 + this.Locations.GetHashCode();
-				hashCode = hashCode * 59 + this.Groups.GetHashCode();
-				hashCode = hashCode * 59 + this.IgnoreSaleItemHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.Hash.GetHashCode();
-				hashCode = hashCode * 59 + this.Index.GetHashCode();
-				hashCode = hashCode * 59 + this.Redacted.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

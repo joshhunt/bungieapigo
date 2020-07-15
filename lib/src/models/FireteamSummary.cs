@@ -149,35 +149,6 @@ namespace BungieNetApi.Model {
                     (TitleBeforeModeration != null && TitleBeforeModeration.Equals(input.TitleBeforeModeration))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.FireteamId.GetHashCode();
-				hashCode = hashCode * 59 + this.GroupId.GetHashCode();
-				hashCode = hashCode * 59 + this.Platform.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityType.GetHashCode();
-				hashCode = hashCode * 59 + this.IsImmediate.GetHashCode();
-				hashCode = hashCode * 59 + this.ScheduledTime.GetHashCode();
-				hashCode = hashCode * 59 + this.OwnerMembershipId.GetHashCode();
-				hashCode = hashCode * 59 + this.PlayerSlotCount.GetHashCode();
-				hashCode = hashCode * 59 + this.AlternateSlotCount.GetHashCode();
-				hashCode = hashCode * 59 + this.AvailablePlayerSlotCount.GetHashCode();
-				hashCode = hashCode * 59 + this.AvailableAlternateSlotCount.GetHashCode();
-				hashCode = hashCode * 59 + this.Title.GetHashCode();
-				hashCode = hashCode * 59 + this.DateCreated.GetHashCode();
-				hashCode = hashCode * 59 + this.DateModified.GetHashCode();
-				hashCode = hashCode * 59 + this.IsPublic.GetHashCode();
-				hashCode = hashCode * 59 + this.Locale.GetHashCode();
-				hashCode = hashCode * 59 + this.IsValid.GetHashCode();
-				hashCode = hashCode * 59 + this.DatePlayerModified.GetHashCode();
-				hashCode = hashCode * 59 + this.TitleBeforeModeration.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -68,21 +68,6 @@ namespace BungieNetApi.Model {
                     (HudIcon != null && HudIcon.Equals(input.HudIcon))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.TalentGridHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemDetailString.GetHashCode();
-				hashCode = hashCode * 59 + this.BuildName.GetHashCode();
-				hashCode = hashCode * 59 + this.HudDamageType.GetHashCode();
-				hashCode = hashCode * 59 + this.HudIcon.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

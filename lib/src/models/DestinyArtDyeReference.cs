@@ -23,17 +23,6 @@ namespace BungieNetApi.Model {
                     (ArtDyeChannelHash != null && ArtDyeChannelHash.Equals(input.ArtDyeChannelHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ArtDyeChannelHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

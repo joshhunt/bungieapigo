@@ -148,27 +148,6 @@ namespace BungieNetApi.Model {
                     (Redacted != null && Redacted.Equals(input.Redacted))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.MaxGridLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.GridLevelPerColumn.GetHashCode();
-				hashCode = hashCode * 59 + this.ProgressionHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Nodes.GetHashCode();
-				hashCode = hashCode * 59 + this.ExclusiveSets.GetHashCode();
-				hashCode = hashCode * 59 + this.IndependentNodeIndexes.GetHashCode();
-				hashCode = hashCode * 59 + this.Groups.GetHashCode();
-				hashCode = hashCode * 59 + this.NodeCategories.GetHashCode();
-				hashCode = hashCode * 59 + this.Hash.GetHashCode();
-				hashCode = hashCode * 59 + this.Index.GetHashCode();
-				hashCode = hashCode * 59 + this.Redacted.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

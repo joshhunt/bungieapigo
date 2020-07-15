@@ -67,21 +67,6 @@ namespace BungieNetApi.Model {
                     (RequiresGuardianOath != null && RequiresGuardianOath.Equals(input.RequiresGuardianOath))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.IsMatchmade.GetHashCode();
-				hashCode = hashCode * 59 + this.MinParty.GetHashCode();
-				hashCode = hashCode * 59 + this.MaxParty.GetHashCode();
-				hashCode = hashCode * 59 + this.MaxPlayers.GetHashCode();
-				hashCode = hashCode * 59 + this.RequiresGuardianOath.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

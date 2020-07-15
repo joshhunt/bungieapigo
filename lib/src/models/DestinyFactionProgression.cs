@@ -178,32 +178,6 @@ namespace BungieNetApi.Model {
                     (RewardItemStates != null && RewardItemStates.Equals(input.RewardItemStates))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.FactionHash.GetHashCode();
-				hashCode = hashCode * 59 + this.FactionVendorIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.ProgressionHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DailyProgress.GetHashCode();
-				hashCode = hashCode * 59 + this.DailyLimit.GetHashCode();
-				hashCode = hashCode * 59 + this.WeeklyProgress.GetHashCode();
-				hashCode = hashCode * 59 + this.WeeklyLimit.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentProgress.GetHashCode();
-				hashCode = hashCode * 59 + this.Level.GetHashCode();
-				hashCode = hashCode * 59 + this.LevelCap.GetHashCode();
-				hashCode = hashCode * 59 + this.StepIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.ProgressToNextLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.NextLevelAt.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentResetCount.GetHashCode();
-				hashCode = hashCode * 59 + this.SeasonResets.GetHashCode();
-				hashCode = hashCode * 59 + this.RewardItemStates.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

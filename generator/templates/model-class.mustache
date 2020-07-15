@@ -37,20 +37,6 @@ namespace BungieNetApi.Model {
                 ) {{#notLast}}&&{{/notLast}}{{^notLast}};{{/notLast}}
 				{{/properties}}
 		}
-
-		{{! TODO: Do we need GetHashCode? If we do, we must check if objects are not null }}
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				{{#properties}}
-				hashCode = hashCode * 59 + this.{{propertyName}}.GetHashCode();
-				{{/properties}}
-				return hashCode;
-			}
-		}*/
 	}
 }
 

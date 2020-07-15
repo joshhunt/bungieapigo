@@ -150,27 +150,6 @@ namespace BungieNetApi.Model {
                     (OverrideNextRefreshDate != null && OverrideNextRefreshDate.Equals(input.OverrideNextRefreshDate))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.SaleStatus.GetHashCode();
-				hashCode = hashCode * 59 + this.RequiredUnlocks.GetHashCode();
-				hashCode = hashCode * 59 + this.UnlockStatuses.GetHashCode();
-				hashCode = hashCode * 59 + this.FailureIndexes.GetHashCode();
-				hashCode = hashCode * 59 + this.Augments.GetHashCode();
-				hashCode = hashCode * 59 + this.VendorItemIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.OverrideStyleItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Quantity.GetHashCode();
-				hashCode = hashCode * 59 + this.Costs.GetHashCode();
-				hashCode = hashCode * 59 + this.OverrideNextRefreshDate.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

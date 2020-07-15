@@ -87,22 +87,6 @@ namespace BungieNetApi.Model {
                     (CurrentSeasonHash != null && CurrentSeasonHash.Equals(input.CurrentSeasonHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.UserInfo.GetHashCode();
-				hashCode = hashCode * 59 + this.DateLastPlayed.GetHashCode();
-				hashCode = hashCode * 59 + this.VersionsOwned.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterIds.GetHashCode();
-				hashCode = hashCode * 59 + this.SeasonHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentSeasonHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -121,25 +121,6 @@ namespace BungieNetApi.Model {
                     (DisplayVersionWatermarkIcons != null && DisplayVersionWatermarkIcons.Equals(input.DisplayVersionWatermarkIcons))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ItemLevels.GetHashCode();
-				hashCode = hashCode * 59 + this.QualityLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.InfusionCategoryName.GetHashCode();
-				hashCode = hashCode * 59 + this.InfusionCategoryHash.GetHashCode();
-				hashCode = hashCode * 59 + this.InfusionCategoryHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.ProgressionLevelRequirementHash.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentVersion.GetHashCode();
-				hashCode = hashCode * 59 + this.Versions.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayVersionWatermarkIcons.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

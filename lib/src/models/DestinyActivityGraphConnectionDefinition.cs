@@ -31,18 +31,6 @@ namespace BungieNetApi.Model {
                     (DestNodeHash != null && DestNodeHash.Equals(input.DestNodeHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.SourceNodeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DestNodeHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

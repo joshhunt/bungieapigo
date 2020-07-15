@@ -41,18 +41,6 @@ namespace BungieNetApi.Model {
                     (DummyRewards != null && DummyRewards.Equals(input.DummyRewards))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ObjectiveHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DummyRewards.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

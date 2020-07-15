@@ -128,32 +128,6 @@ namespace BungieNetApi.Model {
                     (DefaultPublicity != null && DefaultPublicity.Equals(input.DefaultPublicity))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Name.GetHashCode();
-				hashCode = hashCode * 59 + this.About.GetHashCode();
-				hashCode = hashCode * 59 + this.Motto.GetHashCode();
-				hashCode = hashCode * 59 + this.Theme.GetHashCode();
-				hashCode = hashCode * 59 + this.AvatarImageIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.Tags.GetHashCode();
-				hashCode = hashCode * 59 + this.IsPublic.GetHashCode();
-				hashCode = hashCode * 59 + this.MembershipOption.GetHashCode();
-				hashCode = hashCode * 59 + this.IsPublicTopicAdminOnly.GetHashCode();
-				hashCode = hashCode * 59 + this.AllowChat.GetHashCode();
-				hashCode = hashCode * 59 + this.ChatSecurity.GetHashCode();
-				hashCode = hashCode * 59 + this.Callsign.GetHashCode();
-				hashCode = hashCode * 59 + this.Locale.GetHashCode();
-				hashCode = hashCode * 59 + this.Homepage.GetHashCode();
-				hashCode = hashCode * 59 + this.EnableInvitationMessagingForAdmins.GetHashCode();
-				hashCode = hashCode * 59 + this.DefaultPublicity.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

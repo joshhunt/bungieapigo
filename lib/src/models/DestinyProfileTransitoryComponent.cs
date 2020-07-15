@@ -69,21 +69,6 @@ namespace BungieNetApi.Model {
                     (LastOrbitedDestinationHash != null && LastOrbitedDestinationHash.Equals(input.LastOrbitedDestinationHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.PartyMembers.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentActivity.GetHashCode();
-				hashCode = hashCode * 59 + this.Joinability.GetHashCode();
-				hashCode = hashCode * 59 + this.Tracking.GetHashCode();
-				hashCode = hashCode * 59 + this.LastOrbitedDestinationHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

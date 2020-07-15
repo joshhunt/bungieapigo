@@ -67,21 +67,6 @@ namespace BungieNetApi.Model {
                     (MinimumUnlockPointsUsedRequirement != null && MinimumUnlockPointsUsedRequirement.Equals(input.MinimumUnlockPointsUsedRequirement))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.TierHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayTitle.GetHashCode();
-				hashCode = hashCode * 59 + this.ProgressRequirementMessage.GetHashCode();
-				hashCode = hashCode * 59 + this.Items.GetHashCode();
-				hashCode = hashCode * 59 + this.MinimumUnlockPointsUsedRequirement.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

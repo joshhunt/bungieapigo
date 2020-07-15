@@ -53,20 +53,6 @@ namespace BungieNetApi.Model {
                     (CompletionValue != null && CompletionValue.Equals(input.CompletionValue))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.State.GetHashCode();
-				hashCode = hashCode * 59 + this.Objective.GetHashCode();
-				hashCode = hashCode * 59 + this.ProgressValue.GetHashCode();
-				hashCode = hashCode * 59 + this.CompletionValue.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

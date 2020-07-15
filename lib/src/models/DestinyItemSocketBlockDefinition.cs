@@ -58,20 +58,6 @@ namespace BungieNetApi.Model {
                     (SocketCategories != null && SocketCategories.Equals(input.SocketCategories))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Detail.GetHashCode();
-				hashCode = hashCode * 59 + this.SocketEntries.GetHashCode();
-				hashCode = hashCode * 59 + this.IntrinsicSockets.GetHashCode();
-				hashCode = hashCode * 59 + this.SocketCategories.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

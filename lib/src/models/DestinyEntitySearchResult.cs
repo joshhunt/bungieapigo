@@ -38,18 +38,6 @@ namespace BungieNetApi.Model {
                     (Results != null && Results.Equals(input.Results))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.SuggestedWords.GetHashCode();
-				hashCode = hashCode * 59 + this.Results.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

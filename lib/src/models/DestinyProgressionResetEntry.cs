@@ -32,18 +32,6 @@ namespace BungieNetApi.Model {
                     (Resets != null && Resets.Equals(input.Resets))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Season.GetHashCode();
-				hashCode = hashCode * 59 + this.Resets.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

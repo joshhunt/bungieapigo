@@ -45,18 +45,6 @@ namespace BungieNetApi.Model {
                     (MaterialRequirementHashes != null && MaterialRequirementHashes.Equals(input.MaterialRequirementHashes))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.GridLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.MaterialRequirementHashes.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

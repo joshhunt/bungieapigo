@@ -23,17 +23,6 @@ namespace BungieNetApi.Model {
                     (Resolution != null && Resolution.Equals(input.Resolution))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Resolution.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

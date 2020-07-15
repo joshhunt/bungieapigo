@@ -23,17 +23,6 @@ namespace BungieNetApi.Model {
                     (Group != null && Group.Equals(input.Group))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Group.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -65,23 +65,6 @@ namespace BungieNetApi.Model {
                     (GonfalonDetailColorId != null && GonfalonDetailColorId.Equals(input.GonfalonDetailColorId))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DecalId.GetHashCode();
-				hashCode = hashCode * 59 + this.DecalColorId.GetHashCode();
-				hashCode = hashCode * 59 + this.DecalBackgroundColorId.GetHashCode();
-				hashCode = hashCode * 59 + this.GonfalonId.GetHashCode();
-				hashCode = hashCode * 59 + this.GonfalonColorId.GetHashCode();
-				hashCode = hashCode * 59 + this.GonfalonDetailId.GetHashCode();
-				hashCode = hashCode * 59 + this.GonfalonDetailColorId.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

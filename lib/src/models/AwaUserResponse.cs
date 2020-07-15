@@ -47,19 +47,6 @@ namespace BungieNetApi.Model {
                     (Nonce != null && Nonce.Equals(input.Nonce))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Selection.GetHashCode();
-				hashCode = hashCode * 59 + this.CorrelationId.GetHashCode();
-				hashCode = hashCode * 59 + this.Nonce.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

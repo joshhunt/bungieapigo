@@ -47,19 +47,6 @@ namespace BungieNetApi.Model {
                     (DeleteOnAction != null && DeleteOnAction.Equals(input.DeleteOnAction))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Count.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DeleteOnAction.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

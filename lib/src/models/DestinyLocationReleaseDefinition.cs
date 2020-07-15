@@ -149,30 +149,6 @@ namespace BungieNetApi.Model {
                     (WorldPosition != null && WorldPosition.Equals(input.WorldPosition))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.SmallTransparentIcon.GetHashCode();
-				hashCode = hashCode * 59 + this.MapIcon.GetHashCode();
-				hashCode = hashCode * 59 + this.LargeTransparentIcon.GetHashCode();
-				hashCode = hashCode * 59 + this.SpawnPoint.GetHashCode();
-				hashCode = hashCode * 59 + this.DestinationHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityGraphHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityGraphNodeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityBubbleName.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityPathBundle.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityPathDestination.GetHashCode();
-				hashCode = hashCode * 59 + this.NavPointType.GetHashCode();
-				hashCode = hashCode * 59 + this.WorldPosition.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

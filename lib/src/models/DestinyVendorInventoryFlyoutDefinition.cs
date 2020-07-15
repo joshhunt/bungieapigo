@@ -78,22 +78,6 @@ namespace BungieNetApi.Model {
                     (EquipmentSlotHash != null && EquipmentSlotHash.Equals(input.EquipmentSlotHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.LockedDescription.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.Buckets.GetHashCode();
-				hashCode = hashCode * 59 + this.FlyoutId.GetHashCode();
-				hashCode = hashCode * 59 + this.SuppressNewness.GetHashCode();
-				hashCode = hashCode * 59 + this.EquipmentSlotHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -203,33 +203,6 @@ namespace BungieNetApi.Model {
                     (SocketReplacements != null && SocketReplacements.Equals(input.SocketReplacements))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.StepIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.NodeStepHash.GetHashCode();
-				hashCode = hashCode * 59 + this.InteractionDescription.GetHashCode();
-				hashCode = hashCode * 59 + this.DamageType.GetHashCode();
-				hashCode = hashCode * 59 + this.DamageTypeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivationRequirement.GetHashCode();
-				hashCode = hashCode * 59 + this.CanActivateNextStep.GetHashCode();
-				hashCode = hashCode * 59 + this.NextStepIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.IsNextStepRandom.GetHashCode();
-				hashCode = hashCode * 59 + this.PerkHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.StartProgressionBarAtProgress.GetHashCode();
-				hashCode = hashCode * 59 + this.StatHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.AffectsQuality.GetHashCode();
-				hashCode = hashCode * 59 + this.StepGroups.GetHashCode();
-				hashCode = hashCode * 59 + this.AffectsLevel.GetHashCode();
-				hashCode = hashCode * 59 + this.SocketReplacements.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

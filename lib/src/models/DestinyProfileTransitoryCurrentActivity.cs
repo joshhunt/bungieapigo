@@ -78,22 +78,6 @@ namespace BungieNetApi.Model {
                     (NumberOfPlayers != null && NumberOfPlayers.Equals(input.NumberOfPlayers))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.StartTime.GetHashCode();
-				hashCode = hashCode * 59 + this.EndTime.GetHashCode();
-				hashCode = hashCode * 59 + this.Score.GetHashCode();
-				hashCode = hashCode * 59 + this.HighestOpposingFactionScore.GetHashCode();
-				hashCode = hashCode * 59 + this.NumberOfOpponents.GetHashCode();
-				hashCode = hashCode * 59 + this.NumberOfPlayers.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

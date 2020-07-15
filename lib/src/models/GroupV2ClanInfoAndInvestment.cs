@@ -38,19 +38,6 @@ namespace BungieNetApi.Model {
                     (ClanBannerData != null && ClanBannerData.Equals(input.ClanBannerData))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.D2ClanProgressions.GetHashCode();
-				hashCode = hashCode * 59 + this.ClanCallsign.GetHashCode();
-				hashCode = hashCode * 59 + this.ClanBannerData.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

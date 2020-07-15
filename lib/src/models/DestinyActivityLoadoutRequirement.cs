@@ -38,19 +38,6 @@ namespace BungieNetApi.Model {
                     (AllowedWeaponSubTypes != null && AllowedWeaponSubTypes.Equals(input.AllowedWeaponSubTypes))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.EquipmentSlotHash.GetHashCode();
-				hashCode = hashCode * 59 + this.AllowedEquippedItemHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.AllowedWeaponSubTypes.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

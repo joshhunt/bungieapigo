@@ -52,19 +52,6 @@ namespace BungieNetApi.Model {
                     (ProfilesWithErrors != null && ProfilesWithErrors.Equals(input.ProfilesWithErrors))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Profiles.GetHashCode();
-				hashCode = hashCode * 59 + this.BnetMembership.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfilesWithErrors.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

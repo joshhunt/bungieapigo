@@ -247,49 +247,6 @@ namespace BungieNetApi.Model {
                     (TwitchDisplayName != null && TwitchDisplayName.Equals(input.TwitchDisplayName))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.MembershipId.GetHashCode();
-				hashCode = hashCode * 59 + this.UniqueName.GetHashCode();
-				hashCode = hashCode * 59 + this.NormalizedName.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayName.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfilePicture.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfileTheme.GetHashCode();
-				hashCode = hashCode * 59 + this.UserTitle.GetHashCode();
-				hashCode = hashCode * 59 + this.SuccessMessageFlags.GetHashCode();
-				hashCode = hashCode * 59 + this.IsDeleted.GetHashCode();
-				hashCode = hashCode * 59 + this.About.GetHashCode();
-				hashCode = hashCode * 59 + this.FirstAccess.GetHashCode();
-				hashCode = hashCode * 59 + this.LastUpdate.GetHashCode();
-				hashCode = hashCode * 59 + this.LegacyPortalUid.GetHashCode();
-				hashCode = hashCode * 59 + this.Context.GetHashCode();
-				hashCode = hashCode * 59 + this.PsnDisplayName.GetHashCode();
-				hashCode = hashCode * 59 + this.XboxDisplayName.GetHashCode();
-				hashCode = hashCode * 59 + this.FbDisplayName.GetHashCode();
-				hashCode = hashCode * 59 + this.ShowActivity.GetHashCode();
-				hashCode = hashCode * 59 + this.Locale.GetHashCode();
-				hashCode = hashCode * 59 + this.LocaleInheritDefault.GetHashCode();
-				hashCode = hashCode * 59 + this.LastBanReportId.GetHashCode();
-				hashCode = hashCode * 59 + this.ShowGroupMessaging.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfilePicturePath.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfilePictureWidePath.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfileThemeName.GetHashCode();
-				hashCode = hashCode * 59 + this.UserTitleDisplay.GetHashCode();
-				hashCode = hashCode * 59 + this.StatusText.GetHashCode();
-				hashCode = hashCode * 59 + this.StatusDate.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfileBanExpire.GetHashCode();
-				hashCode = hashCode * 59 + this.BlizzardDisplayName.GetHashCode();
-				hashCode = hashCode * 59 + this.SteamDisplayName.GetHashCode();
-				hashCode = hashCode * 59 + this.StadiaDisplayName.GetHashCode();
-				hashCode = hashCode * 59 + this.TwitchDisplayName.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

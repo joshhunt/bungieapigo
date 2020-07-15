@@ -58,19 +58,6 @@ namespace BungieNetApi.Model {
                     (PeerView != null && PeerView.Equals(input.PeerView))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.CustomDyes.GetHashCode();
-				hashCode = hashCode * 59 + this.Customization.GetHashCode();
-				hashCode = hashCode * 59 + this.PeerView.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

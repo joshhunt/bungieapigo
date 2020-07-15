@@ -48,19 +48,6 @@ namespace BungieNetApi.Model {
                     (ApplyThrottles != null && ApplyThrottles.Equals(input.ApplyThrottles))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ProgressionMappingHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Amount.GetHashCode();
-				hashCode = hashCode * 59 + this.ApplyThrottles.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

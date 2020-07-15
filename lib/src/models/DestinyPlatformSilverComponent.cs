@@ -26,17 +26,6 @@ namespace BungieNetApi.Model {
                     (PlatformSilver != null && PlatformSilver.Equals(input.PlatformSilver))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.PlatformSilver.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

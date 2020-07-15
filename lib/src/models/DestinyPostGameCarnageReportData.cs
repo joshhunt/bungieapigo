@@ -67,21 +67,6 @@ namespace BungieNetApi.Model {
                     (Teams != null && Teams.Equals(input.Teams))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Period.GetHashCode();
-				hashCode = hashCode * 59 + this.StartingPhaseIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.ActivityDetails.GetHashCode();
-				hashCode = hashCode * 59 + this.Entries.GetHashCode();
-				hashCode = hashCode * 59 + this.Teams.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

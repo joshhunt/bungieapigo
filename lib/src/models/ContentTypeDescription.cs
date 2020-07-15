@@ -164,37 +164,6 @@ namespace BungieNetApi.Model {
                     (PropertySections != null && PropertySections.Equals(input.PropertySections))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.CType.GetHashCode();
-				hashCode = hashCode * 59 + this.Name.GetHashCode();
-				hashCode = hashCode * 59 + this.ContentDescription.GetHashCode();
-				hashCode = hashCode * 59 + this.PreviewImage.GetHashCode();
-				hashCode = hashCode * 59 + this.Priority.GetHashCode();
-				hashCode = hashCode * 59 + this.Reminder.GetHashCode();
-				hashCode = hashCode * 59 + this.Properties.GetHashCode();
-				hashCode = hashCode * 59 + this.TagMetadata.GetHashCode();
-				hashCode = hashCode * 59 + this.TagMetadataItems.GetHashCode();
-				hashCode = hashCode * 59 + this.UsageExamples.GetHashCode();
-				hashCode = hashCode * 59 + this.ShowInContentEditor.GetHashCode();
-				hashCode = hashCode * 59 + this.TypeOf.GetHashCode();
-				hashCode = hashCode * 59 + this.BindIdentifierToProperty.GetHashCode();
-				hashCode = hashCode * 59 + this.BoundRegex.GetHashCode();
-				hashCode = hashCode * 59 + this.ForceIdentifierBinding.GetHashCode();
-				hashCode = hashCode * 59 + this.AllowComments.GetHashCode();
-				hashCode = hashCode * 59 + this.AutoEnglishPropertyFallback.GetHashCode();
-				hashCode = hashCode * 59 + this.BulkUploadable.GetHashCode();
-				hashCode = hashCode * 59 + this.Previews.GetHashCode();
-				hashCode = hashCode * 59 + this.SuppressCmsPath.GetHashCode();
-				hashCode = hashCode * 59 + this.PropertySections.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

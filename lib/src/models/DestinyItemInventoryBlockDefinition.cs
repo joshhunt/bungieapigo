@@ -134,28 +134,6 @@ namespace BungieNetApi.Model {
                     (SuppressExpirationWhenObjectivesComplete != null && SuppressExpirationWhenObjectivesComplete.Equals(input.SuppressExpirationWhenObjectivesComplete))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.StackUniqueLabel.GetHashCode();
-				hashCode = hashCode * 59 + this.MaxStackSize.GetHashCode();
-				hashCode = hashCode * 59 + this.BucketTypeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.RecoveryBucketTypeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.TierTypeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.IsInstanceItem.GetHashCode();
-				hashCode = hashCode * 59 + this.TierTypeName.GetHashCode();
-				hashCode = hashCode * 59 + this.TierType.GetHashCode();
-				hashCode = hashCode * 59 + this.ExpirationTooltip.GetHashCode();
-				hashCode = hashCode * 59 + this.ExpiredInActivityMessage.GetHashCode();
-				hashCode = hashCode * 59 + this.ExpiredInOrbitMessage.GetHashCode();
-				hashCode = hashCode * 59 + this.SuppressExpirationWhenObjectivesComplete.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

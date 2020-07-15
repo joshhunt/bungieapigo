@@ -68,23 +68,6 @@ namespace BungieNetApi.Model {
                     (LastPlatformInviteAttemptResult != null && LastPlatformInviteAttemptResult.Equals(input.LastPlatformInviteAttemptResult))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DestinyUserInfo.GetHashCode();
-				hashCode = hashCode * 59 + this.BungieNetUserInfo.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterId.GetHashCode();
-				hashCode = hashCode * 59 + this.DateJoined.GetHashCode();
-				hashCode = hashCode * 59 + this.HasMicrophone.GetHashCode();
-				hashCode = hashCode * 59 + this.LastPlatformInviteAttemptDate.GetHashCode();
-				hashCode = hashCode * 59 + this.LastPlatformInviteAttemptResult.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

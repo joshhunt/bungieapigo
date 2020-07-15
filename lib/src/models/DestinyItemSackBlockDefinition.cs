@@ -58,21 +58,6 @@ namespace BungieNetApi.Model {
                     (OpenOnAcquire != null && OpenOnAcquire.Equals(input.OpenOnAcquire))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DetailAction.GetHashCode();
-				hashCode = hashCode * 59 + this.OpenAction.GetHashCode();
-				hashCode = hashCode * 59 + this.SelectItemCount.GetHashCode();
-				hashCode = hashCode * 59 + this.VendorSackType.GetHashCode();
-				hashCode = hashCode * 59 + this.OpenOnAcquire.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

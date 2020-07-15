@@ -81,21 +81,6 @@ namespace BungieNetApi.Model {
                     (PrimaryBaseStatHash != null && PrimaryBaseStatHash.Equals(input.PrimaryBaseStatHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DisablePrimaryStatDisplay.GetHashCode();
-				hashCode = hashCode * 59 + this.StatGroupHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Stats.GetHashCode();
-				hashCode = hashCode * 59 + this.HasDisplayableStats.GetHashCode();
-				hashCode = hashCode * 59 + this.PrimaryBaseStatHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

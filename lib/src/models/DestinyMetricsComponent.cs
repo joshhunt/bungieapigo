@@ -30,18 +30,6 @@ namespace BungieNetApi.Model {
                     (MetricsRootNodeHash != null && MetricsRootNodeHash.Equals(input.MetricsRootNodeHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Metrics.GetHashCode();
-				hashCode = hashCode * 59 + this.MetricsRootNodeHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

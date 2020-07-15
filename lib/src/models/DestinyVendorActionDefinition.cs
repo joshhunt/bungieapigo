@@ -80,25 +80,6 @@ namespace BungieNetApi.Model {
                     (AutoPerformAction != null && AutoPerformAction.Equals(input.AutoPerformAction))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Description.GetHashCode();
-				hashCode = hashCode * 59 + this.ExecuteSeconds.GetHashCode();
-				hashCode = hashCode * 59 + this.Icon.GetHashCode();
-				hashCode = hashCode * 59 + this.Name.GetHashCode();
-				hashCode = hashCode * 59 + this.Verb.GetHashCode();
-				hashCode = hashCode * 59 + this.IsPositive.GetHashCode();
-				hashCode = hashCode * 59 + this.ActionId.GetHashCode();
-				hashCode = hashCode * 59 + this.ActionHash.GetHashCode();
-				hashCode = hashCode * 59 + this.AutoPerformAction.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

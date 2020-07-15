@@ -64,19 +64,6 @@ namespace BungieNetApi.Model {
                     (ReinitializationPossiblePlugHashes != null && ReinitializationPossiblePlugHashes.Equals(input.ReinitializationPossiblePlugHashes))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.CategoryHash.GetHashCode();
-				hashCode = hashCode * 59 + this.CategoryIdentifier.GetHashCode();
-				hashCode = hashCode * 59 + this.ReinitializationPossiblePlugHashes.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

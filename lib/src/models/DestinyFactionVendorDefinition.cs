@@ -48,19 +48,6 @@ namespace BungieNetApi.Model {
                     (BackgroundImagePath != null && BackgroundImagePath.Equals(input.BackgroundImagePath))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.VendorHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DestinationHash.GetHashCode();
-				hashCode = hashCode * 59 + this.BackgroundImagePath.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -87,26 +87,6 @@ namespace BungieNetApi.Model {
                     (KickedPlayerIds != null && KickedPlayerIds.Equals(input.KickedPlayerIds))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.TopicId.GetHashCode();
-				hashCode = hashCode * 59 + this.MicrophoneRequired.GetHashCode();
-				hashCode = hashCode * 59 + this.Intensity.GetHashCode();
-				hashCode = hashCode * 59 + this.Tone.GetHashCode();
-				hashCode = hashCode * 59 + this.Approved.GetHashCode();
-				hashCode = hashCode * 59 + this.ConversationId.GetHashCode();
-				hashCode = hashCode * 59 + this.PlayerSlotsTotal.GetHashCode();
-				hashCode = hashCode * 59 + this.PlayerSlotsRemaining.GetHashCode();
-				hashCode = hashCode * 59 + this.Fireteam.GetHashCode();
-				hashCode = hashCode * 59 + this.KickedPlayerIds.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

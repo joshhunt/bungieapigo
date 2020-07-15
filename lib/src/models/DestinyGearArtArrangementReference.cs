@@ -30,18 +30,6 @@ namespace BungieNetApi.Model {
                     (ArtArrangementHash != null && ArtArrangementHash.Equals(input.ArtArrangementHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ClassHash.GetHashCode();
-				hashCode = hashCode * 59 + this.ArtArrangementHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

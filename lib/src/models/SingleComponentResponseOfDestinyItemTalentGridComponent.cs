@@ -61,19 +61,6 @@ namespace BungieNetApi.Model {
                     (Disabled != null && Disabled.Equals(input.Disabled))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Data.GetHashCode();
-				hashCode = hashCode * 59 + this.Privacy.GetHashCode();
-				hashCode = hashCode * 59 + this.Disabled.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

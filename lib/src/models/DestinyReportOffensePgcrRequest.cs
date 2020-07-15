@@ -50,19 +50,6 @@ namespace BungieNetApi.Model {
                     (OffendingCharacterId != null && OffendingCharacterId.Equals(input.OffendingCharacterId))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ReasonCategoryHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.ReasonHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.OffendingCharacterId.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

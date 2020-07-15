@@ -47,19 +47,6 @@ namespace BungieNetApi.Model {
                     (SortItemsBy != null && SortItemsBy.Equals(input.SortItemsBy))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Collapsible.GetHashCode();
-				hashCode = hashCode * 59 + this.InventoryBucketHash.GetHashCode();
-				hashCode = hashCode * 59 + this.SortItemsBy.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -89,25 +89,6 @@ namespace BungieNetApi.Model {
                     (CurrentUserPotentialMemberMap != null && CurrentUserPotentialMemberMap.Equals(input.CurrentUserPotentialMemberMap))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Detail.GetHashCode();
-				hashCode = hashCode * 59 + this.Founder.GetHashCode();
-				hashCode = hashCode * 59 + this.AlliedIds.GetHashCode();
-				hashCode = hashCode * 59 + this.ParentGroup.GetHashCode();
-				hashCode = hashCode * 59 + this.AllianceStatus.GetHashCode();
-				hashCode = hashCode * 59 + this.GroupJoinInviteCount.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentUserMembershipsInactiveForDestiny.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentUserMemberMap.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentUserPotentialMemberMap.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

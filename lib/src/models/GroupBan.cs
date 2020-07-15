@@ -81,24 +81,6 @@ namespace BungieNetApi.Model {
                     (DestinyUserInfo != null && DestinyUserInfo.Equals(input.DestinyUserInfo))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.GroupId.GetHashCode();
-				hashCode = hashCode * 59 + this.LastModifiedBy.GetHashCode();
-				hashCode = hashCode * 59 + this.CreatedBy.GetHashCode();
-				hashCode = hashCode * 59 + this.DateBanned.GetHashCode();
-				hashCode = hashCode * 59 + this.DateExpires.GetHashCode();
-				hashCode = hashCode * 59 + this.Comment.GetHashCode();
-				hashCode = hashCode * 59 + this.BungieNetUserInfo.GetHashCode();
-				hashCode = hashCode * 59 + this.DestinyUserInfo.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -36,18 +36,6 @@ namespace BungieNetApi.Model {
                     (MinimumQualityIncrement != null && MinimumQualityIncrement.Equals(input.MinimumQualityIncrement))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.BaseQualityTransferRatio.GetHashCode();
-				hashCode = hashCode * 59 + this.MinimumQualityIncrement.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

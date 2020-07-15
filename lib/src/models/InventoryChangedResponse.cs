@@ -38,18 +38,6 @@ namespace BungieNetApi.Model {
                     (RemovedInventoryItems != null && RemovedInventoryItems.Equals(input.RemovedInventoryItems))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.AddedInventoryItems.GetHashCode();
-				hashCode = hashCode * 59 + this.RemovedInventoryItems.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

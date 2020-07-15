@@ -148,29 +148,6 @@ namespace BungieNetApi.Model {
                     (Instructions != null && Instructions.Equals(input.Instructions))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.InteractionIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.Replies.GetHashCode();
-				hashCode = hashCode * 59 + this.VendorCategoryIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.QuestlineItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.SackInteractionList.GetHashCode();
-				hashCode = hashCode * 59 + this.UiInteractionType.GetHashCode();
-				hashCode = hashCode * 59 + this.InteractionType.GetHashCode();
-				hashCode = hashCode * 59 + this.RewardBlockLabel.GetHashCode();
-				hashCode = hashCode * 59 + this.RewardVendorCategoryIndex.GetHashCode();
-				hashCode = hashCode * 59 + this.FlavorLineOne.GetHashCode();
-				hashCode = hashCode * 59 + this.FlavorLineTwo.GetHashCode();
-				hashCode = hashCode * 59 + this.HeaderDisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.Instructions.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

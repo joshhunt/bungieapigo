@@ -36,18 +36,6 @@ namespace BungieNetApi.Model {
                     (DisplayValue != null && DisplayValue.Equals(input.DisplayValue))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Value.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayValue.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

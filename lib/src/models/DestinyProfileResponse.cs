@@ -371,43 +371,6 @@ namespace BungieNetApi.Model {
                     (CharacterCurrencyLookups != null && CharacterCurrencyLookups.Equals(input.CharacterCurrencyLookups))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.VendorReceipts.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfileInventory.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfileCurrencies.GetHashCode();
-				hashCode = hashCode * 59 + this.Profile.GetHashCode();
-				hashCode = hashCode * 59 + this.PlatformSilver.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfileKiosks.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfilePlugSets.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfileProgression.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfilePresentationNodes.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfileRecords.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfileCollectibles.GetHashCode();
-				hashCode = hashCode * 59 + this.ProfileTransitoryData.GetHashCode();
-				hashCode = hashCode * 59 + this.Metrics.GetHashCode();
-				hashCode = hashCode * 59 + this.Characters.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterInventories.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterProgressions.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterRenderData.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterActivities.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterEquipment.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterKiosks.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterPlugSets.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterUninstancedItemComponents.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterPresentationNodes.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterRecords.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterCollectibles.GetHashCode();
-				hashCode = hashCode * 59 + this.ItemComponents.GetHashCode();
-				hashCode = hashCode * 59 + this.CharacterCurrencyLookups.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

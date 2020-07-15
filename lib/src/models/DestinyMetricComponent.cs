@@ -33,18 +33,6 @@ namespace BungieNetApi.Model {
                     (ObjectiveProgress != null && ObjectiveProgress.Equals(input.ObjectiveProgress))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Invisible.GetHashCode();
-				hashCode = hashCode * 59 + this.ObjectiveProgress.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

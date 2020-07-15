@@ -77,22 +77,6 @@ namespace BungieNetApi.Model {
                     (DestinationHash != null && DestinationHash.Equals(input.DestinationHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.QuestItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayProperties.GetHashCode();
-				hashCode = hashCode * 59 + this.OverrideImage.GetHashCode();
-				hashCode = hashCode * 59 + this.QuestRewards.GetHashCode();
-				hashCode = hashCode * 59 + this.Activities.GetHashCode();
-				hashCode = hashCode * 59 + this.DestinationHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

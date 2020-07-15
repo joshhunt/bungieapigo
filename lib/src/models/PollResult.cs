@@ -51,21 +51,6 @@ namespace BungieNetApi.Model {
                     (RequestingUserVoted != null && RequestingUserVoted.Equals(input.RequestingUserVoted))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.AnswerText.GetHashCode();
-				hashCode = hashCode * 59 + this.AnswerSlot.GetHashCode();
-				hashCode = hashCode * 59 + this.LastVoteDate.GetHashCode();
-				hashCode = hashCode * 59 + this.Votes.GetHashCode();
-				hashCode = hashCode * 59 + this.RequestingUserVoted.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

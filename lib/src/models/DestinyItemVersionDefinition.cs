@@ -27,17 +27,6 @@ namespace BungieNetApi.Model {
                     (PowerCapHash != null && PowerCapHash.Equals(input.PowerCapHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.PowerCapHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

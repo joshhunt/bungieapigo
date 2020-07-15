@@ -68,23 +68,6 @@ namespace BungieNetApi.Model {
                     (JoinDate != null && JoinDate.Equals(input.JoinDate))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.MemberType.GetHashCode();
-				hashCode = hashCode * 59 + this.IsOnline.GetHashCode();
-				hashCode = hashCode * 59 + this.LastOnlineStatusChange.GetHashCode();
-				hashCode = hashCode * 59 + this.GroupId.GetHashCode();
-				hashCode = hashCode * 59 + this.DestinyUserInfo.GetHashCode();
-				hashCode = hashCode * 59 + this.BungieNetUserInfo.GetHashCode();
-				hashCode = hashCode * 59 + this.JoinDate.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

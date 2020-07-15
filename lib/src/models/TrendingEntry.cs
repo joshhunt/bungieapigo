@@ -153,31 +153,6 @@ namespace BungieNetApi.Model {
                     (CreationDate != null && CreationDate.Equals(input.CreationDate))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Weight.GetHashCode();
-				hashCode = hashCode * 59 + this.IsFeatured.GetHashCode();
-				hashCode = hashCode * 59 + this.Identifier.GetHashCode();
-				hashCode = hashCode * 59 + this.EntityType.GetHashCode();
-				hashCode = hashCode * 59 + this.DisplayName.GetHashCode();
-				hashCode = hashCode * 59 + this.Tagline.GetHashCode();
-				hashCode = hashCode * 59 + this.Image.GetHashCode();
-				hashCode = hashCode * 59 + this.StartDate.GetHashCode();
-				hashCode = hashCode * 59 + this.EndDate.GetHashCode();
-				hashCode = hashCode * 59 + this.Link.GetHashCode();
-				hashCode = hashCode * 59 + this.WebmVideo.GetHashCode();
-				hashCode = hashCode * 59 + this.Mp4Video.GetHashCode();
-				hashCode = hashCode * 59 + this.FeatureImage.GetHashCode();
-				hashCode = hashCode * 59 + this.Items.GetHashCode();
-				hashCode = hashCode * 59 + this.CreationDate.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

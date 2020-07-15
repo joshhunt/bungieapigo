@@ -27,17 +27,6 @@ namespace BungieNetApi.Model {
                     (Position != null && Position.Equals(input.Position))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.Position.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

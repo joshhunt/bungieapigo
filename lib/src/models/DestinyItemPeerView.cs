@@ -38,18 +38,6 @@ namespace BungieNetApi.Model {
                     (Dyes != null && Dyes.Equals(input.Dyes))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.ItemHash.GetHashCode();
-				hashCode = hashCode * 59 + this.Dyes.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -160,27 +160,6 @@ namespace BungieNetApi.Model {
                     (PlugObjectives != null && PlugObjectives.Equals(input.PlugObjectives))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.CharacterId.GetHashCode();
-				hashCode = hashCode * 59 + this.Item.GetHashCode();
-				hashCode = hashCode * 59 + this.Instance.GetHashCode();
-				hashCode = hashCode * 59 + this.Objectives.GetHashCode();
-				hashCode = hashCode * 59 + this.Perks.GetHashCode();
-				hashCode = hashCode * 59 + this.RenderData.GetHashCode();
-				hashCode = hashCode * 59 + this.Stats.GetHashCode();
-				hashCode = hashCode * 59 + this.TalentGrid.GetHashCode();
-				hashCode = hashCode * 59 + this.Sockets.GetHashCode();
-				hashCode = hashCode * 59 + this.ReusablePlugs.GetHashCode();
-				hashCode = hashCode * 59 + this.PlugObjectives.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

@@ -108,25 +108,6 @@ namespace BungieNetApi.Model {
                     (LastCompletedStoryHash != null && LastCompletedStoryHash.Equals(input.LastCompletedStoryHash))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.DateActivityStarted.GetHashCode();
-				hashCode = hashCode * 59 + this.AvailableActivities.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentActivityHash.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentActivityModeHash.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentActivityModeType.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentActivityModeHashes.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentActivityModeTypes.GetHashCode();
-				hashCode = hashCode * 59 + this.CurrentPlaylistActivityHash.GetHashCode();
-				hashCode = hashCode * 59 + this.LastCompletedStoryHash.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 

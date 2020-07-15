@@ -111,29 +111,6 @@ namespace BungieNetApi.Model {
                     (Theme != null && Theme.Equals(input.Theme))
                 ) ;
 		}
-
-		/* 
-		public override int GetHashCode()
-		{
-			unchecked // Overflow is fine, just wrap
-			{
-				int hashCode = 41;
-				hashCode = hashCode * 59 + this.GroupId.GetHashCode();
-				hashCode = hashCode * 59 + this.Name.GetHashCode();
-				hashCode = hashCode * 59 + this.GroupType.GetHashCode();
-				hashCode = hashCode * 59 + this.CreationDate.GetHashCode();
-				hashCode = hashCode * 59 + this.About.GetHashCode();
-				hashCode = hashCode * 59 + this.Motto.GetHashCode();
-				hashCode = hashCode * 59 + this.MemberCount.GetHashCode();
-				hashCode = hashCode * 59 + this.Locale.GetHashCode();
-				hashCode = hashCode * 59 + this.MembershipOption.GetHashCode();
-				hashCode = hashCode * 59 + this.Capabilities.GetHashCode();
-				hashCode = hashCode * 59 + this.ClanInfo.GetHashCode();
-				hashCode = hashCode * 59 + this.AvatarPath.GetHashCode();
-				hashCode = hashCode * 59 + this.Theme.GetHashCode();
-				return hashCode;
-			}
-		}*/
 	}
 }
 
