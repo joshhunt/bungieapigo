@@ -1,1 +1,0 @@
-export '../src/responses/search_result_of_trending_entry_response.dart';

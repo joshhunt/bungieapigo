@@ -1,1 +1,0 @@
-export '../src/models/destiny_vendor_location_definition.dart';

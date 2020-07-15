@@ -1,1 +1,0 @@
-export '../src/models/destiny_collectible_state_block.dart';

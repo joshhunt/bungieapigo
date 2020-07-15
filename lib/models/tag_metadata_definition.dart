@@ -1,1 +1,0 @@
-export '../src/models/tag_metadata_definition.dart';

@@ -1,1 +1,0 @@
-export '../src/models/destiny_collectible_definition.dart';

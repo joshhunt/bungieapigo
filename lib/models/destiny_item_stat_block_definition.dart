@@ -1,1 +1,0 @@
-export '../src/models/destiny_item_stat_block_definition.dart';

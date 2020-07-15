@@ -1,1 +1,0 @@
-export '../src/models/destiny_inventory_component.dart';

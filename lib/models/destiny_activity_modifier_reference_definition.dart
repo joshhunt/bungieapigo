@@ -1,1 +1,0 @@
-export '../src/models/destiny_activity_modifier_reference_definition.dart';

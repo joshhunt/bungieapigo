@@ -1,1 +1,0 @@
-export '../src/models/trending_entry.dart';

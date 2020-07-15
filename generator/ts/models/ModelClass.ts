@@ -4,12 +4,18 @@ import { chain, map } from "lodash";
 import { ApiDocHelper } from "../utils/api-doc-helper";
 import { camelcaseToUnderscore } from "../utils/camelcase-to-underscore";
 import { ImportInfo } from "./ImportInfo";
+
 export class ModelClass {
   static all: { [id: string]: ModelClass } = {};
   public className: string;
+
   constructor(public pathName: string, public data: SchemaObject) {
     this.className = pathName.split(".").pop()!;
-    ModelClass.all[this.className] = this;
+    if (Object.keys(this.data.properties || {}).length === 0) {
+      console.warn(`Omitting ${this.className} due to no properties`);
+    } else {
+      ModelClass.all[this.className] = this;
+    }
   }
 
   get hasProperties(): boolean {
@@ -23,7 +29,13 @@ export class ModelClass {
         return new ModelProperty(index, property);
       }
     );
-    return (props as any) as ModelProperty[];
+
+    const fixedProperties = (props as any) as ModelProperty[];
+    fixedProperties.forEach((prop, index) => {
+      prop.notLast = index !== fixedProperties.length - 1;
+    });
+
+    return fixedProperties;
   }
 
   description() {
@@ -32,26 +44,42 @@ export class ModelClass {
   }
 
   get filename(): String {
-    return camelcaseToUnderscore(this.className);
+    return ApiDocHelper.propertyName(this.className);
   }
 
   imports() {
-    let filename = camelcaseToUnderscore(this.className);
-    let imports = chain(this.data.properties)
+    // let filename = camelcaseToUnderscore(this.className);
+    // let imports = chain(this.data.properties)
+    //   .map((prop) => {
+    //     return ApiDocHelper.getImportInfo(prop);
+    //   })
+    //   .filter(Boolean)
+    //   .filter((importInfo: ImportInfo) => importInfo.filename() != filename)
+    //   .uniqBy((item: any) => item.filename())
+    //   .map((item: ImportInfo) => {
+    //     if (item.type == "models") {
+    //       return item.filename();
+    //     } else {
+    //       return `../${item.type}/${item.filename()}`;
+    //     }
+    //   })
+    //   .value();
+    // return imports;
+    const baseImports = ["System.Runtime.Serialization"];
+
+    const propertyImports = this.properties()
       .map((prop) => {
-        return ApiDocHelper.getImportInfo(prop);
+        if (prop.typeName().includes("List<")) {
+          return "System.Collections.Generic";
+        }
+
+        return null;
       })
       .filter(Boolean)
-      .filter((importInfo: ImportInfo) => importInfo.filename() != filename)
-      .uniqBy((item: any) => item.filename())
-      .map((item: ImportInfo) => {
-        if (item.type == "models") {
-          return item.filename();
-        } else {
-          return `../${item.type}/${item.filename()}`;
-        }
-      })
-      .value();
-    return imports;
+      .reduce((acc, v) => {
+        return acc.includes(v || "") ? acc : [...acc, v];
+      }, [] as string[]);
+
+    return [...baseImports, ...propertyImports];
   }
 }

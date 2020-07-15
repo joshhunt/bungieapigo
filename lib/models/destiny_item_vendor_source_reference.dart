@@ -1,1 +1,0 @@
-export '../src/models/destiny_item_vendor_source_reference.dart';

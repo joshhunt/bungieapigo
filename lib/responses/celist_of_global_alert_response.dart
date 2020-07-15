@@ -1,1 +1,0 @@
-export '../src/responses/celist_of_global_alert_response.dart';

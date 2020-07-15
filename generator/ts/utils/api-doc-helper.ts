@@ -6,7 +6,7 @@ import {
 } from "openapi3-ts";
 import { readFileSync } from "fs";
 import { ImportInfo } from "../models/ImportInfo";
-import { upperFirst, get as _get } from "lodash";
+import { upperFirst, get as _get, camelCase } from "lodash";
 
 export class ApiDocHelper {
   static doc: OpenAPIObject;
@@ -14,6 +14,10 @@ export class ApiDocHelper {
     let file = readFileSync("../api-src/openapi.json").toString();
     this.doc = JSON.parse(file);
     return this.doc;
+  }
+
+  static propertyName(rawName: string) {
+    return upperFirst(camelCase(rawName));
   }
 
   static getParseFunction(
@@ -146,6 +150,7 @@ export class ApiDocHelper {
     obj: ReferenceObject | ParameterObject | SchemaObject
   ): string {
     let refObj: ReferenceObject = obj as ReferenceObject;
+
     if ("$ref" in obj) {
       let ref = this.getRef(refObj.$ref);
       if (ref.type == "object") {
@@ -230,7 +235,8 @@ export class ApiDocHelper {
         if (format == "byte") {
           return "int";
         }
-        return "String";
+        return "string";
+
       case "integer":
       case "number":
         if (param["x-enum-reference"] && param["x-enum-reference"].$ref) {
@@ -240,12 +246,17 @@ export class ApiDocHelper {
           return type;
         }
         if (format == "int64") {
-          return "String";
+          return "long";
         }
         if (format == "float" || format == "double") {
           return "double";
         }
-        return "int";
+        if (format == "uint32") {
+          return "uint";
+        }
+
+        return "long";
+
       case "boolean":
         return "bool";
     }

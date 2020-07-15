@@ -1,1 +1,0 @@
-export '../src/models/destiny_profile_collectibles_component.dart';

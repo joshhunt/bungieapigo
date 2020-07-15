@@ -1,1 +1,0 @@
-export '../src/responses/search_result_of_fireteam_summary_response.dart';

@@ -1,1 +1,0 @@
-export '../src/models/group_v2_clan_info.dart';

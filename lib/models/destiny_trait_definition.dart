@@ -1,1 +1,0 @@
-export '../src/models/destiny_trait_definition.dart';

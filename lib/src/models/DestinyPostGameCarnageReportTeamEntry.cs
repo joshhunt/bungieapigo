@@ -1,0 +1,75 @@
+using System.Runtime.Serialization;
+
+namespace BungieNetApi.Model {
+	[DataContract]
+	public class DestinyPostGameCarnageReportTeamEntry{
+
+		/// <summary>
+		/// Integer ID for the team.
+		/// </summary>
+		[DataMember(Name="teamId", EmitDefaultValue=false)]
+		public long TeamId { get; set; }
+
+		/// <summary>
+		/// Team's standing relative to other teams.
+		/// </summary>
+		[DataMember(Name="standing", EmitDefaultValue=false)]
+		public DestinyHistoricalStatsValue Standing { get; set; }
+
+		/// <summary>
+		/// Score earned by the team
+		/// </summary>
+		[DataMember(Name="score", EmitDefaultValue=false)]
+		public DestinyHistoricalStatsValue Score { get; set; }
+
+		/// <summary>
+		/// Alpha or Bravo
+		/// </summary>
+		[DataMember(Name="teamName", EmitDefaultValue=false)]
+		public string TeamName { get; set; }
+
+
+		public override bool Equals(object input)
+        {
+            return this.Equals(input as DestinyPostGameCarnageReportTeamEntry);
+        }
+
+		public bool Equals(DestinyPostGameCarnageReportTeamEntry input)
+		{
+			if (input == null) return false;
+
+			return
+				(
+                    TeamId == input.TeamId ||
+                    (TeamId != null && TeamId.Equals(input.TeamId))
+                ) &&
+				(
+                    Standing == input.Standing ||
+                    (Standing != null && Standing.Equals(input.Standing))
+                ) &&
+				(
+                    Score == input.Score ||
+                    (Score != null && Score.Equals(input.Score))
+                ) &&
+				(
+                    TeamName == input.TeamName ||
+                    (TeamName != null && TeamName.Equals(input.TeamName))
+                ) ;
+		}
+
+		/* 
+		public override int GetHashCode()
+		{
+			unchecked // Overflow is fine, just wrap
+			{
+				int hashCode = 41;
+				hashCode = hashCode * 59 + this.TeamId.GetHashCode();
+				hashCode = hashCode * 59 + this.Standing.GetHashCode();
+				hashCode = hashCode * 59 + this.Score.GetHashCode();
+				hashCode = hashCode * 59 + this.TeamName.GetHashCode();
+				return hashCode;
+			}
+		}*/
+	}
+}
+

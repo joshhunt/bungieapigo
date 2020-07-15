@@ -1,1 +1,0 @@
-export '../src/models/destiny_socket_category_definition.dart';

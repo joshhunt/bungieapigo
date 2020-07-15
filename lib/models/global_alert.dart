@@ -1,1 +1,0 @@
-export '../src/models/global_alert.dart';

@@ -1,1 +1,0 @@
-export '../src/models/destiny_damage_type_definition.dart';

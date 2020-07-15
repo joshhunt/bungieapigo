@@ -1,1 +1,0 @@
-export '../src/models/destiny_item_gearset_block_definition.dart';

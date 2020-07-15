@@ -1,1 +1,0 @@
-export '../src/responses/celist_of_forum_recruitment_detail_response.dart';

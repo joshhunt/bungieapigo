@@ -1,1 +1,0 @@
-export '../src/models/destiny_character_component.dart';

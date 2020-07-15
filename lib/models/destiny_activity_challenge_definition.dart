@@ -1,1 +1,0 @@
-export '../src/models/destiny_activity_challenge_definition.dart';

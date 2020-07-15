@@ -1,1 +1,0 @@
-export '../src/models/application_developer.dart';

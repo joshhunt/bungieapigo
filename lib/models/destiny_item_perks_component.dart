@@ -1,1 +1,0 @@
-export '../src/models/destiny_item_perks_component.dart';

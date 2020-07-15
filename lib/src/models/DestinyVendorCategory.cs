@@ -1,0 +1,55 @@
+using System.Runtime.Serialization;
+using System.Collections.Generic;
+
+namespace BungieNetApi.Model {
+	/// Information about the category and items currently sold in that category.
+	[DataContract]
+	public class DestinyVendorCategory{
+
+		/// <summary>
+		/// An index into the DestinyVendorDefinition.displayCategories property, so you can grab the display data for this category.
+		/// </summary>
+		[DataMember(Name="displayCategoryIndex", EmitDefaultValue=false)]
+		public long DisplayCategoryIndex { get; set; }
+
+		/// <summary>
+		/// An ordered list of indexes into items being sold in this category (DestinyVendorDefinition.itemList) which will contain more information about the items being sold themselves. Can also be used to index into DestinyVendorSaleItemComponent data, if you asked for that data to be returned.
+		/// </summary>
+		[DataMember(Name="itemIndexes", EmitDefaultValue=false)]
+		public List<long> ItemIndexes { get; set; }
+
+
+		public override bool Equals(object input)
+        {
+            return this.Equals(input as DestinyVendorCategory);
+        }
+
+		public bool Equals(DestinyVendorCategory input)
+		{
+			if (input == null) return false;
+
+			return
+				(
+                    DisplayCategoryIndex == input.DisplayCategoryIndex ||
+                    (DisplayCategoryIndex != null && DisplayCategoryIndex.Equals(input.DisplayCategoryIndex))
+                ) &&
+				(
+                    ItemIndexes == input.ItemIndexes ||
+                    (ItemIndexes != null && ItemIndexes.Equals(input.ItemIndexes))
+                ) ;
+		}
+
+		/* 
+		public override int GetHashCode()
+		{
+			unchecked // Overflow is fine, just wrap
+			{
+				int hashCode = 41;
+				hashCode = hashCode * 59 + this.DisplayCategoryIndex.GetHashCode();
+				hashCode = hashCode * 59 + this.ItemIndexes.GetHashCode();
+				return hashCode;
+			}
+		}*/
+	}
+}
+

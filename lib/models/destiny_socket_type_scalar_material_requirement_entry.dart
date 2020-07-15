@@ -1,1 +1,0 @@
-export '../src/models/destiny_socket_type_scalar_material_requirement_entry.dart';

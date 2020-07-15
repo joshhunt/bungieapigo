@@ -1,1 +1,0 @@
-export '../src/models/forum_recruitment_detail.dart';

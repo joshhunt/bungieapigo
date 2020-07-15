@@ -1,41 +1,56 @@
-import 'package:json_annotation/json_annotation.dart';
-
 {{#imports}}
-import '{{{.}}}.dart';
+using {{{.}}};
 {{/imports}}
 
-part '{{filename}}.g.dart';
-
-{{#description}}
-/// {{.}}
-{{/description}}
-@JsonSerializable()
-class {{className}}{
-	
-	{{className}}({{#hasProperties}}{{{/hasProperties}}
-		{{#properties}}
-		this.{{propertyName}},
-		{{/properties}}
-	{{#hasProperties}}}{{/hasProperties}});
-
-	factory {{className}}.fromJson(Map<String, dynamic> json) {
-		try{
-			return _${{className}}FromJson(json);
-		}catch(e){
-			print(e);
-		}
-		return null;
-	}
-
-	{{#properties}}
+namespace BungieNetApi.Model {
 	{{#description}}
-	/// {{{.}}}
+	/// {{.}}
 	{{/description}}
-	{{{jsonKey}}}
-	{{{typeName}}} {{propertyName}};
-	{{/properties}}
+	[DataContract]
+	public class {{className}}{
 
-	
-	
-	Map<String, dynamic> toJson() => _${{className}}ToJson(this);
+		{{#properties}}
+		{{#description}}
+		/// <summary>
+		/// {{{.}}}
+		/// </summary>
+		{{/description}}
+		{{{jsonKey}}}
+		{{keywords}} {{{typeName}}} {{propertyName}} { get; set; }
+
+		{{/properties}}
+
+		public override bool Equals(object input)
+        {
+            return this.Equals(input as {{className}});
+        }
+
+		public bool Equals({{className}} input)
+		{
+			if (input == null) return false;
+
+			return
+				{{#properties}}
+				(
+                    {{propertyName}} == input.{{propertyName}} ||
+                    ({{propertyName}} != null && {{propertyName}}.Equals(input.{{propertyName}}))
+                ) {{#notLast}}&&{{/notLast}}{{^notLast}};{{/notLast}}
+				{{/properties}}
+		}
+
+		{{! TODO: Do we need GetHashCode? If we do, we must check if objects are not null }}
+		/* 
+		public override int GetHashCode()
+		{
+			unchecked // Overflow is fine, just wrap
+			{
+				int hashCode = 41;
+				{{#properties}}
+				hashCode = hashCode * 59 + this.{{propertyName}}.GetHashCode();
+				{{/properties}}
+				return hashCode;
+			}
+		}*/
+	}
 }
+

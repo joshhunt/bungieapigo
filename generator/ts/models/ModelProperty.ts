@@ -1,11 +1,14 @@
 import { ParameterObject, ReferenceObject } from "openapi3-ts";
 import { ApiDocHelper } from "../utils/api-doc-helper";
-import { camelCase, get as _get } from "lodash";
+import { camelCase, capitalize, get as _get } from "lodash";
+
 export class ModelProperty {
   constructor(
     public name: string,
     public info: ParameterObject | ReferenceObject
   ) {}
+
+  notLast: boolean;
 
   isNativeType(): boolean {
     return ApiDocHelper.isNativeType(this.info);
@@ -49,26 +52,15 @@ export class ModelProperty {
   }
 
   propertyName(): string {
-    return camelCase(this.name);
+    return ApiDocHelper.propertyName(this.name);
   }
 
   jsonKey(): string {
-    let params = [`name:'${this.name}'`];
-    // var arrayInfo = _get(this.info, 'items');
-    // if(_get(arrayInfo, "x-enum-reference") && !_get(arrayInfo, 'x-enum-is-bitmask')){
-    //     var type = ApiDocHelper.getObjectType(arrayInfo);
-    //     var fromJson = `(json)=>(json['${this.name}'] as List)`+
-    //     `?.map((e) => _$enumDecodeNullable(_$${type}EnumMap, e, ${type}.ProtectedInvalidEnumValue))`+
-    //     `?.toList()`;
-    //     params.push(`fromJson:${fromJson}`);
-    // }
-    var info = this.info;
-    if (info["x-enum-reference"] && !info["x-enum-is-bitmask"]) {
-      params.push(
-        `unknownEnumValue:${this.typeName()}.ProtectedInvalidEnumValue`
-      );
-    }
-    return `@JsonKey(${params.join(",")})`;
+    return `[DataMember(Name="${this.name}", EmitDefaultValue=false)]`;
+  }
+
+  keywords(): string {
+    return ["public"].join(" ");
   }
 
   description(): string[] | null {

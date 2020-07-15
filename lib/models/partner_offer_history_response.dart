@@ -1,1 +1,0 @@
-export '../src/models/partner_offer_history_response.dart';

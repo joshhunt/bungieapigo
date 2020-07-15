@@ -1,1 +1,0 @@
-export '../src/models/destiny_public_vendor_component.dart';

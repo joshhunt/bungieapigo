@@ -45,13 +45,16 @@ _.each(doc.components!.schemas!, (schema: SchemaObject, index: string) => {
 
 deleteAll();
 copyCustom();
-_.each(ApiClass.all, (apiClass: ApiClass) => {
-  generateApiClass(apiClass);
-});
 
-_.each(ResponseClass.all, (responseClass: ResponseClass) => {
-  generateResponseClass(responseClass);
-});
+console.warn("TODO: Skipping generateApiClass");
+// _.each(ApiClass.all, (apiClass: ApiClass) => {
+//   generateApiClass(apiClass);
+// });
+
+console.warn("TODO: Skipping generateApiClass");
+// _.each(ResponseClass.all, (responseClass: ResponseClass) => {
+//   generateResponseClass(responseClass);
+// });
 
 _.each(ModelClass.all, (modelClass: ModelClass) => {
   generateModelClass(modelClass);

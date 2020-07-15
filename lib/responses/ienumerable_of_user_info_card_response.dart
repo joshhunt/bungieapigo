@@ -1,1 +1,0 @@
-export '../src/responses/ienumerable_of_user_info_card_response.dart';

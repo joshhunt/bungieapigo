@@ -1,0 +1,40 @@
+using System.Runtime.Serialization;
+using System.Collections.Generic;
+
+namespace BungieNetApi.Model {
+	[DataContract]
+	public class DestinyIconSequenceDefinition{
+
+		[DataMember(Name="frames", EmitDefaultValue=false)]
+		public List<string> Frames { get; set; }
+
+
+		public override bool Equals(object input)
+        {
+            return this.Equals(input as DestinyIconSequenceDefinition);
+        }
+
+		public bool Equals(DestinyIconSequenceDefinition input)
+		{
+			if (input == null) return false;
+
+			return
+				(
+                    Frames == input.Frames ||
+                    (Frames != null && Frames.Equals(input.Frames))
+                ) ;
+		}
+
+		/* 
+		public override int GetHashCode()
+		{
+			unchecked // Overflow is fine, just wrap
+			{
+				int hashCode = 41;
+				hashCode = hashCode * 59 + this.Frames.GetHashCode();
+				return hashCode;
+			}
+		}*/
+	}
+}
+

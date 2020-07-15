@@ -1,1 +1,0 @@
-export '../src/models/destiny_item_socket_category_definition.dart';

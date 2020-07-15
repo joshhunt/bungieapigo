@@ -1,1 +1,0 @@
-export '../src/models/search_result.dart';

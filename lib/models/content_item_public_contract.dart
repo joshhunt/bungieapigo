@@ -1,1 +1,0 @@
-export '../src/models/content_item_public_contract.dart';

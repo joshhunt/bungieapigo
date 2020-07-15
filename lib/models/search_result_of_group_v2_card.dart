@@ -1,1 +1,0 @@
-export '../src/models/search_result_of_group_v2_card.dart';

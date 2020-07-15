@@ -1,1 +1,0 @@
-export '../src/models/destiny_activity_matchmaking_block_definition.dart';

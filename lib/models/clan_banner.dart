@@ -1,1 +1,0 @@
-export '../src/models/clan_banner.dart';

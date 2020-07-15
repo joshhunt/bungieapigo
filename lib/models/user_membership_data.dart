@@ -1,1 +1,0 @@
-export '../src/models/user_membership_data.dart';

@@ -1,1 +1,0 @@
-export '../src/models/destiny_entity_search_result_item.dart';

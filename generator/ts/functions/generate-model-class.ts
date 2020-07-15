@@ -17,9 +17,5 @@ export function generateModelClass(model: ModelClass) {
   }
   let template = readFileSync("templates/model-class.mustache").toString();
   let rendered = mustache.render(template, model);
-  writeFileSync(`../lib/src/models/${model.filename}.dart`, rendered);
-  writeFileSync(
-    `../lib/models/${model.filename}.dart`,
-    `export '../src/models/${model.filename}.dart';`
-  );
+  writeFileSync(`../lib/src/models/${model.filename}.cs`, rendered);
 }
