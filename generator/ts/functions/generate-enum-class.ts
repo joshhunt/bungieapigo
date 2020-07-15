@@ -16,14 +16,7 @@ export function generateEnumClass(enumClass: EnumClass) {
   if (!shell.test("-d", "../lib/enums")) {
     shell.mkdir("-p", "../lib/enums");
   }
-  let template = enumClass.isBitMask
-    ? readFileSync("templates/bitmask-enum.mustache").toString()
-    : readFileSync("templates/enum.mustache").toString();
+  let template = readFileSync("templates/enum.mustache").toString();
   let rendered = mustache.render(template, enumClass);
-  let underscored = camelcaseToUnderscore(enumClass.className);
-  writeFileSync(`../lib/src/enums/${underscored}.dart`, rendered);
-  writeFileSync(
-    `../lib/enums/${underscored}.dart`,
-    `export '../src/enums/${underscored}.dart';`
-  );
+  writeFileSync(`../lib/src/enums/${enumClass.filename}.cs`, rendered);
 }

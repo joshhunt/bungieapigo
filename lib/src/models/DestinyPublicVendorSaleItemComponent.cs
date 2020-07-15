@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Has character-agnostic information about an item being sold by a vendor.
-	/// Note that if you want instance, stats, etc... data for the item, you&#39;ll have to request additional components such as ItemInstances, ItemPerks etc... and acquire them from the DestinyVendorResponse&#39;s &quot;items&quot; property. For most of these, however, you&#39;ll have to ask for it in context of a specific character.
+	/// </summary>
+	/// <summary>
+	/// Note that if you want instance, stats, etc... data for the item, you'll have to request additional components such as ItemInstances, ItemPerks etc... and acquire them from the DestinyVendorResponse's "items" property. For most of these, however, you'll have to ask for it in context of a specific character.
+	/// </summary>
 	[DataContract]
 	public class DestinyPublicVendorSaleItemComponent{
 

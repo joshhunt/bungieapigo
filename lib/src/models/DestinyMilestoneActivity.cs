@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// Sometimes, we know the specific activity that the Milestone wants you to play. This entity provides additional information about that Activity and all of its variants. (sometimes there&#39;s only one variant, but I think you get the point)
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Sometimes, we know the specific activity that the Milestone wants you to play. This entity provides additional information about that Activity and all of its variants. (sometimes there's only one variant, but I think you get the point)
+	/// </summary>
 	[DataContract]
 	public class DestinyMilestoneActivity{
 

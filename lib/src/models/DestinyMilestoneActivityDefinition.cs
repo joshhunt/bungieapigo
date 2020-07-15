@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Milestones can have associated activities which provide additional information about the context, challenges, modifiers, state etc... related to this Milestone. 
+	/// </summary>
+	/// <summary>
 	/// Information we need to be able to return that data is defined here, along with Tier data to establish a relationship between a conceptual Activity and its difficulty levels and variants.
+	/// </summary>
 	[DataContract]
 	public class DestinyMilestoneActivityDefinition{
 

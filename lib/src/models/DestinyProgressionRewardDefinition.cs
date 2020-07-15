@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Inventory Items can reward progression when actions are performed on them. A common example of this in Destiny 1 was Bounties, which would reward Experience on your Character and the like when you completed the bounty.
-	/// Note that this maps to a DestinyProgressionMappingDefinition, and *not* a DestinyProgressionDefinition directly. This is apparently so that multiple progressions can be granted progression points&#x2F;experience at the same time.
+	/// </summary>
+	/// <summary>
+	/// Note that this maps to a DestinyProgressionMappingDefinition, and *not* a DestinyProgressionDefinition directly. This is apparently so that multiple progressions can be granted progression points/experience at the same time.
+	/// </summary>
 	[DataContract]
 	public class DestinyProgressionRewardDefinition{
 

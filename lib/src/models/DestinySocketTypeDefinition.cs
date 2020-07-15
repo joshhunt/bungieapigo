@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// All Sockets have a &quot;Type&quot;: a set of common properties that determine when the socket allows Plugs to be inserted, what Categories of Plugs can be inserted, and whether the socket is even visible at all given the current game&#x2F;character&#x2F;account state.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// All Sockets have a "Type": a set of common properties that determine when the socket allows Plugs to be inserted, what Categories of Plugs can be inserted, and whether the socket is even visible at all given the current game/character/account state.
+	/// </summary>
+	/// <summary>
 	/// See DestinyInventoryItemDefinition for more information about Socketed items and Plugs.
+	/// </summary>
 	[DataContract]
 	public class DestinySocketTypeDefinition{
 

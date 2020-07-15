@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// The status of a given item&#39;s socket. (which plug is inserted, if any: whether it is enabled, what &quot;reusable&quot; plugs can be inserted, etc...)
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// The status of a given item's socket. (which plug is inserted, if any: whether it is enabled, what "reusable" plugs can be inserted, etc...)
+	/// </summary>
+	/// <summary>
 	/// If I had it to do over, this would probably have a DestinyItemPlug representing the inserted item instead of most of these properties. :shrug:
+	/// </summary>
 	[DataContract]
 	public class DestinyItemSocketState{
 

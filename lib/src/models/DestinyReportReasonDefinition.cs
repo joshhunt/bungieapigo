@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// A specific reason for being banned. Only accessible under the related category (DestinyReportReasonCategoryDefinition) under which it is shown. Note that this means that report reasons&#39; reasonHash are not globally unique: and indeed, entries like &quot;Other&quot; are defined under most categories for example.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// A specific reason for being banned. Only accessible under the related category (DestinyReportReasonCategoryDefinition) under which it is shown. Note that this means that report reasons' reasonHash are not globally unique: and indeed, entries like "Other" are defined under most categories for example.
+	/// </summary>
 	[DataContract]
 	public class DestinyReportReasonDefinition{
 

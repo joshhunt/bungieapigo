@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// In addition to item quantity information for vendor prices, this also has any optional information that may exist about how the item&#39;s quantity can be modified. (unfortunately not information that is able to be read outside of the BNet servers, but it&#39;s there)
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// In addition to item quantity information for vendor prices, this also has any optional information that may exist about how the item's quantity can be modified. (unfortunately not information that is able to be read outside of the BNet servers, but it's there)
+	/// </summary>
 	[DataContract]
 	public class DestinyVendorItemQuantity{
 

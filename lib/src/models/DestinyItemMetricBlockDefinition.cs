@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The metrics available for display and selection on an item.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemMetricBlockDefinition{
 

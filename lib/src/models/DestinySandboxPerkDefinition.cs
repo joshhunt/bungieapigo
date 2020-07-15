@@ -1,12 +1,25 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Perks are modifiers to a character or item that can be applied situationally.
-	/// - Perks determine a weapons&#39; damage type.
+	/// </summary>
+	/// <summary>
+	/// - Perks determine a weapons' damage type.
+	/// </summary>
+	/// <summary>
 	/// - Perks put the Mods in Modifiers (they are literally the entity that bestows the Sandbox benefit for whatever fluff text about the modifier in the Socket, Plug or Talent Node)
+	/// </summary>
+	/// <summary>
 	/// - Perks are applied for unique alterations of state in Objectives
-	/// Anyways, I&#39;m sure you can see why perks are so interesting.
-	/// What Perks often don&#39;t have is human readable information, so we attempt to reverse engineer that by pulling that data from places that uniquely refer to these perks: namely, Talent Nodes and Plugs. That only gives us a subset of perks that are human readable, but those perks are the ones people generally care about anyways. The others are left as a mystery, their true purpose mostly unknown and undocumented.
+	/// </summary>
+	/// <summary>
+	/// Anyways, I'm sure you can see why perks are so interesting.
+	/// </summary>
+	/// <summary>
+	/// What Perks often don't have is human readable information, so we attempt to reverse engineer that by pulling that data from places that uniquely refer to these perks: namely, Talent Nodes and Plugs. That only gives us a subset of perks that are human readable, but those perks are the ones people generally care about anyways. The others are left as a mystery, their true purpose mostly unknown and undocumented.
+	/// </summary>
 	[DataContract]
 	public class DestinySandboxPerkDefinition{
 

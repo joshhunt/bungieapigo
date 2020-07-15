@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The list entry view for trending items. Returns just enough to show the item on the trending page.
+	/// </summary>
 	[DataContract]
 	public class TrendingEntry{
 

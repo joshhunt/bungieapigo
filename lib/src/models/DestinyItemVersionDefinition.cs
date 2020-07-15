@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The version definition currently just holds a reference to the power cap.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemVersionDefinition{
 

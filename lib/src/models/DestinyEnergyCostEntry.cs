@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Some plugs cost Energy, which is a stat on the item that can be increased by other plugs (that, at least in Armor 2.0, have a &quot;masterworks-like&quot; mechanic for upgrading). If a plug has costs, the details of that cost are defined here.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Some plugs cost Energy, which is a stat on the item that can be increased by other plugs (that, at least in Armor 2.0, have a "masterworks-like" mechanic for upgrading). If a plug has costs, the details of that cost are defined here.
+	/// </summary>
 	[DataContract]
 	public class DestinyEnergyCostEntry{
 

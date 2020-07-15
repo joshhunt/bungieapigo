@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// The properties of an individual checklist item. Note that almost everything is optional: it is *highly* variable what kind of data we&#39;ll actually be able to return: at times we may have no other relationships to entities at all.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// The properties of an individual checklist item. Note that almost everything is optional: it is *highly* variable what kind of data we'll actually be able to return: at times we may have no other relationships to entities at all.
+	/// </summary>
+	/// <summary>
 	/// Whatever UI you build, do it with the knowledge that any given entry might not actually be able to be associated with some other Destiny entity.
+	/// </summary>
 	[DataContract]
 	public class DestinyChecklistEntryDefinition{
 

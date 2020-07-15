@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Very basic info about a user as returned by the Account server.
+	/// </summary>
 	[DataContract]
 	public class UserMembership{
 

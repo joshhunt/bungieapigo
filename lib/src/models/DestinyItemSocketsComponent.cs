@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Instanced items can have sockets, which are slots on the item where plugs can be inserted.
-	/// Sockets are a bit complex: be sure to examine the documentation on the DestinyInventoryItemDefinition&#39;s &quot;socket&quot; block and elsewhere on these objects for more details.
+	/// </summary>
+	/// <summary>
+	/// Sockets are a bit complex: be sure to examine the documentation on the DestinyInventoryItemDefinition's "socket" block and elsewhere on these objects for more details.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemSocketsComponent{
 

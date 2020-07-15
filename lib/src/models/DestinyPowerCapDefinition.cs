@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Defines a &#39;power cap&#39; (limit) for gear items, based on the rarity tier and season of release.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Defines a 'power cap' (limit) for gear items, based on the rarity tier and season of release.
+	/// </summary>
 	[DataContract]
 	public class DestinyPowerCapDefinition{
 

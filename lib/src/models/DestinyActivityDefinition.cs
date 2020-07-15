@@ -1,13 +1,26 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The static data about Activities in Destiny 2.
-	/// Note that an Activity must be combined with an ActivityMode to know - from a Gameplay perspective - what the user is &quot;Playing&quot;.
+	/// </summary>
+	/// <summary>
+	/// Note that an Activity must be combined with an ActivityMode to know - from a Gameplay perspective - what the user is "Playing".
+	/// </summary>
+	/// <summary>
 	/// In most PvE activities, this is fairly straightforward. A Story Activity can only be played in the Story Activity Mode.
-	/// However, in PvP activities, the Activity alone only tells you the map being played, or the Playlist that the user chose to enter. You&#39;ll need to know the Activity Mode they&#39;re playing to know that they&#39;re playing Mode X on Map Y.
-	/// Activity Definitions tell a great deal of information about what *could* be relevant to a user: what rewards they can earn, what challenges could be performed, what modifiers could be applied. To figure out which of these properties is actually live, you&#39;ll need to combine the definition with &quot;Live&quot; data from one of the Destiny endpoints.
-	/// Activities also have Activity Types, but unfortunately in Destiny 2 these are even less reliable of a source of information than they were in Destiny 1. I will be looking into ways to provide more reliable sources for type information as time goes on, but for now we&#39;re going to have to deal with the limitations. See DestinyActivityTypeDefinition for more information.
+	/// </summary>
+	/// <summary>
+	/// However, in PvP activities, the Activity alone only tells you the map being played, or the Playlist that the user chose to enter. You'll need to know the Activity Mode they're playing to know that they're playing Mode X on Map Y.
+	/// </summary>
+	/// <summary>
+	/// Activity Definitions tell a great deal of information about what *could* be relevant to a user: what rewards they can earn, what challenges could be performed, what modifiers could be applied. To figure out which of these properties is actually live, you'll need to combine the definition with "Live" data from one of the Destiny endpoints.
+	/// </summary>
+	/// <summary>
+	/// Activities also have Activity Types, but unfortunately in Destiny 2 these are even less reliable of a source of information than they were in Destiny 1. I will be looking into ways to provide more reliable sources for type information as time goes on, but for now we're going to have to deal with the limitations. See DestinyActivityTypeDefinition for more information.
+	/// </summary>
 	[DataContract]
 	public class DestinyActivityDefinition{
 

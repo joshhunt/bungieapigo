@@ -1,10 +1,17 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Instanced items can have perks: benefits that the item bestows.
-	/// These are related to DestinySandboxPerkDefinition, and sometimes - but not always - have human readable info. When they do, they are the icons and text that you see in an item&#39;s tooltip.
+	/// </summary>
+	/// <summary>
+	/// These are related to DestinySandboxPerkDefinition, and sometimes - but not always - have human readable info. When they do, they are the icons and text that you see in an item's tooltip.
+	/// </summary>
+	/// <summary>
 	/// Talent Grids, Sockets, and the item itself can apply Perks, which are then summarized here for your convenience.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemPerksComponent{
 

@@ -1,6 +1,7 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
 	[DataContract]
 	public class DestinyHistoricalWeaponStats{
 

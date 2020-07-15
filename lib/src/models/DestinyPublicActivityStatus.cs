@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// Represents the public-facing status of an activity: any data about what is currently active in the Activity, regardless of an individual character&#39;s progress in it.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Represents the public-facing status of an activity: any data about what is currently active in the Activity, regardless of an individual character's progress in it.
+	/// </summary>
 	[DataContract]
 	public class DestinyPublicActivityStatus{
 

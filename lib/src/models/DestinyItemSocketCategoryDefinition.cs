@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Sockets are grouped into categories in the UI. These define which category and which sockets are under that category.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemSocketCategoryDefinition{
 

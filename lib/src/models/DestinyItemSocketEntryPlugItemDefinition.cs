@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The definition of a known, reusable plug that can be applied to a socket.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemSocketEntryPlugItemDefinition{
 

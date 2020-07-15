@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Defines a canonical &quot;Season&quot; of Destiny: a range of a few months where the game highlights certain challenges, provides new loot, has new Clan-related rewards and celebrates various seasonal events.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Defines a canonical "Season" of Destiny: a range of a few months where the game highlights certain challenges, provides new loot, has new Clan-related rewards and celebrates various seasonal events.
+	/// </summary>
 	[DataContract]
 	public class DestinySeasonDefinition{
 

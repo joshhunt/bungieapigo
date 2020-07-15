@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Very basic info about a user as returned by the Account server, but including CrossSave information. Do NOT use as a request contract.
+	/// </summary>
 	[DataContract]
 	public class CrossSaveUserMembership{
 

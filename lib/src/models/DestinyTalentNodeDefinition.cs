@@ -1,10 +1,17 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// Talent Grids on items have Nodes. These nodes have positions in the talent grid&#39;s UI, and contain &quot;Steps&quot; (DestinyTalentNodeStepDefinition), one of whom will be the &quot;Current&quot; step.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Talent Grids on items have Nodes. These nodes have positions in the talent grid's UI, and contain "Steps" (DestinyTalentNodeStepDefinition), one of whom will be the "Current" step.
+	/// </summary>
+	/// <summary>
 	/// The Current Step determines the visual properties of the node, as well as what the node grants when it is activated.
+	/// </summary>
+	/// <summary>
 	/// See DestinyTalentGridDefinition for a more complete overview of how Talent Grids work, and how they are used in Destiny 2 (and how they were used in Destiny 1).
+	/// </summary>
 	[DataContract]
 	public class DestinyTalentNodeDefinition{
 

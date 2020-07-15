@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// When a Graph needs to show active Objectives, this defines those objectives as well as an identifier.
+	/// </summary>
 	[DataContract]
 	public class DestinyActivityGraphDisplayObjectiveDefinition{
 

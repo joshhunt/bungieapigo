@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Not terribly useful, some basic cooldown interaction info.
+	/// </summary>
 	[DataContract]
 	public class DestinyVendorSaleItemActionBlockDefinition{
 

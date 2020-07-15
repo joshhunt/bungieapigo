@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// This property has some history. A talent grid can provide stats on both the item it&#39;s related to and the character equipping the item. This returns data about those stat bonuses.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// This property has some history. A talent grid can provide stats on both the item it's related to and the character equipping the item. This returns data about those stat bonuses.
+	/// </summary>
 	[DataContract]
 	public class DestinyTalentNodeStatBlock{
 

@@ -1,12 +1,23 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// A PresentationNode is an entity that represents a logical grouping of other entities visually&#x2F;organizationally.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// A PresentationNode is an entity that represents a logical grouping of other entities visually/organizationally.
+	/// </summary>
+	/// <summary>
 	/// For now, Presentation Nodes may contain the following... but it may be used for more in the future:
-	/// - Collectibles - Records (Or, as the public will call them, &quot;Triumphs.&quot; Don&#39;t ask me why we&#39;re overloading the term &quot;Triumph&quot;, it still hurts me to think about it) - Metrics (aka Stat Trackers) - Other Presentation Nodes, allowing a tree of Presentation Nodes to be created
-	/// Part of me wants to break these into conceptual definitions per entity being collected, but the possibility of these different types being mixed in the same UI and the possibility that it could actually be more useful to return the &quot;bare metal&quot; presentation node concept has resulted in me deciding against that for the time being.
-	/// We&#39;ll see if I come to regret this as well.
+	/// </summary>
+	/// <summary>
+	/// - Collectibles - Records (Or, as the public will call them, "Triumphs." Don't ask me why we're overloading the term "Triumph", it still hurts me to think about it) - Metrics (aka Stat Trackers) - Other Presentation Nodes, allowing a tree of Presentation Nodes to be created
+	/// </summary>
+	/// <summary>
+	/// Part of me wants to break these into conceptual definitions per entity being collected, but the possibility of these different types being mixed in the same UI and the possibility that it could actually be more useful to return the "bare metal" presentation node concept has resulted in me deciding against that for the time being.
+	/// </summary>
+	/// <summary>
+	/// We'll see if I come to regret this as well.
+	/// </summary>
 	[DataContract]
 	public class DestinyPresentationNodeDefinition{
 

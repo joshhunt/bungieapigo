@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Represents a season and the number of resets you had in that season.
+	/// </summary>
+	/// <summary>
 	///  We do not necessarily - even for progressions with resets - track it over all seasons. So be careful and check the season numbers being returned.
+	/// </summary>
 	[DataContract]
 	public class DestinyProgressionResetEntry{
 

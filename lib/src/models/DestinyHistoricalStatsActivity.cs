@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Summary information about the activity that was played.
+	/// </summary>
 	[DataContract]
 	public class DestinyHistoricalStatsActivity{
 

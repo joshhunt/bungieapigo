@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// A response containing all of the components for all requested vendors.
+	/// </summary>
 	[DataContract]
 	public class DestinyVendorsResponse{
 

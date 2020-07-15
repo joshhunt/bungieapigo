@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The details of an overlay prompt to show to a user. They are all fairly self-explanatory localized strings that can be shown.
+	/// </summary>
 	[DataContract]
 	public class DestinyVendorCategoryOverlayDefinition{
 

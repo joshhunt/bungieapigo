@@ -1,1 +1,0 @@
-export '../src/enums/equipping_item_block_attributes.dart';

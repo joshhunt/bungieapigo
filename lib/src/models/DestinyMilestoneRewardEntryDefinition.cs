@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The definition of a specific reward, which may be contained in a category of rewards and that has optional information about how it is obtained.
+	/// </summary>
 	[DataContract]
 	public class DestinyMilestoneRewardEntryDefinition{
 

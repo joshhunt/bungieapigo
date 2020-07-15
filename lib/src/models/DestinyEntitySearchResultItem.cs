@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// An individual Destiny Entity returned from the entity search.
+	/// </summary>
 	[DataContract]
 	public class DestinyEntitySearchResultItem{
 

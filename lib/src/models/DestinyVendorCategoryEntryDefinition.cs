@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// This is the definition for a single Vendor Category, into which Sale Items are grouped.
+	/// </summary>
 	[DataContract]
 	public class DestinyVendorCategoryEntryDefinition{
 

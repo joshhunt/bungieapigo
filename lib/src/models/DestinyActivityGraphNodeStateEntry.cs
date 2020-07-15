@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Represents a single state that a graph node might end up in. Depending on what&#39;s going on in the game, graph nodes could be shown in different ways or even excluded from view entirely.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Represents a single state that a graph node might end up in. Depending on what's going on in the game, graph nodes could be shown in different ways or even excluded from view entirely.
+	/// </summary>
 	[DataContract]
 	public class DestinyActivityGraphNodeStateEntry{
 

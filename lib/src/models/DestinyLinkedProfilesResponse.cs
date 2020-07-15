@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// I know what you seek. You seek linked accounts. Found them, you have.
+	/// </summary>
+	/// <summary>
 	/// This contract returns a minimal amount of data about Destiny Accounts that are linked through your Bungie.Net account. We will not return accounts in this response whose
+	/// </summary>
 	[DataContract]
 	public class DestinyLinkedProfilesResponse{
 

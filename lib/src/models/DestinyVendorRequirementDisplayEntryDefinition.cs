@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The localized properties of the requirementsDisplay, allowing information about the requirement or item being featured to be seen.
+	/// </summary>
 	[DataContract]
 	public class DestinyVendorRequirementDisplayEntryDefinition{
 

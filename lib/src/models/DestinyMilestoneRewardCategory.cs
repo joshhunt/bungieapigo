@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// Represents a category of &quot;summary&quot; rewards that can be earned for the Milestone regardless of specific quest rewards that can be earned.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Represents a category of "summary" rewards that can be earned for the Milestone regardless of specific quest rewards that can be earned.
+	/// </summary>
 	[DataContract]
 	public class DestinyMilestoneRewardCategory{
 

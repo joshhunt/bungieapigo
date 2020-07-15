@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// The list of indexes into the Talent Grid&#39;s &quot;nodes&quot; property for nodes in this exclusive set. (See DestinyTalentNodeDefinition.nodeIndex)
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// The list of indexes into the Talent Grid's "nodes" property for nodes in this exclusive set. (See DestinyTalentNodeDefinition.nodeIndex)
+	/// </summary>
 	[DataContract]
 	public class DestinyTalentNodeExclusiveSetDefinition{
 

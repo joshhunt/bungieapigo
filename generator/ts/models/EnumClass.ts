@@ -1,5 +1,6 @@
 import { SchemaObject } from "openapi3-ts";
 import { camelcaseToUnderscore } from "../utils/camelcase-to-underscore";
+import { ApiDocHelper } from "../utils/api-doc-helper";
 
 export class EnumClass {
   static all: { [id: string]: EnumClass } = {};
@@ -14,7 +15,7 @@ export class EnumClass {
   }
 
   get filename(): string {
-    return camelcaseToUnderscore(this.className);
+    return ApiDocHelper.propertyName(this.className);
   }
 
   get description(): string[] {

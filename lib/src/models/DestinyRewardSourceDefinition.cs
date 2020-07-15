@@ -1,9 +1,16 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Represents a heuristically-determined &quot;item source&quot; according to Bungie.net. These item sources are non-canonical: we apply a combination of special configuration and often-fragile heuristics to attempt to discern whether an item should be part of a given &quot;source,&quot; but we have known cases of false positives and negatives due to our imperfect heuristics.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Represents a heuristically-determined "item source" according to Bungie.net. These item sources are non-canonical: we apply a combination of special configuration and often-fragile heuristics to attempt to discern whether an item should be part of a given "source," but we have known cases of false positives and negatives due to our imperfect heuristics.
+	/// </summary>
+	/// <summary>
 	/// Still, they provide a decent approximation for people trying to figure out how an item can be obtained. DestinyInventoryItemDefinition refers to sources in the sourceDatas.sourceHashes property for all sources we determined the item could spawn from.
-	/// An example in Destiny 1 of a Source would be &quot;Nightfall&quot;. If an item has the &quot;Nightfall&quot; source associated with it, it&#39;s extremely likely that you can earn that item while playing Nightfall, either during play or as an after-completion reward.
+	/// </summary>
+	/// <summary>
+	/// An example in Destiny 1 of a Source would be "Nightfall". If an item has the "Nightfall" source associated with it, it's extremely likely that you can earn that item while playing Nightfall, either during play or as an after-completion reward.
+	/// </summary>
 	[DataContract]
 	public class DestinyRewardSourceDefinition{
 

@@ -1,11 +1,20 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// This defines the properties of a &quot;Talent Node Step&quot;. When you see a talent node in game, the actual visible properties that you see (its icon, description, the perks and stats it provides) are not provided by the Node itself, but rather by the currently active Step on the node.
-	/// When a Talent Node is activated, the currently active step&#39;s benefits are conferred upon the item and character.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// This defines the properties of a "Talent Node Step". When you see a talent node in game, the actual visible properties that you see (its icon, description, the perks and stats it provides) are not provided by the Node itself, but rather by the currently active Step on the node.
+	/// </summary>
+	/// <summary>
+	/// When a Talent Node is activated, the currently active step's benefits are conferred upon the item and character.
+	/// </summary>
+	/// <summary>
 	/// The currently active step on talent nodes are determined when an item is first instantiated. Sometimes it is random, sometimes it is more deterministic (particularly when a node has only a single step).
+	/// </summary>
+	/// <summary>
 	/// Note that, when dealing with Talent Node Steps, you must ensure that you have the latest version of content. stepIndex and nodeStepHash - two ways of identifying the step within a node - are both content version dependent, and thus are subject to change between content updates.
+	/// </summary>
 	[DataContract]
 	public class DestinyNodeStepDefinition{
 

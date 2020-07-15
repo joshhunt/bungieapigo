@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Aggregations of multiple progressions.
+	/// </summary>
+	/// <summary>
 	/// These are used to apply rewards to multiple progressions at once. They can sometimes have human readable data as well, but only extremely sporadically.
+	/// </summary>
 	[DataContract]
 	public class DestinyProgressionMappingDefinition{
 

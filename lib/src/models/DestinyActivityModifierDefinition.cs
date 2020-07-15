@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Modifiers - in Destiny 1, these were referred to as &quot;Skulls&quot; - are changes that can be applied to an Activity.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Modifiers - in Destiny 1, these were referred to as "Skulls" - are changes that can be applied to an Activity.
+	/// </summary>
 	[DataContract]
 	public class DestinyActivityModifierDefinition{
 

@@ -1,28 +1,27 @@
-import 'package:json_annotation/json_annotation.dart';
+using System.Runtime.Serialization;{{#isBitMask}}
+using System;{{/isBitMask}}
 
-enum {{className}} {
-  {{#values}}
-  ///{{name}} = {{value}}
-  {{#description}}
-  /// {{.}}
-  {{/description}}
-  @JsonValue({{value}})
-  {{name}},
-  {{/values}}
-  ///value not found fallback
-  @JsonValue(999999999)
-  ProtectedInvalidEnumValue
-}
+namespace GhostSharp.BungieNetApi.Model
+{
+	{{#description}}
+	/// <summary>
+	/// {{&.}}
+	/// </summary>
+	{{/description}}
+	{{#isBitMask}}[Flags]{{/isBitMask}}
+	public enum {{className}}
+	{
+		{{#values}}
+		/// <summary>
+		/// {{name}} = {{value}}{{#description}}
+		/// {{.}}{{/description}}
+		/// </summary>
+		[EnumMember(Value = "{{value}}")]
+		{{name}} = {{value}},
 
-extension {{className}}Extension on {{className}}{
-  int get value {
-    switch(this){
-      {{#values}}
-      case {{className}}.{{name}}:
-        return {{value}};
-      {{/values}}
-      default:
-        return null;
-    }
-  }
+		{{/values}}
+		///value not found fallback
+		[EnumMember(Value = 999999999)]
+		ProtectedInvalidEnumValue = 999999999
+	}
 }

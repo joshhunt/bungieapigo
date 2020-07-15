@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// If a Milestone has one or more Quests, this will contain the live information for the character&#39;s status with one of those quests.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// If a Milestone has one or more Quests, this will contain the live information for the character's status with one of those quests.
+	/// </summary>
 	[DataContract]
 	public class DestinyMilestoneQuest{
 

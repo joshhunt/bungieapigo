@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Represents a socket that has a plug associated with it intrinsically. This is useful for situations where the weapon needs to have a visual plug&#x2F;Mod on it, but that plug&#x2F;Mod should never change.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Represents a socket that has a plug associated with it intrinsically. This is useful for situations where the weapon needs to have a visual plug/Mod on it, but that plug/Mod should never change.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemIntrinsicSocketEntryDefinition{
 

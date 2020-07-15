@@ -1,7 +1,8 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
 	[DataContract]
 	public class DestinyActivityLoadoutRequirement{
 

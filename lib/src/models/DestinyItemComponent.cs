@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// The base item component, filled with properties that are generally useful to know in any item request or that don&#39;t feel worthwhile to put in their own component.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// The base item component, filled with properties that are generally useful to know in any item request or that don't feel worthwhile to put in their own component.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemComponent{
 

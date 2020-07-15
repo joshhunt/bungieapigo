@@ -1,10 +1,17 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// This defines an item&#39;s &quot;Value&quot;. Unfortunately, this appears to be used in different ways depending on the way that the item itself is used.
-	/// For items being sold at a Vendor, this is the default &quot;sale price&quot; of the item. These days, the vendor itself almost always sets the price, but it still possible for the price to fall back to this value. For quests, it is a preview of rewards you can gain by completing the quest. For dummy items, if the itemValue refers to an Emblem, it is the emblem that should be shown as the reward. (jeez louise)
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// This defines an item's "Value". Unfortunately, this appears to be used in different ways depending on the way that the item itself is used.
+	/// </summary>
+	/// <summary>
+	/// For items being sold at a Vendor, this is the default "sale price" of the item. These days, the vendor itself almost always sets the price, but it still possible for the price to fall back to this value. For quests, it is a preview of rewards you can gain by completing the quest. For dummy items, if the itemValue refers to an Emblem, it is the emblem that should be shown as the reward. (jeez louise)
+	/// </summary>
+	/// <summary>
 	/// It will likely be used in a number of other ways in the future, it appears to be a bucket where they put arbitrary items and quantities into the item.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemValueBlockDefinition{
 

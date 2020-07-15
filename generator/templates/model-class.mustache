@@ -2,9 +2,12 @@
 using {{{.}}};
 {{/imports}}
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
 	{{#description}}
-	/// {{.}}
+	/// <summary>
+	/// {{&.}}
+	/// </summary>
 	{{/description}}
 	[DataContract]
 	public class {{className}}{

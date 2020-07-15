@@ -1,19 +1,44 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// Milestones are an in-game concept where they&#39;re attempting to tell you what you can do next in-game.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Milestones are an in-game concept where they're attempting to tell you what you can do next in-game.
+	/// </summary>
+	/// <summary>
 	/// If that sounds a lot like Advisors in Destiny 1, it is! So we threw out Advisors in the Destiny 2 API and tacked all of the data we would have put on Advisors onto Milestones instead.
+	/// </summary>
+	/// <summary>
 	/// Each Milestone represents something going on in the game right now:
-	/// - A &quot;ritual activity&quot; you can perform, like nightfall
-	/// - A &quot;special event&quot; that may have activities related to it, like Taco Tuesday (there&#39;s no Taco Tuesday in Destiny 2)
+	/// </summary>
+	/// <summary>
+	/// - A "ritual activity" you can perform, like nightfall
+	/// </summary>
+	/// <summary>
+	/// - A "special event" that may have activities related to it, like Taco Tuesday (there's no Taco Tuesday in Destiny 2)
+	/// </summary>
+	/// <summary>
 	/// - A checklist you can fulfill, like helping your Clan complete all of its weekly objectives
+	/// </summary>
+	/// <summary>
 	/// - A tutorial quest you can play through, like the introduction to the Crucible.
-	/// Most of these milestones appear in game as well. Some of them are BNet only, because we&#39;re so extra. You&#39;re welcome.
-	/// There are some important caveats to understand about how we currently render Milestones and their deficiencies. The game currently doesn&#39;t have any content that actually tells you oughtright *what* the Milestone is: that is to say, what you&#39;ll be doing. The best we get is either a description of the overall Milestone, or of the Quest that the Milestone is having you partake in: which is usually something that assumes you already know what it&#39;s talking about, like &quot;Complete 5 Challenges&quot;. 5 Challenges for what? What&#39;s a challenge? These are not questions that the Milestone data will answer for you unfortunately.
-	/// This isn&#39;t great, and in the future I&#39;d like to add some custom text to give you more contextual information to pass on to your users. But for now, you can do what we do to render what little display info we do have:
-	/// Start by looking at the currently active quest (ideally, you&#39;ve fetched DestinyMilestone or DestinyPublicMilestone data from the API, so you know the currently active quest for the Milestone in question). Look up the Quests property in the Milestone Definition, and check if it has display properties. If it does, show that as the description of the Milestone. If it doesn&#39;t, fall back on the Milestone&#39;s description.
+	/// </summary>
+	/// <summary>
+	/// Most of these milestones appear in game as well. Some of them are BNet only, because we're so extra. You're welcome.
+	/// </summary>
+	/// <summary>
+	/// There are some important caveats to understand about how we currently render Milestones and their deficiencies. The game currently doesn't have any content that actually tells you oughtright *what* the Milestone is: that is to say, what you'll be doing. The best we get is either a description of the overall Milestone, or of the Quest that the Milestone is having you partake in: which is usually something that assumes you already know what it's talking about, like "Complete 5 Challenges". 5 Challenges for what? What's a challenge? These are not questions that the Milestone data will answer for you unfortunately.
+	/// </summary>
+	/// <summary>
+	/// This isn't great, and in the future I'd like to add some custom text to give you more contextual information to pass on to your users. But for now, you can do what we do to render what little display info we do have:
+	/// </summary>
+	/// <summary>
+	/// Start by looking at the currently active quest (ideally, you've fetched DestinyMilestone or DestinyPublicMilestone data from the API, so you know the currently active quest for the Milestone in question). Look up the Quests property in the Milestone Definition, and check if it has display properties. If it does, show that as the description of the Milestone. If it doesn't, fall back on the Milestone's description.
+	/// </summary>
+	/// <summary>
 	/// This approach will let you avoid, whenever possible, the even less useful (and sometimes nonexistant) milestone-level names and descriptions.
+	/// </summary>
 	[DataContract]
 	public class DestinyMilestoneDefinition{
 

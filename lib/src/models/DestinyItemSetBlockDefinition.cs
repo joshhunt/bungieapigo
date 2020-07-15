@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Primarily for Quests, this is the definition of properties related to the item if it is a quest and its various quest steps.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemSetBlockDefinition{
 

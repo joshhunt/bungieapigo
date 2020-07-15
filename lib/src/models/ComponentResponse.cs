@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The base class for any component-returning object that may need to indicate information about the state of the component being returned.
+	/// </summary>
 	[DataContract]
 	public class ComponentResponse{
 

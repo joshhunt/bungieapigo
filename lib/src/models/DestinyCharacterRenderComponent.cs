@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// Only really useful if you&#39;re attempting to render the character&#39;s current appearance in 3D, this returns a bare minimum of information, pre-aggregated, that you&#39;ll need to perform that rendering. Note that you need to combine this with other 3D assets and data from our servers.
-	/// Examine the Javascript returned by https:&#x2F;&#x2F;bungie.net&#x2F;sharedbundle&#x2F;spasm to see how we use this data, but be warned: the rabbit hole goes pretty deep.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Only really useful if you're attempting to render the character's current appearance in 3D, this returns a bare minimum of information, pre-aggregated, that you'll need to perform that rendering. Note that you need to combine this with other 3D assets and data from our servers.
+	/// </summary>
+	/// <summary>
+	/// Examine the Javascript returned by https://bungie.net/sharedbundle/spasm to see how we use this data, but be warned: the rabbit hole goes pretty deep.
+	/// </summary>
 	[DataContract]
 	public class DestinyCharacterRenderComponent{
 

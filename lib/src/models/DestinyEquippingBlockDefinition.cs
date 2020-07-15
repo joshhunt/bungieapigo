@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Items that can be equipped define this block. It contains information we need to understand how and when the item can be equipped.
+	/// </summary>
 	[DataContract]
 	public class DestinyEquippingBlockDefinition{
 

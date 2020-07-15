@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// This component contains base properties of the character. You&#39;ll probably want to always request this component, but hey you do you.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// This component contains base properties of the character. You'll probably want to always request this component, but hey you do you.
+	/// </summary>
 	[DataContract]
 	public class DestinyCharacterComponent{
 

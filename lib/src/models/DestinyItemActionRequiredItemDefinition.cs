@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// The definition of an item and quantity required in a character&#39;s inventory in order to perform an action.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// The definition of an item and quantity required in a character's inventory in order to perform an action.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemActionRequiredItemDefinition{
 

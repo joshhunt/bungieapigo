@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Guided Game information for this activity.
+	/// </summary>
 	[DataContract]
 	public class DestinyActivityGuidedBlockDefinition{
 

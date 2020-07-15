@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Represents a color whose RGBA values are all represented as values between 0 and 255.
+	/// </summary>
 	[DataContract]
 	public class DestinyColor{
 

@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// An item can have objectives on it. In practice, these are the exclusive purview of &quot;Quest Step&quot; items: DestinyInventoryItemDefinitions that represent a specific step in a Quest.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// An item can have objectives on it. In practice, these are the exclusive purview of "Quest Step" items: DestinyInventoryItemDefinitions that represent a specific step in a Quest.
+	/// </summary>
+	/// <summary>
 	/// Quest steps have 1:M objectives that we end up processing and returning in live data as DestinyQuestStatus data, and other useful information.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemObjectiveBlockDefinition{
 

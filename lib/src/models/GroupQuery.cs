@@ -1,11 +1,22 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// NOTE: GroupQuery, as of Destiny 2, has essentially two totally different and incompatible &quot;modes&quot;.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// NOTE: GroupQuery, as of Destiny 2, has essentially two totally different and incompatible "modes".
+	/// </summary>
+	/// <summary>
 	/// If you are querying for a group, you can pass any of the properties below.
-	/// If you are querying for a Clan, you MUST NOT pass any of the following properties (they must be null or undefined in your request, not just empty string&#x2F;default values):
+	/// </summary>
+	/// <summary>
+	/// If you are querying for a Clan, you MUST NOT pass any of the following properties (they must be null or undefined in your request, not just empty string/default values):
+	/// </summary>
+	/// <summary>
 	/// - groupMemberCountFilter - localeFilter - tagText
+	/// </summary>
+	/// <summary>
 	/// If you pass these, you will get a useless InvalidParameters error.
+	/// </summary>
 	[DataContract]
 	public class GroupQuery{
 

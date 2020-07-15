@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The information for how the vendor purchase should override a given socket with custom plug data.
+	/// </summary>
 	[DataContract]
 	public class DestinyVendorItemSocketOverride{
 

@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Okay, so Activities (DestinyActivityDefinition) take place in Destinations (DestinyDestinationDefinition). Destinations are part of larger locations known as Places (you&#39;re reading its documentation right now).
-	/// Places are more on the planetary scale, like &quot;Earth&quot; and &quot;Your Mom.&quot;
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Okay, so Activities (DestinyActivityDefinition) take place in Destinations (DestinyDestinationDefinition). Destinations are part of larger locations known as Places (you're reading its documentation right now).
+	/// </summary>
+	/// <summary>
+	/// Places are more on the planetary scale, like "Earth" and "Your Mom."
+	/// </summary>
 	[DataContract]
 	public class DestinyPlaceDefinition{
 

@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// Part of our dynamic, localized Milestone content is arbitrary categories of items. These are built in our content management system, and thus aren&#39;t the same as programmatically generated rewards.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Part of our dynamic, localized Milestone content is arbitrary categories of items. These are built in our content management system, and thus aren't the same as programmatically generated rewards.
+	/// </summary>
 	[DataContract]
 	public class DestinyMilestoneContentItemCategory{
 

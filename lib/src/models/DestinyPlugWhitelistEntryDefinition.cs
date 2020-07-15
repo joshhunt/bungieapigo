@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// Defines a plug &quot;Category&quot; that is allowed to be plugged into a socket of this type.
-	/// This should be compared against a given plug item&#39;s DestinyInventoryItemDefinition.plug.plugCategoryHash, which indicates the plug item&#39;s category.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Defines a plug "Category" that is allowed to be plugged into a socket of this type.
+	/// </summary>
+	/// <summary>
+	/// This should be compared against a given plug item's DestinyInventoryItemDefinition.plug.plugCategoryHash, which indicates the plug item's category.
+	/// </summary>
 	[DataContract]
 	public class DestinyPlugWhitelistEntryDefinition{
 

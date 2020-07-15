@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// This represents an item being sold by the vendor.
+	/// </summary>
 	[DataContract]
 	public class DestinyVendorItemDefinition{
 

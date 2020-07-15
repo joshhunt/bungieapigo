@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// An Unlock Value is an internal integer value, stored on the server and used in a variety of ways, most frequently for the gating&#x2F;requirement checks that the game performs across all of its main features. They can also be used as the storage data for mapped Progressions, Objectives, and other features that require storage of variable numeric values.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// An Unlock Value is an internal integer value, stored on the server and used in a variety of ways, most frequently for the gating/requirement checks that the game performs across all of its main features. They can also be used as the storage data for mapped Progressions, Objectives, and other features that require storage of variable numeric values.
+	/// </summary>
 	[DataContract]
 	public class DestinyUnlockValueDefinition{
 

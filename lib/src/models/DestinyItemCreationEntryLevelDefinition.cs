@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// An overly complicated wrapper for the item level at which the item should spawn.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemCreationEntryLevelDefinition{
 

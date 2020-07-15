@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Information about matchmaking and party size for the activity.
+	/// </summary>
 	[DataContract]
 	public class DestinyActivityMatchmakingBlockDefinition{
 

@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// DestinyManifest is the external-facing contract for just the properties needed by those calling the Destiny Platform.
+	/// </summary>
 	[DataContract]
 	public class DestinyManifest{
 

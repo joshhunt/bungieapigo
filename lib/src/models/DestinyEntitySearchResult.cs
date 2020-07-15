@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// The results of a search for Destiny content. This will be improved on over time, I&#39;ve been doing some experimenting to see what might be useful.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// The results of a search for Destiny content. This will be improved on over time, I've been doing some experimenting to see what might be useful.
+	/// </summary>
 	[DataContract]
 	public class DestinyEntitySearchResult{
 

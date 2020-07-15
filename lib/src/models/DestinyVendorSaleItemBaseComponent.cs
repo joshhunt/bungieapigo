@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The base class for Vendor Sale Item data. Has a bunch of character-agnostic state about the item being sold.
-	/// Note that if you want instance, stats, etc... data for the item, you&#39;ll have to request additional components such as ItemInstances, ItemPerks etc... and acquire them from the DestinyVendorResponse&#39;s &quot;items&quot; property.
+	/// </summary>
+	/// <summary>
+	/// Note that if you want instance, stats, etc... data for the item, you'll have to request additional components such as ItemInstances, ItemPerks etc... and acquire them from the DestinyVendorResponse's "items" property.
+	/// </summary>
 	[DataContract]
 	public class DestinyVendorSaleItemBaseComponent{
 

@@ -1,10 +1,17 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// In an attempt to categorize items by type, usage, and other interesting properties, we created DestinyItemCategoryDefinition: information about types that is assembled using a set of heuristics that examine the properties of an item such as what inventory bucket it&#39;s in, its item type name, and whether it has or is missing certain blocks of data.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// In an attempt to categorize items by type, usage, and other interesting properties, we created DestinyItemCategoryDefinition: information about types that is assembled using a set of heuristics that examine the properties of an item such as what inventory bucket it's in, its item type name, and whether it has or is missing certain blocks of data.
+	/// </summary>
+	/// <summary>
 	/// This heuristic is imperfect, however. If you find an item miscategorized, let us know on the Bungie API forums!
+	/// </summary>
+	/// <summary>
 	/// We then populate all of the categories that we think an item belongs to in its DestinyInventoryItemDefinition.itemCategoryHashes property. You can use that to provide your own custom item filtering, sorting, aggregating... go nuts on it! And let us know if you see more categories that you wish would be added!
+	/// </summary>
 	[DataContract]
 	public class DestinyItemCategoryDefinition{
 

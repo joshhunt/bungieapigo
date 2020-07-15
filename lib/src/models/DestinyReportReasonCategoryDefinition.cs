@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// If you&#39;re going to report someone for a Terms of Service violation, you need to choose a category and reason for the report. This definition holds both the categories and the reasons within those categories, for simplicity and my own laziness&#39; sake.
-	/// Note tha this means that, to refer to a Reason by reasonHash, you need a combination of the reasonHash *and* the associated ReasonCategory&#39;s hash: there are some reasons defined under multiple categories.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// If you're going to report someone for a Terms of Service violation, you need to choose a category and reason for the report. This definition holds both the categories and the reasons within those categories, for simplicity and my own laziness' sake.
+	/// </summary>
+	/// <summary>
+	/// Note tha this means that, to refer to a Reason by reasonHash, you need a combination of the reasonHash *and* the associated ReasonCategory's hash: there are some reasons defined under multiple categories.
+	/// </summary>
 	[DataContract]
 	public class DestinyReportReasonCategoryDefinition{
 

@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// The definition for an &quot;inventory flyout&quot;: a UI screen where we show you part of an otherwise hidden vendor inventory: like the Vault inventory buckets.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// The definition for an "inventory flyout": a UI screen where we show you part of an otherwise hidden vendor inventory: like the Vault inventory buckets.
+	/// </summary>
 	[DataContract]
 	public class DestinyVendorInventoryFlyoutDefinition{
 

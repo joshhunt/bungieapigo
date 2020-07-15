@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The definition information for a specific socket on an item. This will determine how the socket behaves in-game.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemSocketEntryDefinition{
 

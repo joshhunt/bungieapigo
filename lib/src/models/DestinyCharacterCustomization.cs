@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// Raw data about the customization options chosen for a character&#39;s face and appearance.
-	/// You can look up the relevant class&#x2F;race&#x2F;gender combo in DestinyCharacterCustomizationOptionDefinition for the character, and then look up these values within the CustomizationOptions found to pull some data about their choices. Warning: not all of that data is meaningful. Some data has useful icons. Others have nothing, and are only meant for 3D rendering purposes (which we sadly do not expose yet)
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Raw data about the customization options chosen for a character's face and appearance.
+	/// </summary>
+	/// <summary>
+	/// You can look up the relevant class/race/gender combo in DestinyCharacterCustomizationOptionDefinition for the character, and then look up these values within the CustomizationOptions found to pull some data about their choices. Warning: not all of that data is meaningful. Some data has useful icons. Others have nothing, and are only meant for 3D rendering purposes (which we sadly do not expose yet)
+	/// </summary>
 	[DataContract]
 	public class DestinyCharacterCustomization{
 

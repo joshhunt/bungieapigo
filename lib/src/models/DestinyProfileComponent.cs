@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// The most essential summary information about a Profile (in Destiny 1, we called these &quot;Accounts&quot;).
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// The most essential summary information about a Profile (in Destiny 1, we called these "Accounts").
+	/// </summary>
 	[DataContract]
 	public class DestinyProfileComponent{
 

@@ -1,13 +1,28 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Defines an &quot;Objective&quot;.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Defines an "Objective".
+	/// </summary>
+	/// <summary>
 	/// An objective is a specific task you should accomplish in the game. These are referred to by:
+	/// </summary>
+	/// <summary>
 	/// - Quest Steps (which are DestinyInventoryItemDefinition entities with Objectives)
+	/// </summary>
+	/// <summary>
 	/// - Challenges (which are Objectives defined on an DestinyActivityDefintion)
+	/// </summary>
+	/// <summary>
 	/// - Milestones (which refer to Objectives that are defined on both Quest Steps and Activities)
+	/// </summary>
+	/// <summary>
 	/// - Anything else that the designers decide to do later.
+	/// </summary>
+	/// <summary>
 	/// Objectives have progress, a notion of having been Completed, human readable data describing the task to be accomplished, and a lot of optional tack-on data that can enhance the information provided about the task.
+	/// </summary>
 	[DataContract]
 	public class DestinyObjectiveDefinition{
 

@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// A small infocard of group information, usually used for when a list of groups are returned
+	/// </summary>
 	[DataContract]
 	public class GroupV2Card{
 

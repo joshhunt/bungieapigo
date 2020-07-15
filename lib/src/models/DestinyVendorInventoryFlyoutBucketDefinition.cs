@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Information about a single inventory bucket in a vendor flyout UI and how it is shown.
+	/// </summary>
 	[DataContract]
 	public class DestinyVendorInventoryFlyoutBucketDefinition{
 

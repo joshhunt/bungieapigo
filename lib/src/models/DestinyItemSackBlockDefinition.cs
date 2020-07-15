@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Some items are &quot;sacks&quot; - they can be &quot;opened&quot; to produce other items. This is information related to its sack status, mostly UI strings. Engrams are an example of items that are considered to be &quot;Sacks&quot;.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Some items are "sacks" - they can be "opened" to produce other items. This is information related to its sack status, mostly UI strings. Engrams are an example of items that are considered to be "Sacks".
+	/// </summary>
 	[DataContract]
 	public class DestinyItemSackBlockDefinition{
 

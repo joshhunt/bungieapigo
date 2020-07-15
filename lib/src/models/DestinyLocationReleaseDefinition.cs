@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// A specific &quot;spot&quot; referred to by a location. Only one of these can be active at a time for a given Location.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// A specific "spot" referred to by a location. Only one of these can be active at a time for a given Location.
+	/// </summary>
 	[DataContract]
 	public class DestinyLocationReleaseDefinition{
 

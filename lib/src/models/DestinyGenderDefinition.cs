@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Gender is a social construct, and as such we have definitions for Genders. Right now there happens to only be two, but we&#39;ll see what the future holds.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Gender is a social construct, and as such we have definitions for Genders. Right now there happens to only be two, but we'll see what the future holds.
+	/// </summary>
 	[DataContract]
 	public class DestinyGenderDefinition{
 

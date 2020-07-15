@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// This component returns anything that could be considered &quot;Progression&quot; on a user: data where the user is gaining levels, reputation, completions, rewards, etc...
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// This component returns anything that could be considered "Progression" on a user: data where the user is gaining levels, reputation, completions, rewards, etc...
+	/// </summary>
 	[DataContract]
 	public class DestinyCharacterProgressionComponent{
 

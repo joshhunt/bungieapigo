@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// The set of progression-related information that applies at a Profile-wide level for your Destiny experience. This differs from the Jimi Hendrix Experience because there&#39;s less guitars on fire. Yet. #spoileralert?
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// The set of progression-related information that applies at a Profile-wide level for your Destiny experience. This differs from the Jimi Hendrix Experience because there's less guitars on fire. Yet. #spoileralert?
+	/// </summary>
+	/// <summary>
 	/// This will include information such as Checklist info.
+	/// </summary>
 	[DataContract]
 	public class DestinyProfileProgressionComponent{
 

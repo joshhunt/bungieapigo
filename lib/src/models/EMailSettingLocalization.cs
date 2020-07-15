@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Localized text relevant to a given EMail setting in a given localization.
+	/// </summary>
 	[DataContract]
 	public class EMailSettingLocalization{
 

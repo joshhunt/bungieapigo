@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Represents types of Energy that can be used for costs and payments related to Armor 2.0 mods.
+	/// </summary>
 	[DataContract]
 	public class DestinyEnergyTypeDefinition{
 

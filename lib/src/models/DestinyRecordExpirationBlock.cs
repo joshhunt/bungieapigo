@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// If this record has an expiration after which it cannot be earned, this is some information about that expiration.
+	/// </summary>
 	[DataContract]
 	public class DestinyRecordExpirationBlock{
 

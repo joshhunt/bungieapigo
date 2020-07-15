@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Human readable data about the bubble. Combine with DestinyBubbleDefinition - see DestinyDestinationDefinition.bubbleSettings for more information.
+	/// </summary>
+	/// <summary>
 	/// DEPRECATED - Just use bubbles.
+	/// </summary>
 	[DataContract]
 	public class DestinyDestinationBubbleSettingDefinition{
 

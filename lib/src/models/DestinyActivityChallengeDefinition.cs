@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Represents a reference to a Challenge, which for now is just an Objective.
+	/// </summary>
 	[DataContract]
 	public class DestinyActivityChallengeDefinition{
 

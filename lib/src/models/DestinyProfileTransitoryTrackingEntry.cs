@@ -1,9 +1,16 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// This represents a single &quot;thing&quot; being tracked by the player.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// This represents a single "thing" being tracked by the player.
+	/// </summary>
+	/// <summary>
 	/// This can point to many types of entities, but only a subset of them will actually have a valid hash identifier for whatever it is being pointed to.
-	/// It&#39;s up to you to interpret what it means when various combinations of these entries have values being tracked.
+	/// </summary>
+	/// <summary>
+	/// It's up to you to interpret what it means when various combinations of these entries have values being tracked.
+	/// </summary>
 	[DataContract]
 	public class DestinyProfileTransitoryTrackingEntry{
 

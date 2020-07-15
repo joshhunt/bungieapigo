@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Represent a set of material requirements: Items that either need to be owned or need to be consumed in order to perform an action.
+	/// </summary>
+	/// <summary>
 	/// A variety of other entities refer to these as gatekeepers and payments for actions that can be performed in game.
+	/// </summary>
 	[DataContract]
 	public class DestinyMaterialRequirementSetDefinition{
 

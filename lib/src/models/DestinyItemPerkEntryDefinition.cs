@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// An intrinsic perk on an item, and the requirements for it to be activated.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemPerkEntryDefinition{
 

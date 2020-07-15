@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Defines a single opt-in category: a wide-scoped permission to send emails for the subject related to the opt-in.
+	/// </summary>
 	[DataContract]
 	public class EmailOptInDefinition{
 

@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Talent nodes have requirements that must be met before they can be activated.
-	/// This describes the material costs, the Level of the Talent Grid&#39;s progression required, and other conditional information that limits whether a talent node can be activated.
+	/// </summary>
+	/// <summary>
+	/// This describes the material costs, the Level of the Talent Grid's progression required, and other conditional information that limits whether a talent node can be activated.
+	/// </summary>
 	[DataContract]
 	public class DestinyNodeActivationRequirement{
 

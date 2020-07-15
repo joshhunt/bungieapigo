@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Describes the way that an Item Stat (see DestinyStatDefinition) is transformed using the DestinyStatGroupDefinition related to that item. See both of the aforementioned definitions for more information about the stages of stat transformation.
-	/// This represents the transformation of a stat into a &quot;Display&quot; stat (the closest value that BNet can get to the in-game display value of the stat)
+	/// </summary>
+	/// <summary>
+	/// This represents the transformation of a stat into a "Display" stat (the closest value that BNet can get to the in-game display value of the stat)
+	/// </summary>
 	[DataContract]
 	public class DestinyStatDisplayDefinition{
 

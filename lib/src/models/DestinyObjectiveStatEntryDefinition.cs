@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Defines the conditions under which stat modifications will be applied to a Character while participating in an objective.
+	/// </summary>
 	[DataContract]
 	public class DestinyObjectiveStatEntryDefinition{
 

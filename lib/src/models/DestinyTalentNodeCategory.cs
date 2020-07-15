@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// An artificial construct provided by Bungie.Net, where we attempt to group talent nodes by functionality.
+	/// </summary>
+	/// <summary>
 	/// This is a single set of references to Talent Nodes that share a common trait or purpose.
+	/// </summary>
 	[DataContract]
 	public class DestinyTalentNodeCategory{
 

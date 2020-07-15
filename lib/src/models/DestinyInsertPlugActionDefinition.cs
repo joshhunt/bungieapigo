@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Data related to what happens while a plug is being inserted, mostly for UI purposes.
+	/// </summary>
 	[DataContract]
 	public class DestinyInsertPlugActionDefinition{
 

@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Defines a particular entry in an ItemSet (AKA a particular Quest Step in a Quest)
+	/// </summary>
 	[DataContract]
 	public class DestinyItemSetBlockEntryDefinition{
 

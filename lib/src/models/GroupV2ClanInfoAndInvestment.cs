@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The same as GroupV2ClanInfo, but includes any investment data.
+	/// </summary>
 	[DataContract]
 	public class GroupV2ClanInfoAndInvestment{
 

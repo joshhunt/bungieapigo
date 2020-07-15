@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// This defines a single Step in a progression (which roughly equates to a level. See DestinyProgressionDefinition for caveats).
+	/// </summary>
 	[DataContract]
 	public class DestinyProgressionStepDefinition{
 

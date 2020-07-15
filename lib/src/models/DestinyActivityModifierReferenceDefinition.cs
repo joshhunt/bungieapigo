@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// A reference to an Activity Modifier from another entity, such as an Activity (for now, just Activities).
+	/// </summary>
+	/// <summary>
 	/// This defines some
+	/// </summary>
 	[DataContract]
 	public class DestinyActivityModifierReferenceDefinition{
 

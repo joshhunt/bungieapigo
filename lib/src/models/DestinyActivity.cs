@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// Represents the &quot;Live&quot; data that we can obtain about a Character&#39;s status with a specific Activity. This will tell you whether the character can participate in the activity, as well as some other basic mutable information. 
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Represents the "Live" data that we can obtain about a Character's status with a specific Activity. This will tell you whether the character can participate in the activity, as well as some other basic mutable information. 
+	/// </summary>
+	/// <summary>
 	/// Meant to be combined with static DestinyActivityDefinition data for a full picture of the Activity.
+	/// </summary>
 	[DataContract]
 	public class DestinyActivity{
 

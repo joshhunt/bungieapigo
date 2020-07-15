@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// Information about a current character&#39;s status with a Progression. A progression is a value that can increase with activity and has levels. Think Character Level and Reputation Levels. Combine this &quot;live&quot; data with the related DestinyProgressionDefinition for a full picture of the Progression.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Information about a current character's status with a Progression. A progression is a value that can increase with activity and has levels. Think Character Level and Reputation Levels. Combine this "live" data with the related DestinyProgressionDefinition for a full picture of the Progression.
+	/// </summary>
 	[DataContract]
 	public class DestinyProgression{
 

@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Destinations and Activities may have default Activity Graphs that should be shown when you bring up the Director and are playing in either.
+	/// </summary>
+	/// <summary>
 	/// This contract defines the graph referred to and the gating for when it is relevant.
+	/// </summary>
 	[DataContract]
 	public class DestinyActivityGraphListEntryDefinition{
 

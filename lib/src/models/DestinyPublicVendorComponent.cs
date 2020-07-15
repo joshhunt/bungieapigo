@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// This component contains essential&#x2F;summary information about the vendor from the perspective of a character-agnostic view.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// This component contains essential/summary information about the vendor from the perspective of a character-agnostic view.
+	/// </summary>
 	[DataContract]
 	public class DestinyPublicVendorComponent{
 

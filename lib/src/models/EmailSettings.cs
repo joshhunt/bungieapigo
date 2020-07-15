@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// The set of all email subscription&#x2F;opt-in settings and definitions.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// The set of all email subscription/opt-in settings and definitions.
+	/// </summary>
 	[DataContract]
 	public class EmailSettings{
 

@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// This appears to be information used when rendering rewards. We don&#39;t currently use it on BNet.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// This appears to be information used when rendering rewards. We don't currently use it on BNet.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemSummaryBlockDefinition{
 

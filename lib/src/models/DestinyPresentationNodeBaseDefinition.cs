@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// This is the base class for all presentation system children. Presentation Nodes, Records, Collectibles, and Metrics.
+	/// </summary>
 	[DataContract]
 	public class DestinyPresentationNodeBaseDefinition{
 

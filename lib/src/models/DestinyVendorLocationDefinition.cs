@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// These definitions represent vendors&#39; locations and relevant display information at different times in the game.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// These definitions represent vendors' locations and relevant display information at different times in the game.
+	/// </summary>
 	[DataContract]
 	public class DestinyVendorLocationDefinition{
 

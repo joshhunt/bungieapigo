@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Represents custom data that we know about an individual variant of an activity.
+	/// </summary>
 	[DataContract]
 	public class DestinyMilestoneActivityVariant{
 

@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Items can have Energy Capacity, and plugs can provide that capacity such as on a piece of Armor in Armor 2.0. This is how much &quot;Energy&quot; can be spent on activating plugs for this item.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Items can have Energy Capacity, and plugs can provide that capacity such as on a piece of Armor in Armor 2.0. This is how much "Energy" can be spent on activating plugs for this item.
+	/// </summary>
 	[DataContract]
 	public class DestinyEnergyCapacityEntry{
 

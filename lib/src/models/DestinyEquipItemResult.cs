@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The results of an Equipping operation performed through the Destiny API.
+	/// </summary>
 	[DataContract]
 	public class DestinyEquipItemResult{
 

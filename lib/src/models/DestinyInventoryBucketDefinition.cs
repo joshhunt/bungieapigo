@@ -1,9 +1,16 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// An Inventory (be it Character or Profile level) is comprised of many Buckets. An example of a bucket is &quot;Primary Weapons&quot;, where all of the primary weapons on a character are gathered together into a single visual element in the UI: a subset of the inventory that has a limited number of slots, and in this case also has an associated Equipment Slot for equipping an item in the bucket.
-	/// Item definitions declare what their &quot;default&quot; bucket is (DestinyInventoryItemDefinition.inventory.bucketTypeHash), and Item instances will tell you which bucket they are currently residing in (DestinyItemComponent.bucketHash). You can use this information along with the DestinyInventoryBucketDefinition to show these items grouped by bucket.
-	/// You cannot transfer an item to a bucket that is not its Default without going through a Vendor&#39;s &quot;accepted items&quot; (DestinyVendorDefinition.acceptedItems). This is how transfer functionality like the Vault is implemented, as a feature of a Vendor. See the vendor&#39;s acceptedItems property for more details.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// An Inventory (be it Character or Profile level) is comprised of many Buckets. An example of a bucket is "Primary Weapons", where all of the primary weapons on a character are gathered together into a single visual element in the UI: a subset of the inventory that has a limited number of slots, and in this case also has an associated Equipment Slot for equipping an item in the bucket.
+	/// </summary>
+	/// <summary>
+	/// Item definitions declare what their "default" bucket is (DestinyInventoryItemDefinition.inventory.bucketTypeHash), and Item instances will tell you which bucket they are currently residing in (DestinyItemComponent.bucketHash). You can use this information along with the DestinyInventoryBucketDefinition to show these items grouped by bucket.
+	/// </summary>
+	/// <summary>
+	/// You cannot transfer an item to a bucket that is not its Default without going through a Vendor's "accepted items" (DestinyVendorDefinition.acceptedItems). This is how transfer functionality like the Vault is implemented, as a feature of a Vendor. See the vendor's acceptedItems property for more details.
+	/// </summary>
 	[DataContract]
 	public class DestinyInventoryBucketDefinition{
 

@@ -1,9 +1,14 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Items like Sacks or Boxes can have items that it shows in-game when you view details that represent the items you can obtain if you use or acquire the item.
-	/// This defines those categories, and gives some insights into that data&#39;s source.
+	/// </summary>
+	/// <summary>
+	/// This defines those categories, and gives some insights into that data's source.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemPreviewBlockDefinition{
 

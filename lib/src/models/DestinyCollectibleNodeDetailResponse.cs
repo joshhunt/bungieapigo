@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Returns the detailed information about a Collectible Presentation Node and any Collectibles that are direct descendants.
+	/// </summary>
 	[DataContract]
 	public class DestinyCollectibleNodeDetailResponse{
 

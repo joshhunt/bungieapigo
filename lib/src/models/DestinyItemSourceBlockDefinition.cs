@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// Data about an item&#39;s &quot;sources&quot;: ways that the item can be obtained.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Data about an item's "sources": ways that the item can be obtained.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemSourceBlockDefinition{
 

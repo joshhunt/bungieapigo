@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// The character-specific data for a milestone&#39;s reward entry. See DestinyMilestoneDefinition for more information about Reward Entries.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// The character-specific data for a milestone's reward entry. See DestinyMilestoneDefinition for more information about Reward Entries.
+	/// </summary>
 	[DataContract]
 	public class DestinyMilestoneRewardEntry{
 

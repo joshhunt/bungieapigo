@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// This describes links between the current graph and others, as well as when that link is relevant.
+	/// </summary>
 	[DataContract]
 	public class DestinyLinkedGraphDefinition{
 

@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Defines the tier type of an item. Mostly this provides human readable properties for types like Common, Rare, etc...
+	/// </summary>
+	/// <summary>
 	/// It also provides some base data for infusion that could be useful.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemTierTypeDefinition{
 

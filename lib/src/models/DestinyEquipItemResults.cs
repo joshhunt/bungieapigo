@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The results of a bulk Equipping operation performed through the Destiny API.
+	/// </summary>
 	[DataContract]
 	public class DestinyEquipItemResults{
 

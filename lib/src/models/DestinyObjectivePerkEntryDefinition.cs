@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Defines the conditions under which an intrinsic perk is applied while participating in an Objective.
+	/// </summary>
+	/// <summary>
 	/// These perks will generally not be benefit-granting perks, but rather a perk that modifies gameplay in some interesting way.
+	/// </summary>
 	[DataContract]
 	public class DestinyObjectivePerkEntryDefinition{
 

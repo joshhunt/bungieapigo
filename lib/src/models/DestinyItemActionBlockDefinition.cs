@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// If an item can have an action performed on it (like &quot;Dismantle&quot;), it will be defined here if you care.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// If an item can have an action performed on it (like "Dismantle"), it will be defined here if you care.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemActionBlockDefinition{
 

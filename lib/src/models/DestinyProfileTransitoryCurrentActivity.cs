@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// If you are playing in an activity, this is some information about it.
+	/// </summary>
+	/// <summary>
 	/// Note that we cannot guarantee any of this resembles what ends up in the PGCR in any way. They are sourced by two entirely separate systems with their own logic, and the one we source this data from should be considered non-authoritative in comparison.
+	/// </summary>
 	[DataContract]
 	public class DestinyProfileTransitoryCurrentActivity{
 

@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// The response object for retrieving an individual instanced item. None of these components are relevant for an item that doesn&#39;t have an &quot;itemInstanceId&quot;: for those, get your information from the DestinyInventoryDefinition.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// The response object for retrieving an individual instanced item. None of these components are relevant for an item that doesn't have an "itemInstanceId": for those, get your information from the DestinyInventoryDefinition.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemResponse{
 

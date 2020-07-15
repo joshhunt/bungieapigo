@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// When a vendor provides services, this is the localized name of those services.
+	/// </summary>
 	[DataContract]
 	public class DestinyVendorServiceDefinition{
 

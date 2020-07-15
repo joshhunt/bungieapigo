@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Defines a specific stat value on an item, and the minimum&#x2F;maximum range that we could compute for the item based on our heuristics for how the item might be generated.
-	/// Not guaranteed to match real-world instances of the item, but should hopefully at least be close. If it&#39;s not close, let us know on the Bungie API forums.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Defines a specific stat value on an item, and the minimum/maximum range that we could compute for the item based on our heuristics for how the item might be generated.
+	/// </summary>
+	/// <summary>
+	/// Not guaranteed to match real-world instances of the item, but should hopefully at least be close. If it's not close, let us know on the Bungie API forums.
+	/// </summary>
 	[DataContract]
 	public class DestinyInventoryItemStatDefinition{
 

@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// If defined, the item has at least one socket.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemSocketBlockDefinition{
 

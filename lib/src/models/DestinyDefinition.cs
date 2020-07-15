@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Provides common properties for destiny definitions.
+	/// </summary>
 	[DataContract]
 	public class DestinyDefinition{
 

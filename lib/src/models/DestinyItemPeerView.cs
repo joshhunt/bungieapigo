@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Bare minimum summary information for an item, for the sake of 3D rendering the item.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemPeerView{
 

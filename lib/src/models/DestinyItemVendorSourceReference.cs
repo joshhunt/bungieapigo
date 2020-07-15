@@ -1,10 +1,17 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Represents that a vendor could sell this item, and provides a quick link to that vendor and sale item.
+	/// </summary>
+	/// <summary>
 	///  Note that we do not and cannot make a guarantee that the vendor will ever *actually* sell this item, only that the Vendor has a definition that indicates it *could* be sold.
-	///  Note also that a vendor may sell the same item in multiple &quot;ways&quot;, which means there may be multiple vendorItemIndexes for a single Vendor hash.
+	/// </summary>
+	/// <summary>
+	///  Note also that a vendor may sell the same item in multiple "ways", which means there may be multiple vendorItemIndexes for a single Vendor hash.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemVendorSourceReference{
 

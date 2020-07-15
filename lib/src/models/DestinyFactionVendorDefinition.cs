@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// These definitions represent faction vendors at different points in the game.
+	/// </summary>
+	/// <summary>
 	/// A single faction may contain multiple vendors, or the same vendor available at two different locations.
+	/// </summary>
 	[DataContract]
 	public class DestinyFactionVendorDefinition{
 

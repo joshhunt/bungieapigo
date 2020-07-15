@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// Represents a data-driven view for Email settings. Web&#x2F;Mobile UI can use this data to show new EMail settings consistently without further manual work.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Represents a data-driven view for Email settings. Web/Mobile UI can use this data to show new EMail settings consistently without further manual work.
+	/// </summary>
 	[DataContract]
 	public class EmailViewDefinition{
 

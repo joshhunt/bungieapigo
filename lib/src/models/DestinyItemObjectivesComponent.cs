@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Items can have objectives and progression. When you request this block, you will obtain information about any Objectives and progression tied to this item.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemObjectivesComponent{
 

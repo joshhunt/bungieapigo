@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Indicates the status of an &quot;Unlock Flag&quot; on a Character or Profile.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Indicates the status of an "Unlock Flag" on a Character or Profile.
+	/// </summary>
+	/// <summary>
 	/// These are individual bits of state that can be either set or not set, and sometimes provide interesting human-readable information in their related DestinyUnlockDefinition.
+	/// </summary>
 	[DataContract]
 	public class DestinyUnlockStatus{
 

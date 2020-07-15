@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Represents a variant of an activity that&#39;s relevant to a milestone.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Represents a variant of an activity that's relevant to a milestone.
+	/// </summary>
 	[DataContract]
 	public class DestinyPublicMilestoneActivityVariant{
 

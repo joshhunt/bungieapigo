@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// This contract contains clan-specific group information. It does not include any investment data.
+	/// </summary>
 	[DataContract]
 	public class GroupV2ClanInfo{
 

@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The definition of a category of rewards, that contains many individual rewards.
+	/// </summary>
 	[DataContract]
 	public class DestinyMilestoneRewardCategoryDefinition{
 

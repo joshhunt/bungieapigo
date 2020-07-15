@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// The response contract for GetDestinyCharacter, with components that can be returned for character and item-level data.
+	/// </summary>
 	[DataContract]
 	public class DestinyCharacterResponse{
 

@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// This defines information that can only come from a talent grid on an item. Items mostly have negligible talent grid data these days, but instanced items still retain grids as a source for some of this common information.
-	/// Builds&#x2F;Subclasses are the only items left that still have talent grids with meaningful Nodes.
+	/// </summary>
+	/// <summary>
+	/// Builds/Subclasses are the only items left that still have talent grids with meaningful Nodes.
+	/// </summary>
 	[DataContract]
 	public class DestinyItemTalentGridBlockDefinition{
 

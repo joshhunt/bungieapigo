@@ -1,8 +1,11 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace BungieNetApi.Model {
-	/// A minimal view of a character&#39;s equipped items, for the purpose of rendering a summary screen or showing the character in 3D.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// A minimal view of a character's equipped items, for the purpose of rendering a summary screen or showing the character in 3D.
+	/// </summary>
 	[DataContract]
 	public class DestinyCharacterPeerView{
 

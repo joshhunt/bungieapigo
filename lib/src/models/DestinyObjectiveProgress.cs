@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Returns data about a character&#39;s status with a given Objective. Combine with DestinyObjectiveDefinition static data for display purposes.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Returns data about a character's status with a given Objective. Combine with DestinyObjectiveDefinition static data for display purposes.
+	/// </summary>
 	[DataContract]
 	public class DestinyObjectiveProgress{
 

@@ -1,7 +1,10 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
-	/// Presentation nodes can be restricted by various requirements. This defines the rules of those requirements, and the message(s) to be shown if these requirements aren&#39;t met.
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
+	/// Presentation nodes can be restricted by various requirements. This defines the rules of those requirements, and the message(s) to be shown if these requirements aren't met.
+	/// </summary>
 	[DataContract]
 	public class DestinyPresentationNodeRequirementsBlock{
 

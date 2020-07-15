@@ -1,8 +1,13 @@
 using System.Runtime.Serialization;
 
-namespace BungieNetApi.Model {
+namespace GhostSharp.BungieNetApi.Model
+{
+	/// <summary>
 	/// Represents a variant on an activity for a Milestone: a specific difficulty tier, or a specific activity variant for example.
+	/// </summary>
+	/// <summary>
 	/// These will often have more specific details, such as an associated Guided Game, progression steps, tier-specific rewards, and custom values.
+	/// </summary>
 	[DataContract]
 	public class DestinyMilestoneActivityVariantDefinition{
 
