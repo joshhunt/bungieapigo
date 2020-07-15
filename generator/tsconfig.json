@@ -7,7 +7,5 @@
     "target": "es2017",
     "moduleResolution": "node"
   },
-  "include": [
-    "./ts/**/*"
-  ]
+  "include": ["./ts/**/*"]
 }

@@ -8,7 +8,5 @@
     "moduleResolution": "node",
     "declaration": true
   },
-  "include": [
-    "./lib/**/*"
-  ]
+  "include": ["./lib/**/*"]
 }
