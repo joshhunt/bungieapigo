@@ -15,7 +15,7 @@ class DestinyCollectibleState {
     /// If this flag is set, the item is "obscured" to you: you can/should use the alternate item hash found in DestinyCollectibleDefinition.stateInfo.obscuredOverrideItemHash when displaying this collectible instead of the default display info.
     static const DestinyCollectibleState Obscured = DestinyCollectibleState(2);
     ///Invisible = 4
-    /// If this flag is set, the collectible should not be shown to the user.
+    /// If this flag is set, the collectible should not be shown to the user.
     /// Please do consider honoring this flag. It is used - for example - to hide items that a person didn't get from the Eververse. I can't prevent these from being returned in definitions, because some people may have acquired them and thus they should show up: but I would hate for people to start feeling some variant of a Collector's Remorse about these items, and thus increasing their purchasing based on that compulsion. That would be a very unfortunate outcome, and one that I wouldn't like to see happen. So please, whether or not I'm your mom, consider honoring this flag and don't show people invisible collectibles.
     static const DestinyCollectibleState Invisible = DestinyCollectibleState(4);
     ///CannotAffordMaterialRequirements = 8

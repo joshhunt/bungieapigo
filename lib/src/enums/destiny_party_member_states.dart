@@ -14,7 +14,7 @@ class DestinyPartyMemberStates {
     /// I don't know what it means to be in a 'Posse', but apparently this is it.
     static const DestinyPartyMemberStates PosseMember = DestinyPartyMemberStates(2);
     ///GroupMember = 4
-    /// Nor do I understand the difference between them being in a 'Group' vs. a 'Fireteam'.
+    /// Nor do I understand the difference between them being in a 'Group' vs. a 'Fireteam'.
     /// I'll update these docs once I get more info. If I get more info. If you're reading this, I never got more info. You're on your own, kid.
     static const DestinyPartyMemberStates GroupMember = DestinyPartyMemberStates(4);
     ///PartyLeader = 8
