@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -18,7 +19,7 @@ namespace GhostSharp.BungieNetApi.Models
 		public uint TrackedRecordHash { get; set; }
 
 		[DataMember(Name="records", EmitDefaultValue=false)]
-		public Map<String, DestinyRecordComponent> Records { get; set; }
+		public Dictionary<string, DestinyRecordComponent> Records { get; set; }
 
 		/// <summary>
 		/// The hash for the root presentation node definition of Triumph categories.

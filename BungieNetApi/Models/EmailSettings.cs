@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -12,19 +13,19 @@ namespace GhostSharp.BungieNetApi.Models
 		/// Keyed by the name identifier of the opt-in definition.
 		/// </summary>
 		[DataMember(Name="optInDefinitions", EmitDefaultValue=false)]
-		public Map<String, EmailOptInDefinition> OptInDefinitions { get; set; }
+		public Dictionary<string, EmailOptInDefinition> OptInDefinitions { get; set; }
 
 		/// <summary>
 		/// Keyed by the name identifier of the Subscription definition.
 		/// </summary>
 		[DataMember(Name="subscriptionDefinitions", EmitDefaultValue=false)]
-		public Map<String, EmailSubscriptionDefinition> SubscriptionDefinitions { get; set; }
+		public Dictionary<string, EmailSubscriptionDefinition> SubscriptionDefinitions { get; set; }
 
 		/// <summary>
 		/// Keyed by the name identifier of the View definition.
 		/// </summary>
 		[DataMember(Name="views", EmitDefaultValue=false)]
-		public Map<String, EmailViewDefinition> Views { get; set; }
+		public Dictionary<string, EmailViewDefinition> Views { get; set; }
 
 
 		public override bool Equals(object input)

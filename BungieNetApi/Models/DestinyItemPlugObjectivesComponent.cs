@@ -19,7 +19,7 @@ namespace GhostSharp.BungieNetApi.Models
 		///  Sometimes, Plugs may have objectives: generally, these are used for flavor and display purposes. For instance, a Plug might be tracking the number of PVP kills you have made. It will use the parent item's data about that tracking status to determine what to show, and will generally show it using the DestinyObjectiveDefinition's progressDescription property. Refer to the plug's itemHash and objective property for more information if you would like to display even more data.
 		/// </summary>
 		[DataMember(Name="objectivesPerPlug", EmitDefaultValue=false)]
-		public Map<String, List<DestinyObjectiveProgress>> ObjectivesPerPlug { get; set; }
+		public Dictionary<string, List<DestinyObjectiveProgress>> ObjectivesPerPlug { get; set; }
 
 
 		public override bool Equals(object input)

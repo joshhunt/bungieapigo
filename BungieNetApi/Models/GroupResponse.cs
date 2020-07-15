@@ -34,13 +34,13 @@ namespace GhostSharp.BungieNetApi.Models
 		/// This property will be populated if the authenticated user is a member of the group. Note that because of account linking, a user can sometimes be part of a clan more than once. As such, this returns the highest member type available.
 		/// </summary>
 		[DataMember(Name="currentUserMemberMap", EmitDefaultValue=false)]
-		public Map<String, GroupMember> CurrentUserMemberMap { get; set; }
+		public Dictionary<string, GroupMember> CurrentUserMemberMap { get; set; }
 
 		/// <summary>
 		/// This property will be populated if the authenticated user is an applicant or has an outstanding invitation to join. Note that because of account linking, a user can sometimes be part of a clan more than once.
 		/// </summary>
 		[DataMember(Name="currentUserPotentialMemberMap", EmitDefaultValue=false)]
-		public Map<String, GroupPotentialMember> CurrentUserPotentialMemberMap { get; set; }
+		public Dictionary<string, GroupPotentialMember> CurrentUserPotentialMemberMap { get; set; }
 
 
 		public override bool Equals(object input)

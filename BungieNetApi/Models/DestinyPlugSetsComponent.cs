@@ -16,7 +16,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// The shared list of plugs for each relevant PlugSet, keyed by the hash identifier of the PlugSet (DestinyPlugSetDefinition).
 		/// </summary>
 		[DataMember(Name="plugs", EmitDefaultValue=false)]
-		public Map<String, List<DestinyItemPlug>> Plugs { get; set; }
+		public Dictionary<string, List<DestinyItemPlug>> Plugs { get; set; }
 
 
 		public override bool Equals(object input)

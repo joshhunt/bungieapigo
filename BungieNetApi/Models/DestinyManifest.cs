@@ -19,25 +19,25 @@ namespace GhostSharp.BungieNetApi.Models
 		public List<GearAssetDataBaseDefinition> MobileGearAssetDataBases { get; set; }
 
 		[DataMember(Name="mobileWorldContentPaths", EmitDefaultValue=false)]
-		public Map<String, string> MobileWorldContentPaths { get; set; }
+		public Dictionary<string, string> MobileWorldContentPaths { get; set; }
 
 		/// <summary>
 		/// This points to the generated JSON that contains all the Definitions. Each key is a locale. The value is a path to the aggregated world definitions (warning: large file!)
 		/// </summary>
 		[DataMember(Name="jsonWorldContentPaths", EmitDefaultValue=false)]
-		public Map<String, string> JsonWorldContentPaths { get; set; }
+		public Dictionary<string, string> JsonWorldContentPaths { get; set; }
 
 		/// <summary>
 		/// This points to the generated JSON that contains all the Definitions. Each key is a locale. The value is a dictionary, where the key is a definition type by name, and the value is the path to the file for that definition. WARNING: This is unsafe and subject to change - do not depend on data in these files staying around long-term.
 		/// </summary>
 		[DataMember(Name="jsonWorldComponentContentPaths", EmitDefaultValue=false)]
-		public Map<String, Map<String, string>> JsonWorldComponentContentPaths { get; set; }
+		public Dictionary<string, Dictionary<string, string>> JsonWorldComponentContentPaths { get; set; }
 
 		[DataMember(Name="mobileClanBannerDatabasePath", EmitDefaultValue=false)]
 		public string MobileClanBannerDatabasePath { get; set; }
 
 		[DataMember(Name="mobileGearCDN", EmitDefaultValue=false)]
-		public Map<String, string> MobileGearCdn { get; set; }
+		public Dictionary<string, string> MobileGearCdn { get; set; }
 
 		/// <summary>
 		/// Information about the "Image Pyramid" for Destiny icons. Where possible, we create smaller versions of Destiny icons. These are found as subfolders under the location of the "original/full size" Destiny images, with the same file name and extension as the original image itself. (this lets us avoid sending largely redundant path info with every entity, at the expense of the smaller versions of the image being less discoverable)

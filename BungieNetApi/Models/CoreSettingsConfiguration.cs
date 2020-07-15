@@ -10,7 +10,7 @@ namespace GhostSharp.BungieNetApi.Models
 		public string Environment { get; set; }
 
 		[DataMember(Name="systems", EmitDefaultValue=false)]
-		public Map<String, CoreSystem> Systems { get; set; }
+		public Dictionary<string, CoreSystem> Systems { get; set; }
 
 		[DataMember(Name="ignoreReasons", EmitDefaultValue=false)]
 		public List<CoreSetting> IgnoreReasons { get; set; }

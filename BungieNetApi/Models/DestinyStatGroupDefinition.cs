@@ -46,7 +46,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// Mercifully, no Stat Groups use this feature currently. If they start using them, we'll all need to start using them (and those of you who are more prudent than I am can go ahead and start pre-checking for this.)
 		/// </summary>
 		[DataMember(Name="overrides", EmitDefaultValue=false)]
-		public Map<String, DestinyStatOverrideDefinition> Overrides { get; set; }
+		public Dictionary<string, DestinyStatOverrideDefinition> Overrides { get; set; }
 
 		/// <summary>
 		/// The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.

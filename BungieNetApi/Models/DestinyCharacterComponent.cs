@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -57,7 +58,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// You'll have to call a different endpoint for those.
 		/// </summary>
 		[DataMember(Name="stats", EmitDefaultValue=false)]
-		public Map<String, long> Stats { get; set; }
+		public Dictionary<string, long> Stats { get; set; }
 
 		/// <summary>
 		/// Use this hash to look up the character's DestinyRaceDefinition.

@@ -91,7 +91,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// On our side, we don't necessarily even know what these are used for (the game designers know, but we don't), and we have no human readable data for them. In order to use them, you will have to do some experimentation.
 		/// </summary>
 		[DataMember(Name="booleanActivityOptions", EmitDefaultValue=false)]
-		public Map<String, bool> BooleanActivityOptions { get; set; }
+		public Dictionary<string, bool> BooleanActivityOptions { get; set; }
 
 		/// <summary>
 		/// If returned, this is the index into the DestinyActivityDefinition's "loadouts" property, indicating the currently active loadout requirements.

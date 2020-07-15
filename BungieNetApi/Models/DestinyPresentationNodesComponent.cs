@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -6,7 +7,7 @@ namespace GhostSharp.BungieNetApi.Models
 	public class DestinyPresentationNodesComponent{
 
 		[DataMember(Name="nodes", EmitDefaultValue=false)]
-		public Map<String, DestinyPresentationNodeComponent> Nodes { get; set; }
+		public Dictionary<string, DestinyPresentationNodeComponent> Nodes { get; set; }
 
 
 		public override bool Equals(object input)

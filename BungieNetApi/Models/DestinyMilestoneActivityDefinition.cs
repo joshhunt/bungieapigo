@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -33,7 +34,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// If a Milestone could ever split the variants' active status conditionally, they should all have their own DestinyMilestoneActivityDefinition instead! The potential duplication will be worth it for the obviousness of processing and use.
 		/// </summary>
 		[DataMember(Name="variants", EmitDefaultValue=false)]
-		public Map<String, DestinyMilestoneActivityVariantDefinition> Variants { get; set; }
+		public Dictionary<string, DestinyMilestoneActivityVariantDefinition> Variants { get; set; }
 
 
 		public override bool Equals(object input)

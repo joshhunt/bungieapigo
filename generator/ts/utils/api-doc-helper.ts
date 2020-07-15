@@ -56,7 +56,7 @@ export class ApiDocHelper {
       let valueType = this.getObjectType(param.additionalProperties);
       let value =
         this.getParseFunction(param.additionalProperties, "v", "v") || "v";
-      return `Map<String, ${valueType}>.from(${source}.map((k, v)=>MapEntry(k, ${value})))`;
+      return `Dictionary<string, ${valueType}>.from(${source}.map((k, v)=>MapEntry(k, ${value})))`;
     }
 
     if (param.type == "array" && param.items) {
@@ -180,10 +180,10 @@ export class ApiDocHelper {
     ) {
       let keyType = this.getObjectType(param["x-dictionary-key"]);
       let valueType = this.getObjectType(param.additionalProperties);
-      return `Map<String, ${valueType}>`;
+      return `Dictionary<string, ${valueType}>`;
     }
     if (param.type == "object") {
-      return `Map<String, String>`;
+      return `Dictionary<string, string>`;
     }
     if (param.type) {
       return this.parseType(param);

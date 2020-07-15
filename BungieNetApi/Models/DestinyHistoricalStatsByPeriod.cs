@@ -7,16 +7,16 @@ namespace GhostSharp.BungieNetApi.Models
 	public class DestinyHistoricalStatsByPeriod{
 
 		[DataMember(Name="allTime", EmitDefaultValue=false)]
-		public Map<String, DestinyHistoricalStatsValue> AllTime { get; set; }
+		public Dictionary<string, DestinyHistoricalStatsValue> AllTime { get; set; }
 
 		[DataMember(Name="allTimeTier1", EmitDefaultValue=false)]
-		public Map<String, DestinyHistoricalStatsValue> AllTimeTier1 { get; set; }
+		public Dictionary<string, DestinyHistoricalStatsValue> AllTimeTier1 { get; set; }
 
 		[DataMember(Name="allTimeTier2", EmitDefaultValue=false)]
-		public Map<String, DestinyHistoricalStatsValue> AllTimeTier2 { get; set; }
+		public Dictionary<string, DestinyHistoricalStatsValue> AllTimeTier2 { get; set; }
 
 		[DataMember(Name="allTimeTier3", EmitDefaultValue=false)]
-		public Map<String, DestinyHistoricalStatsValue> AllTimeTier3 { get; set; }
+		public Dictionary<string, DestinyHistoricalStatsValue> AllTimeTier3 { get; set; }
 
 		[DataMember(Name="daily", EmitDefaultValue=false)]
 		public List<DestinyHistoricalStatsPeriodGroup> Daily { get; set; }

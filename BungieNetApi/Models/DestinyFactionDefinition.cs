@@ -28,7 +28,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// The faction token item hashes, and their respective progression values.
 		/// </summary>
 		[DataMember(Name="tokenValues", EmitDefaultValue=false)]
-		public Map<String, uint> TokenValues { get; set; }
+		public Dictionary<string, uint> TokenValues { get; set; }
 
 		/// <summary>
 		/// The faction reward item hash, usually an engram.

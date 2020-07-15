@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -6,7 +7,7 @@ namespace GhostSharp.BungieNetApi.Models
 	public class DictionaryComponentResponseOfint32AndDestinyVendorSaleItemComponent{
 
 		[DataMember(Name="data", EmitDefaultValue=false)]
-		public Map<String, DestinyVendorSaleItemComponent> Data { get; set; }
+		public Dictionary<string, DestinyVendorSaleItemComponent> Data { get; set; }
 
 		[DataMember(Name="privacy", EmitDefaultValue=false)]
 		public ComponentPrivacySetting Privacy { get; set; }

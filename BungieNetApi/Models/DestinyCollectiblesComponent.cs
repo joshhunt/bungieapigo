@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -6,7 +7,7 @@ namespace GhostSharp.BungieNetApi.Models
 	public class DestinyCollectiblesComponent{
 
 		[DataMember(Name="collectibles", EmitDefaultValue=false)]
-		public Map<String, DestinyCollectibleComponent> Collectibles { get; set; }
+		public Dictionary<string, DestinyCollectibleComponent> Collectibles { get; set; }
 
 		/// <summary>
 		/// The hash for the root presentation node definition of Collection categories.

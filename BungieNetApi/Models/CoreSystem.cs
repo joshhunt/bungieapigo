@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -9,7 +10,7 @@ namespace GhostSharp.BungieNetApi.Models
 		public bool Enabled { get; set; }
 
 		[DataMember(Name="parameters", EmitDefaultValue=false)]
-		public Map<String, string> Parameters { get; set; }
+		public Dictionary<string, string> Parameters { get; set; }
 
 
 		public override bool Equals(object input)

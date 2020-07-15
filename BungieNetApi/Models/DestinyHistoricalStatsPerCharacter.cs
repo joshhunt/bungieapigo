@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -12,7 +13,7 @@ namespace GhostSharp.BungieNetApi.Models
 		public bool Deleted { get; set; }
 
 		[DataMember(Name="results", EmitDefaultValue=false)]
-		public Map<String, DestinyHistoricalStatsByPeriod> Results { get; set; }
+		public Dictionary<string, DestinyHistoricalStatsByPeriod> Results { get; set; }
 
 		[DataMember(Name="merged", EmitDefaultValue=false)]
 		public DestinyHistoricalStatsByPeriod Merged { get; set; }

@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -9,7 +10,7 @@ namespace GhostSharp.BungieNetApi.Models
 	public class GroupV2ClanInfoAndInvestment{
 
 		[DataMember(Name="d2ClanProgressions", EmitDefaultValue=false)]
-		public Map<String, DestinyProgression> D2ClanProgressions { get; set; }
+		public Dictionary<string, DestinyProgression> D2ClanProgressions { get; set; }
 
 		[DataMember(Name="clanCallsign", EmitDefaultValue=false)]
 		public string ClanCallsign { get; set; }

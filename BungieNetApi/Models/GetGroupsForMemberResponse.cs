@@ -13,7 +13,7 @@ namespace GhostSharp.BungieNetApi.Models
 		///  The key is the Group ID for the group being checked, and the value is true if the users' memberships for that group are all inactive.
 		/// </summary>
 		[DataMember(Name="areAllMembershipsInactive", EmitDefaultValue=false)]
-		public Map<String, bool> AreAllMembershipsInactive { get; set; }
+		public Dictionary<string, bool> AreAllMembershipsInactive { get; set; }
 
 		[DataMember(Name="results", EmitDefaultValue=false)]
 		public List<GroupMembership> Results { get; set; }

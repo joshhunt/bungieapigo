@@ -67,7 +67,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// If this exists, the mode has specific Activities (referred to by the Key) that should instead map to other Activity Modes when they are played. This was useful in D1 for Private Matches, where we wanted to have Private Matches as an activity mode while still referring to the specific mode being played.
 		/// </summary>
 		[DataMember(Name="activityModeMappings", EmitDefaultValue=false)]
-		public Map<String, DestinyActivityModeType> ActivityModeMappings { get; set; }
+		public Dictionary<string, DestinyActivityModeType> ActivityModeMappings { get; set; }
 
 		/// <summary>
 		/// If FALSE, we want to ignore this type when we're showing activity modes in BNet UI. It will still be returned in case 3rd parties want to use it for any purpose.

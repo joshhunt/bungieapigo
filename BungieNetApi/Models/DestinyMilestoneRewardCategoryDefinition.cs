@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -30,7 +31,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// If this milestone can provide rewards, this will define the sets of rewards that can be earned, the conditions under which they can be acquired, internal data that we'll use at runtime to determine whether you've already earned or redeemed this set of rewards, and the category that this reward should be placed under.
 		/// </summary>
 		[DataMember(Name="rewardEntries", EmitDefaultValue=false)]
-		public Map<String, DestinyMilestoneRewardEntryDefinition> RewardEntries { get; set; }
+		public Dictionary<string, DestinyMilestoneRewardEntryDefinition> RewardEntries { get; set; }
 
 		/// <summary>
 		/// If you want to use BNet's recommended order for rendering categories programmatically, use this value and compare it to other categories to determine the order in which they should be rendered. I don't feel great about putting this here, I won't lie.

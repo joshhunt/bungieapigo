@@ -46,7 +46,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// The stats computed for this level/quality range.
 		/// </summary>
 		[DataMember(Name="computedStats", EmitDefaultValue=false)]
-		public Map<String, DestinyInventoryItemStatDefinition> ComputedStats { get; set; }
+		public Dictionary<string, DestinyInventoryItemStatDefinition> ComputedStats { get; set; }
 
 		/// <summary>
 		/// The DestinyRewardSourceDefinitions found that can spawn the item at this level.

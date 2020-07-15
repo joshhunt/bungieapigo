@@ -70,7 +70,7 @@ namespace GhostSharp.BungieNetApi.Models
 		public ContentPropertyDataTypeEnum Datatype { get; set; }
 
 		[DataMember(Name="attributes", EmitDefaultValue=false)]
-		public Map<String, string> Attributes { get; set; }
+		public Dictionary<string, string> Attributes { get; set; }
 
 		[DataMember(Name="childProperties", EmitDefaultValue=false)]
 		public List<ContentTypeProperty> ChildProperties { get; set; }
@@ -85,7 +85,7 @@ namespace GhostSharp.BungieNetApi.Models
 		public string BoundRegex { get; set; }
 
 		[DataMember(Name="representationSelection", EmitDefaultValue=false)]
-		public Map<String, string> RepresentationSelection { get; set; }
+		public Dictionary<string, string> RepresentationSelection { get; set; }
 
 		[DataMember(Name="defaultValues", EmitDefaultValue=false)]
 		public List<ContentTypeDefaultValue> DefaultValues { get; set; }

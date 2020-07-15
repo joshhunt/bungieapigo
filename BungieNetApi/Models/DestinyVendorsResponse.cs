@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -54,7 +55,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// The components contained inside are themselves keyed by the vendorSaleIndex, and will have whatever item-level components you requested (Sockets, Stats, Instance data etc...) per item being sold by the vendor.
 		/// </summary>
 		[DataMember(Name="itemComponents", EmitDefaultValue=false)]
-		public Map<String, DestinyItemComponentSetOfint32> ItemComponents { get; set; }
+		public Dictionary<string, DestinyItemComponentSetOfint32> ItemComponents { get; set; }
 
 		/// <summary>
 		/// A "lookup" convenience component that can be used to quickly check if the character has access to items that can be used for purchasing.

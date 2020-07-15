@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -21,7 +22,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// This allows you to see whether the requesting character can afford any given purchase/action without having to re-create this list itself.
 		/// </summary>
 		[DataMember(Name="itemQuantities", EmitDefaultValue=false)]
-		public Map<String, long> ItemQuantities { get; set; }
+		public Dictionary<string, long> ItemQuantities { get; set; }
 
 
 		public override bool Equals(object input)

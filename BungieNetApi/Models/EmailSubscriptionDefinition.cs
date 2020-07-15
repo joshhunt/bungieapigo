@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -18,7 +19,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// A dictionary of localized text for the EMail Opt-in setting, keyed by the locale.
 		/// </summary>
 		[DataMember(Name="localization", EmitDefaultValue=false)]
-		public Map<String, EMailSettingSubscriptionLocalization> Localization { get; set; }
+		public Dictionary<string, EMailSettingSubscriptionLocalization> Localization { get; set; }
 
 		/// <summary>
 		/// The bitflag value for this subscription. Should be a unique power of two value.

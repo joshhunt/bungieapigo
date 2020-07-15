@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -216,7 +217,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// I'm not crying, you're crying Okay we're both crying but it's going to be okay I promise Actually I shouldn't promise that, I don't know if it's going to be okay
 		/// </summary>
 		[DataMember(Name="characterUninstancedItemComponents", EmitDefaultValue=false)]
-		public Map<String, DestinyBaseItemComponentSetOfuint32> CharacterUninstancedItemComponents { get; set; }
+		public Dictionary<string, DestinyBaseItemComponentSetOfuint32> CharacterUninstancedItemComponents { get; set; }
 
 		/// <summary>
 		/// COMPONENT TYPE: PresentationNodes

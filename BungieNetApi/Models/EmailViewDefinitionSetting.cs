@@ -16,7 +16,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// A dictionary of localized text for the EMail setting, keyed by the locale.
 		/// </summary>
 		[DataMember(Name="localization", EmitDefaultValue=false)]
-		public Map<String, EMailSettingLocalization> Localization { get; set; }
+		public Dictionary<string, EMailSettingLocalization> Localization { get; set; }
 
 		/// <summary>
 		/// If true, this setting should be set by default if the user hasn't chosen whether it's set or cleared yet.

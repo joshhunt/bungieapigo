@@ -43,7 +43,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// We have no human readable information for this data, so it's up to you if you want to associate it with such info to show it.
 		/// </summary>
 		[DataMember(Name="booleanActivityOptions", EmitDefaultValue=false)]
-		public Map<String, bool> BooleanActivityOptions { get; set; }
+		public Dictionary<string, bool> BooleanActivityOptions { get; set; }
 
 
 		public override bool Equals(object input)

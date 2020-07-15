@@ -22,7 +22,7 @@ namespace GhostSharp.BungieNetApi.Models
 		///  If a socket doesn't have any reusable plugs defined at the item scope, there will be no entry for that socket.
 		/// </summary>
 		[DataMember(Name="plugs", EmitDefaultValue=false)]
-		public Map<String, List<DestinyItemPlugBase>> Plugs { get; set; }
+		public Dictionary<string, List<DestinyItemPlugBase>> Plugs { get; set; }
 
 
 		public override bool Equals(object input)

@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -18,7 +19,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// If the item has stats that it provides (damage, defense, etc...), it will be given here.
 		/// </summary>
 		[DataMember(Name="stats", EmitDefaultValue=false)]
-		public Map<String, DestinyStat> Stats { get; set; }
+		public Dictionary<string, DestinyStat> Stats { get; set; }
 
 
 		public override bool Equals(object input)

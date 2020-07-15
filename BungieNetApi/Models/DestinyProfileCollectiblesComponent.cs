@@ -22,7 +22,7 @@ namespace GhostSharp.BungieNetApi.Models
 		public List<uint> NewnessFlaggedCollectibleHashes { get; set; }
 
 		[DataMember(Name="collectibles", EmitDefaultValue=false)]
-		public Map<String, DestinyCollectibleComponent> Collectibles { get; set; }
+		public Dictionary<string, DestinyCollectibleComponent> Collectibles { get; set; }
 
 		/// <summary>
 		/// The hash for the root presentation node definition of Collection categories.

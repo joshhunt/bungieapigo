@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -18,7 +19,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// For each checklist returned, its value is itself a Dictionary keyed by the checklist's hash identifier with the value being a boolean indicating if it's been discovered yet.
 		/// </summary>
 		[DataMember(Name="checklists", EmitDefaultValue=false)]
-		public Map<String, Map<String, bool>> Checklists { get; set; }
+		public Dictionary<string, Dictionary<string, bool>> Checklists { get; set; }
 
 		/// <summary>
 		/// Data related to your progress on the current season's artifact that is the same across characters.

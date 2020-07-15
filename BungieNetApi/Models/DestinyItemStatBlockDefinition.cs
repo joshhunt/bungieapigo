@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -39,7 +40,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// These stats are keyed by the DestinyStatDefinition's hash identifier for the stat that's found on the item.
 		/// </summary>
 		[DataMember(Name="stats", EmitDefaultValue=false)]
-		public Map<String, DestinyInventoryItemStatDefinition> Stats { get; set; }
+		public Dictionary<string, DestinyInventoryItemStatDefinition> Stats { get; set; }
 
 		/// <summary>
 		/// A quick and lazy way to determine whether any stat other than the "primary" stat is actually visible on the item. Items often have stats that we return in case people find them useful, but they're not part of the "Stat Group" and thus we wouldn't display them in our UI. If this is False, then we're not going to display any of these stats other than the primary one.

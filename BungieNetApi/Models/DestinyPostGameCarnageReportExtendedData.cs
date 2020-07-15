@@ -16,7 +16,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// Collection of stats for the player in this activity.
 		/// </summary>
 		[DataMember(Name="values", EmitDefaultValue=false)]
-		public Map<String, DestinyHistoricalStatsValue> Values { get; set; }
+		public Dictionary<string, DestinyHistoricalStatsValue> Values { get; set; }
 
 
 		public override bool Equals(object input)

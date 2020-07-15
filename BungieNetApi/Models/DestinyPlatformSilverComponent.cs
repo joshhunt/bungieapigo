@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -9,7 +10,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// If a Profile is played on multiple platforms, this is the silver they have for each platform, keyed by Membership Type.
 		/// </summary>
 		[DataMember(Name="platformSilver", EmitDefaultValue=false)]
-		public Map<String, DestinyItemComponent> PlatformSilver { get; set; }
+		public Dictionary<string, DestinyItemComponent> PlatformSilver { get; set; }
 
 
 		public override bool Equals(object input)

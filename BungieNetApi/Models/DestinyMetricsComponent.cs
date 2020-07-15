@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -6,7 +7,7 @@ namespace GhostSharp.BungieNetApi.Models
 	public class DestinyMetricsComponent{
 
 		[DataMember(Name="metrics", EmitDefaultValue=false)]
-		public Map<String, DestinyMetricComponent> Metrics { get; set; }
+		public Dictionary<string, DestinyMetricComponent> Metrics { get; set; }
 
 		[DataMember(Name="metricsRootNodeHash", EmitDefaultValue=false)]
 		public uint MetricsRootNodeHash { get; set; }

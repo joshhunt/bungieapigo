@@ -19,7 +19,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// A dictionary keyed by the Kiosk Vendor's hash identifier (use it to look up the DestinyVendorDefinition for the relevant kiosk vendor), and whose value is a list of all the items that the user can "see" in the Kiosk, and any other interesting metadata.
 		/// </summary>
 		[DataMember(Name="kioskItems", EmitDefaultValue=false)]
-		public Map<String, List<DestinyKioskItem>> KioskItems { get; set; }
+		public Dictionary<string, List<DestinyKioskItem>> KioskItems { get; set; }
 
 
 		public override bool Equals(object input)

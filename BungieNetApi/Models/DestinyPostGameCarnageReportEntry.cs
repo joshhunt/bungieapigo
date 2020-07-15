@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -33,7 +34,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// Collection of stats for the player in this activity.
 		/// </summary>
 		[DataMember(Name="values", EmitDefaultValue=false)]
-		public Map<String, DestinyHistoricalStatsValue> Values { get; set; }
+		public Dictionary<string, DestinyHistoricalStatsValue> Values { get; set; }
 
 		/// <summary>
 		/// Extended data extracted from the activity blob.

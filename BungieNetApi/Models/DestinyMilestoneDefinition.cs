@@ -109,7 +109,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// As of Forsaken (~September 2018), Quest-style Milestones are being removed for many types of activities. There will likely be further revisions to the Milestone concept in the future.
 		/// </summary>
 		[DataMember(Name="quests", EmitDefaultValue=false)]
-		public Map<String, DestinyMilestoneQuestDefinition> Quests { get; set; }
+		public Dictionary<string, DestinyMilestoneQuestDefinition> Quests { get; set; }
 
 		/// <summary>
 		/// If this milestone can provide rewards, this will define the categories into which the individual reward entries are placed.
@@ -118,7 +118,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// This is keyed by the Category's hash, which is only guaranteed to be unique within a given Milestone.
 		/// </summary>
 		[DataMember(Name="rewards", EmitDefaultValue=false)]
-		public Map<String, DestinyMilestoneRewardCategoryDefinition> Rewards { get; set; }
+		public Dictionary<string, DestinyMilestoneRewardCategoryDefinition> Rewards { get; set; }
 
 		/// <summary>
 		/// If you're going to show Vendors for the Milestone, you can use this as a localized "header" for the section where you show that vendor data. It'll provide a more context-relevant clue about what the vendor's role is in the Milestone.
@@ -136,7 +136,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// Sometimes, milestones will have arbitrary values associated with them that are of interest to us or to third party developers. This is the collection of those values' definitions, keyed by the identifier of the value and providing useful definition information such as localizable names and descriptions for the value.
 		/// </summary>
 		[DataMember(Name="values", EmitDefaultValue=false)]
-		public Map<String, DestinyMilestoneValueDefinition> Values { get; set; }
+		public Dictionary<string, DestinyMilestoneValueDefinition> Values { get; set; }
 
 		/// <summary>
 		/// Some milestones are explicit objectives that you can see and interact with in the game. Some milestones are more conceptual, built by BNet to help advise you on activities and events that happen in-game but that aren't explicitly shown in game as Milestones. If this is TRUE, you can see this as a milestone in the game. If this is FALSE, it's an event or activity you can participate in, but you won't see it as a Milestone in the game's UI.

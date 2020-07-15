@@ -73,7 +73,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// Look at the definition of DestinyTalentExclusiveGroup for more information and how they work. These groups are keyed by the "groupHash" from DestinyTalentExclusiveGroup.
 		/// </summary>
 		[DataMember(Name="groups", EmitDefaultValue=false)]
-		public Map<String, DestinyTalentExclusiveGroup> Groups { get; set; }
+		public Dictionary<string, DestinyTalentExclusiveGroup> Groups { get; set; }
 
 		/// <summary>
 		/// BNet wants to show talent nodes grouped by similar purpose with localized titles. This is the ordered list of those categories: if you want to show nodes by category, you can iterate over this list, render the displayProperties for the category as the title, and then iterate over the talent nodes referenced by the category to show the related nodes.

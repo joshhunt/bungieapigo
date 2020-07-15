@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -15,7 +16,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// Collection of stats for the period.
 		/// </summary>
 		[DataMember(Name="values", EmitDefaultValue=false)]
-		public Map<String, DestinyHistoricalStatsValue> Values { get; set; }
+		public Dictionary<string, DestinyHistoricalStatsValue> Values { get; set; }
 
 
 		public override bool Equals(object input)

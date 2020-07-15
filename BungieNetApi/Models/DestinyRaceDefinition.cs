@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -24,10 +25,10 @@ namespace GhostSharp.BungieNetApi.Models
 		/// A localized string referring to the singular form of the Race's name when referred to in gendered form. Keyed by the DestinyGender.
 		/// </summary>
 		[DataMember(Name="genderedRaceNames", EmitDefaultValue=false)]
-		public Map<String, string> GenderedRaceNames { get; set; }
+		public Dictionary<string, string> GenderedRaceNames { get; set; }
 
 		[DataMember(Name="genderedRaceNamesByGenderHash", EmitDefaultValue=false)]
-		public Map<String, string> GenderedRaceNamesByGenderHash { get; set; }
+		public Dictionary<string, string> GenderedRaceNamesByGenderHash { get; set; }
 
 		/// <summary>
 		/// The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.

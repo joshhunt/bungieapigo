@@ -31,7 +31,7 @@ namespace GhostSharp.BungieNetApi.Models
 		public List<TagMetadataDefinition> TagMetadata { get; set; }
 
 		[DataMember(Name="tagMetadataItems", EmitDefaultValue=false)]
-		public Map<String, TagMetadataItem> TagMetadataItems { get; set; }
+		public Dictionary<string, TagMetadataItem> TagMetadataItems { get; set; }
 
 		[DataMember(Name="usageExamples", EmitDefaultValue=false)]
 		public List<string> UsageExamples { get; set; }

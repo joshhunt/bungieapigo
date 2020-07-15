@@ -52,7 +52,13 @@ export class ModelClass {
 
     const propertyImports = this.properties()
       .map((prop) => {
-        if (prop.typeName().includes("List<")) {
+        const type = prop.typeName();
+
+        if (type.includes("List<")) {
+          return "System.Collections.Generic";
+        }
+
+        if (type.includes("Dictionary<")) {
           return "System.Collections.Generic";
         }
 

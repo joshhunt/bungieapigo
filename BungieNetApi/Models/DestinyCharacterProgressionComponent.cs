@@ -16,19 +16,19 @@ namespace GhostSharp.BungieNetApi.Models
 		/// Not all progressions have user-facing data, but those who do will have that data contained in the DestinyProgressionDefinition.
 		/// </summary>
 		[DataMember(Name="progressions", EmitDefaultValue=false)]
-		public Map<String, DestinyProgression> Progressions { get; set; }
+		public Dictionary<string, DestinyProgression> Progressions { get; set; }
 
 		/// <summary>
 		/// A dictionary of all known Factions, keyed by the Faction's hash. It contains data about this character's status with the faction.
 		/// </summary>
 		[DataMember(Name="factions", EmitDefaultValue=false)]
-		public Map<String, DestinyFactionProgression> Factions { get; set; }
+		public Dictionary<string, DestinyFactionProgression> Factions { get; set; }
 
 		/// <summary>
 		/// Milestones are related to the simple progressions shown in the game, but return additional and hopefully helpful information for users about the specifics of the Milestone's status.
 		/// </summary>
 		[DataMember(Name="milestones", EmitDefaultValue=false)]
-		public Map<String, DestinyMilestone> Milestones { get; set; }
+		public Dictionary<string, DestinyMilestone> Milestones { get; set; }
 
 		/// <summary>
 		/// If the user has any active quests, the quests' statuses will be returned here.
@@ -49,7 +49,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// This dictionary is keyed by the item's hash: which you can use to look up the name and description for the overall task(s) implied by the objective. The value is the list of objectives for this item, and their statuses.
 		/// </summary>
 		[DataMember(Name="uninstancedItemObjectives", EmitDefaultValue=false)]
-		public Map<String, List<DestinyObjectiveProgress>> UninstancedItemObjectives { get; set; }
+		public Dictionary<string, List<DestinyObjectiveProgress>> UninstancedItemObjectives { get; set; }
 
 		/// <summary>
 		/// The set of checklists that can be examined for this specific character, keyed by the hash identifier of the Checklist (DestinyChecklistDefinition)
@@ -58,7 +58,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// For each checklist returned, its value is itself a Dictionary keyed by the checklist's hash identifier with the value being a boolean indicating if it's been discovered yet.
 		/// </summary>
 		[DataMember(Name="checklists", EmitDefaultValue=false)]
-		public Map<String, Map<String, bool>> Checklists { get; set; }
+		public Dictionary<string, Dictionary<string, bool>> Checklists { get; set; }
 
 		/// <summary>
 		/// Data related to your progress on the current season's artifact that can vary per character.

@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -36,7 +37,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// The full set of all possible "conceptual activities" that are related to this Milestone. Tiers or alternative modes of play within these conceptual activities will be defined as sub-entities. Keyed by the Conceptual Activity Hash. Use the key to look up DestinyActivityDefinition.
 		/// </summary>
 		[DataMember(Name="activities", EmitDefaultValue=false)]
-		public Map<String, DestinyMilestoneActivityDefinition> Activities { get; set; }
+		public Dictionary<string, DestinyMilestoneActivityDefinition> Activities { get; set; }
 
 		/// <summary>
 		/// Sometimes, a Milestone's quest is related to an entire Destination rather than a specific activity. In that situation, this will be the hash of that Destination. Hotspots are currently the only Milestones that expose this data, but that does not preclude this data from being returned for other Milestones in the future.

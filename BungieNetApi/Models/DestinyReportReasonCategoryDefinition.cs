@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -21,7 +22,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// The specific reasons for the report under this category.
 		/// </summary>
 		[DataMember(Name="reasons", EmitDefaultValue=false)]
-		public Map<String, DestinyReportReasonDefinition> Reasons { get; set; }
+		public Dictionary<string, DestinyReportReasonDefinition> Reasons { get; set; }
 
 		/// <summary>
 		/// The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.

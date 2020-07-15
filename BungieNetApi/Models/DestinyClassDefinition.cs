@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -24,10 +25,10 @@ namespace GhostSharp.BungieNetApi.Models
 		/// A localized string referring to the singular form of the Class's name when referred to in gendered form. Keyed by the DestinyGender.
 		/// </summary>
 		[DataMember(Name="genderedClassNames", EmitDefaultValue=false)]
-		public Map<String, string> GenderedClassNames { get; set; }
+		public Dictionary<string, string> GenderedClassNames { get; set; }
 
 		[DataMember(Name="genderedClassNamesByGenderHash", EmitDefaultValue=false)]
-		public Map<String, string> GenderedClassNamesByGenderHash { get; set; }
+		public Dictionary<string, string> GenderedClassNamesByGenderHash { get; set; }
 
 		/// <summary>
 		/// Mentors don't really mean anything anymore. Don't expect this to be populated.

@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
@@ -24,7 +25,7 @@ namespace GhostSharp.BungieNetApi.Models
 		/// value = The chosen Arrangement Index for the Region, based on the value of a stat on the item used for making the choice.
 		/// </summary>
 		[DataMember(Name="artRegions", EmitDefaultValue=false)]
-		public Map<String, long> ArtRegions { get; set; }
+		public Dictionary<string, long> ArtRegions { get; set; }
 
 
 		public override bool Equals(object input)
