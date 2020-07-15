@@ -1,0 +1,57 @@
+name: Scheduled checks
+
+on:
+  push:
+  schedule:
+    - cron: "0 * * * *" # Every hour
+
+jobs:
+  check-run-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Checkout submodules (Bungie-net/api)
+        uses: srt32/git-actions@v0.0.3
+        with:
+          args: git submodule update --init --recursive
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.101
+
+      - run: yarn install
+      - run: yarn run build:scripts
+      - run: yarn run scripts
+
+      - name: Check if there were changes
+        id: changes-check
+        run: echo ::set-output name=dirty::"$(git status --porcelain)"
+
+      - name: Get manifest version file
+        id: manifest-version
+        run: echo "::set-output name=contents::$(cat ./generated-data/version.json)"
+
+      - name: Commit everything
+        if: steps.changes-check.outputs.dirty
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Destiny manifest changed to version ${{ fromJson(steps.manifest-version.outputs.contents).version }}" -a
+
+      - name: Push changes
+        if: steps.changes-check.outputs.dirty
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
