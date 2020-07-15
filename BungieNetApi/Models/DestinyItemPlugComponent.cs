@@ -1,7 +1,7 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace GhostSharp.BungieNetApi.Model
+namespace GhostSharp.BungieNetApi.Models
 {
 	/// <summary>
 	/// Plugs are non-instanced items that can provide Stat and Perk benefits when socketed into an instanced item. Items have Sockets, and Plugs are inserted into Sockets.

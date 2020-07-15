@@ -1,7 +1,7 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace GhostSharp.BungieNetApi.Model
+namespace GhostSharp.BungieNetApi.Models
 {
 	/// <summary>
 	/// A response containing all of the components for all requested vendors.

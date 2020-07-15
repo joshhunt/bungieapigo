@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace GhostSharp.BungieNetApi.Model
+namespace GhostSharp.BungieNetApi.Models
 {
 	/// <summary>
 	/// If a Destiny Profile can't be returned, but we're pretty certain it's a valid Destiny account, this will contain as much info as we can get about the profile for your use.

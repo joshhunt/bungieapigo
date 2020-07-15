@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace GhostSharp.BungieNetApi.Model
+namespace GhostSharp.BungieNetApi.Models
 {
 	/// <summary>
 	/// Items can have Energy Capacity, and plugs can provide that capacity such as on a piece of Armor in Armor 2.0. This is how much "Energy" can be spent on activating plugs for this item.

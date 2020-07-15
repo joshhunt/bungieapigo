@@ -1,7 +1,7 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace GhostSharp.BungieNetApi.Model
+namespace GhostSharp.BungieNetApi.Models
 {
 	/// <summary>
 	/// Sockets are grouped into categories in the UI. These define which category and which sockets are under that category.

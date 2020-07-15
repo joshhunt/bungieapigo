@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace GhostSharp.BungieNetApi.Model
+namespace GhostSharp.BungieNetApi.Models
 {
 	/// <summary>
 	/// If you ever wondered how the Vault works, here it is.

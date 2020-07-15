@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace GhostSharp.BungieNetApi.Model
+namespace GhostSharp.BungieNetApi.Models
 {
 	/// <summary>
 	/// Activity Modes are grouped into a few possible broad categories.

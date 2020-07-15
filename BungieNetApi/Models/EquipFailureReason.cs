@@ -1,7 +1,7 @@
 using System.Runtime.Serialization;
 using System;
 
-namespace GhostSharp.BungieNetApi.Model
+namespace GhostSharp.BungieNetApi.Models
 {
 	/// <summary>
 	/// The reasons why an item cannot be equipped, if any. Many flags can be set, or "None" if

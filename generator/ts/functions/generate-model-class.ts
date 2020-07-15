@@ -12,7 +12,9 @@ export function generateModelClass(model: ModelClass) {
   if (!shell.test("-d", "../BungieNetApi/Models")) {
     shell.mkdir("-p", "../BungieNetApi/Models");
   }
+
   let template = readFileSync("templates/model-class.mustache").toString();
   let rendered = mustache.render(template, model);
+
   writeFileSync(`../BungieNetApi/Models/${model.filename}.cs`, rendered);
 }

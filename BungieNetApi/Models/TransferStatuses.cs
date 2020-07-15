@@ -1,7 +1,7 @@
 using System.Runtime.Serialization;
 using System;
 
-namespace GhostSharp.BungieNetApi.Model
+namespace GhostSharp.BungieNetApi.Models
 {
 	/// <summary>
 	/// Whether you can transfer an item, and why not if you can't.

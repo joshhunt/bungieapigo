@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace GhostSharp.BungieNetApi.Model
+namespace GhostSharp.BungieNetApi.Models
 {
 	/// <summary>
 	/// A hint for the UI as to what display information ought to be shown. Defaults to showing the static MilestoneDefinition's display properties.

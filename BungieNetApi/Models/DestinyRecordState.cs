@@ -1,7 +1,7 @@
 using System.Runtime.Serialization;
 using System;
 
-namespace GhostSharp.BungieNetApi.Model
+namespace GhostSharp.BungieNetApi.Models
 {
 	/// <summary>
 	/// A Flags enumeration/bitmask where each bit represents a possible state that a Record/Triumph can be in.

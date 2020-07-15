@@ -1,7 +1,7 @@
 using System.Runtime.Serialization;
 using System;
 
-namespace GhostSharp.BungieNetApi.Model
+namespace GhostSharp.BungieNetApi.Models
 {
 	/// <summary>
 	/// A flags enumeration/bitmask indicating the versions of the game that a given user has purchased.

@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace GhostSharp.BungieNetApi.Model
+namespace GhostSharp.BungieNetApi.Models
 {
 	[DataContract]
 	public class DictionaryComponentResponseOfint32AndDestinyItemObjectivesComponent{

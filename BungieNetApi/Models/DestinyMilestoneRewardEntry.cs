@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace GhostSharp.BungieNetApi.Model
+namespace GhostSharp.BungieNetApi.Models
 {
 	/// <summary>
 	/// The character-specific data for a milestone's reward entry. See DestinyMilestoneDefinition for more information about Reward Entries.

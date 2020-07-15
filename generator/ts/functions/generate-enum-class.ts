@@ -6,14 +6,15 @@
 import * as shell from "shelljs";
 import * as mustache from "mustache";
 import { readFileSync, writeFileSync } from "fs";
-import { camelcaseToUnderscore } from "../utils/camelcase-to-underscore";
 import { EnumClass } from "../models/EnumClass";
 
 export function generateEnumClass(enumClass: EnumClass) {
   if (!shell.test("-d", "../BungieNetApi/Models")) {
     shell.mkdir("-p", "../BungieNetApi/Models");
   }
+
   let template = readFileSync("templates/enum.mustache").toString();
   let rendered = mustache.render(template, enumClass);
+
   writeFileSync(`../BungieNetApi/Models/${enumClass.filename}.cs`, rendered);
 }
