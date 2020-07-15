@@ -10,13 +10,10 @@ import { camelcaseToUnderscore } from "../utils/camelcase-to-underscore";
 import { EnumClass } from "../models/EnumClass";
 
 export function generateEnumClass(enumClass: EnumClass) {
-  if (!shell.test("-d", "../lib/src/enums")) {
-    shell.mkdir("-p", "../lib/src/enums");
-  }
-  if (!shell.test("-d", "../lib/enums")) {
-    shell.mkdir("-p", "../lib/enums");
+  if (!shell.test("-d", "../BungieNetApi/Models")) {
+    shell.mkdir("-p", "../BungieNetApi/Models");
   }
   let template = readFileSync("templates/enum.mustache").toString();
   let rendered = mustache.render(template, enumClass);
-  writeFileSync(`../lib/src/enums/${enumClass.filename}.cs`, rendered);
+  writeFileSync(`../BungieNetApi/Models/${enumClass.filename}.cs`, rendered);
 }

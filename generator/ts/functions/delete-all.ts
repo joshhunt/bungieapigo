@@ -5,5 +5,5 @@
 
 import * as shell from "shelljs";
 export function deleteAll() {
-  shell.rm("-rf", "../lib");
+  shell.rm("-rf", "../BungieNetApi");
 }

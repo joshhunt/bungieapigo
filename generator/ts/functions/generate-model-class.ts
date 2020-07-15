@@ -9,13 +9,10 @@ import { readFileSync, writeFileSync } from "fs-extra";
 import { ModelClass } from "../models/ModelClass";
 
 export function generateModelClass(model: ModelClass) {
-  if (!shell.test("-d", "../lib/models")) {
-    shell.mkdir("-p", "../lib/models");
-  }
-  if (!shell.test("-d", "../lib/src/models")) {
-    shell.mkdir("-p", "../lib/src/models");
+  if (!shell.test("-d", "../BungieNetApi/Models")) {
+    shell.mkdir("-p", "../BungieNetApi/Models");
   }
   let template = readFileSync("templates/model-class.mustache").toString();
   let rendered = mustache.render(template, model);
-  writeFileSync(`../lib/src/models/${model.filename}.cs`, rendered);
+  writeFileSync(`../BungieNetApi/Models/${model.filename}.cs`, rendered);
 }
