@@ -2,31 +2,31 @@ using System.Runtime.Serialization;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	[DataContract]
-	public class DestinyMilestoneChallengeDefinition{
+    [DataContract]
+    public class DestinyMilestoneChallengeDefinition
+    {
+        /// <summary>
+        /// The challenge related to this milestone.
+        /// </summary>
+        [DataMember(Name = "challengeObjectiveHash", EmitDefaultValue = false)]
+        public uint ChallengeObjectiveHash { get; set; }
 
-		/// <summary>
-		/// The challenge related to this milestone.
-		/// </summary>
-		[DataMember(Name="challengeObjectiveHash", EmitDefaultValue=false)]
-		public uint ChallengeObjectiveHash { get; set; }
 
-
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as DestinyMilestoneChallengeDefinition);
         }
 
-		public bool Equals(DestinyMilestoneChallengeDefinition input)
-		{
-			if (input == null) return false;
+        public bool Equals(DestinyMilestoneChallengeDefinition input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     ChallengeObjectiveHash == input.ChallengeObjectiveHash ||
                     (ChallengeObjectiveHash != null && ChallengeObjectiveHash.Equals(input.ChallengeObjectiveHash))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

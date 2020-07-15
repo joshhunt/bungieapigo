@@ -3,31 +3,31 @@ using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	[DataContract]
-	public class DestinyActivityHistoryResults{
+    [DataContract]
+    public class DestinyActivityHistoryResults
+    {
+        /// <summary>
+        /// List of activities, the most recent activity first.
+        /// </summary>
+        [DataMember(Name = "activities", EmitDefaultValue = false)]
+        public List<DestinyHistoricalStatsPeriodGroup> Activities { get; set; }
 
-		/// <summary>
-		/// List of activities, the most recent activity first.
-		/// </summary>
-		[DataMember(Name="activities", EmitDefaultValue=false)]
-		public List<DestinyHistoricalStatsPeriodGroup> Activities { get; set; }
 
-
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as DestinyActivityHistoryResults);
         }
 
-		public bool Equals(DestinyActivityHistoryResults input)
-		{
-			if (input == null) return false;
+        public bool Equals(DestinyActivityHistoryResults input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     Activities == input.Activities ||
                     (Activities != null && Activities.Equals(input.Activities))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

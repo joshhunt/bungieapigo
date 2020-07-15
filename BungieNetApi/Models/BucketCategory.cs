@@ -2,41 +2,41 @@ using System.Runtime.Serialization;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	
-	public enum BucketCategory
-	{
-		/// <summary>
-		/// Invisible = 0
-		/// </summary>
-		[EnumMember(Value = "0")]
-		Invisible = 0,
+    
+    public enum BucketCategory
+    {
+        /// <summary>
+        /// Invisible = 0
+        /// </summary>
+        [EnumMember(Value = "0")]
+        Invisible = 0,
 
-		/// <summary>
-		/// Item = 1
-		/// </summary>
-		[EnumMember(Value = "1")]
-		Item = 1,
+        /// <summary>
+        /// Item = 1
+        /// </summary>
+        [EnumMember(Value = "1")]
+        Item = 1,
 
-		/// <summary>
-		/// Currency = 2
-		/// </summary>
-		[EnumMember(Value = "2")]
-		Currency = 2,
+        /// <summary>
+        /// Currency = 2
+        /// </summary>
+        [EnumMember(Value = "2")]
+        Currency = 2,
 
-		/// <summary>
-		/// Equippable = 3
-		/// </summary>
-		[EnumMember(Value = "3")]
-		Equippable = 3,
+        /// <summary>
+        /// Equippable = 3
+        /// </summary>
+        [EnumMember(Value = "3")]
+        Equippable = 3,
 
-		/// <summary>
-		/// Ignored = 4
-		/// </summary>
-		[EnumMember(Value = "4")]
-		Ignored = 4,
+        /// <summary>
+        /// Ignored = 4
+        /// </summary>
+        [EnumMember(Value = "4")]
+        Ignored = 4,
 
-		///value not found fallback
-		[EnumMember(Value = "999999999")]
-		ProtectedInvalidEnumValue = 999999999
-	}
+        ///value not found fallback
+        [EnumMember(Value = "999999999")]
+        ProtectedInvalidEnumValue = 999999999
+    }
 }

@@ -3,44 +3,44 @@ using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	/// <summary>
-	/// Bare minimum summary information for an item, for the sake of 3D rendering the item.
-	/// </summary>
-	[DataContract]
-	public class DestinyItemPeerView{
+    /// <summary>
+    /// Bare minimum summary information for an item, for the sake of 3D rendering the item.
+    /// </summary>
+    [DataContract]
+    public class DestinyItemPeerView
+    {
+        /// <summary>
+        /// The hash identifier of the item in question. Use it to look up the DestinyInventoryItemDefinition of the item for static rendering data.
+        /// </summary>
+        [DataMember(Name = "itemHash", EmitDefaultValue = false)]
+        public uint ItemHash { get; set; }
 
-		/// <summary>
-		/// The hash identifier of the item in question. Use it to look up the DestinyInventoryItemDefinition of the item for static rendering data.
-		/// </summary>
-		[DataMember(Name="itemHash", EmitDefaultValue=false)]
-		public uint ItemHash { get; set; }
-
-		/// <summary>
-		/// The list of dyes that have been applied to this item.
-		/// </summary>
-		[DataMember(Name="dyes", EmitDefaultValue=false)]
-		public List<DyeReference> Dyes { get; set; }
+        /// <summary>
+        /// The list of dyes that have been applied to this item.
+        /// </summary>
+        [DataMember(Name = "dyes", EmitDefaultValue = false)]
+        public List<DyeReference> Dyes { get; set; }
 
 
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as DestinyItemPeerView);
         }
 
-		public bool Equals(DestinyItemPeerView input)
-		{
-			if (input == null) return false;
+        public bool Equals(DestinyItemPeerView input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     ItemHash == input.ItemHash ||
                     (ItemHash != null && ItemHash.Equals(input.ItemHash))
                 ) &&
-				(
+                (
                     Dyes == input.Dyes ||
                     (Dyes != null && Dyes.Equals(input.Dyes))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

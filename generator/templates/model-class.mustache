@@ -4,42 +4,42 @@ using {{{.}}};
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	{{#description}}
-	/// <summary>
-	/// {{&.}}
-	/// </summary>
-	{{/description}}
-	[DataContract]
-	public class {{className}}{
+    {{#description}}
+    /// <summary>
+    /// {{&.}}
+    /// </summary>
+    {{/description}}
+    [DataContract]
+    public class {{className}}
+    {
+        {{#properties}}
+        {{#description}}
+        /// <summary>
+        /// {{{.}}}
+        /// </summary>
+        {{/description}}
+        {{{jsonKey}}}
+        {{keywords}} {{{typeName}}} {{propertyName}} { get; set; }
 
-		{{#properties}}
-		{{#description}}
-		/// <summary>
-		/// {{{.}}}
-		/// </summary>
-		{{/description}}
-		{{{jsonKey}}}
-		{{keywords}} {{{typeName}}} {{propertyName}} { get; set; }
+        {{/properties}}
 
-		{{/properties}}
-
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as {{className}});
         }
 
-		public bool Equals({{className}} input)
-		{
-			if (input == null) return false;
+        public bool Equals({{className}} input)
+        {
+            if (input == null) return false;
 
-			return
-				{{#properties}}
-				(
+            return
+                {{#properties}}
+                (
                     {{propertyName}} == input.{{propertyName}} ||
                     ({{propertyName}} != null && {{propertyName}}.Equals(input.{{propertyName}}))
                 ) {{#notLast}}&&{{/notLast}}{{^notLast}};{{/notLast}}
-				{{/properties}}
-		}
-	}
+                {{/properties}}
+        }
+    }
 }
 

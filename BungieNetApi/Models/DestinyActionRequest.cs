@@ -2,28 +2,28 @@ using System.Runtime.Serialization;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	[DataContract]
-	public class DestinyActionRequest{
+    [DataContract]
+    public class DestinyActionRequest
+    {
+        [DataMember(Name = "membershipType", EmitDefaultValue = false)]
+        public BungieMembershipType MembershipType { get; set; }
 
-		[DataMember(Name="membershipType", EmitDefaultValue=false)]
-		public BungieMembershipType MembershipType { get; set; }
 
-
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as DestinyActionRequest);
         }
 
-		public bool Equals(DestinyActionRequest input)
-		{
-			if (input == null) return false;
+        public bool Equals(DestinyActionRequest input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     MembershipType == input.MembershipType ||
                     (MembershipType != null && MembershipType.Equals(input.MembershipType))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

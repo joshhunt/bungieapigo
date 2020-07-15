@@ -3,45 +3,45 @@ using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	[DataContract]
-	public class DictionaryComponentResponseOfint64AndDestinyCurrenciesComponent{
+    [DataContract]
+    public class DictionaryComponentResponseOfint64AndDestinyCurrenciesComponent
+    {
+        [DataMember(Name = "data", EmitDefaultValue = false)]
+        public Dictionary<string, DestinyCurrenciesComponent> Data { get; set; }
 
-		[DataMember(Name="data", EmitDefaultValue=false)]
-		public Dictionary<string, DestinyCurrenciesComponent> Data { get; set; }
+        [DataMember(Name = "privacy", EmitDefaultValue = false)]
+        public ComponentPrivacySetting Privacy { get; set; }
 
-		[DataMember(Name="privacy", EmitDefaultValue=false)]
-		public ComponentPrivacySetting Privacy { get; set; }
-
-		/// <summary>
-		/// If true, this component is disabled.
-		/// </summary>
-		[DataMember(Name="disabled", EmitDefaultValue=false)]
-		public bool Disabled { get; set; }
+        /// <summary>
+        /// If true, this component is disabled.
+        /// </summary>
+        [DataMember(Name = "disabled", EmitDefaultValue = false)]
+        public bool Disabled { get; set; }
 
 
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as DictionaryComponentResponseOfint64AndDestinyCurrenciesComponent);
         }
 
-		public bool Equals(DictionaryComponentResponseOfint64AndDestinyCurrenciesComponent input)
-		{
-			if (input == null) return false;
+        public bool Equals(DictionaryComponentResponseOfint64AndDestinyCurrenciesComponent input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     Data == input.Data ||
                     (Data != null && Data.Equals(input.Data))
                 ) &&
-				(
+                (
                     Privacy == input.Privacy ||
                     (Privacy != null && Privacy.Equals(input.Privacy))
                 ) &&
-				(
+                (
                     Disabled == input.Disabled ||
                     (Disabled != null && Disabled.Equals(input.Disabled))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

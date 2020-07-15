@@ -46,12 +46,12 @@ _.each(doc.components!.schemas!, (schema: SchemaObject, index: string) => {
 deleteAll();
 copyCustom();
 
-console.warn("TODO: Skipping generateApiClass");
+// Skipping, I don't want these, yet
 // _.each(ApiClass.all, (apiClass: ApiClass) => {
 //   generateApiClass(apiClass);
 // });
 
-console.warn("TODO: Skipping generateApiClass");
+// TODO: Skipping, I don't think we need these
 // _.each(ResponseClass.all, (responseClass: ResponseClass) => {
 //   generateResponseClass(responseClass);
 // });

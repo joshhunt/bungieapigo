@@ -2,35 +2,35 @@ using System.Runtime.Serialization;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	[DataContract]
-	public class GroupBanRequest{
+    [DataContract]
+    public class GroupBanRequest
+    {
+        [DataMember(Name = "comment", EmitDefaultValue = false)]
+        public string Comment { get; set; }
 
-		[DataMember(Name="comment", EmitDefaultValue=false)]
-		public string Comment { get; set; }
-
-		[DataMember(Name="length", EmitDefaultValue=false)]
-		public IgnoreLength Length { get; set; }
+        [DataMember(Name = "length", EmitDefaultValue = false)]
+        public IgnoreLength Length { get; set; }
 
 
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as GroupBanRequest);
         }
 
-		public bool Equals(GroupBanRequest input)
-		{
-			if (input == null) return false;
+        public bool Equals(GroupBanRequest input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     Comment == input.Comment ||
                     (Comment != null && Comment.Equals(input.Comment))
                 ) &&
-				(
+                (
                     Length == input.Length ||
                     (Length != null && Length.Equals(input.Length))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

@@ -3,25 +3,25 @@ using System;{{/isBitMask}}
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	{{#description}}
-	/// <summary>
-	/// {{&.}}
-	/// </summary>
-	{{/description}}
-	{{#isBitMask}}[Flags]{{/isBitMask}}
-	public enum {{className}}
-	{
-		{{#values}}
-		/// <summary>
-		/// {{name}} = {{value}}{{#description}}
-		/// {{.}}{{/description}}
-		/// </summary>
-		[EnumMember(Value = "{{value}}")]
-		{{name}} = {{value}},
+    {{#description}}
+    /// <summary>
+    /// {{&.}}
+    /// </summary>
+    {{/description}}
+    {{#isBitMask}}[Flags]{{/isBitMask}}
+    public enum {{className}}
+    {
+        {{#values}}
+        /// <summary>
+        /// {{name}} = {{value}}{{#description}}
+        /// {{.}}{{/description}}
+        /// </summary>
+        [EnumMember(Value = "{{value}}")]
+        {{name}} = {{value}},
 
-		{{/values}}
-		///value not found fallback
-		[EnumMember(Value = "999999999")]
-		ProtectedInvalidEnumValue = 999999999
-	}
+        {{/values}}
+        ///value not found fallback
+        [EnumMember(Value = "999999999")]
+        ProtectedInvalidEnumValue = 999999999
+    }
 }

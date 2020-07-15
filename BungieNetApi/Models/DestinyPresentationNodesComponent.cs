@@ -3,28 +3,28 @@ using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	[DataContract]
-	public class DestinyPresentationNodesComponent{
+    [DataContract]
+    public class DestinyPresentationNodesComponent
+    {
+        [DataMember(Name = "nodes", EmitDefaultValue = false)]
+        public Dictionary<string, DestinyPresentationNodeComponent> Nodes { get; set; }
 
-		[DataMember(Name="nodes", EmitDefaultValue=false)]
-		public Dictionary<string, DestinyPresentationNodeComponent> Nodes { get; set; }
 
-
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as DestinyPresentationNodesComponent);
         }
 
-		public bool Equals(DestinyPresentationNodesComponent input)
-		{
-			if (input == null) return false;
+        public bool Equals(DestinyPresentationNodesComponent input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     Nodes == input.Nodes ||
                     (Nodes != null && Nodes.Equals(input.Nodes))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

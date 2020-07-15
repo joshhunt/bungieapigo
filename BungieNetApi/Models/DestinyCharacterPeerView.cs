@@ -3,31 +3,31 @@ using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	/// <summary>
-	/// A minimal view of a character's equipped items, for the purpose of rendering a summary screen or showing the character in 3D.
-	/// </summary>
-	[DataContract]
-	public class DestinyCharacterPeerView{
+    /// <summary>
+    /// A minimal view of a character's equipped items, for the purpose of rendering a summary screen or showing the character in 3D.
+    /// </summary>
+    [DataContract]
+    public class DestinyCharacterPeerView
+    {
+        [DataMember(Name = "equipment", EmitDefaultValue = false)]
+        public List<DestinyItemPeerView> Equipment { get; set; }
 
-		[DataMember(Name="equipment", EmitDefaultValue=false)]
-		public List<DestinyItemPeerView> Equipment { get; set; }
 
-
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as DestinyCharacterPeerView);
         }
 
-		public bool Equals(DestinyCharacterPeerView input)
-		{
-			if (input == null) return false;
+        public bool Equals(DestinyCharacterPeerView input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     Equipment == input.Equipment ||
                     (Equipment != null && Equipment.Equals(input.Equipment))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

@@ -3,38 +3,38 @@ using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	/// <summary>
-	/// Part of our dynamic, localized Milestone content is arbitrary categories of items. These are built in our content management system, and thus aren't the same as programmatically generated rewards.
-	/// </summary>
-	[DataContract]
-	public class DestinyMilestoneContentItemCategory{
+    /// <summary>
+    /// Part of our dynamic, localized Milestone content is arbitrary categories of items. These are built in our content management system, and thus aren't the same as programmatically generated rewards.
+    /// </summary>
+    [DataContract]
+    public class DestinyMilestoneContentItemCategory
+    {
+        [DataMember(Name = "title", EmitDefaultValue = false)]
+        public string Title { get; set; }
 
-		[DataMember(Name="title", EmitDefaultValue=false)]
-		public string Title { get; set; }
-
-		[DataMember(Name="itemHashes", EmitDefaultValue=false)]
-		public List<uint> ItemHashes { get; set; }
+        [DataMember(Name = "itemHashes", EmitDefaultValue = false)]
+        public List<uint> ItemHashes { get; set; }
 
 
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as DestinyMilestoneContentItemCategory);
         }
 
-		public bool Equals(DestinyMilestoneContentItemCategory input)
-		{
-			if (input == null) return false;
+        public bool Equals(DestinyMilestoneContentItemCategory input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     Title == input.Title ||
                     (Title != null && Title.Equals(input.Title))
                 ) &&
-				(
+                (
                     ItemHashes == input.ItemHashes ||
                     (ItemHashes != null && ItemHashes.Equals(input.ItemHashes))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

@@ -2,28 +2,28 @@ using System.Runtime.Serialization;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	[DataContract]
-	public class DestinyPresentationNodeRecordChildEntry{
+    [DataContract]
+    public class DestinyPresentationNodeRecordChildEntry
+    {
+        [DataMember(Name = "recordHash", EmitDefaultValue = false)]
+        public uint RecordHash { get; set; }
 
-		[DataMember(Name="recordHash", EmitDefaultValue=false)]
-		public uint RecordHash { get; set; }
 
-
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as DestinyPresentationNodeRecordChildEntry);
         }
 
-		public bool Equals(DestinyPresentationNodeRecordChildEntry input)
-		{
-			if (input == null) return false;
+        public bool Equals(DestinyPresentationNodeRecordChildEntry input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     RecordHash == input.RecordHash ||
                     (RecordHash != null && RecordHash.Equals(input.RecordHash))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

@@ -2,35 +2,35 @@ using System.Runtime.Serialization;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	[DataContract]
-	public class DestinyArtifactTierItem{
+    [DataContract]
+    public class DestinyArtifactTierItem
+    {
+        [DataMember(Name = "itemHash", EmitDefaultValue = false)]
+        public uint ItemHash { get; set; }
 
-		[DataMember(Name="itemHash", EmitDefaultValue=false)]
-		public uint ItemHash { get; set; }
-
-		[DataMember(Name="isActive", EmitDefaultValue=false)]
-		public bool IsActive { get; set; }
+        [DataMember(Name = "isActive", EmitDefaultValue = false)]
+        public bool IsActive { get; set; }
 
 
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as DestinyArtifactTierItem);
         }
 
-		public bool Equals(DestinyArtifactTierItem input)
-		{
-			if (input == null) return false;
+        public bool Equals(DestinyArtifactTierItem input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     ItemHash == input.ItemHash ||
                     (ItemHash != null && ItemHash.Equals(input.ItemHash))
                 ) &&
-				(
+                (
                     IsActive == input.IsActive ||
                     (IsActive != null && IsActive.Equals(input.IsActive))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

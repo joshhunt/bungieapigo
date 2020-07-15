@@ -7,8 +7,4 @@
     <Authors>Josh Hunt</Authors>
   </PropertyGroup>
 
-  <ItemGroup>
-    <DnxInvisibleFolder Include="generator" />
-  </ItemGroup>
-
 </Project>

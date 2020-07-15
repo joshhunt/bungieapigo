@@ -2,48 +2,48 @@ using System.Runtime.Serialization;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	[DataContract]
-	public class SingleComponentResponseOfDestinyCharacterComponent{
+    [DataContract]
+    public class SingleComponentResponseOfDestinyCharacterComponent
+    {
+        /// <summary>
+        /// This component contains base properties of the character. You'll probably want to always request this component, but hey you do you.
+        /// </summary>
+        [DataMember(Name = "data", EmitDefaultValue = false)]
+        public DestinyCharacterComponent Data { get; set; }
 
-		/// <summary>
-		/// This component contains base properties of the character. You'll probably want to always request this component, but hey you do you.
-		/// </summary>
-		[DataMember(Name="data", EmitDefaultValue=false)]
-		public DestinyCharacterComponent Data { get; set; }
+        [DataMember(Name = "privacy", EmitDefaultValue = false)]
+        public ComponentPrivacySetting Privacy { get; set; }
 
-		[DataMember(Name="privacy", EmitDefaultValue=false)]
-		public ComponentPrivacySetting Privacy { get; set; }
-
-		/// <summary>
-		/// If true, this component is disabled.
-		/// </summary>
-		[DataMember(Name="disabled", EmitDefaultValue=false)]
-		public bool Disabled { get; set; }
+        /// <summary>
+        /// If true, this component is disabled.
+        /// </summary>
+        [DataMember(Name = "disabled", EmitDefaultValue = false)]
+        public bool Disabled { get; set; }
 
 
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as SingleComponentResponseOfDestinyCharacterComponent);
         }
 
-		public bool Equals(SingleComponentResponseOfDestinyCharacterComponent input)
-		{
-			if (input == null) return false;
+        public bool Equals(SingleComponentResponseOfDestinyCharacterComponent input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     Data == input.Data ||
                     (Data != null && Data.Equals(input.Data))
                 ) &&
-				(
+                (
                     Privacy == input.Privacy ||
                     (Privacy != null && Privacy.Equals(input.Privacy))
                 ) &&
-				(
+                (
                     Disabled == input.Disabled ||
                     (Disabled != null && Disabled.Equals(input.Disabled))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

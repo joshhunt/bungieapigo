@@ -56,7 +56,7 @@ export class ModelProperty {
   }
 
   jsonKey(): string {
-    return `[DataMember(Name="${this.name}", EmitDefaultValue=false)]`;
+    return `[DataMember(Name = "${this.name}", EmitDefaultValue = false)]`;
   }
 
   keywords(): string {

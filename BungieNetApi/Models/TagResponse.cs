@@ -2,35 +2,35 @@ using System.Runtime.Serialization;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	[DataContract]
-	public class TagResponse{
+    [DataContract]
+    public class TagResponse
+    {
+        [DataMember(Name = "tagText", EmitDefaultValue = false)]
+        public string TagText { get; set; }
 
-		[DataMember(Name="tagText", EmitDefaultValue=false)]
-		public string TagText { get; set; }
-
-		[DataMember(Name="ignoreStatus", EmitDefaultValue=false)]
-		public IgnoreResponse IgnoreStatus { get; set; }
+        [DataMember(Name = "ignoreStatus", EmitDefaultValue = false)]
+        public IgnoreResponse IgnoreStatus { get; set; }
 
 
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as TagResponse);
         }
 
-		public bool Equals(TagResponse input)
-		{
-			if (input == null) return false;
+        public bool Equals(TagResponse input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     TagText == input.TagText ||
                     (TagText != null && TagText.Equals(input.TagText))
                 ) &&
-				(
+                (
                     IgnoreStatus == input.IgnoreStatus ||
                     (IgnoreStatus != null && IgnoreStatus.Equals(input.IgnoreStatus))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

@@ -2,35 +2,35 @@ using System.Runtime.Serialization;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	[DataContract]
-	public class DestinyCollectibleAcquisitionBlock{
+    [DataContract]
+    public class DestinyCollectibleAcquisitionBlock
+    {
+        [DataMember(Name = "acquireMaterialRequirementHash", EmitDefaultValue = false)]
+        public uint AcquireMaterialRequirementHash { get; set; }
 
-		[DataMember(Name="acquireMaterialRequirementHash", EmitDefaultValue=false)]
-		public uint AcquireMaterialRequirementHash { get; set; }
-
-		[DataMember(Name="acquireTimestampUnlockValueHash", EmitDefaultValue=false)]
-		public uint AcquireTimestampUnlockValueHash { get; set; }
+        [DataMember(Name = "acquireTimestampUnlockValueHash", EmitDefaultValue = false)]
+        public uint AcquireTimestampUnlockValueHash { get; set; }
 
 
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as DestinyCollectibleAcquisitionBlock);
         }
 
-		public bool Equals(DestinyCollectibleAcquisitionBlock input)
-		{
-			if (input == null) return false;
+        public bool Equals(DestinyCollectibleAcquisitionBlock input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     AcquireMaterialRequirementHash == input.AcquireMaterialRequirementHash ||
                     (AcquireMaterialRequirementHash != null && AcquireMaterialRequirementHash.Equals(input.AcquireMaterialRequirementHash))
                 ) &&
-				(
+                (
                     AcquireTimestampUnlockValueHash == input.AcquireTimestampUnlockValueHash ||
                     (AcquireTimestampUnlockValueHash != null && AcquireTimestampUnlockValueHash.Equals(input.AcquireTimestampUnlockValueHash))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

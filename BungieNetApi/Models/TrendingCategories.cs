@@ -3,28 +3,28 @@ using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	[DataContract]
-	public class TrendingCategories{
+    [DataContract]
+    public class TrendingCategories
+    {
+        [DataMember(Name = "categories", EmitDefaultValue = false)]
+        public List<TrendingCategory> Categories { get; set; }
 
-		[DataMember(Name="categories", EmitDefaultValue=false)]
-		public List<TrendingCategory> Categories { get; set; }
 
-
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as TrendingCategories);
         }
 
-		public bool Equals(TrendingCategories input)
-		{
-			if (input == null) return false;
+        public bool Equals(TrendingCategories input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     Categories == input.Categories ||
                     (Categories != null && Categories.Equals(input.Categories))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

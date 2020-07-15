@@ -3,44 +3,44 @@ using System.Collections.Generic;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	/// <summary>
-	/// Represents a data-driven view for Email settings. Web/Mobile UI can use this data to show new EMail settings consistently without further manual work.
-	/// </summary>
-	[DataContract]
-	public class EmailViewDefinition{
+    /// <summary>
+    /// Represents a data-driven view for Email settings. Web/Mobile UI can use this data to show new EMail settings consistently without further manual work.
+    /// </summary>
+    [DataContract]
+    public class EmailViewDefinition
+    {
+        /// <summary>
+        /// The identifier for this view.
+        /// </summary>
+        [DataMember(Name = "name", EmitDefaultValue = false)]
+        public string Name { get; set; }
 
-		/// <summary>
-		/// The identifier for this view.
-		/// </summary>
-		[DataMember(Name="name", EmitDefaultValue=false)]
-		public string Name { get; set; }
-
-		/// <summary>
-		/// The ordered list of settings to show in this view.
-		/// </summary>
-		[DataMember(Name="viewSettings", EmitDefaultValue=false)]
-		public List<EmailViewDefinitionSetting> ViewSettings { get; set; }
+        /// <summary>
+        /// The ordered list of settings to show in this view.
+        /// </summary>
+        [DataMember(Name = "viewSettings", EmitDefaultValue = false)]
+        public List<EmailViewDefinitionSetting> ViewSettings { get; set; }
 
 
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as EmailViewDefinition);
         }
 
-		public bool Equals(EmailViewDefinition input)
-		{
-			if (input == null) return false;
+        public bool Equals(EmailViewDefinition input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     Name == input.Name ||
                     (Name != null && Name.Equals(input.Name))
                 ) &&
-				(
+                (
                     ViewSettings == input.ViewSettings ||
                     (ViewSettings != null && ViewSettings.Equals(input.ViewSettings))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

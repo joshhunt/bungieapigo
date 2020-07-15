@@ -2,23 +2,23 @@ using System.Runtime.Serialization;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	
-	public enum BucketScope
-	{
-		/// <summary>
-		/// Character = 0
-		/// </summary>
-		[EnumMember(Value = "0")]
-		Character = 0,
+    
+    public enum BucketScope
+    {
+        /// <summary>
+        /// Character = 0
+        /// </summary>
+        [EnumMember(Value = "0")]
+        Character = 0,
 
-		/// <summary>
-		/// Account = 1
-		/// </summary>
-		[EnumMember(Value = "1")]
-		Account = 1,
+        /// <summary>
+        /// Account = 1
+        /// </summary>
+        [EnumMember(Value = "1")]
+        Account = 1,
 
-		///value not found fallback
-		[EnumMember(Value = "999999999")]
-		ProtectedInvalidEnumValue = 999999999
-	}
+        ///value not found fallback
+        [EnumMember(Value = "999999999")]
+        ProtectedInvalidEnumValue = 999999999
+    }
 }

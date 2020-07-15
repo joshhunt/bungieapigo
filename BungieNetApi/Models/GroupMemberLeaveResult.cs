@@ -2,35 +2,35 @@ using System.Runtime.Serialization;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	[DataContract]
-	public class GroupMemberLeaveResult{
+    [DataContract]
+    public class GroupMemberLeaveResult
+    {
+        [DataMember(Name = "group", EmitDefaultValue = false)]
+        public GroupV2 Group { get; set; }
 
-		[DataMember(Name="group", EmitDefaultValue=false)]
-		public GroupV2 Group { get; set; }
-
-		[DataMember(Name="groupDeleted", EmitDefaultValue=false)]
-		public bool GroupDeleted { get; set; }
+        [DataMember(Name = "groupDeleted", EmitDefaultValue = false)]
+        public bool GroupDeleted { get; set; }
 
 
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as GroupMemberLeaveResult);
         }
 
-		public bool Equals(GroupMemberLeaveResult input)
-		{
-			if (input == null) return false;
+        public bool Equals(GroupMemberLeaveResult input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     Group == input.Group ||
                     (Group != null && Group.Equals(input.Group))
                 ) &&
-				(
+                (
                     GroupDeleted == input.GroupDeleted ||
                     (GroupDeleted != null && GroupDeleted.Equals(input.GroupDeleted))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

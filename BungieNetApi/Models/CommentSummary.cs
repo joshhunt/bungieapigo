@@ -2,35 +2,35 @@ using System.Runtime.Serialization;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	[DataContract]
-	public class CommentSummary{
+    [DataContract]
+    public class CommentSummary
+    {
+        [DataMember(Name = "topicId", EmitDefaultValue = false)]
+        public long TopicId { get; set; }
 
-		[DataMember(Name="topicId", EmitDefaultValue=false)]
-		public long TopicId { get; set; }
-
-		[DataMember(Name="commentCount", EmitDefaultValue=false)]
-		public long CommentCount { get; set; }
+        [DataMember(Name = "commentCount", EmitDefaultValue = false)]
+        public long CommentCount { get; set; }
 
 
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as CommentSummary);
         }
 
-		public bool Equals(CommentSummary input)
-		{
-			if (input == null) return false;
+        public bool Equals(CommentSummary input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     TopicId == input.TopicId ||
                     (TopicId != null && TopicId.Equals(input.TopicId))
                 ) &&
-				(
+                (
                     CommentCount == input.CommentCount ||
                     (CommentCount != null && CommentCount.Equals(input.CommentCount))
                 ) ;
-		}
-	}
+        }
+    }
 }
 

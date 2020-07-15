@@ -2,35 +2,35 @@ using System.Runtime.Serialization;
 
 namespace GhostSharp.BungieNetApi.Models
 {
-	[DataContract]
-	public class GroupNameSearchRequest{
+    [DataContract]
+    public class GroupNameSearchRequest
+    {
+        [DataMember(Name = "groupName", EmitDefaultValue = false)]
+        public string GroupName { get; set; }
 
-		[DataMember(Name="groupName", EmitDefaultValue=false)]
-		public string GroupName { get; set; }
-
-		[DataMember(Name="groupType", EmitDefaultValue=false)]
-		public GroupType GroupType { get; set; }
+        [DataMember(Name = "groupType", EmitDefaultValue = false)]
+        public GroupType GroupType { get; set; }
 
 
-		public override bool Equals(object input)
+        public override bool Equals(object input)
         {
             return this.Equals(input as GroupNameSearchRequest);
         }
 
-		public bool Equals(GroupNameSearchRequest input)
-		{
-			if (input == null) return false;
+        public bool Equals(GroupNameSearchRequest input)
+        {
+            if (input == null) return false;
 
-			return
-				(
+            return
+                (
                     GroupName == input.GroupName ||
                     (GroupName != null && GroupName.Equals(input.GroupName))
                 ) &&
-				(
+                (
                     GroupType == input.GroupType ||
                     (GroupType != null && GroupType.Equals(input.GroupType))
                 ) ;
-		}
-	}
+        }
+    }
 }
 
