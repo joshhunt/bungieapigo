@@ -6,11 +6,9 @@ This project implements C# classes for the [Bungie.net API](https://github.com/B
 
 Published to Nuget as [`GhostSharper`](https://www.nuget.org/packages/GhostSharper).
 
-## Interfaces and Enums
+## Usage
 
 There are definitions for every type defined in the Bungie.net services. See [their documentation](https://bungie-net.github.io/multi/) for a list - the interface names are the last part of the full name (for example, `Destiny.Definitions.DestinyVendorActionDefinition` becomes `DestinyVendorActionDefinition`).
-
-## Usage
 
 All definitions, enums, and API responses are on the `GhostSharper.Models` namespace. Additionally, `GhostSharper.Api.DestinyServerResponse` (name pending change) is a generic type used for API responses. e.g.
 
