@@ -34,7 +34,7 @@ namespace GhostSharper.Models
 
         /// <summary>
         /// Invisible = 4
-        /// If this flag is set, the collectible should not be shown to the user.
+        /// If this flag is set, the collectible should not be shown to the user.
         /// Please do consider honoring this flag. It is used - for example - to hide items that a person didn&#39;t get from the Eververse. I can&#39;t prevent these from being returned in definitions, because some people may have acquired them and thus they should show up: but I would hate for people to start feeling some variant of a Collector&#39;s Remorse about these items, and thus increasing their purchasing based on that compulsion. That would be a very unfortunate outcome, and one that I wouldn&#39;t like to see happen. So please, whether or not I&#39;m your mom, consider honoring this flag and don&#39;t show people invisible collectibles.
         /// </summary>
         [EnumMember(Value = "4")]

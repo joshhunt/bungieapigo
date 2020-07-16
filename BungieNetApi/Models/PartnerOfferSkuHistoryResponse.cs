@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 using System.Collections.Generic;
 
 namespace GhostSharper.Models
@@ -16,7 +17,7 @@ namespace GhostSharper.Models
         public string LocalizedDescription { get; set; }
 
         [DataMember(Name = "ClaimDate", EmitDefaultValue = false)]
-        public string ClaimDate { get; set; }
+        public DateTime ClaimDate { get; set; }
 
         [DataMember(Name = "AllOffersApplied", EmitDefaultValue = false)]
         public bool AllOffersApplied { get; set; }

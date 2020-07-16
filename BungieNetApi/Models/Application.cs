@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 using System.Collections.Generic;
 
 namespace GhostSharper.Models
@@ -55,19 +56,19 @@ namespace GhostSharper.Models
         /// Date the application was first added to our database.
         /// </summary>
         [DataMember(Name = "creationDate", EmitDefaultValue = false)]
-        public string CreationDate { get; set; }
+        public DateTime CreationDate { get; set; }
 
         /// <summary>
         /// Date the application status last changed.
         /// </summary>
         [DataMember(Name = "statusChanged", EmitDefaultValue = false)]
-        public string StatusChanged { get; set; }
+        public DateTime StatusChanged { get; set; }
 
         /// <summary>
         /// Date the first time the application status entered the 'Public' status.
         /// </summary>
         [DataMember(Name = "firstPublished", EmitDefaultValue = false)]
-        public string FirstPublished { get; set; }
+        public DateTime FirstPublished { get; set; }
 
         /// <summary>
         /// List of team members who manage this application on Bungie.net. Will always consist of at least the application owner.

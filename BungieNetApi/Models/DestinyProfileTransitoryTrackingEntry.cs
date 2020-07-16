@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -51,7 +52,7 @@ namespace GhostSharper.Models
         /// I don't know, but we can get at it - when I get time to actually test what it is, I'll update this. In the meantime, bask in the mysterious data.
         /// </summary>
         [DataMember(Name = "trackedDate", EmitDefaultValue = false)]
-        public string TrackedDate { get; set; }
+        public DateTime TrackedDate { get; set; }
 
 
         public override bool Equals(object input)

@@ -235,6 +235,11 @@ export class ApiDocHelper {
         if (format == "byte") {
           return "int";
         }
+
+        if (format == "date-time") {
+          return "DateTime";
+        }
+
         return "string";
 
       case "integer":

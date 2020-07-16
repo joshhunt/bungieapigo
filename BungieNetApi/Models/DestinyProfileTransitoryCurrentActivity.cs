@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -15,13 +16,13 @@ namespace GhostSharper.Models
         /// When the activity started.
         /// </summary>
         [DataMember(Name = "startTime", EmitDefaultValue = false)]
-        public string StartTime { get; set; }
+        public DateTime StartTime { get; set; }
 
         /// <summary>
         /// If you're still in it but it "ended" (like when folks are dancing around the loot after they beat a boss), this is when the activity ended.
         /// </summary>
         [DataMember(Name = "endTime", EmitDefaultValue = false)]
-        public string EndTime { get; set; }
+        public DateTime EndTime { get; set; }
 
         /// <summary>
         /// This is what our non-authoritative source thought the score was.

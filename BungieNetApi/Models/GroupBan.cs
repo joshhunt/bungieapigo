@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -21,10 +22,10 @@ namespace GhostSharper.Models
         public UserInfoCard CreatedBy { get; set; }
 
         [DataMember(Name = "dateBanned", EmitDefaultValue = false)]
-        public string DateBanned { get; set; }
+        public DateTime DateBanned { get; set; }
 
         [DataMember(Name = "dateExpires", EmitDefaultValue = false)]
-        public string DateExpires { get; set; }
+        public DateTime DateExpires { get; set; }
 
         [DataMember(Name = "comment", EmitDefaultValue = false)]
         public string Comment { get; set; }

@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -36,7 +37,7 @@ namespace GhostSharper.Models
         /// Time, UTC, when token expires.
         /// </summary>
         [DataMember(Name = "validUntil", EmitDefaultValue = false)]
-        public string ValidUntil { get; set; }
+        public DateTime ValidUntil { get; set; }
 
         /// <summary>
         /// Advanced Write Action Type from the permission request.

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -61,13 +62,13 @@ namespace GhostSharper.Models
         /// If known, this is the date when the event last began or refreshed. It will only be populated for events with fixed and repeating start and end dates.
         /// </summary>
         [DataMember(Name = "startDate", EmitDefaultValue = false)]
-        public string StartDate { get; set; }
+        public DateTime StartDate { get; set; }
 
         /// <summary>
         /// If known, this is the date when the event will next end or repeat. It will only be populated for events with fixed and repeating start and end dates.
         /// </summary>
         [DataMember(Name = "endDate", EmitDefaultValue = false)]
-        public string EndDate { get; set; }
+        public DateTime EndDate { get; set; }
 
         /// <summary>
         /// Used for ordering milestones in a display to match how we order them in BNet. May pull from static data, or possibly in the future from dynamic information.

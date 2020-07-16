@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 using System.Collections.Generic;
 
 namespace GhostSharper.Models
@@ -19,10 +20,10 @@ namespace GhostSharper.Models
         public long MembershipIdCreated { get; set; }
 
         [DataMember(Name = "creationDate", EmitDefaultValue = false)]
-        public string CreationDate { get; set; }
+        public DateTime CreationDate { get; set; }
 
         [DataMember(Name = "modificationDate", EmitDefaultValue = false)]
-        public string ModificationDate { get; set; }
+        public DateTime ModificationDate { get; set; }
 
         [DataMember(Name = "about", EmitDefaultValue = false)]
         public string About { get; set; }
@@ -82,7 +83,7 @@ namespace GhostSharper.Models
         public bool EnableInvitationMessagingForAdmins { get; set; }
 
         [DataMember(Name = "banExpireDate", EmitDefaultValue = false)]
-        public string BanExpireDate { get; set; }
+        public DateTime BanExpireDate { get; set; }
 
         [DataMember(Name = "features", EmitDefaultValue = false)]
         public GroupFeatures Features { get; set; }

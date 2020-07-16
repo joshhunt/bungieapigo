@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 using System.Collections.Generic;
 
 namespace GhostSharper.Models
@@ -19,7 +20,7 @@ namespace GhostSharper.Models
         /// The last time the user played with any character on this Profile.
         /// </summary>
         [DataMember(Name = "dateLastPlayed", EmitDefaultValue = false)]
-        public string DateLastPlayed { get; set; }
+        public DateTime DateLastPlayed { get; set; }
 
         /// <summary>
         /// If you want to know what expansions they own, this will contain that data.

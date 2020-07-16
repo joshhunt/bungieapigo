@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 using System.Collections.Generic;
 
 namespace GhostSharper.Models
@@ -31,7 +32,7 @@ namespace GhostSharper.Models
         /// The last date that the user played Destiny.
         /// </summary>
         [DataMember(Name = "dateLastPlayed", EmitDefaultValue = false)]
-        public string DateLastPlayed { get; set; }
+        public DateTime DateLastPlayed { get; set; }
 
         /// <summary>
         /// If the user is currently playing, this is how long they've been playing.

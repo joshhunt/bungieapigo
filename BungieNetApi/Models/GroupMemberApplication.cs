@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -9,13 +10,13 @@ namespace GhostSharper.Models
         public long GroupId { get; set; }
 
         [DataMember(Name = "creationDate", EmitDefaultValue = false)]
-        public string CreationDate { get; set; }
+        public DateTime CreationDate { get; set; }
 
         [DataMember(Name = "resolveState", EmitDefaultValue = false)]
         public GroupApplicationResolveState ResolveState { get; set; }
 
         [DataMember(Name = "resolveDate", EmitDefaultValue = false)]
-        public string ResolveDate { get; set; }
+        public DateTime ResolveDate { get; set; }
 
         [DataMember(Name = "resolvedByMembershipId", EmitDefaultValue = false)]
         public long ResolvedByMembershipId { get; set; }

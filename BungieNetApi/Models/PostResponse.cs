@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -6,7 +7,7 @@ namespace GhostSharper.Models
     public class PostResponse
     {
         [DataMember(Name = "lastReplyTimestamp", EmitDefaultValue = false)]
-        public string LastReplyTimestamp { get; set; }
+        public DateTime LastReplyTimestamp { get; set; }
 
         [DataMember(Name = "IsPinned", EmitDefaultValue = false)]
         public bool IsPinned { get; set; }

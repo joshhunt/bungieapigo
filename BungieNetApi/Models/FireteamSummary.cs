@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -21,7 +22,7 @@ namespace GhostSharper.Models
         public bool IsImmediate { get; set; }
 
         [DataMember(Name = "scheduledTime", EmitDefaultValue = false)]
-        public string ScheduledTime { get; set; }
+        public DateTime ScheduledTime { get; set; }
 
         [DataMember(Name = "ownerMembershipId", EmitDefaultValue = false)]
         public long OwnerMembershipId { get; set; }
@@ -42,10 +43,10 @@ namespace GhostSharper.Models
         public string Title { get; set; }
 
         [DataMember(Name = "dateCreated", EmitDefaultValue = false)]
-        public string DateCreated { get; set; }
+        public DateTime DateCreated { get; set; }
 
         [DataMember(Name = "dateModified", EmitDefaultValue = false)]
-        public string DateModified { get; set; }
+        public DateTime DateModified { get; set; }
 
         [DataMember(Name = "isPublic", EmitDefaultValue = false)]
         public bool IsPublic { get; set; }
@@ -57,7 +58,7 @@ namespace GhostSharper.Models
         public bool IsValid { get; set; }
 
         [DataMember(Name = "datePlayerModified", EmitDefaultValue = false)]
-        public string DatePlayerModified { get; set; }
+        public DateTime DatePlayerModified { get; set; }
 
         [DataMember(Name = "titleBeforeModeration", EmitDefaultValue = false)]
         public string TitleBeforeModeration { get; set; }

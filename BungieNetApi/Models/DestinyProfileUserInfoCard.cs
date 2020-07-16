@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 using System.Collections.Generic;
 
 namespace GhostSharper.Models
@@ -7,7 +8,7 @@ namespace GhostSharper.Models
     public class DestinyProfileUserInfoCard
     {
         [DataMember(Name = "dateLastPlayed", EmitDefaultValue = false)]
-        public string DateLastPlayed { get; set; }
+        public DateTime DateLastPlayed { get; set; }
 
         /// <summary>
         /// If this profile is being overridden/obscured by Cross Save, this will be set to true. We will still return the profile for display purposes where users need to know the info: it is up to any given area of the app/site to determine if this profile should still be shown.

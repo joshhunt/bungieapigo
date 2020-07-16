@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -97,7 +98,7 @@ namespace GhostSharper.Models
         /// Note that there's not actually any guarantee that it will go away: it could be chosen again and end up still being in the Vendor's sale items! But this is the next date where that test will occur, and is also the date that the game shows for availability on things like Bounties being sold. So it's the best we can give.
         /// </summary>
         [DataMember(Name = "overrideNextRefreshDate", EmitDefaultValue = false)]
-        public string OverrideNextRefreshDate { get; set; }
+        public DateTime OverrideNextRefreshDate { get; set; }
 
 
         public override bool Equals(object input)

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -55,7 +56,7 @@ namespace GhostSharper.Models
         /// The date at which this receipt is rendered invalid.
         /// </summary>
         [DataMember(Name = "expiresOn", EmitDefaultValue = false)]
-        public string ExpiresOn { get; set; }
+        public DateTime ExpiresOn { get; set; }
 
 
         public override bool Equals(object input)

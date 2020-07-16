@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace GhostSharp.BungieNetApi.Api
+namespace GhostSharper.Api
 {
     /// <summary>
     /// InlineResponse20037

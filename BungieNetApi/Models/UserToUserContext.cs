@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -12,7 +13,7 @@ namespace GhostSharper.Models
         public IgnoreResponse IgnoreStatus { get; set; }
 
         [DataMember(Name = "globalIgnoreEndDate", EmitDefaultValue = false)]
-        public string GlobalIgnoreEndDate { get; set; }
+        public DateTime GlobalIgnoreEndDate { get; set; }
 
 
         public override bool Equals(object input)

@@ -1,46 +1,38 @@
-# Bungie API Dart support
+# GhostSharper - Bungie API C# classes
 
-This project implements Dart definitions and API helpers for the [Bungie.net API](https://github.com/Bungie-net/api). It's based on [bungie-api-ts](https://github.com/DestinyItemManager/bungie-api-ts) that is meant for use in [Destiny Item Manager](http://destinyitemmanager.com), but should be general enough to use in any project. The code is completely generated from Bungie's documentation - I considered using something like Swagger Codegen, but instead opted for a custom generator so we could make the result as nice as possible.
+This project implements C# classes for the [Bungie.net API](https://github.com/Bungie-net/api). While it does provide class definitions for API responses, it does not provide API helpers to call the API itself - that's up to you. The code is completely generated from Bungie's documentation - I previously the OpenAPI codegen tool, but found the generated code to be too messy so I opted for a custom generator so we could make the result as nice as possible.
 
-# Install
-add this to your dependencies block in pubspec.yaml
-```
-dependencies:
-  bungie_api: ^12.2.4
-```
+## Install
 
-# Interfaces and Enums
+Published to Nuget as [`GhostSharper`](https://www.nuget.org/packages/GhostSharper).
 
-There are definitions for every type defined in the Bungie.net services. See [their documentation](https://bungie-net.github.io/multi/) for a list - the interface names are the last part of the full name (for example, `Destiny.Definitions.DestinyVendorActionDefinition` becomes `DestinyVendorActionDefinition`). There are a few exceptions, like `SingleComponentResponseOfDestinyInventoryComponent`, which have been mapped into nicer forms like `SingleComponentResponse<DestinyInventoryComponent>`, and the server responses, which are now `ServerResponse<T>` instead of something like `DestinyCharacterResponse`.
+## Interfaces and Enums
 
-# API Helpers
+There are definitions for every type defined in the Bungie.net services. See [their documentation](https://bungie-net.github.io/multi/) for a list - the interface names are the last part of the full name (for example, `Destiny.Definitions.DestinyVendorActionDefinition` becomes `DestinyVendorActionDefinition`).
 
-In addition to the types, there are also simple helper functions for each API endpoint. They define the inputs and outputs to that endpoint, and will call a user-provided function with HTTP request info that you can then use to make an HTTP request. This pattern was used so the API helpers could provide full type information. These helpers are not a full API client - they assist in building one. An example:
+## Usage
 
-```dart
-import 'dart:async';
-import 'package:http/http.dart' as http;
-import 'package:bungie_api_dart/destiny2.dart';
+All definitions, enums, and API responses are on the `GhostSharper.Models` namespace. Additionally, `GhostSharper.Api.DestinyServerResponse` (name pending change) is a generic type used for API responses. e.g.
 
-class BungieApiService{
-  Future<ServerResponse<DestinyManifest>> getManifest(){
-    return getDestinyManifest(new Client());
-  }
-}
-class Client implements HttpClient{
-  static const API_KEY = "your_key";
-  @override
-    Future<Object> request(HttpClientConfig config) {
-      if(config.method == 'GET'){
-        return http.get(config.url, headers: {'X-API-Key': API_KEY});
-      }
-      return http.post(config.url, headers: {'X-API-Key': API_KEY});
-    }
-}
+```csharp
+using GhostSharper.Api;
+using GhostSharper.Models;
+
+var jsonString = await getHttpAsync("https://www.bungie.net/Platform/Destiny2/Manifest");
+var manifestResponse = JsonConvert.DeserializeObject<DestinyServerResponse<DestinyManifest>>(response.Content);
+Debug.WriteLine(manifestResponse.Response.Version)
 ```
 
-# Build
+## Updates
+
+This repo and the published package is automatically updated using Github Actions when the API spec in the [Bungie.net API repo](https://github.com/Bungie-net/api) is update. The package version number published to NuGet matches the version from the Bungie API spec.
+
+## Build
+
+Node and Yarn is required for the generator. Node 14.x has been tested.
 
 ```
-./install.sh && ./build.sh
+yarn --cwd ./generator install
+yarn --cwd ./generator start
+dotnet pack -nowarn:CS0659 -nowarn:CS0472 --include-symbols --include-source -c Release
 ```

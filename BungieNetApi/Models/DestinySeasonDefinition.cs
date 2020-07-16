@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -21,10 +22,10 @@ namespace GhostSharper.Models
         public long SeasonNumber { get; set; }
 
         [DataMember(Name = "startDate", EmitDefaultValue = false)]
-        public string StartDate { get; set; }
+        public DateTime StartDate { get; set; }
 
         [DataMember(Name = "endDate", EmitDefaultValue = false)]
-        public string EndDate { get; set; }
+        public DateTime EndDate { get; set; }
 
         [DataMember(Name = "seasonPassHash", EmitDefaultValue = false)]
         public uint SeasonPassHash { get; set; }

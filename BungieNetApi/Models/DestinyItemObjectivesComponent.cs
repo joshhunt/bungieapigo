@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -28,7 +29,7 @@ namespace GhostSharper.Models
         /// If we have any information on when these objectives were completed, this will be the date of that completion. This won't be on many items, but could be interesting for some items that do store this information.
         /// </summary>
         [DataMember(Name = "dateCompleted", EmitDefaultValue = false)]
-        public string DateCompleted { get; set; }
+        public DateTime DateCompleted { get; set; }
 
 
         public override bool Equals(object input)

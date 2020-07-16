@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 using System.Collections.Generic;
 
 namespace GhostSharper.Models
@@ -76,7 +77,7 @@ namespace GhostSharper.Models
         /// If the item can expire, this is the date at which it will/did expire.
         /// </summary>
         [DataMember(Name = "expirationDate", EmitDefaultValue = false)]
-        public string ExpirationDate { get; set; }
+        public DateTime ExpirationDate { get; set; }
 
         /// <summary>
         /// If this is true, the object is actually a "wrapper" of the object it's representing. This means that it's not the actual item itself, but rather an item that must be "opened" in game before you have and can use the item.

@@ -31,7 +31,7 @@ namespace GhostSharper.Models
 
         /// <summary>
         /// GroupMember = 4
-        /// Nor do I understand the difference between them being in a &#39;Group&#39; vs. a &#39;Fireteam&#39;.
+        /// Nor do I understand the difference between them being in a &#39;Group&#39; vs. a &#39;Fireteam&#39;.
         /// I&#39;ll update these docs once I get more info. If I get more info. If you&#39;re reading this, I never got more info. You&#39;re on your own, kid.
         /// </summary>
         [EnumMember(Value = "4")]

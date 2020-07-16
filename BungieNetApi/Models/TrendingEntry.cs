@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 using System.Collections.Generic;
 
 namespace GhostSharper.Models
@@ -46,10 +47,10 @@ namespace GhostSharper.Models
         public string Image { get; set; }
 
         [DataMember(Name = "startDate", EmitDefaultValue = false)]
-        public string StartDate { get; set; }
+        public DateTime StartDate { get; set; }
 
         [DataMember(Name = "endDate", EmitDefaultValue = false)]
-        public string EndDate { get; set; }
+        public DateTime EndDate { get; set; }
 
         [DataMember(Name = "link", EmitDefaultValue = false)]
         public string Link { get; set; }
@@ -82,7 +83,7 @@ namespace GhostSharper.Models
         /// If the entry has a date at which it was created, this is that date.
         /// </summary>
         [DataMember(Name = "creationDate", EmitDefaultValue = false)]
-        public string CreationDate { get; set; }
+        public DateTime CreationDate { get; set; }
 
 
         public override bool Equals(object input)

@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -18,10 +19,10 @@ namespace GhostSharper.Models
         public string Subtitle { get; set; }
 
         [DataMember(Name = "dateStart", EmitDefaultValue = false)]
-        public string DateStart { get; set; }
+        public DateTime DateStart { get; set; }
 
         [DataMember(Name = "dateEnd", EmitDefaultValue = false)]
-        public string DateEnd { get; set; }
+        public DateTime DateEnd { get; set; }
 
         /// <summary>
         /// A destiny event does not necessarily have a related Milestone, but if it does the details will be returned here.

@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 using System.Collections.Generic;
 
 namespace GhostSharper.Models
@@ -16,10 +17,10 @@ namespace GhostSharper.Models
         public string CmsPath { get; set; }
 
         [DataMember(Name = "creationDate", EmitDefaultValue = false)]
-        public string CreationDate { get; set; }
+        public DateTime CreationDate { get; set; }
 
         [DataMember(Name = "modifyDate", EmitDefaultValue = false)]
-        public string ModifyDate { get; set; }
+        public DateTime ModifyDate { get; set; }
 
         [DataMember(Name = "allowComments", EmitDefaultValue = false)]
         public bool AllowComments { get; set; }

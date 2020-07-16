@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -12,7 +13,7 @@ namespace GhostSharper.Models
         public string AlertHtml { get; set; }
 
         [DataMember(Name = "AlertTimestamp", EmitDefaultValue = false)]
-        public string AlertTimestamp { get; set; }
+        public DateTime AlertTimestamp { get; set; }
 
         [DataMember(Name = "AlertLink", EmitDefaultValue = false)]
         public string AlertLink { get; set; }

@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -6,10 +7,10 @@ namespace GhostSharper.Models
     public class DateRange
     {
         [DataMember(Name = "start", EmitDefaultValue = false)]
-        public string Start { get; set; }
+        public DateTime Start { get; set; }
 
         [DataMember(Name = "end", EmitDefaultValue = false)]
-        public string End { get; set; }
+        public DateTime End { get; set; }
 
 
         public override bool Equals(object input)

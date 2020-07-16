@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -18,13 +19,13 @@ namespace GhostSharper.Models
         public long CharacterId { get; set; }
 
         [DataMember(Name = "dateJoined", EmitDefaultValue = false)]
-        public string DateJoined { get; set; }
+        public DateTime DateJoined { get; set; }
 
         [DataMember(Name = "hasMicrophone", EmitDefaultValue = false)]
         public bool HasMicrophone { get; set; }
 
         [DataMember(Name = "lastPlatformInviteAttemptDate", EmitDefaultValue = false)]
-        public string LastPlatformInviteAttemptDate { get; set; }
+        public DateTime LastPlatformInviteAttemptDate { get; set; }
 
         [DataMember(Name = "lastPlatformInviteAttemptResult", EmitDefaultValue = false)]
         public FireteamPlatformInviteResult LastPlatformInviteAttemptResult { get; set; }

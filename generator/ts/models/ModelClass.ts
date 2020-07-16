@@ -4,6 +4,7 @@ import { chain, map } from "lodash";
 import { ApiDocHelper } from "../utils/api-doc-helper";
 import { camelcaseToUnderscore } from "../utils/camelcase-to-underscore";
 import { ImportInfo } from "./ImportInfo";
+import { basename } from "path";
 
 export class ModelClass {
   static all: { [id: string]: ModelClass } = {};
@@ -60,6 +61,10 @@ export class ModelClass {
 
         if (type.includes("Dictionary<")) {
           return "System.Collections.Generic";
+        }
+
+        if (type.includes("DateTime")) {
+          return "System";
         }
 
         return null;

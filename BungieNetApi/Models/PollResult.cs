@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -12,7 +13,7 @@ namespace GhostSharper.Models
         public long AnswerSlot { get; set; }
 
         [DataMember(Name = "lastVoteDate", EmitDefaultValue = false)]
-        public string LastVoteDate { get; set; }
+        public DateTime LastVoteDate { get; set; }
 
         [DataMember(Name = "votes", EmitDefaultValue = false)]
         public long Votes { get; set; }

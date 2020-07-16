@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 using System.Collections.Generic;
 
 namespace GhostSharper.Models
@@ -13,7 +14,7 @@ namespace GhostSharper.Models
         /// The last date that the user started playing an activity.
         /// </summary>
         [DataMember(Name = "dateActivityStarted", EmitDefaultValue = false)]
-        public string DateActivityStarted { get; set; }
+        public DateTime DateActivityStarted { get; set; }
 
         /// <summary>
         /// The list of activities that the user can play.

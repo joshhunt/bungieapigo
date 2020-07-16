@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -18,7 +19,7 @@ namespace GhostSharper.Models
         public GroupType GroupType { get; set; }
 
         [DataMember(Name = "creationDate", EmitDefaultValue = false)]
-        public string CreationDate { get; set; }
+        public DateTime CreationDate { get; set; }
 
         [DataMember(Name = "about", EmitDefaultValue = false)]
         public string About { get; set; }

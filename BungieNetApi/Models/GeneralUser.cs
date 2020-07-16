@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -36,10 +37,10 @@ namespace GhostSharper.Models
         public string About { get; set; }
 
         [DataMember(Name = "firstAccess", EmitDefaultValue = false)]
-        public string FirstAccess { get; set; }
+        public DateTime FirstAccess { get; set; }
 
         [DataMember(Name = "lastUpdate", EmitDefaultValue = false)]
-        public string LastUpdate { get; set; }
+        public DateTime LastUpdate { get; set; }
 
         [DataMember(Name = "legacyPortalUID", EmitDefaultValue = false)]
         public long LegacyPortalUid { get; set; }
@@ -87,10 +88,10 @@ namespace GhostSharper.Models
         public string StatusText { get; set; }
 
         [DataMember(Name = "statusDate", EmitDefaultValue = false)]
-        public string StatusDate { get; set; }
+        public DateTime StatusDate { get; set; }
 
         [DataMember(Name = "profileBanExpire", EmitDefaultValue = false)]
-        public string ProfileBanExpire { get; set; }
+        public DateTime ProfileBanExpire { get; set; }
 
         [DataMember(Name = "blizzardDisplayName", EmitDefaultValue = false)]
         public string BlizzardDisplayName { get; set; }

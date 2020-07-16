@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -9,7 +10,7 @@ namespace GhostSharper.Models
         /// Timestamp for the related count.
         /// </summary>
         [DataMember(Name = "time", EmitDefaultValue = false)]
-        public string Time { get; set; }
+        public DateTime Time { get; set; }
 
         /// <summary>
         /// Count associated with timestamp

@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -27,7 +28,7 @@ namespace GhostSharper.Models
         public long QuantityApplied { get; set; }
 
         [DataMember(Name = "ApplyDate", EmitDefaultValue = false)]
-        public string ApplyDate { get; set; }
+        public DateTime ApplyDate { get; set; }
 
 
         public override bool Equals(object input)

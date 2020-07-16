@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 using System.Collections.Generic;
 
 namespace GhostSharper.Models
@@ -10,7 +11,7 @@ namespace GhostSharper.Models
         /// Date and time for the activity.
         /// </summary>
         [DataMember(Name = "period", EmitDefaultValue = false)]
-        public string Period { get; set; }
+        public DateTime Period { get; set; }
 
         /// <summary>
         /// If this activity has "phases", this is the phase at which the activity was started.

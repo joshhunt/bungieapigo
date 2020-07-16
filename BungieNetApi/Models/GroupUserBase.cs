@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -18,7 +19,7 @@ namespace GhostSharper.Models
         public UserInfoCard BungieNetUserInfo { get; set; }
 
         [DataMember(Name = "joinDate", EmitDefaultValue = false)]
-        public string JoinDate { get; set; }
+        public DateTime JoinDate { get; set; }
 
 
         public override bool Equals(object input)

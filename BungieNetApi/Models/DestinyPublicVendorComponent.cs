@@ -1,4 +1,5 @@
 using System.Runtime.Serialization;
+using System;
 
 namespace GhostSharper.Models
 {
@@ -24,7 +25,7 @@ namespace GhostSharper.Models
         /// Issue https://github.com/Bungie-net/api/issues/353 is tracking a fix to start providing visibility date ranges where possible in addition to this refresh date, so that all important dates for vendors are available for use.
         /// </summary>
         [DataMember(Name = "nextRefreshDate", EmitDefaultValue = false)]
-        public string NextRefreshDate { get; set; }
+        public DateTime NextRefreshDate { get; set; }
 
         /// <summary>
         /// If True, the Vendor is currently accessible. 
