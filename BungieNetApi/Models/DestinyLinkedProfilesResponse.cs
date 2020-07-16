@@ -1,7 +1,7 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace GhostSharp.BungieNetApi.Models
+namespace GhostSharper.Models
 {
     /// <summary>
     /// I know what you seek. You seek linked accounts. Found them, you have.

@@ -1,7 +1,7 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace GhostSharp.BungieNetApi.Models
+namespace GhostSharper.Models
 {
     /// <summary>
     /// Many items can be rendered in 3D. When you request this block, you will obtain the custom data needed to render this specific instance of the item.

@@ -1,7 +1,7 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace GhostSharp.BungieNetApi.Models
+namespace GhostSharper.Models
 {
     /// <summary>
     /// Information about the category and items currently sold in that category.

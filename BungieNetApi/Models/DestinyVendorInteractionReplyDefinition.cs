@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace GhostSharp.BungieNetApi.Models
+namespace GhostSharper.Models
 {
     /// <summary>
     /// When the interaction is replied to, Reward sites will fire and items potentially selected based on whether the given unlock expression is TRUE.

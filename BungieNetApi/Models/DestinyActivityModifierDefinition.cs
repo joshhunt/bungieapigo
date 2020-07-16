@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace GhostSharp.BungieNetApi.Models
+namespace GhostSharper.Models
 {
     /// <summary>
     /// Modifiers - in Destiny 1, these were referred to as "Skulls" - are changes that can be applied to an Activity.

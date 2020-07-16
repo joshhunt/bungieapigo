@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace GhostSharp.BungieNetApi.Models
+namespace GhostSharper.Models
 {
     /// <summary>
     /// Destinations and Activities may have default Activity Graphs that should be shown when you bring up the Director and are playing in either.

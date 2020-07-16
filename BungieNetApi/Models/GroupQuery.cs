@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace GhostSharp.BungieNetApi.Models
+namespace GhostSharper.Models
 {
     /// <summary>
     /// NOTE: GroupQuery, as of Destiny 2, has essentially two totally different and incompatible "modes".

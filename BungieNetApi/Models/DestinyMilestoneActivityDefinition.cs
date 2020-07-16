@@ -1,7 +1,7 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
 
-namespace GhostSharp.BungieNetApi.Models
+namespace GhostSharper.Models
 {
     /// <summary>
     /// Milestones can have associated activities which provide additional information about the context, challenges, modifiers, state etc... related to this Milestone. 

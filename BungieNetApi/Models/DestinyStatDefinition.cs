@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace GhostSharp.BungieNetApi.Models
+namespace GhostSharper.Models
 {
     /// <summary>
     /// This represents a stat that's applied to a character or an item (such as a weapon, piece of armor, or a vehicle).

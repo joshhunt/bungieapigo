@@ -1,6 +1,6 @@
 using System.Runtime.Serialization;
 
-namespace GhostSharp.BungieNetApi.Models
+namespace GhostSharper.Models
 {
     /// <summary>
     /// The details of an overlay prompt to show to a user. They are all fairly self-explanatory localized strings that can be shown.
