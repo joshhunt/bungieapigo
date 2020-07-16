@@ -10,6 +10,7 @@
     <AssemblyName>GhostSharper</AssemblyName>
     <RootNamespace>GhostSharper</RootNamespace>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>bungie; destiny; destiny-api;</PackageTags>
     <PackageProjectUrl></PackageProjectUrl>
     <Description>C# classes for BungieNetAPI definitions, API responses, and enums.</Description>
