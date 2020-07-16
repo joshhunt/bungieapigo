@@ -54,7 +54,7 @@ namespace GhostSharper.Models
 
         /// <summary>
         /// PlatformSilver = 105
-        /// This will get you information about the silver that this profile has on every platform on which it plays.
+        /// This will get you information about the silver that this profile has on every platform on which it plays.
         ///  You may only request this component for the logged in user&#39;s Profile, and will not recieve it if you request it for another Profile.
         /// </summary>
         [EnumMember(Value = "105")]
@@ -174,9 +174,9 @@ namespace GhostSharper.Models
 
         /// <summary>
         /// ItemReusablePlugs = 310
-        /// Sometimes, designers create thousands of reusable plugs and suddenly your response sizes are almost 3MB, and something has to give.
-        ///  Reusable Plugs were split off as their own component, away from ItemSockets, as a result of the Plug changes in Shadowkeep that made plug data infeasibly large for the most common use cases.
-        ///  Request this component if and only if you need to know what plugs *could* be inserted into a socket, and need to know it before &quot;drilling&quot; into the details of an item in your application (for instance, if you&#39;re doing some sort of interesting sorting or aggregation based on available plugs.
+        /// Sometimes, designers create thousands of reusable plugs and suddenly your response sizes are almost 3MB, and something has to give.
+        ///  Reusable Plugs were split off as their own component, away from ItemSockets, as a result of the Plug changes in Shadowkeep that made plug data infeasibly large for the most common use cases.
+        ///  Request this component if and only if you need to know what plugs *could* be inserted into a socket, and need to know it before &quot;drilling&quot; into the details of an item in your application (for instance, if you&#39;re doing some sort of interesting sorting or aggregation based on available plugs.
         ///  When you get this, you will also need to combine it with &quot;Plug Sets&quot; data if you want a full picture of all of the available plugs: this component will only return plugs that have state data that is per-item. See Plug Sets for available plugs that have Character, Profile, or no state-specific restrictions.
         /// </summary>
         [EnumMember(Value = "310")]
