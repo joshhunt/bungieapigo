@@ -65,7 +65,7 @@ jobs:
 
       - name: Update version in .csproj
         if: steps.code-changed.outputs.dirty
-        run: sed -ie "s/<Version>.*<\/Version>/<Version>${{ steps.api-version.outputs.value }}<\/Version>/" GhostSharp.csproj
+        run: sed -i "s/<Version>.*<\/Version>/<Version>${{ steps.api-version.outputs.value }}<\/Version>/" GhostSharp.csproj
 
       - name: Build and publish to NuGet
         if: steps.code-changed.outputs.dirty
