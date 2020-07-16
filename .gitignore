@@ -38,6 +38,7 @@ bld/
 [Ll]og/
 
 Configuration.resw
+.snupkg
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
