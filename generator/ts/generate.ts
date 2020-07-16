@@ -44,7 +44,7 @@ _.each(doc.components!.schemas!, (schema: SchemaObject, index: string) => {
 });
 
 deleteAll();
-copyCustom();
+copyCustom(doc);
 
 // Skipping, I don't want these, yet
 // _.each(ApiClass.all, (apiClass: ApiClass) => {

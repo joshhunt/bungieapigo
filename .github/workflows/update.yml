@@ -58,14 +58,14 @@ jobs:
         id: code-changed
         run: echo ::set-output name=dirty::"$(git status --porcelain)"
 
-      - name: Get API spec
+      - name: Get Bungie API version
         if: steps.code-changed.outputs.dirty
-        id: api-spec
-        run: echo "::set-output name=contents::$(cat ./api-src/openapi.json)"
+        id: api-version
+        run: echo "::set-output name=value::$(cat bungie-api-version)"
 
       - name: Update version in .csproj
         if: steps.code-changed.outputs.dirty
-        run: sed -ie "s/<Version>.*<\/Version>/<Version>${{ fromJson(steps.api-spec.outputs.contents).info.version }}<\/Version>/" GhostSharp.csproj
+        run: sed -ie "s/<Version>.*<\/Version>/<Version>${{ steps.api-version.outputs.value }}<\/Version>/" GhostSharp.csproj
 
       - name: Build and Pack library
         if: steps.code-changed.outputs.dirty

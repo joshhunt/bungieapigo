@@ -54,12 +54,6 @@ namespace GhostSharper.Models
         [DataMember(Name = "currentSeasonHash", EmitDefaultValue = false)]
         public uint CurrentSeasonHash { get; set; }
 
-        /// <summary>
-        /// If populated, this is the reward power cap for the current season.
-        /// </summary>
-        [DataMember(Name = "currentSeasonRewardPowerCap", EmitDefaultValue = false)]
-        public long CurrentSeasonRewardPowerCap { get; set; }
-
 
         public override bool Equals(object input)
         {
@@ -94,10 +88,6 @@ namespace GhostSharper.Models
                 (
                     CurrentSeasonHash == input.CurrentSeasonHash ||
                     (CurrentSeasonHash != null && CurrentSeasonHash.Equals(input.CurrentSeasonHash))
-                ) &&
-                (
-                    CurrentSeasonRewardPowerCap == input.CurrentSeasonRewardPowerCap ||
-                    (CurrentSeasonRewardPowerCap != null && CurrentSeasonRewardPowerCap.Equals(input.CurrentSeasonRewardPowerCap))
                 ) ;
         }
     }
