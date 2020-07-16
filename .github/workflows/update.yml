@@ -16,16 +16,10 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
 
-      - name: Checkout submodules (Bungie-net/api)
-        uses: srt32/git-actions@v0.0.3
+      - name: Checkout submodules
+        uses: textbook/git-checkout-submodule-action@master
         with:
-          args: git submodule update --init --recursive
-
-      - name: Update submodules (Bungie-net/api)
-        working-directory: ./api-src
-        run: |
-          git checkout master
-          git pull
+          remote: true
 
       - name: Check if there were changes
         id: bungie-changed

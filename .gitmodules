@@ -1,3 +1,4 @@
 [submodule "api-src"]
 	path = api-src
 	url = https://github.com/Bungie-net/api
+	branch = master
