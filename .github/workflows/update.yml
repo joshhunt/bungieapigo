@@ -3,7 +3,7 @@ name: Scheduled checks
 on:
   push:
   schedule:
-    - cron: "*/5 * * * *" # Every hour
+    - cron: "0 * * * *" # Every hour
 
 jobs:
   check-for-api-update:
@@ -67,17 +67,14 @@ jobs:
         if: steps.code-changed.outputs.dirty
         run: sed -ie "s/<Version>.*<\/Version>/<Version>${{ steps.api-version.outputs.value }}<\/Version>/" GhostSharp.csproj
 
-      - name: Build and Pack library
-        if: steps.code-changed.outputs.dirty
-        run: dotnet pack -nowarn:CS0659 -nowarn:CS0472 --include-symbols --include-source -c Release
-
-      - name: Publish to nuget
+      - name: Build and publish to NuGet
         if: steps.code-changed.outputs.dirty
         uses: brandedoutcast/publish-nuget@v2.5.2
         with:
           PROJECT_FILE_PATH: GhostSharp.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
           INCLUDE_SYMBOLS: true
+          TAG_COMMIT: false
 
       - name: Commit everything
         if: steps.code-changed.outputs.dirty
@@ -86,9 +83,11 @@ jobs:
           git config --local user.name "GitHub Action"
           git add .
           git commit -am "Updated to Bungie API spec version ${{ steps.api-version.outputs.value }}"
+          git tag v${{ steps.api-version.outputs.value }}
 
       - name: Push changes
         if: steps.code-changed.outputs.dirty
         uses: ad-m/github-push-action@master
         with:
+          tags: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
