@@ -3,10 +3,10 @@ name: Scheduled checks
 on:
   push:
   schedule:
-    - cron: "0 * * * *" # Every hour
+    - cron: "*/5 * * * *" # Every hour
 
 jobs:
-  check-run-commit:
+  check-for-api-update:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,37 +21,74 @@ jobs:
         with:
           args: git submodule update --init --recursive
 
+      - name: Check if there were changes
+        id: bungie-changed
+        run: echo ::set-output name=dirty::"$(git status --porcelain)"
+
+      - name: Commit submodule
+        if: steps.bungie-changed.outputs.dirty
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add api-src
+          git commit -m "Updating bungie-net/api submodule"
+
       - name: Use Node.js
+        if: steps.bungie-changed.outputs.dirty
         uses: actions/setup-node@v1
         with:
           node-version: 14.x
 
       - name: Setup .NET Core
+        if: steps.bungie-changed.outputs.dirty
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 3.1.101
+          dotnet-version: 3.1.302
 
-      - run: yarn install
-      - run: yarn run build:scripts
-      - run: yarn run scripts
+      - name: Yarn install
+        if: steps.bungie-changed.outputs.dirty
+        run: yarn --cwd ./generator install
+
+      - name: Generate classes
+        if: steps.bungie-changed.outputs.dirty
+        run: yarn --cwd ./generator start
 
       - name: Check if there were changes
-        id: changes-check
+        if: steps.bungie-changed.outputs.dirty
+        id: code-changed
         run: echo ::set-output name=dirty::"$(git status --porcelain)"
 
-      - name: Get manifest version file
-        id: manifest-version
-        run: echo "::set-output name=contents::$(cat ./generated-data/version.json)"
+      - name: Get API spec
+        if: steps.code-changed.outputs.dirty
+        id: api-spec
+        run: echo "::set-output name=contents::$(cat ./api-src/openapi.json)"
+
+      - name: Update version in .csproj
+        if: steps.code-changed.outputs.dirty
+        run: sed -ie "s/<Version>.*<\/Version>/<Version>${{ fromJson(steps.api-spec.outputs.contents).info.version }}<\/Version>/" GhostSharp.csproj
+
+      - name: Build and Pack library
+        if: steps.code-changed.outputs.dirty
+        run: dotnet pack -nowarn:CS0659 -nowarn:CS0472 --include-symbols --include-source -c Release
+
+      - name: Publish to nuget
+        if: steps.code-changed.outputs.dirty
+        uses: brandedoutcast/publish-nuget@v2.5.2
+        with:
+          PROJECT_FILE_PATH: GhostSharp.csproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+          INCLUDE_SYMBOLS: true
 
       - name: Commit everything
-        if: steps.changes-check.outputs.dirty
+        if: steps.code-changed.outputs.dirty
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git commit -m "Destiny manifest changed to version ${{ fromJson(steps.manifest-version.outputs.contents).version }}" -a
+          git add .
+          git commit -am "Updated to Bungie API spec version ${{ fromJson(steps.api-spec.outputs.contents).info.version }}"
 
       - name: Push changes
-        if: steps.changes-check.outputs.dirty
+        if: steps.code-changed.outputs.dirty
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
