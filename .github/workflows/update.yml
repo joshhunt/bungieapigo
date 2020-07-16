@@ -85,7 +85,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -am "Updated to Bungie API spec version ${{ fromJson(steps.api-spec.outputs.contents).info.version }}"
+          git commit -am "Updated to Bungie API spec version ${{ steps.api-version.outputs.value }}"
 
       - name: Push changes
         if: steps.code-changed.outputs.dirty
