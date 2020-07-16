@@ -22,7 +22,6 @@ jobs:
           args: git submodule update --init --recursive
 
       - name: Update submodules (Bungie-net/api)
-        uses: srt32/git-actions@v0.0.3
         working-directory: ./api-src
         run: |
           git checkout master
