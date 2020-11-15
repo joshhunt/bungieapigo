@@ -34,3 +34,5 @@ yarn --cwd ./generator install
 yarn --cwd ./generator start
 dotnet pack -nowarn:CS0659 -nowarn:CS0472 --include-symbols --include-source -c Release
 ```
+
+Have a nice day.
