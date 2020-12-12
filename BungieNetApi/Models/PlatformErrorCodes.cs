@@ -3320,6 +3320,12 @@ namespace GhostSharper.Models
         DestinyNotEnoughRoomForMultipleRewards = 1687,
 
         /// <summary>
+        /// DestinyDirectBabelClientTimeout = 1688
+        /// </summary>
+        [EnumMember(Value = "1688")]
+        DestinyDirectBabelClientTimeout = 1688,
+
+        /// <summary>
         /// FbInvalidRequest = 1800
         /// </summary>
         [EnumMember(Value = "1800")]
@@ -4602,6 +4608,30 @@ namespace GhostSharper.Models
         /// </summary>
         [EnumMember(Value = "3600")]
         StadiaAccountRequired = 3600,
+
+        /// <summary>
+        /// ErrorPhoneValidationTooManyUses = 3702
+        /// </summary>
+        [EnumMember(Value = "3702")]
+        ErrorPhoneValidationTooManyUses = 3702,
+
+        /// <summary>
+        /// ErrorPhoneValidationNoAssociatedPhone = 3703
+        /// </summary>
+        [EnumMember(Value = "3703")]
+        ErrorPhoneValidationNoAssociatedPhone = 3703,
+
+        /// <summary>
+        /// ErrorPhoneValidationCodeInvalid = 3705
+        /// </summary>
+        [EnumMember(Value = "3705")]
+        ErrorPhoneValidationCodeInvalid = 3705,
+
+        /// <summary>
+        /// ErrorPhoneValidationBanned = 3706
+        /// </summary>
+        [EnumMember(Value = "3706")]
+        ErrorPhoneValidationBanned = 3706,
 
     }
 }

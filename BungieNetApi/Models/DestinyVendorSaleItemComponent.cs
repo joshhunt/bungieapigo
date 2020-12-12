@@ -101,6 +101,12 @@ namespace GhostSharper.Models
         [DataMember(Name = "overrideNextRefreshDate", EmitDefaultValue = false)]
         public DateTime OverrideNextRefreshDate { get; set; }
 
+        /// <summary>
+        /// If true, this item can be purchased through the Bungie.net API.
+        /// </summary>
+        [DataMember(Name = "apiPurchasable", EmitDefaultValue = false)]
+        public bool ApiPurchasable { get; set; }
+
 
         public override bool Equals(object input)
         {
@@ -155,6 +161,10 @@ namespace GhostSharper.Models
                 (
                     OverrideNextRefreshDate == input.OverrideNextRefreshDate ||
                     (OverrideNextRefreshDate != null && OverrideNextRefreshDate.Equals(input.OverrideNextRefreshDate))
+                ) &&
+                (
+                    ApiPurchasable == input.ApiPurchasable ||
+                    (ApiPurchasable != null && ApiPurchasable.Equals(input.ApiPurchasable))
                 ) ;
         }
     }

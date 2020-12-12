@@ -91,6 +91,9 @@ namespace GhostSharper.Models
         [DataMember(Name = "disableChildSubscreenNavigation", EmitDefaultValue = false)]
         public bool DisableChildSubscreenNavigation { get; set; }
 
+        [DataMember(Name = "maxCategoryRecordScore", EmitDefaultValue = false)]
+        public long MaxCategoryRecordScore { get; set; }
+
         [DataMember(Name = "presentationNodeType", EmitDefaultValue = false)]
         public DestinyPresentationNodeType PresentationNodeType { get; set; }
 
@@ -185,6 +188,10 @@ namespace GhostSharper.Models
                 (
                     DisableChildSubscreenNavigation == input.DisableChildSubscreenNavigation ||
                     (DisableChildSubscreenNavigation != null && DisableChildSubscreenNavigation.Equals(input.DisableChildSubscreenNavigation))
+                ) &&
+                (
+                    MaxCategoryRecordScore == input.MaxCategoryRecordScore ||
+                    (MaxCategoryRecordScore.Equals(input.MaxCategoryRecordScore))
                 ) &&
                 (
                     PresentationNodeType == input.PresentationNodeType ||

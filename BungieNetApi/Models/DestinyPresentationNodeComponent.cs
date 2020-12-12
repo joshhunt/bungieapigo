@@ -26,6 +26,12 @@ namespace GhostSharper.Models
         [DataMember(Name = "completionValue", EmitDefaultValue = false)]
         public long CompletionValue { get; set; }
 
+        /// <summary>
+        /// If available, this is the current score for the record category that this node represents.
+        /// </summary>
+        [DataMember(Name = "recordCategoryScore", EmitDefaultValue = false)]
+        public long RecordCategoryScore { get; set; }
+
 
         public override bool Equals(object input)
         {
@@ -52,6 +58,10 @@ namespace GhostSharper.Models
                 (
                     CompletionValue == input.CompletionValue ||
                     (CompletionValue.Equals(input.CompletionValue))
+                ) &&
+                (
+                    RecordCategoryScore == input.RecordCategoryScore ||
+                    (RecordCategoryScore.Equals(input.RecordCategoryScore))
                 ) ;
         }
     }

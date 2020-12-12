@@ -192,5 +192,11 @@ namespace GhostSharper.Models
         [EnumMember(Value = "31")]
         Bow = 31,
 
+        /// <summary>
+        /// DummyRepeatableBounty = 32
+        /// </summary>
+        [EnumMember(Value = "32")]
+        DummyRepeatableBounty = 32,
+
     }
 }

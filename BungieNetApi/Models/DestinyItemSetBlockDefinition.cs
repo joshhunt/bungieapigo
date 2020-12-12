@@ -40,6 +40,18 @@ namespace GhostSharper.Models
         [DataMember(Name = "questLineName", EmitDefaultValue = false)]
         public string QuestLineName { get; set; }
 
+        /// <summary>
+        /// The description of the quest line that this quest step is a part of.
+        /// </summary>
+        [DataMember(Name = "questLineDescription", EmitDefaultValue = false)]
+        public string QuestLineDescription { get; set; }
+
+        /// <summary>
+        /// An additional summary of this step in the quest line.
+        /// </summary>
+        [DataMember(Name = "questStepSummary", EmitDefaultValue = false)]
+        public string QuestStepSummary { get; set; }
+
 
         public override bool Equals(object input)
         {
@@ -70,6 +82,14 @@ namespace GhostSharper.Models
                 (
                     QuestLineName == input.QuestLineName ||
                     (QuestLineName != null && QuestLineName.Equals(input.QuestLineName))
+                ) &&
+                (
+                    QuestLineDescription == input.QuestLineDescription ||
+                    (QuestLineDescription != null && QuestLineDescription.Equals(input.QuestLineDescription))
+                ) &&
+                (
+                    QuestStepSummary == input.QuestStepSummary ||
+                    (QuestStepSummary != null && QuestStepSummary.Equals(input.QuestStepSummary))
                 ) ;
         }
     }

@@ -50,5 +50,17 @@ namespace GhostSharper.Models
         [EnumMember(Value = "6")]
         LargePerk = 6,
 
+        /// <summary>
+        /// Abilities = 7
+        /// </summary>
+        [EnumMember(Value = "7")]
+        Abilities = 7,
+
+        /// <summary>
+        /// Supers = 8
+        /// </summary>
+        [EnumMember(Value = "8")]
+        Supers = 8,
+
     }
 }

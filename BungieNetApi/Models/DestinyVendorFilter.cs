@@ -14,5 +14,11 @@ namespace GhostSharper.Models
         [EnumMember(Value = "0")]
         None = 0,
 
+        /// <summary>
+        /// ApiPurchasable = 1
+        /// </summary>
+        [EnumMember(Value = "1")]
+        ApiPurchasable = 1,
+
     }
 }

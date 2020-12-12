@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 namespace GhostSharper.Models
 {
     /// <summary>
-    /// Represents an Energy Type for systems that require payment of energy of certain types, such as with Armor 2.0.
+    /// Represents the socket energy types for Armor 2.0, Ghosts 2.0, and Stasis subclasses.
     /// </summary>
     
     public enum DestinyEnergyType
@@ -31,6 +31,18 @@ namespace GhostSharper.Models
         /// </summary>
         [EnumMember(Value = "3")]
         Void = 3,
+
+        /// <summary>
+        /// Ghost = 4
+        /// </summary>
+        [EnumMember(Value = "4")]
+        Ghost = 4,
+
+        /// <summary>
+        /// Subclass = 5
+        /// </summary>
+        [EnumMember(Value = "5")]
+        Subclass = 5,
 
     }
 }

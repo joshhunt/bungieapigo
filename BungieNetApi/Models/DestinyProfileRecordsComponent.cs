@@ -8,10 +8,28 @@ namespace GhostSharper.Models
     public class DestinyProfileRecordsComponent
     {
         /// <summary>
-        /// Your "Triumphs" score.
+        /// Your 'active' Triumphs score, maintained for backwards compatibility.
         /// </summary>
         [DataMember(Name = "score", EmitDefaultValue = false)]
         public long Score { get; set; }
+
+        /// <summary>
+        /// Your 'active' Triumphs score.
+        /// </summary>
+        [DataMember(Name = "activeScore", EmitDefaultValue = false)]
+        public long ActiveScore { get; set; }
+
+        /// <summary>
+        /// Your 'legacy' Triumphs score.
+        /// </summary>
+        [DataMember(Name = "legacyScore", EmitDefaultValue = false)]
+        public long LegacyScore { get; set; }
+
+        /// <summary>
+        /// Your 'lifetime' Triumphs score.
+        /// </summary>
+        [DataMember(Name = "lifetimeScore", EmitDefaultValue = false)]
+        public long LifetimeScore { get; set; }
 
         /// <summary>
         /// If this profile is tracking a record, this is the hash identifier of the record it is tracking.
@@ -48,6 +66,18 @@ namespace GhostSharper.Models
                 (
                     Score == input.Score ||
                     (Score.Equals(input.Score))
+                ) &&
+                (
+                    ActiveScore == input.ActiveScore ||
+                    (ActiveScore.Equals(input.ActiveScore))
+                ) &&
+                (
+                    LegacyScore == input.LegacyScore ||
+                    (LegacyScore.Equals(input.LegacyScore))
+                ) &&
+                (
+                    LifetimeScore == input.LifetimeScore ||
+                    (LifetimeScore.Equals(input.LifetimeScore))
                 ) &&
                 (
                     TrackedRecordHash == input.TrackedRecordHash ||

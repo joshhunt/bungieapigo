@@ -8,12 +8,6 @@ namespace GhostSharper.Models
     public class ApiUsage
     {
         /// <summary>
-        /// The date range for the data being reported.
-        /// </summary>
-        [DataMember(Name = "range", EmitDefaultValue = false)]
-        public DateRange Range { get; set; }
-
-        /// <summary>
         /// Counts for on API calls made for the time range.
         /// </summary>
         [DataMember(Name = "apiCalls", EmitDefaultValue = false)]
@@ -36,10 +30,6 @@ namespace GhostSharper.Models
             if (input == null) return false;
 
             return
-                (
-                    Range == input.Range ||
-                    (Range != null && Range.Equals(input.Range))
-                ) &&
                 (
                     ApiCalls == input.ApiCalls ||
                     (ApiCalls != null && ApiCalls.SequenceEqual(input.ApiCalls))

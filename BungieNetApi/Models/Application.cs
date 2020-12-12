@@ -8,9 +8,6 @@ namespace GhostSharper.Models
     [DataContract]
     public class Application
     {
-        [DataMember(Name = "applicationType", EmitDefaultValue = false)]
-        public OAuthApplicationType ApplicationType { get; set; }
-
         /// <summary>
         /// Unique ID assigned to the application
         /// </summary>
@@ -88,10 +85,6 @@ namespace GhostSharper.Models
             if (input == null) return false;
 
             return
-                (
-                    ApplicationType == input.ApplicationType ||
-                    (ApplicationType != null && ApplicationType.Equals(input.ApplicationType))
-                ) &&
                 (
                     ApplicationId == input.ApplicationId ||
                     (ApplicationId.Equals(input.ApplicationId))

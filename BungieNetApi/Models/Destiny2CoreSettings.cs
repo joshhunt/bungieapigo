@@ -22,6 +22,27 @@ namespace GhostSharper.Models
         [DataMember(Name = "metricsRootNode", EmitDefaultValue = false)]
         public uint MetricsRootNode { get; set; }
 
+        [DataMember(Name = "activeTriumphsRootNodeHash", EmitDefaultValue = false)]
+        public uint ActiveTriumphsRootNodeHash { get; set; }
+
+        [DataMember(Name = "activeSealsRootNodeHash", EmitDefaultValue = false)]
+        public uint ActiveSealsRootNodeHash { get; set; }
+
+        [DataMember(Name = "legacyTriumphsRootNodeHash", EmitDefaultValue = false)]
+        public uint LegacyTriumphsRootNodeHash { get; set; }
+
+        [DataMember(Name = "legacySealsRootNodeHash", EmitDefaultValue = false)]
+        public uint LegacySealsRootNodeHash { get; set; }
+
+        [DataMember(Name = "medalsRootNodeHash", EmitDefaultValue = false)]
+        public uint MedalsRootNodeHash { get; set; }
+
+        [DataMember(Name = "exoticCatalystsRootNodeHash", EmitDefaultValue = false)]
+        public uint ExoticCatalystsRootNodeHash { get; set; }
+
+        [DataMember(Name = "loreRootNodeHash", EmitDefaultValue = false)]
+        public uint LoreRootNodeHash { get; set; }
+
         [DataMember(Name = "currentRankProgressionHashes", EmitDefaultValue = false)]
         public List<uint> CurrentRankProgressionHashes { get; set; }
 
@@ -79,6 +100,34 @@ namespace GhostSharper.Models
                 (
                     MetricsRootNode == input.MetricsRootNode ||
                     (MetricsRootNode.Equals(input.MetricsRootNode))
+                ) &&
+                (
+                    ActiveTriumphsRootNodeHash == input.ActiveTriumphsRootNodeHash ||
+                    (ActiveTriumphsRootNodeHash.Equals(input.ActiveTriumphsRootNodeHash))
+                ) &&
+                (
+                    ActiveSealsRootNodeHash == input.ActiveSealsRootNodeHash ||
+                    (ActiveSealsRootNodeHash.Equals(input.ActiveSealsRootNodeHash))
+                ) &&
+                (
+                    LegacyTriumphsRootNodeHash == input.LegacyTriumphsRootNodeHash ||
+                    (LegacyTriumphsRootNodeHash.Equals(input.LegacyTriumphsRootNodeHash))
+                ) &&
+                (
+                    LegacySealsRootNodeHash == input.LegacySealsRootNodeHash ||
+                    (LegacySealsRootNodeHash.Equals(input.LegacySealsRootNodeHash))
+                ) &&
+                (
+                    MedalsRootNodeHash == input.MedalsRootNodeHash ||
+                    (MedalsRootNodeHash.Equals(input.MedalsRootNodeHash))
+                ) &&
+                (
+                    ExoticCatalystsRootNodeHash == input.ExoticCatalystsRootNodeHash ||
+                    (ExoticCatalystsRootNodeHash.Equals(input.ExoticCatalystsRootNodeHash))
+                ) &&
+                (
+                    LoreRootNodeHash == input.LoreRootNodeHash ||
+                    (LoreRootNodeHash.Equals(input.LoreRootNodeHash))
                 ) &&
                 (
                     CurrentRankProgressionHashes == input.CurrentRankProgressionHashes ||

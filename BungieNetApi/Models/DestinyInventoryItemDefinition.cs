@@ -32,6 +32,18 @@ namespace GhostSharper.Models
         public uint CollectibleHash { get; set; }
 
         /// <summary>
+        /// If available, this is the original 'active' release watermark overlay for the icon. If the item has different versions, this can be overridden by the 'display version watermark icon' from the 'quality' block. Alternatively, if there is no watermark for the version, and the item version has a power cap below the current season power cap, this can be overridden by the iconWatermarkShelved property.
+        /// </summary>
+        [DataMember(Name = "iconWatermark", EmitDefaultValue = false)]
+        public string IconWatermark { get; set; }
+
+        /// <summary>
+        /// If available, this is the 'shelved' release watermark overlay for the icon. If the item version has a power cap below the current season power cap, it can be treated as 'shelved', and should be shown with this 'shelved' watermark overlay.
+        /// </summary>
+        [DataMember(Name = "iconWatermarkShelved", EmitDefaultValue = false)]
+        public string IconWatermarkShelved { get; set; }
+
+        /// <summary>
         /// A secondary icon associated with the item. Currently this is used in very context specific applications, such as Emblem Nameplates.
         /// </summary>
         [DataMember(Name = "secondaryIcon", EmitDefaultValue = false)]
@@ -437,6 +449,14 @@ namespace GhostSharper.Models
                 (
                     CollectibleHash == input.CollectibleHash ||
                     (CollectibleHash.Equals(input.CollectibleHash))
+                ) &&
+                (
+                    IconWatermark == input.IconWatermark ||
+                    (IconWatermark != null && IconWatermark.Equals(input.IconWatermark))
+                ) &&
+                (
+                    IconWatermarkShelved == input.IconWatermarkShelved ||
+                    (IconWatermarkShelved != null && IconWatermarkShelved.Equals(input.IconWatermarkShelved))
                 ) &&
                 (
                     SecondaryIcon == input.SecondaryIcon ||
