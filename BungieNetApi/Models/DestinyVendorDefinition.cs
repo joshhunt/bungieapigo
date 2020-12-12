@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -286,7 +287,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     DisplayItemHash == input.DisplayItemHash ||
-                    (DisplayItemHash != null && DisplayItemHash.Equals(input.DisplayItemHash))
+                    (DisplayItemHash.Equals(input.DisplayItemHash))
                 ) &&
                 (
                     InhibitBuying == input.InhibitBuying ||
@@ -298,23 +299,23 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     FactionHash == input.FactionHash ||
-                    (FactionHash != null && FactionHash.Equals(input.FactionHash))
+                    (FactionHash.Equals(input.FactionHash))
                 ) &&
                 (
                     ResetIntervalMinutes == input.ResetIntervalMinutes ||
-                    (ResetIntervalMinutes != null && ResetIntervalMinutes.Equals(input.ResetIntervalMinutes))
+                    (ResetIntervalMinutes.Equals(input.ResetIntervalMinutes))
                 ) &&
                 (
                     ResetOffsetMinutes == input.ResetOffsetMinutes ||
-                    (ResetOffsetMinutes != null && ResetOffsetMinutes.Equals(input.ResetOffsetMinutes))
+                    (ResetOffsetMinutes.Equals(input.ResetOffsetMinutes))
                 ) &&
                 (
                     FailureStrings == input.FailureStrings ||
-                    (FailureStrings != null && FailureStrings.Equals(input.FailureStrings))
+                    (FailureStrings != null && FailureStrings.SequenceEqual(input.FailureStrings))
                 ) &&
                 (
                     UnlockRanges == input.UnlockRanges ||
-                    (UnlockRanges != null && UnlockRanges.Equals(input.UnlockRanges))
+                    (UnlockRanges != null && UnlockRanges.SequenceEqual(input.UnlockRanges))
                 ) &&
                 (
                     VendorIdentifier == input.VendorIdentifier ||
@@ -346,39 +347,39 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Actions == input.Actions ||
-                    (Actions != null && Actions.Equals(input.Actions))
+                    (Actions != null && Actions.SequenceEqual(input.Actions))
                 ) &&
                 (
                     Categories == input.Categories ||
-                    (Categories != null && Categories.Equals(input.Categories))
+                    (Categories != null && Categories.SequenceEqual(input.Categories))
                 ) &&
                 (
                     OriginalCategories == input.OriginalCategories ||
-                    (OriginalCategories != null && OriginalCategories.Equals(input.OriginalCategories))
+                    (OriginalCategories != null && OriginalCategories.SequenceEqual(input.OriginalCategories))
                 ) &&
                 (
                     DisplayCategories == input.DisplayCategories ||
-                    (DisplayCategories != null && DisplayCategories.Equals(input.DisplayCategories))
+                    (DisplayCategories != null && DisplayCategories.SequenceEqual(input.DisplayCategories))
                 ) &&
                 (
                     Interactions == input.Interactions ||
-                    (Interactions != null && Interactions.Equals(input.Interactions))
+                    (Interactions != null && Interactions.SequenceEqual(input.Interactions))
                 ) &&
                 (
                     InventoryFlyouts == input.InventoryFlyouts ||
-                    (InventoryFlyouts != null && InventoryFlyouts.Equals(input.InventoryFlyouts))
+                    (InventoryFlyouts != null && InventoryFlyouts.SequenceEqual(input.InventoryFlyouts))
                 ) &&
                 (
                     ItemList == input.ItemList ||
-                    (ItemList != null && ItemList.Equals(input.ItemList))
+                    (ItemList != null && ItemList.SequenceEqual(input.ItemList))
                 ) &&
                 (
                     Services == input.Services ||
-                    (Services != null && Services.Equals(input.Services))
+                    (Services != null && Services.SequenceEqual(input.Services))
                 ) &&
                 (
                     AcceptedItems == input.AcceptedItems ||
-                    (AcceptedItems != null && AcceptedItems.Equals(input.AcceptedItems))
+                    (AcceptedItems != null && AcceptedItems.SequenceEqual(input.AcceptedItems))
                 ) &&
                 (
                     ReturnWithVendorRequest == input.ReturnWithVendorRequest ||
@@ -386,23 +387,23 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Locations == input.Locations ||
-                    (Locations != null && Locations.Equals(input.Locations))
+                    (Locations != null && Locations.SequenceEqual(input.Locations))
                 ) &&
                 (
                     Groups == input.Groups ||
-                    (Groups != null && Groups.Equals(input.Groups))
+                    (Groups != null && Groups.SequenceEqual(input.Groups))
                 ) &&
                 (
                     IgnoreSaleItemHashes == input.IgnoreSaleItemHashes ||
-                    (IgnoreSaleItemHashes != null && IgnoreSaleItemHashes.Equals(input.IgnoreSaleItemHashes))
+                    (IgnoreSaleItemHashes != null && IgnoreSaleItemHashes.SequenceEqual(input.IgnoreSaleItemHashes))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

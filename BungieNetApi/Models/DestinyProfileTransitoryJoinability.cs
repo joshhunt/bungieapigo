@@ -39,7 +39,7 @@ namespace GhostSharper.Models
             return
                 (
                     OpenSlots == input.OpenSlots ||
-                    (OpenSlots != null && OpenSlots.Equals(input.OpenSlots))
+                    (OpenSlots.Equals(input.OpenSlots))
                 ) &&
                 (
                     PrivacySetting == input.PrivacySetting ||

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -71,7 +72,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     IconSequences == input.IconSequences ||
-                    (IconSequences != null && IconSequences.Equals(input.IconSequences))
+                    (IconSequences != null && IconSequences.SequenceEqual(input.IconSequences))
                 ) &&
                 (
                     HighResIcon == input.HighResIcon ||

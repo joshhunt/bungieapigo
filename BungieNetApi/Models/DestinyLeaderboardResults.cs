@@ -30,11 +30,11 @@ namespace GhostSharper.Models
             return
                 (
                     FocusMembershipId == input.FocusMembershipId ||
-                    (FocusMembershipId != null && FocusMembershipId.Equals(input.FocusMembershipId))
+                    (FocusMembershipId.Equals(input.FocusMembershipId))
                 ) &&
                 (
                     FocusCharacterId == input.FocusCharacterId ||
-                    (FocusCharacterId != null && FocusCharacterId.Equals(input.FocusCharacterId))
+                    (FocusCharacterId.Equals(input.FocusCharacterId))
                 ) ;
         }
     }

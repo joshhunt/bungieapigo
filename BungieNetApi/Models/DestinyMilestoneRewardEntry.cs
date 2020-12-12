@@ -39,7 +39,7 @@ namespace GhostSharper.Models
             return
                 (
                     RewardEntryHash == input.RewardEntryHash ||
-                    (RewardEntryHash != null && RewardEntryHash.Equals(input.RewardEntryHash))
+                    (RewardEntryHash.Equals(input.RewardEntryHash))
                 ) &&
                 (
                     Earned == input.Earned ||

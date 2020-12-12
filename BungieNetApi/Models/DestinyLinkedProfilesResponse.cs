@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -46,7 +47,7 @@ namespace GhostSharper.Models
             return
                 (
                     Profiles == input.Profiles ||
-                    (Profiles != null && Profiles.Equals(input.Profiles))
+                    (Profiles != null && Profiles.SequenceEqual(input.Profiles))
                 ) &&
                 (
                     BnetMembership == input.BnetMembership ||
@@ -54,7 +55,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ProfilesWithErrors == input.ProfilesWithErrors ||
-                    (ProfilesWithErrors != null && ProfilesWithErrors.Equals(input.ProfilesWithErrors))
+                    (ProfilesWithErrors != null && ProfilesWithErrors.SequenceEqual(input.ProfilesWithErrors))
                 ) ;
         }
     }

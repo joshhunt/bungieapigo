@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -61,27 +62,27 @@ namespace GhostSharper.Models
             return
                 (
                     CollectionRootNode == input.CollectionRootNode ||
-                    (CollectionRootNode != null && CollectionRootNode.Equals(input.CollectionRootNode))
+                    (CollectionRootNode.Equals(input.CollectionRootNode))
                 ) &&
                 (
                     BadgesRootNode == input.BadgesRootNode ||
-                    (BadgesRootNode != null && BadgesRootNode.Equals(input.BadgesRootNode))
+                    (BadgesRootNode.Equals(input.BadgesRootNode))
                 ) &&
                 (
                     RecordsRootNode == input.RecordsRootNode ||
-                    (RecordsRootNode != null && RecordsRootNode.Equals(input.RecordsRootNode))
+                    (RecordsRootNode.Equals(input.RecordsRootNode))
                 ) &&
                 (
                     MedalsRootNode == input.MedalsRootNode ||
-                    (MedalsRootNode != null && MedalsRootNode.Equals(input.MedalsRootNode))
+                    (MedalsRootNode.Equals(input.MedalsRootNode))
                 ) &&
                 (
                     MetricsRootNode == input.MetricsRootNode ||
-                    (MetricsRootNode != null && MetricsRootNode.Equals(input.MetricsRootNode))
+                    (MetricsRootNode.Equals(input.MetricsRootNode))
                 ) &&
                 (
                     CurrentRankProgressionHashes == input.CurrentRankProgressionHashes ||
-                    (CurrentRankProgressionHashes != null && CurrentRankProgressionHashes.Equals(input.CurrentRankProgressionHashes))
+                    (CurrentRankProgressionHashes != null && CurrentRankProgressionHashes.SequenceEqual(input.CurrentRankProgressionHashes))
                 ) &&
                 (
                     UndiscoveredCollectibleImage == input.UndiscoveredCollectibleImage ||
@@ -101,19 +102,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     CurrentSeasonalArtifactHash == input.CurrentSeasonalArtifactHash ||
-                    (CurrentSeasonalArtifactHash != null && CurrentSeasonalArtifactHash.Equals(input.CurrentSeasonalArtifactHash))
+                    (CurrentSeasonalArtifactHash.Equals(input.CurrentSeasonalArtifactHash))
                 ) &&
                 (
                     CurrentSeasonHash == input.CurrentSeasonHash ||
-                    (CurrentSeasonHash != null && CurrentSeasonHash.Equals(input.CurrentSeasonHash))
+                    (CurrentSeasonHash.Equals(input.CurrentSeasonHash))
                 ) &&
                 (
                     FutureSeasonHashes == input.FutureSeasonHashes ||
-                    (FutureSeasonHashes != null && FutureSeasonHashes.Equals(input.FutureSeasonHashes))
+                    (FutureSeasonHashes != null && FutureSeasonHashes.SequenceEqual(input.FutureSeasonHashes))
                 ) &&
                 (
                     PastSeasonHashes == input.PastSeasonHashes ||
-                    (PastSeasonHashes != null && PastSeasonHashes.Equals(input.PastSeasonHashes))
+                    (PastSeasonHashes != null && PastSeasonHashes.SequenceEqual(input.PastSeasonHashes))
                 ) ;
         }
     }

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -28,15 +29,15 @@ namespace GhostSharper.Models
             return
                 (
                     TopicId == input.TopicId ||
-                    (TopicId != null && TopicId.Equals(input.TopicId))
+                    (TopicId.Equals(input.TopicId))
                 ) &&
                 (
                     Results == input.Results ||
-                    (Results != null && Results.Equals(input.Results))
+                    (Results != null && Results.SequenceEqual(input.Results))
                 ) &&
                 (
                     TotalVotes == input.TotalVotes ||
-                    (TotalVotes != null && TotalVotes.Equals(input.TotalVotes))
+                    (TotalVotes.Equals(input.TotalVotes))
                 ) ;
         }
     }

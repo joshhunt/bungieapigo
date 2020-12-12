@@ -82,7 +82,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     AvatarImageIndex == input.AvatarImageIndex ||
-                    (AvatarImageIndex != null && AvatarImageIndex.Equals(input.AvatarImageIndex))
+                    (AvatarImageIndex.Equals(input.AvatarImageIndex))
                 ) &&
                 (
                     Tags == input.Tags ||
@@ -94,7 +94,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MembershipOption == input.MembershipOption ||
-                    (MembershipOption != null && MembershipOption.Equals(input.MembershipOption))
+                    (MembershipOption.Equals(input.MembershipOption))
                 ) &&
                 (
                     IsPublicTopicAdminOnly == input.IsPublicTopicAdminOnly ||
@@ -106,7 +106,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ChatSecurity == input.ChatSecurity ||
-                    (ChatSecurity != null && ChatSecurity.Equals(input.ChatSecurity))
+                    (ChatSecurity.Equals(input.ChatSecurity))
                 ) &&
                 (
                     Callsign == input.Callsign ||
@@ -118,7 +118,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Homepage == input.Homepage ||
-                    (Homepage != null && Homepage.Equals(input.Homepage))
+                    (Homepage.Equals(input.Homepage))
                 ) &&
                 (
                     EnableInvitationMessagingForAdmins == input.EnableInvitationMessagingForAdmins ||
@@ -126,7 +126,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     DefaultPublicity == input.DefaultPublicity ||
-                    (DefaultPublicity != null && DefaultPublicity.Equals(input.DefaultPublicity))
+                    (DefaultPublicity.Equals(input.DefaultPublicity))
                 ) ;
         }
     }

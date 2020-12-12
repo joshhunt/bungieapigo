@@ -69,7 +69,7 @@ namespace GhostSharper.Models
             return
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     DisplayProperties == input.DisplayProperties ||
@@ -77,31 +77,31 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     DestinationHash == input.DestinationHash ||
-                    (DestinationHash != null && DestinationHash.Equals(input.DestinationHash))
+                    (DestinationHash.Equals(input.DestinationHash))
                 ) &&
                 (
                     LocationHash == input.LocationHash ||
-                    (LocationHash != null && LocationHash.Equals(input.LocationHash))
+                    (LocationHash.Equals(input.LocationHash))
                 ) &&
                 (
                     BubbleHash == input.BubbleHash ||
-                    (BubbleHash != null && BubbleHash.Equals(input.BubbleHash))
+                    (BubbleHash.Equals(input.BubbleHash))
                 ) &&
                 (
                     ActivityHash == input.ActivityHash ||
-                    (ActivityHash != null && ActivityHash.Equals(input.ActivityHash))
+                    (ActivityHash.Equals(input.ActivityHash))
                 ) &&
                 (
                     ItemHash == input.ItemHash ||
-                    (ItemHash != null && ItemHash.Equals(input.ItemHash))
+                    (ItemHash.Equals(input.ItemHash))
                 ) &&
                 (
                     VendorHash == input.VendorHash ||
-                    (VendorHash != null && VendorHash.Equals(input.VendorHash))
+                    (VendorHash.Equals(input.VendorHash))
                 ) &&
                 (
                     VendorInteractionIndex == input.VendorInteractionIndex ||
-                    (VendorInteractionIndex != null && VendorInteractionIndex.Equals(input.VendorInteractionIndex))
+                    (VendorInteractionIndex.Equals(input.VendorInteractionIndex))
                 ) &&
                 (
                     Scope == input.Scope ||

@@ -30,7 +30,7 @@ namespace GhostSharper.Models
             return
                 (
                     ActivityHash == input.ActivityHash ||
-                    (ActivityHash != null && ActivityHash.Equals(input.ActivityHash))
+                    (ActivityHash.Equals(input.ActivityHash))
                 ) &&
                 (
                     DisplayOnItemPreviewScreen == input.DisplayOnItemPreviewScreen ||

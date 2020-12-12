@@ -33,11 +33,11 @@ namespace GhostSharper.Models
             return
                 (
                     NodeActivityId == input.NodeActivityId ||
-                    (NodeActivityId != null && NodeActivityId.Equals(input.NodeActivityId))
+                    (NodeActivityId.Equals(input.NodeActivityId))
                 ) &&
                 (
                     ActivityHash == input.ActivityHash ||
-                    (ActivityHash != null && ActivityHash.Equals(input.ActivityHash))
+                    (ActivityHash.Equals(input.ActivityHash))
                 ) ;
         }
     }

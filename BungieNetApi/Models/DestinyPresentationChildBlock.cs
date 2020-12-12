@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -32,7 +33,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ParentPresentationNodeHashes == input.ParentPresentationNodeHashes ||
-                    (ParentPresentationNodeHashes != null && ParentPresentationNodeHashes.Equals(input.ParentPresentationNodeHashes))
+                    (ParentPresentationNodeHashes != null && ParentPresentationNodeHashes.SequenceEqual(input.ParentPresentationNodeHashes))
                 ) &&
                 (
                     DisplayStyle == input.DisplayStyle ||

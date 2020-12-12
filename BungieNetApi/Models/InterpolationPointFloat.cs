@@ -24,11 +24,11 @@ namespace GhostSharper.Models
             return
                 (
                     Value == input.Value ||
-                    (Value != null && Value.Equals(input.Value))
+                    (Value.Equals(input.Value))
                 ) &&
                 (
                     Weight == input.Weight ||
-                    (Weight != null && Weight.Equals(input.Weight))
+                    (Weight.Equals(input.Weight))
                 ) ;
         }
     }

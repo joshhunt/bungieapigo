@@ -24,7 +24,7 @@ namespace GhostSharper.Models
             return
                 (
                     FeaturedPriority == input.FeaturedPriority ||
-                    (FeaturedPriority != null && FeaturedPriority.Equals(input.FeaturedPriority))
+                    (FeaturedPriority.Equals(input.FeaturedPriority))
                 ) &&
                 (
                     ObscuredString == input.ObscuredString ||

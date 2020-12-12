@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -40,15 +41,15 @@ namespace GhostSharper.Models
             return
                 (
                     OptInDefinitions == input.OptInDefinitions ||
-                    (OptInDefinitions != null && OptInDefinitions.Equals(input.OptInDefinitions))
+                    (OptInDefinitions != null && OptInDefinitions.SequenceEqual(input.OptInDefinitions))
                 ) &&
                 (
                     SubscriptionDefinitions == input.SubscriptionDefinitions ||
-                    (SubscriptionDefinitions != null && SubscriptionDefinitions.Equals(input.SubscriptionDefinitions))
+                    (SubscriptionDefinitions != null && SubscriptionDefinitions.SequenceEqual(input.SubscriptionDefinitions))
                 ) &&
                 (
                     Views == input.Views ||
-                    (Views != null && Views.Equals(input.Views))
+                    (Views != null && Views.SequenceEqual(input.Views))
                 ) ;
         }
     }

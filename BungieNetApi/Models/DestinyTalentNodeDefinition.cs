@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -169,27 +170,27 @@ namespace GhostSharper.Models
             return
                 (
                     NodeIndex == input.NodeIndex ||
-                    (NodeIndex != null && NodeIndex.Equals(input.NodeIndex))
+                    (NodeIndex.Equals(input.NodeIndex))
                 ) &&
                 (
                     NodeHash == input.NodeHash ||
-                    (NodeHash != null && NodeHash.Equals(input.NodeHash))
+                    (NodeHash.Equals(input.NodeHash))
                 ) &&
                 (
                     Row == input.Row ||
-                    (Row != null && Row.Equals(input.Row))
+                    (Row.Equals(input.Row))
                 ) &&
                 (
                     Column == input.Column ||
-                    (Column != null && Column.Equals(input.Column))
+                    (Column.Equals(input.Column))
                 ) &&
                 (
                     PrerequisiteNodeIndexes == input.PrerequisiteNodeIndexes ||
-                    (PrerequisiteNodeIndexes != null && PrerequisiteNodeIndexes.Equals(input.PrerequisiteNodeIndexes))
+                    (PrerequisiteNodeIndexes != null && PrerequisiteNodeIndexes.SequenceEqual(input.PrerequisiteNodeIndexes))
                 ) &&
                 (
                     BinaryPairNodeIndex == input.BinaryPairNodeIndex ||
-                    (BinaryPairNodeIndex != null && BinaryPairNodeIndex.Equals(input.BinaryPairNodeIndex))
+                    (BinaryPairNodeIndex.Equals(input.BinaryPairNodeIndex))
                 ) &&
                 (
                     AutoUnlocks == input.AutoUnlocks ||
@@ -213,15 +214,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Steps == input.Steps ||
-                    (Steps != null && Steps.Equals(input.Steps))
+                    (Steps != null && Steps.SequenceEqual(input.Steps))
                 ) &&
                 (
                     ExclusiveWithNodeHashes == input.ExclusiveWithNodeHashes ||
-                    (ExclusiveWithNodeHashes != null && ExclusiveWithNodeHashes.Equals(input.ExclusiveWithNodeHashes))
+                    (ExclusiveWithNodeHashes != null && ExclusiveWithNodeHashes.SequenceEqual(input.ExclusiveWithNodeHashes))
                 ) &&
                 (
                     RandomStartProgressionBarAtProgression == input.RandomStartProgressionBarAtProgression ||
-                    (RandomStartProgressionBarAtProgression != null && RandomStartProgressionBarAtProgression.Equals(input.RandomStartProgressionBarAtProgression))
+                    (RandomStartProgressionBarAtProgression.Equals(input.RandomStartProgressionBarAtProgression))
                 ) &&
                 (
                     LayoutIdentifier == input.LayoutIdentifier ||
@@ -229,11 +230,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     GroupHash == input.GroupHash ||
-                    (GroupHash != null && GroupHash.Equals(input.GroupHash))
+                    (GroupHash.Equals(input.GroupHash))
                 ) &&
                 (
                     LoreHash == input.LoreHash ||
-                    (LoreHash != null && LoreHash.Equals(input.LoreHash))
+                    (LoreHash.Equals(input.LoreHash))
                 ) &&
                 (
                     NodeStyleIdentifier == input.NodeStyleIdentifier ||

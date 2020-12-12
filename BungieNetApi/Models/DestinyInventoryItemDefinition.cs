@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -431,11 +432,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     TooltipNotifications == input.TooltipNotifications ||
-                    (TooltipNotifications != null && TooltipNotifications.Equals(input.TooltipNotifications))
+                    (TooltipNotifications != null && TooltipNotifications.SequenceEqual(input.TooltipNotifications))
                 ) &&
                 (
                     CollectibleHash == input.CollectibleHash ||
-                    (CollectibleHash != null && CollectibleHash.Equals(input.CollectibleHash))
+                    (CollectibleHash.Equals(input.CollectibleHash))
                 ) &&
                 (
                     SecondaryIcon == input.SecondaryIcon ||
@@ -495,7 +496,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     EmblemObjectiveHash == input.EmblemObjectiveHash ||
-                    (EmblemObjectiveHash != null && EmblemObjectiveHash.Equals(input.EmblemObjectiveHash))
+                    (EmblemObjectiveHash.Equals(input.EmblemObjectiveHash))
                 ) &&
                 (
                     EquippingBlock == input.EquippingBlock ||
@@ -555,23 +556,23 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     InvestmentStats == input.InvestmentStats ||
-                    (InvestmentStats != null && InvestmentStats.Equals(input.InvestmentStats))
+                    (InvestmentStats != null && InvestmentStats.SequenceEqual(input.InvestmentStats))
                 ) &&
                 (
                     Perks == input.Perks ||
-                    (Perks != null && Perks.Equals(input.Perks))
+                    (Perks != null && Perks.SequenceEqual(input.Perks))
                 ) &&
                 (
                     LoreHash == input.LoreHash ||
-                    (LoreHash != null && LoreHash.Equals(input.LoreHash))
+                    (LoreHash.Equals(input.LoreHash))
                 ) &&
                 (
                     SummaryItemHash == input.SummaryItemHash ||
-                    (SummaryItemHash != null && SummaryItemHash.Equals(input.SummaryItemHash))
+                    (SummaryItemHash.Equals(input.SummaryItemHash))
                 ) &&
                 (
                     Animations == input.Animations ||
-                    (Animations != null && Animations.Equals(input.Animations))
+                    (Animations != null && Animations.SequenceEqual(input.Animations))
                 ) &&
                 (
                     AllowActions == input.AllowActions ||
@@ -579,7 +580,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Links == input.Links ||
-                    (Links != null && Links.Equals(input.Links))
+                    (Links != null && Links.SequenceEqual(input.Links))
                 ) &&
                 (
                     DoesPostmasterPullHaveSideEffects == input.DoesPostmasterPullHaveSideEffects ||
@@ -591,7 +592,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ItemCategoryHashes == input.ItemCategoryHashes ||
-                    (ItemCategoryHashes != null && ItemCategoryHashes.Equals(input.ItemCategoryHashes))
+                    (ItemCategoryHashes != null && ItemCategoryHashes.SequenceEqual(input.ItemCategoryHashes))
                 ) &&
                 (
                     SpecialItemType == input.SpecialItemType ||
@@ -615,7 +616,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     BreakerTypeHash == input.BreakerTypeHash ||
-                    (BreakerTypeHash != null && BreakerTypeHash.Equals(input.BreakerTypeHash))
+                    (BreakerTypeHash.Equals(input.BreakerTypeHash))
                 ) &&
                 (
                     Equippable == input.Equippable ||
@@ -623,11 +624,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     DamageTypeHashes == input.DamageTypeHashes ||
-                    (DamageTypeHashes != null && DamageTypeHashes.Equals(input.DamageTypeHashes))
+                    (DamageTypeHashes != null && DamageTypeHashes.SequenceEqual(input.DamageTypeHashes))
                 ) &&
                 (
                     DamageTypes == input.DamageTypes ||
-                    (DamageTypes != null && DamageTypes.Equals(input.DamageTypes))
+                    (DamageTypes != null && DamageTypes.SequenceEqual(input.DamageTypes))
                 ) &&
                 (
                     DefaultDamageType == input.DefaultDamageType ||
@@ -635,11 +636,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     DefaultDamageTypeHash == input.DefaultDamageTypeHash ||
-                    (DefaultDamageTypeHash != null && DefaultDamageTypeHash.Equals(input.DefaultDamageTypeHash))
+                    (DefaultDamageTypeHash.Equals(input.DefaultDamageTypeHash))
                 ) &&
                 (
                     SeasonHash == input.SeasonHash ||
-                    (SeasonHash != null && SeasonHash.Equals(input.SeasonHash))
+                    (SeasonHash.Equals(input.SeasonHash))
                 ) &&
                 (
                     IsWrapper == input.IsWrapper ||
@@ -647,15 +648,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     TraitIds == input.TraitIds ||
-                    (TraitIds != null && TraitIds.Equals(input.TraitIds))
+                    (TraitIds != null && TraitIds.SequenceEqual(input.TraitIds))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

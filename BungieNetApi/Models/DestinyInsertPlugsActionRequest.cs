@@ -46,7 +46,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ItemInstanceId == input.ItemInstanceId ||
-                    (ItemInstanceId != null && ItemInstanceId.Equals(input.ItemInstanceId))
+                    (ItemInstanceId.Equals(input.ItemInstanceId))
                 ) &&
                 (
                     Plug == input.Plug ||
@@ -54,7 +54,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     CharacterId == input.CharacterId ||
-                    (CharacterId != null && CharacterId.Equals(input.CharacterId))
+                    (CharacterId.Equals(input.CharacterId))
                 ) &&
                 (
                     MembershipType == input.MembershipType ||

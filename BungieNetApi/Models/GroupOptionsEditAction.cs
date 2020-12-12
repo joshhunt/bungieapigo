@@ -95,7 +95,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     HostGuidedGamePermissionOverride == input.HostGuidedGamePermissionOverride ||
-                    (HostGuidedGamePermissionOverride != null && HostGuidedGamePermissionOverride.Equals(input.HostGuidedGamePermissionOverride))
+                    (HostGuidedGamePermissionOverride.Equals(input.HostGuidedGamePermissionOverride))
                 ) &&
                 (
                     UpdateBannerPermissionOverride == input.UpdateBannerPermissionOverride ||
@@ -103,7 +103,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     JoinLevel == input.JoinLevel ||
-                    (JoinLevel != null && JoinLevel.Equals(input.JoinLevel))
+                    (JoinLevel.Equals(input.JoinLevel))
                 ) ;
         }
     }

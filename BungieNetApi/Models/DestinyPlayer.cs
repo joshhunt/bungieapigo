@@ -83,23 +83,23 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ClassHash == input.ClassHash ||
-                    (ClassHash != null && ClassHash.Equals(input.ClassHash))
+                    (ClassHash.Equals(input.ClassHash))
                 ) &&
                 (
                     RaceHash == input.RaceHash ||
-                    (RaceHash != null && RaceHash.Equals(input.RaceHash))
+                    (RaceHash.Equals(input.RaceHash))
                 ) &&
                 (
                     GenderHash == input.GenderHash ||
-                    (GenderHash != null && GenderHash.Equals(input.GenderHash))
+                    (GenderHash.Equals(input.GenderHash))
                 ) &&
                 (
                     CharacterLevel == input.CharacterLevel ||
-                    (CharacterLevel != null && CharacterLevel.Equals(input.CharacterLevel))
+                    (CharacterLevel.Equals(input.CharacterLevel))
                 ) &&
                 (
                     LightLevel == input.LightLevel ||
-                    (LightLevel != null && LightLevel.Equals(input.LightLevel))
+                    (LightLevel.Equals(input.LightLevel))
                 ) &&
                 (
                     BungieNetUserInfo == input.BungieNetUserInfo ||
@@ -115,7 +115,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     EmblemHash == input.EmblemHash ||
-                    (EmblemHash != null && EmblemHash.Equals(input.EmblemHash))
+                    (EmblemHash.Equals(input.EmblemHash))
                 ) ;
         }
     }

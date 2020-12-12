@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -177,7 +178,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Order == input.Order ||
-                    (Order != null && Order.Equals(input.Order))
+                    (Order.Equals(input.Order))
                 ) &&
                 (
                     Visible == input.Visible ||
@@ -193,15 +194,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MaxLength == input.MaxLength ||
-                    (MaxLength != null && MaxLength.Equals(input.MaxLength))
+                    (MaxLength.Equals(input.MaxLength))
                 ) &&
                 (
                     MaxByteLength == input.MaxByteLength ||
-                    (MaxByteLength != null && MaxByteLength.Equals(input.MaxByteLength))
+                    (MaxByteLength.Equals(input.MaxByteLength))
                 ) &&
                 (
                     MaxFileSize == input.MaxFileSize ||
-                    (MaxFileSize != null && MaxFileSize.Equals(input.MaxFileSize))
+                    (MaxFileSize.Equals(input.MaxFileSize))
                 ) &&
                 (
                     Regexp == input.Regexp ||
@@ -229,11 +230,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Attributes == input.Attributes ||
-                    (Attributes != null && Attributes.Equals(input.Attributes))
+                    (Attributes != null && Attributes.SequenceEqual(input.Attributes))
                 ) &&
                 (
                     ChildProperties == input.ChildProperties ||
-                    (ChildProperties != null && ChildProperties.Equals(input.ChildProperties))
+                    (ChildProperties != null && ChildProperties.SequenceEqual(input.ChildProperties))
                 ) &&
                 (
                     ContentTypeAllowed == input.ContentTypeAllowed ||
@@ -249,11 +250,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     RepresentationSelection == input.RepresentationSelection ||
-                    (RepresentationSelection != null && RepresentationSelection.Equals(input.RepresentationSelection))
+                    (RepresentationSelection != null && RepresentationSelection.SequenceEqual(input.RepresentationSelection))
                 ) &&
                 (
                     DefaultValues == input.DefaultValues ||
-                    (DefaultValues != null && DefaultValues.Equals(input.DefaultValues))
+                    (DefaultValues != null && DefaultValues.SequenceEqual(input.DefaultValues))
                 ) &&
                 (
                     IsExternalAllowed == input.IsExternalAllowed ||
@@ -265,7 +266,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Weight == input.Weight ||
-                    (Weight != null && Weight.Equals(input.Weight))
+                    (Weight.Equals(input.Weight))
                 ) &&
                 (
                     Entitytype == input.Entitytype ||
@@ -281,7 +282,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     LegalContentTypes == input.LegalContentTypes ||
-                    (LegalContentTypes != null && LegalContentTypes.Equals(input.LegalContentTypes))
+                    (LegalContentTypes != null && LegalContentTypes.SequenceEqual(input.LegalContentTypes))
                 ) &&
                 (
                     RepresentationValidationString == input.RepresentationValidationString ||
@@ -289,19 +290,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MinWidth == input.MinWidth ||
-                    (MinWidth != null && MinWidth.Equals(input.MinWidth))
+                    (MinWidth.Equals(input.MinWidth))
                 ) &&
                 (
                     MaxWidth == input.MaxWidth ||
-                    (MaxWidth != null && MaxWidth.Equals(input.MaxWidth))
+                    (MaxWidth.Equals(input.MaxWidth))
                 ) &&
                 (
                     MinHeight == input.MinHeight ||
-                    (MinHeight != null && MinHeight.Equals(input.MinHeight))
+                    (MinHeight.Equals(input.MinHeight))
                 ) &&
                 (
                     MaxHeight == input.MaxHeight ||
-                    (MaxHeight != null && MaxHeight.Equals(input.MaxHeight))
+                    (MaxHeight.Equals(input.MaxHeight))
                 ) &&
                 (
                     IsVideo == input.IsVideo ||

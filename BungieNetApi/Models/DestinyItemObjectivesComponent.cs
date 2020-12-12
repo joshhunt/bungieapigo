@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 using System;
 
 namespace GhostSharper.Models
@@ -44,7 +45,7 @@ namespace GhostSharper.Models
             return
                 (
                     Objectives == input.Objectives ||
-                    (Objectives != null && Objectives.Equals(input.Objectives))
+                    (Objectives != null && Objectives.SequenceEqual(input.Objectives))
                 ) &&
                 (
                     FlavorObjective == input.FlavorObjective ||

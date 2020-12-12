@@ -48,11 +48,11 @@ namespace GhostSharper.Models
             return
                 (
                     MembershipId == input.MembershipId ||
-                    (MembershipId != null && MembershipId.Equals(input.MembershipId))
+                    (MembershipId.Equals(input.MembershipId))
                 ) &&
                 (
                     EmblemHash == input.EmblemHash ||
-                    (EmblemHash != null && EmblemHash.Equals(input.EmblemHash))
+                    (EmblemHash.Equals(input.EmblemHash))
                 ) &&
                 (
                     DisplayName == input.DisplayName ||

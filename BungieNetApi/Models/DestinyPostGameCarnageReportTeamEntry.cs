@@ -42,7 +42,7 @@ namespace GhostSharper.Models
             return
                 (
                     TeamId == input.TeamId ||
-                    (TeamId != null && TeamId.Equals(input.TeamId))
+                    (TeamId.Equals(input.TeamId))
                 ) &&
                 (
                     Standing == input.Standing ||

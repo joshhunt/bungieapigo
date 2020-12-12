@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -79,27 +80,27 @@ namespace GhostSharper.Models
             return
                 (
                     Progressions == input.Progressions ||
-                    (Progressions != null && Progressions.Equals(input.Progressions))
+                    (Progressions != null && Progressions.SequenceEqual(input.Progressions))
                 ) &&
                 (
                     Factions == input.Factions ||
-                    (Factions != null && Factions.Equals(input.Factions))
+                    (Factions != null && Factions.SequenceEqual(input.Factions))
                 ) &&
                 (
                     Milestones == input.Milestones ||
-                    (Milestones != null && Milestones.Equals(input.Milestones))
+                    (Milestones != null && Milestones.SequenceEqual(input.Milestones))
                 ) &&
                 (
                     Quests == input.Quests ||
-                    (Quests != null && Quests.Equals(input.Quests))
+                    (Quests != null && Quests.SequenceEqual(input.Quests))
                 ) &&
                 (
                     UninstancedItemObjectives == input.UninstancedItemObjectives ||
-                    (UninstancedItemObjectives != null && UninstancedItemObjectives.Equals(input.UninstancedItemObjectives))
+                    (UninstancedItemObjectives != null && UninstancedItemObjectives.SequenceEqual(input.UninstancedItemObjectives))
                 ) &&
                 (
                     Checklists == input.Checklists ||
-                    (Checklists != null && Checklists.Equals(input.Checklists))
+                    (Checklists != null && Checklists.SequenceEqual(input.Checklists))
                 ) &&
                 (
                     SeasonalArtifact == input.SeasonalArtifact ||

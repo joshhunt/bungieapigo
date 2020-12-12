@@ -80,8 +80,5 @@ namespace GhostSharper.Models
         [EnumMember(Value = "11")]
         Release = 11,
 
-        ///value not found fallback
-        [EnumMember(Value = "999999999")]
-        ProtectedInvalidEnumValue = 999999999
     }
 }

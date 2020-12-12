@@ -37,7 +37,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     PhaseHash == input.PhaseHash ||
-                    (PhaseHash != null && PhaseHash.Equals(input.PhaseHash))
+                    (PhaseHash.Equals(input.PhaseHash))
                 ) ;
         }
     }

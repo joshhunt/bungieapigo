@@ -49,7 +49,7 @@ namespace GhostSharper.Models
             return
                 (
                     VendorHash == input.VendorHash ||
-                    (VendorHash != null && VendorHash.Equals(input.VendorHash))
+                    (VendorHash.Equals(input.VendorHash))
                 ) &&
                 (
                     NextRefreshDate == input.NextRefreshDate ||

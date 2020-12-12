@@ -42,15 +42,15 @@ namespace GhostSharper.Models
             return
                 (
                     SingleItemHash == input.SingleItemHash ||
-                    (SingleItemHash != null && SingleItemHash.Equals(input.SingleItemHash))
+                    (SingleItemHash.Equals(input.SingleItemHash))
                 ) &&
                 (
                     RandomizedOptionsCount == input.RandomizedOptionsCount ||
-                    (RandomizedOptionsCount != null && RandomizedOptionsCount.Equals(input.RandomizedOptionsCount))
+                    (RandomizedOptionsCount.Equals(input.RandomizedOptionsCount))
                 ) &&
                 (
                     SocketTypeHash == input.SocketTypeHash ||
-                    (SocketTypeHash != null && SocketTypeHash.Equals(input.SocketTypeHash))
+                    (SocketTypeHash.Equals(input.SocketTypeHash))
                 ) ;
         }
     }

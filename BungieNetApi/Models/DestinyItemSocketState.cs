@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -58,7 +59,7 @@ namespace GhostSharper.Models
             return
                 (
                     PlugHash == input.PlugHash ||
-                    (PlugHash != null && PlugHash.Equals(input.PlugHash))
+                    (PlugHash.Equals(input.PlugHash))
                 ) &&
                 (
                     IsEnabled == input.IsEnabled ||
@@ -70,7 +71,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     EnableFailIndexes == input.EnableFailIndexes ||
-                    (EnableFailIndexes != null && EnableFailIndexes.Equals(input.EnableFailIndexes))
+                    (EnableFailIndexes != null && EnableFailIndexes.SequenceEqual(input.EnableFailIndexes))
                 ) ;
         }
     }

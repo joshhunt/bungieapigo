@@ -94,19 +94,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MaxStackSize == input.MaxStackSize ||
-                    (MaxStackSize != null && MaxStackSize.Equals(input.MaxStackSize))
+                    (MaxStackSize.Equals(input.MaxStackSize))
                 ) &&
                 (
                     BucketTypeHash == input.BucketTypeHash ||
-                    (BucketTypeHash != null && BucketTypeHash.Equals(input.BucketTypeHash))
+                    (BucketTypeHash.Equals(input.BucketTypeHash))
                 ) &&
                 (
                     RecoveryBucketTypeHash == input.RecoveryBucketTypeHash ||
-                    (RecoveryBucketTypeHash != null && RecoveryBucketTypeHash.Equals(input.RecoveryBucketTypeHash))
+                    (RecoveryBucketTypeHash.Equals(input.RecoveryBucketTypeHash))
                 ) &&
                 (
                     TierTypeHash == input.TierTypeHash ||
-                    (TierTypeHash != null && TierTypeHash.Equals(input.TierTypeHash))
+                    (TierTypeHash.Equals(input.TierTypeHash))
                 ) &&
                 (
                     IsInstanceItem == input.IsInstanceItem ||

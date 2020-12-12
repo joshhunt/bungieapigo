@@ -35,7 +35,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Count == input.Count ||
-                    (Count != null && Count.Equals(input.Count))
+                    (Count.Equals(input.Count))
                 ) ;
         }
     }

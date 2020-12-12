@@ -51,11 +51,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     LastOnlineStatusChange == input.LastOnlineStatusChange ||
-                    (LastOnlineStatusChange != null && LastOnlineStatusChange.Equals(input.LastOnlineStatusChange))
+                    (LastOnlineStatusChange.Equals(input.LastOnlineStatusChange))
                 ) &&
                 (
                     GroupId == input.GroupId ||
-                    (GroupId != null && GroupId.Equals(input.GroupId))
+                    (GroupId.Equals(input.GroupId))
                 ) &&
                 (
                     DestinyUserInfo == input.DestinyUserInfo ||

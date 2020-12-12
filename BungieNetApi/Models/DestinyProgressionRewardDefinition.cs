@@ -42,11 +42,11 @@ namespace GhostSharper.Models
             return
                 (
                     ProgressionMappingHash == input.ProgressionMappingHash ||
-                    (ProgressionMappingHash != null && ProgressionMappingHash.Equals(input.ProgressionMappingHash))
+                    (ProgressionMappingHash.Equals(input.ProgressionMappingHash))
                 ) &&
                 (
                     Amount == input.Amount ||
-                    (Amount != null && Amount.Equals(input.Amount))
+                    (Amount.Equals(input.Amount))
                 ) &&
                 (
                     ApplyThrottles == input.ApplyThrottles ||

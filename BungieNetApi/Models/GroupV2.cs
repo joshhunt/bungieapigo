@@ -1,6 +1,7 @@
 using System.Runtime.Serialization;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -107,7 +108,7 @@ namespace GhostSharper.Models
             return
                 (
                     GroupId == input.GroupId ||
-                    (GroupId != null && GroupId.Equals(input.GroupId))
+                    (GroupId.Equals(input.GroupId))
                 ) &&
                 (
                     Name == input.Name ||
@@ -119,7 +120,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MembershipIdCreated == input.MembershipIdCreated ||
-                    (MembershipIdCreated != null && MembershipIdCreated.Equals(input.MembershipIdCreated))
+                    (MembershipIdCreated.Equals(input.MembershipIdCreated))
                 ) &&
                 (
                     CreationDate == input.CreationDate ||
@@ -135,11 +136,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Tags == input.Tags ||
-                    (Tags != null && Tags.Equals(input.Tags))
+                    (Tags != null && Tags.SequenceEqual(input.Tags))
                 ) &&
                 (
                     MemberCount == input.MemberCount ||
-                    (MemberCount != null && MemberCount.Equals(input.MemberCount))
+                    (MemberCount.Equals(input.MemberCount))
                 ) &&
                 (
                     IsPublic == input.IsPublic ||
@@ -171,7 +172,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     AvatarImageIndex == input.AvatarImageIndex ||
-                    (AvatarImageIndex != null && AvatarImageIndex.Equals(input.AvatarImageIndex))
+                    (AvatarImageIndex.Equals(input.AvatarImageIndex))
                 ) &&
                 (
                     Homepage == input.Homepage ||
@@ -199,7 +200,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ConversationId == input.ConversationId ||
-                    (ConversationId != null && ConversationId.Equals(input.ConversationId))
+                    (ConversationId.Equals(input.ConversationId))
                 ) &&
                 (
                     EnableInvitationMessagingForAdmins == input.EnableInvitationMessagingForAdmins ||

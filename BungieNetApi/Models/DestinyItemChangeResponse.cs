@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -41,11 +42,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     AddedInventoryItems == input.AddedInventoryItems ||
-                    (AddedInventoryItems != null && AddedInventoryItems.Equals(input.AddedInventoryItems))
+                    (AddedInventoryItems != null && AddedInventoryItems.SequenceEqual(input.AddedInventoryItems))
                 ) &&
                 (
                     RemovedInventoryItems == input.RemovedInventoryItems ||
-                    (RemovedInventoryItems != null && RemovedInventoryItems.Equals(input.RemovedInventoryItems))
+                    (RemovedInventoryItems != null && RemovedInventoryItems.SequenceEqual(input.RemovedInventoryItems))
                 ) ;
         }
     }

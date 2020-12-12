@@ -89,7 +89,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     UserRating == input.UserRating ||
-                    (UserRating != null && UserRating.Equals(input.UserRating))
+                    (UserRating.Equals(input.UserRating))
                 ) &&
                 (
                     UserHasRated == input.UserHasRated ||
@@ -101,11 +101,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     LatestReplyPostId == input.LatestReplyPostId ||
-                    (LatestReplyPostId != null && LatestReplyPostId.Equals(input.LatestReplyPostId))
+                    (LatestReplyPostId.Equals(input.LatestReplyPostId))
                 ) &&
                 (
                     LatestReplyAuthorId == input.LatestReplyAuthorId ||
-                    (LatestReplyAuthorId != null && LatestReplyAuthorId.Equals(input.LatestReplyAuthorId))
+                    (LatestReplyAuthorId.Equals(input.LatestReplyAuthorId))
                 ) &&
                 (
                     IgnoreStatus == input.IgnoreStatus ||

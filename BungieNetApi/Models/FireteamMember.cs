@@ -51,7 +51,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     CharacterId == input.CharacterId ||
-                    (CharacterId != null && CharacterId.Equals(input.CharacterId))
+                    (CharacterId.Equals(input.CharacterId))
                 ) &&
                 (
                     DateJoined == input.DateJoined ||

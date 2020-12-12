@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -35,15 +36,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Objectives == input.Objectives ||
-                    (Objectives != null && Objectives.Equals(input.Objectives))
+                    (Objectives != null && Objectives.SequenceEqual(input.Objectives))
                 ) &&
                 (
                     IntervalObjectives == input.IntervalObjectives ||
-                    (IntervalObjectives != null && IntervalObjectives.Equals(input.IntervalObjectives))
+                    (IntervalObjectives != null && IntervalObjectives.SequenceEqual(input.IntervalObjectives))
                 ) &&
                 (
                     IntervalsRedeemedCount == input.IntervalsRedeemedCount ||
-                    (IntervalsRedeemedCount != null && IntervalsRedeemedCount.Equals(input.IntervalsRedeemedCount))
+                    (IntervalsRedeemedCount.Equals(input.IntervalsRedeemedCount))
                 ) ;
         }
     }

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -110,7 +111,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ApplicableMembershipTypes == input.ApplicableMembershipTypes ||
-                    (ApplicableMembershipTypes != null && ApplicableMembershipTypes.Equals(input.ApplicableMembershipTypes))
+                    (ApplicableMembershipTypes != null && ApplicableMembershipTypes.SequenceEqual(input.ApplicableMembershipTypes))
                 ) &&
                 (
                     IsPublic == input.IsPublic ||
@@ -122,7 +123,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MembershipId == input.MembershipId ||
-                    (MembershipId != null && MembershipId.Equals(input.MembershipId))
+                    (MembershipId.Equals(input.MembershipId))
                 ) &&
                 (
                     DisplayName == input.DisplayName ||

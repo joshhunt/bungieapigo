@@ -30,11 +30,11 @@ namespace GhostSharper.Models
             return
                 (
                     BaseQualityTransferRatio == input.BaseQualityTransferRatio ||
-                    (BaseQualityTransferRatio != null && BaseQualityTransferRatio.Equals(input.BaseQualityTransferRatio))
+                    (BaseQualityTransferRatio.Equals(input.BaseQualityTransferRatio))
                 ) &&
                 (
                     MinimumQualityIncrement == input.MinimumQualityIncrement ||
-                    (MinimumQualityIncrement != null && MinimumQualityIncrement.Equals(input.MinimumQualityIncrement))
+                    (MinimumQualityIncrement.Equals(input.MinimumQualityIncrement))
                 ) ;
         }
     }

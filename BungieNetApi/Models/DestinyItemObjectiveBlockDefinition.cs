@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -85,11 +86,11 @@ namespace GhostSharper.Models
             return
                 (
                     ObjectiveHashes == input.ObjectiveHashes ||
-                    (ObjectiveHashes != null && ObjectiveHashes.Equals(input.ObjectiveHashes))
+                    (ObjectiveHashes != null && ObjectiveHashes.SequenceEqual(input.ObjectiveHashes))
                 ) &&
                 (
                     DisplayActivityHashes == input.DisplayActivityHashes ||
-                    (DisplayActivityHashes != null && DisplayActivityHashes.Equals(input.DisplayActivityHashes))
+                    (DisplayActivityHashes != null && DisplayActivityHashes.SequenceEqual(input.DisplayActivityHashes))
                 ) &&
                 (
                     RequireFullObjectiveCompletion == input.RequireFullObjectiveCompletion ||
@@ -97,7 +98,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     QuestlineItemHash == input.QuestlineItemHash ||
-                    (QuestlineItemHash != null && QuestlineItemHash.Equals(input.QuestlineItemHash))
+                    (QuestlineItemHash.Equals(input.QuestlineItemHash))
                 ) &&
                 (
                     Narrative == input.Narrative ||
@@ -113,11 +114,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     QuestTypeHash == input.QuestTypeHash ||
-                    (QuestTypeHash != null && QuestTypeHash.Equals(input.QuestTypeHash))
+                    (QuestTypeHash.Equals(input.QuestTypeHash))
                 ) &&
                 (
                     PerObjectiveDisplayProperties == input.PerObjectiveDisplayProperties ||
-                    (PerObjectiveDisplayProperties != null && PerObjectiveDisplayProperties.Equals(input.PerObjectiveDisplayProperties))
+                    (PerObjectiveDisplayProperties != null && PerObjectiveDisplayProperties.SequenceEqual(input.PerObjectiveDisplayProperties))
                 ) &&
                 (
                     DisplayAsStatTracker == input.DisplayAsStatTracker ||

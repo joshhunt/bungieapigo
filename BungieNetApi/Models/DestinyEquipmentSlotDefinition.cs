@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -83,11 +84,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     EquipmentCategoryHash == input.EquipmentCategoryHash ||
-                    (EquipmentCategoryHash != null && EquipmentCategoryHash.Equals(input.EquipmentCategoryHash))
+                    (EquipmentCategoryHash.Equals(input.EquipmentCategoryHash))
                 ) &&
                 (
                     BucketTypeHash == input.BucketTypeHash ||
-                    (BucketTypeHash != null && BucketTypeHash.Equals(input.BucketTypeHash))
+                    (BucketTypeHash.Equals(input.BucketTypeHash))
                 ) &&
                 (
                     ApplyCustomArtDyes == input.ApplyCustomArtDyes ||
@@ -95,15 +96,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ArtDyeChannels == input.ArtDyeChannels ||
-                    (ArtDyeChannels != null && ArtDyeChannels.Equals(input.ArtDyeChannels))
+                    (ArtDyeChannels != null && ArtDyeChannels.SequenceEqual(input.ArtDyeChannels))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

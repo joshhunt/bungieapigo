@@ -27,11 +27,11 @@ namespace GhostSharper.Models
             return
                 (
                     Id == input.Id ||
-                    (Id != null && Id.Equals(input.Id))
+                    (Id.Equals(input.Id))
                 ) &&
                 (
                     ProgressionHash == input.ProgressionHash ||
-                    (ProgressionHash != null && ProgressionHash.Equals(input.ProgressionHash))
+                    (ProgressionHash.Equals(input.ProgressionHash))
                 ) ;
         }
     }

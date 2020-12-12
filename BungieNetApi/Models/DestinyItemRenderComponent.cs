@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -44,7 +45,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ArtRegions == input.ArtRegions ||
-                    (ArtRegions != null && ArtRegions.Equals(input.ArtRegions))
+                    (ArtRegions != null && ArtRegions.SequenceEqual(input.ArtRegions))
                 ) ;
         }
     }

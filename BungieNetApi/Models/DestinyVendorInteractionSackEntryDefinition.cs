@@ -24,7 +24,7 @@ namespace GhostSharper.Models
             return
                 (
                     SackType == input.SackType ||
-                    (SackType != null && SackType.Equals(input.SackType))
+                    (SackType.Equals(input.SackType))
                 ) ;
         }
     }

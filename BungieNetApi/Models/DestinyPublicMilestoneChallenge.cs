@@ -33,11 +33,11 @@ namespace GhostSharper.Models
             return
                 (
                     ObjectiveHash == input.ObjectiveHash ||
-                    (ObjectiveHash != null && ObjectiveHash.Equals(input.ObjectiveHash))
+                    (ObjectiveHash.Equals(input.ObjectiveHash))
                 ) &&
                 (
                     ActivityHash == input.ActivityHash ||
-                    (ActivityHash != null && ActivityHash.Equals(input.ActivityHash))
+                    (ActivityHash.Equals(input.ActivityHash))
                 ) ;
         }
     }

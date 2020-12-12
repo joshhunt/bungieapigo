@@ -30,7 +30,7 @@ namespace GhostSharper.Models
             return
                 (
                     Value == input.Value ||
-                    (Value != null && Value.Equals(input.Value))
+                    (Value.Equals(input.Value))
                 ) &&
                 (
                     DisplayValue == input.DisplayValue ||

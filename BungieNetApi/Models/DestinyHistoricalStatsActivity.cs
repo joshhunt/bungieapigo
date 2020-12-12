@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -67,15 +68,15 @@ namespace GhostSharper.Models
             return
                 (
                     ReferenceId == input.ReferenceId ||
-                    (ReferenceId != null && ReferenceId.Equals(input.ReferenceId))
+                    (ReferenceId.Equals(input.ReferenceId))
                 ) &&
                 (
                     DirectorActivityHash == input.DirectorActivityHash ||
-                    (DirectorActivityHash != null && DirectorActivityHash.Equals(input.DirectorActivityHash))
+                    (DirectorActivityHash.Equals(input.DirectorActivityHash))
                 ) &&
                 (
                     InstanceId == input.InstanceId ||
-                    (InstanceId != null && InstanceId.Equals(input.InstanceId))
+                    (InstanceId.Equals(input.InstanceId))
                 ) &&
                 (
                     Mode == input.Mode ||
@@ -83,7 +84,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Modes == input.Modes ||
-                    (Modes != null && Modes.Equals(input.Modes))
+                    (Modes != null && Modes.SequenceEqual(input.Modes))
                 ) &&
                 (
                     IsPrivate == input.IsPrivate ||

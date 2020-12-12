@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -46,23 +47,23 @@ namespace GhostSharper.Models
             return
                 (
                     Score == input.Score ||
-                    (Score != null && Score.Equals(input.Score))
+                    (Score.Equals(input.Score))
                 ) &&
                 (
                     TrackedRecordHash == input.TrackedRecordHash ||
-                    (TrackedRecordHash != null && TrackedRecordHash.Equals(input.TrackedRecordHash))
+                    (TrackedRecordHash.Equals(input.TrackedRecordHash))
                 ) &&
                 (
                     Records == input.Records ||
-                    (Records != null && Records.Equals(input.Records))
+                    (Records != null && Records.SequenceEqual(input.Records))
                 ) &&
                 (
                     RecordCategoriesRootNodeHash == input.RecordCategoriesRootNodeHash ||
-                    (RecordCategoriesRootNodeHash != null && RecordCategoriesRootNodeHash.Equals(input.RecordCategoriesRootNodeHash))
+                    (RecordCategoriesRootNodeHash.Equals(input.RecordCategoriesRootNodeHash))
                 ) &&
                 (
                     RecordSealsRootNodeHash == input.RecordSealsRootNodeHash ||
-                    (RecordSealsRootNodeHash != null && RecordSealsRootNodeHash.Equals(input.RecordSealsRootNodeHash))
+                    (RecordSealsRootNodeHash.Equals(input.RecordSealsRootNodeHash))
                 ) ;
         }
     }

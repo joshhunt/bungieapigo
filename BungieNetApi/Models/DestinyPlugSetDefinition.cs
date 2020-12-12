@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -80,7 +81,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ReusablePlugItems == input.ReusablePlugItems ||
-                    (ReusablePlugItems != null && ReusablePlugItems.Equals(input.ReusablePlugItems))
+                    (ReusablePlugItems != null && ReusablePlugItems.SequenceEqual(input.ReusablePlugItems))
                 ) &&
                 (
                     IsFakePlugSet == input.IsFakePlugSet ||
@@ -88,11 +89,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

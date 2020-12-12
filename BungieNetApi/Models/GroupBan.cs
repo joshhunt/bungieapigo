@@ -52,7 +52,7 @@ namespace GhostSharper.Models
             return
                 (
                     GroupId == input.GroupId ||
-                    (GroupId != null && GroupId.Equals(input.GroupId))
+                    (GroupId.Equals(input.GroupId))
                 ) &&
                 (
                     LastModifiedBy == input.LastModifiedBy ||

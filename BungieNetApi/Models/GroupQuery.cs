@@ -79,7 +79,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     GroupMemberCountFilter == input.GroupMemberCountFilter ||
-                    (GroupMemberCountFilter != null && GroupMemberCountFilter.Equals(input.GroupMemberCountFilter))
+                    (GroupMemberCountFilter.Equals(input.GroupMemberCountFilter))
                 ) &&
                 (
                     LocaleFilter == input.LocaleFilter ||
@@ -91,11 +91,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ItemsPerPage == input.ItemsPerPage ||
-                    (ItemsPerPage != null && ItemsPerPage.Equals(input.ItemsPerPage))
+                    (ItemsPerPage.Equals(input.ItemsPerPage))
                 ) &&
                 (
                     CurrentPage == input.CurrentPage ||
-                    (CurrentPage != null && CurrentPage.Equals(input.CurrentPage))
+                    (CurrentPage.Equals(input.CurrentPage))
                 ) &&
                 (
                     RequestContinuationToken == input.RequestContinuationToken ||

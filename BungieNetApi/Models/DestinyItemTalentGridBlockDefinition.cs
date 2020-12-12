@@ -54,7 +54,7 @@ namespace GhostSharper.Models
             return
                 (
                     TalentGridHash == input.TalentGridHash ||
-                    (TalentGridHash != null && TalentGridHash.Equals(input.TalentGridHash))
+                    (TalentGridHash.Equals(input.TalentGridHash))
                 ) &&
                 (
                     ItemDetailString == input.ItemDetailString ||

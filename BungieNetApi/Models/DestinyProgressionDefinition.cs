@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -137,7 +138,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Steps == input.Steps ||
-                    (Steps != null && Steps.Equals(input.Steps))
+                    (Steps != null && Steps.SequenceEqual(input.Steps))
                 ) &&
                 (
                     Visible == input.Visible ||
@@ -145,7 +146,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     FactionHash == input.FactionHash ||
-                    (FactionHash != null && FactionHash.Equals(input.FactionHash))
+                    (FactionHash.Equals(input.FactionHash))
                 ) &&
                 (
                     Color == input.Color ||
@@ -157,15 +158,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     RewardItems == input.RewardItems ||
-                    (RewardItems != null && RewardItems.Equals(input.RewardItems))
+                    (RewardItems != null && RewardItems.SequenceEqual(input.RewardItems))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

@@ -55,15 +55,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MinParty == input.MinParty ||
-                    (MinParty != null && MinParty.Equals(input.MinParty))
+                    (MinParty.Equals(input.MinParty))
                 ) &&
                 (
                     MaxParty == input.MaxParty ||
-                    (MaxParty != null && MaxParty.Equals(input.MaxParty))
+                    (MaxParty.Equals(input.MaxParty))
                 ) &&
                 (
                     MaxPlayers == input.MaxPlayers ||
-                    (MaxPlayers != null && MaxPlayers.Equals(input.MaxPlayers))
+                    (MaxPlayers.Equals(input.MaxPlayers))
                 ) &&
                 (
                     RequiresGuardianOath == input.RequiresGuardianOath ||

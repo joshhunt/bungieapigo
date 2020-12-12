@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -112,19 +113,19 @@ namespace GhostSharper.Models
             return
                 (
                     CategoryIndex == input.CategoryIndex ||
-                    (CategoryIndex != null && CategoryIndex.Equals(input.CategoryIndex))
+                    (CategoryIndex.Equals(input.CategoryIndex))
                 ) &&
                 (
                     SortValue == input.SortValue ||
-                    (SortValue != null && SortValue.Equals(input.SortValue))
+                    (SortValue.Equals(input.SortValue))
                 ) &&
                 (
                     CategoryHash == input.CategoryHash ||
-                    (CategoryHash != null && CategoryHash.Equals(input.CategoryHash))
+                    (CategoryHash.Equals(input.CategoryHash))
                 ) &&
                 (
                     QuantityAvailable == input.QuantityAvailable ||
-                    (QuantityAvailable != null && QuantityAvailable.Equals(input.QuantityAvailable))
+                    (QuantityAvailable.Equals(input.QuantityAvailable))
                 ) &&
                 (
                     ShowUnavailableItems == input.ShowUnavailableItems ||
@@ -156,7 +157,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     VendorItemIndexes == input.VendorItemIndexes ||
-                    (VendorItemIndexes != null && VendorItemIndexes.Equals(input.VendorItemIndexes))
+                    (VendorItemIndexes != null && VendorItemIndexes.SequenceEqual(input.VendorItemIndexes))
                 ) &&
                 (
                     IsPreview == input.IsPreview ||
@@ -168,11 +169,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ResetIntervalMinutesOverride == input.ResetIntervalMinutesOverride ||
-                    (ResetIntervalMinutesOverride != null && ResetIntervalMinutesOverride.Equals(input.ResetIntervalMinutesOverride))
+                    (ResetIntervalMinutesOverride.Equals(input.ResetIntervalMinutesOverride))
                 ) &&
                 (
                     ResetOffsetMinutesOverride == input.ResetOffsetMinutesOverride ||
-                    (ResetOffsetMinutesOverride != null && ResetOffsetMinutesOverride.Equals(input.ResetOffsetMinutesOverride))
+                    (ResetOffsetMinutesOverride.Equals(input.ResetOffsetMinutesOverride))
                 ) ;
         }
     }

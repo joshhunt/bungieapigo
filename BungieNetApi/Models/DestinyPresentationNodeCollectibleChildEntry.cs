@@ -21,7 +21,7 @@ namespace GhostSharper.Models
             return
                 (
                     CollectibleHash == input.CollectibleHash ||
-                    (CollectibleHash != null && CollectibleHash.Equals(input.CollectibleHash))
+                    (CollectibleHash.Equals(input.CollectibleHash))
                 ) ;
         }
     }

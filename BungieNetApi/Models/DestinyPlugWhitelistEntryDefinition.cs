@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -58,7 +59,7 @@ namespace GhostSharper.Models
             return
                 (
                     CategoryHash == input.CategoryHash ||
-                    (CategoryHash != null && CategoryHash.Equals(input.CategoryHash))
+                    (CategoryHash.Equals(input.CategoryHash))
                 ) &&
                 (
                     CategoryIdentifier == input.CategoryIdentifier ||
@@ -66,7 +67,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ReinitializationPossiblePlugHashes == input.ReinitializationPossiblePlugHashes ||
-                    (ReinitializationPossiblePlugHashes != null && ReinitializationPossiblePlugHashes.Equals(input.ReinitializationPossiblePlugHashes))
+                    (ReinitializationPossiblePlugHashes != null && ReinitializationPossiblePlugHashes.SequenceEqual(input.ReinitializationPossiblePlugHashes))
                 ) ;
         }
     }

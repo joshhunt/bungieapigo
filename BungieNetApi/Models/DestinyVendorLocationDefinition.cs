@@ -33,7 +33,7 @@ namespace GhostSharper.Models
             return
                 (
                     DestinationHash == input.DestinationHash ||
-                    (DestinationHash != null && DestinationHash.Equals(input.DestinationHash))
+                    (DestinationHash.Equals(input.DestinationHash))
                 ) &&
                 (
                     BackgroundImagePath == input.BackgroundImagePath ||

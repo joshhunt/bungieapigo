@@ -27,11 +27,11 @@ namespace GhostSharper.Models
             return
                 (
                     ItemId == input.ItemId ||
-                    (ItemId != null && ItemId.Equals(input.ItemId))
+                    (ItemId.Equals(input.ItemId))
                 ) &&
                 (
                     CharacterId == input.CharacterId ||
-                    (CharacterId != null && CharacterId.Equals(input.CharacterId))
+                    (CharacterId.Equals(input.CharacterId))
                 ) &&
                 (
                     MembershipType == input.MembershipType ||

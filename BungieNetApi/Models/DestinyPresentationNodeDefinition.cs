@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -159,11 +160,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ObjectiveHash == input.ObjectiveHash ||
-                    (ObjectiveHash != null && ObjectiveHash.Equals(input.ObjectiveHash))
+                    (ObjectiveHash.Equals(input.ObjectiveHash))
                 ) &&
                 (
                     CompletionRecordHash == input.CompletionRecordHash ||
-                    (CompletionRecordHash != null && CompletionRecordHash.Equals(input.CompletionRecordHash))
+                    (CompletionRecordHash.Equals(input.CompletionRecordHash))
                 ) &&
                 (
                     Children == input.Children ||
@@ -191,23 +192,23 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     TraitIds == input.TraitIds ||
-                    (TraitIds != null && TraitIds.Equals(input.TraitIds))
+                    (TraitIds != null && TraitIds.SequenceEqual(input.TraitIds))
                 ) &&
                 (
                     TraitHashes == input.TraitHashes ||
-                    (TraitHashes != null && TraitHashes.Equals(input.TraitHashes))
+                    (TraitHashes != null && TraitHashes.SequenceEqual(input.TraitHashes))
                 ) &&
                 (
                     ParentNodeHashes == input.ParentNodeHashes ||
-                    (ParentNodeHashes != null && ParentNodeHashes.Equals(input.ParentNodeHashes))
+                    (ParentNodeHashes != null && ParentNodeHashes.SequenceEqual(input.ParentNodeHashes))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

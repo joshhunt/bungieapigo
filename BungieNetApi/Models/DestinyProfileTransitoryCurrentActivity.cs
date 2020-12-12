@@ -69,19 +69,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Score == input.Score ||
-                    (Score != null && Score.Equals(input.Score))
+                    (Score.Equals(input.Score))
                 ) &&
                 (
                     HighestOpposingFactionScore == input.HighestOpposingFactionScore ||
-                    (HighestOpposingFactionScore != null && HighestOpposingFactionScore.Equals(input.HighestOpposingFactionScore))
+                    (HighestOpposingFactionScore.Equals(input.HighestOpposingFactionScore))
                 ) &&
                 (
                     NumberOfOpponents == input.NumberOfOpponents ||
-                    (NumberOfOpponents != null && NumberOfOpponents.Equals(input.NumberOfOpponents))
+                    (NumberOfOpponents.Equals(input.NumberOfOpponents))
                 ) &&
                 (
                     NumberOfPlayers == input.NumberOfPlayers ||
-                    (NumberOfPlayers != null && NumberOfPlayers.Equals(input.NumberOfPlayers))
+                    (NumberOfPlayers.Equals(input.NumberOfPlayers))
                 ) ;
         }
     }

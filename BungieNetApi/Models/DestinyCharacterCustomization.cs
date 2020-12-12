@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -61,35 +62,35 @@ namespace GhostSharper.Models
             return
                 (
                     Personality == input.Personality ||
-                    (Personality != null && Personality.Equals(input.Personality))
+                    (Personality.Equals(input.Personality))
                 ) &&
                 (
                     Face == input.Face ||
-                    (Face != null && Face.Equals(input.Face))
+                    (Face.Equals(input.Face))
                 ) &&
                 (
                     SkinColor == input.SkinColor ||
-                    (SkinColor != null && SkinColor.Equals(input.SkinColor))
+                    (SkinColor.Equals(input.SkinColor))
                 ) &&
                 (
                     LipColor == input.LipColor ||
-                    (LipColor != null && LipColor.Equals(input.LipColor))
+                    (LipColor.Equals(input.LipColor))
                 ) &&
                 (
                     EyeColor == input.EyeColor ||
-                    (EyeColor != null && EyeColor.Equals(input.EyeColor))
+                    (EyeColor.Equals(input.EyeColor))
                 ) &&
                 (
                     HairColors == input.HairColors ||
-                    (HairColors != null && HairColors.Equals(input.HairColors))
+                    (HairColors != null && HairColors.SequenceEqual(input.HairColors))
                 ) &&
                 (
                     FeatureColors == input.FeatureColors ||
-                    (FeatureColors != null && FeatureColors.Equals(input.FeatureColors))
+                    (FeatureColors != null && FeatureColors.SequenceEqual(input.FeatureColors))
                 ) &&
                 (
                     DecalColor == input.DecalColor ||
-                    (DecalColor != null && DecalColor.Equals(input.DecalColor))
+                    (DecalColor.Equals(input.DecalColor))
                 ) &&
                 (
                     WearHelmet == input.WearHelmet ||
@@ -97,15 +98,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     HairIndex == input.HairIndex ||
-                    (HairIndex != null && HairIndex.Equals(input.HairIndex))
+                    (HairIndex.Equals(input.HairIndex))
                 ) &&
                 (
                     FeatureIndex == input.FeatureIndex ||
-                    (FeatureIndex != null && FeatureIndex.Equals(input.FeatureIndex))
+                    (FeatureIndex.Equals(input.FeatureIndex))
                 ) &&
                 (
                     DecalIndex == input.DecalIndex ||
-                    (DecalIndex != null && DecalIndex.Equals(input.DecalIndex))
+                    (DecalIndex.Equals(input.DecalIndex))
                 ) ;
         }
     }

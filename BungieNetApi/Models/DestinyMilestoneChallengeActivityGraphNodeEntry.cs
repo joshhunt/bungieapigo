@@ -24,11 +24,11 @@ namespace GhostSharper.Models
             return
                 (
                     ActivityGraphHash == input.ActivityGraphHash ||
-                    (ActivityGraphHash != null && ActivityGraphHash.Equals(input.ActivityGraphHash))
+                    (ActivityGraphHash.Equals(input.ActivityGraphHash))
                 ) &&
                 (
                     ActivityGraphNodeHash == input.ActivityGraphNodeHash ||
-                    (ActivityGraphNodeHash != null && ActivityGraphNodeHash.Equals(input.ActivityGraphNodeHash))
+                    (ActivityGraphNodeHash.Equals(input.ActivityGraphNodeHash))
                 ) ;
         }
     }

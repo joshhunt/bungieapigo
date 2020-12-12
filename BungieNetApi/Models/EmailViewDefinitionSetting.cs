@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -53,7 +54,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Localization == input.Localization ||
-                    (Localization != null && Localization.Equals(input.Localization))
+                    (Localization != null && Localization.SequenceEqual(input.Localization))
                 ) &&
                 (
                     SetByDefault == input.SetByDefault ||
@@ -65,7 +66,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Subscriptions == input.Subscriptions ||
-                    (Subscriptions != null && Subscriptions.Equals(input.Subscriptions))
+                    (Subscriptions != null && Subscriptions.SequenceEqual(input.Subscriptions))
                 ) ;
         }
     }

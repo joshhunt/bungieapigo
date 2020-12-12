@@ -18,6 +18,12 @@ export class ModelProperty {
     return ApiDocHelper.getObjectType(this.info);
   }
 
+  needsNullCheck(): boolean {
+    var type = this.typeName();
+
+    return type != "long" && type != "uint" && type != "double";
+  }
+
   deserializationFunction() {
     let fn = ApiDocHelper.getParseFunction(
       this.info,
@@ -57,6 +63,23 @@ export class ModelProperty {
 
   jsonKey(): string {
     return `[DataMember(Name = "${this.name}", EmitDefaultValue = false)]`;
+  }
+
+  comparisonFnName(): string {
+    if (ApiDocHelper.isSequenceType(this.typeName())) {
+      return "SequenceEqual";
+    } else {
+      return "Equals";
+    }
+  }
+
+  equals(): string {
+    return [
+      this.needsNullCheck() && `${this.propertyName()} != null`,
+      `${this.propertyName()}.${this.comparisonFnName()}(input.${this.propertyName()})`,
+    ]
+      .filter(Boolean)
+      .join(" && ");
   }
 
   keywords(): string {

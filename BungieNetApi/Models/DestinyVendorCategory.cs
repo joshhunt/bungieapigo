@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -34,11 +35,11 @@ namespace GhostSharper.Models
             return
                 (
                     DisplayCategoryIndex == input.DisplayCategoryIndex ||
-                    (DisplayCategoryIndex != null && DisplayCategoryIndex.Equals(input.DisplayCategoryIndex))
+                    (DisplayCategoryIndex.Equals(input.DisplayCategoryIndex))
                 ) &&
                 (
                     ItemIndexes == input.ItemIndexes ||
-                    (ItemIndexes != null && ItemIndexes.Equals(input.ItemIndexes))
+                    (ItemIndexes != null && ItemIndexes.SequenceEqual(input.ItemIndexes))
                 ) ;
         }
     }

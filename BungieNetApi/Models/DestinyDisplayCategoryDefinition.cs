@@ -72,7 +72,7 @@ namespace GhostSharper.Models
             return
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Identifier == input.Identifier ||
@@ -80,7 +80,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     DisplayCategoryHash == input.DisplayCategoryHash ||
-                    (DisplayCategoryHash != null && DisplayCategoryHash.Equals(input.DisplayCategoryHash))
+                    (DisplayCategoryHash.Equals(input.DisplayCategoryHash))
                 ) &&
                 (
                     DisplayProperties == input.DisplayProperties ||
@@ -92,7 +92,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ProgressionHash == input.ProgressionHash ||
-                    (ProgressionHash != null && ProgressionHash.Equals(input.ProgressionHash))
+                    (ProgressionHash.Equals(input.ProgressionHash))
                 ) &&
                 (
                     SortOrder == input.SortOrder ||
@@ -100,7 +100,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     DisplayStyleHash == input.DisplayStyleHash ||
-                    (DisplayStyleHash != null && DisplayStyleHash.Equals(input.DisplayStyleHash))
+                    (DisplayStyleHash.Equals(input.DisplayStyleHash))
                 ) &&
                 (
                     DisplayStyleIdentifier == input.DisplayStyleIdentifier ||

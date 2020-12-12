@@ -94,19 +94,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     CapacityStatHash == input.CapacityStatHash ||
-                    (CapacityStatHash != null && CapacityStatHash.Equals(input.CapacityStatHash))
+                    (CapacityStatHash.Equals(input.CapacityStatHash))
                 ) &&
                 (
                     CostStatHash == input.CostStatHash ||
-                    (CostStatHash != null && CostStatHash.Equals(input.CostStatHash))
+                    (CostStatHash.Equals(input.CostStatHash))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

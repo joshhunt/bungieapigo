@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -113,7 +114,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     DamageTypeHash == input.DamageTypeHash ||
-                    (DamageTypeHash != null && DamageTypeHash.Equals(input.DamageTypeHash))
+                    (DamageTypeHash.Equals(input.DamageTypeHash))
                 ) &&
                 (
                     PrimaryStat == input.PrimaryStat ||
@@ -121,11 +122,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ItemLevel == input.ItemLevel ||
-                    (ItemLevel != null && ItemLevel.Equals(input.ItemLevel))
+                    (ItemLevel.Equals(input.ItemLevel))
                 ) &&
                 (
                     Quality == input.Quality ||
-                    (Quality != null && Quality.Equals(input.Quality))
+                    (Quality.Equals(input.Quality))
                 ) &&
                 (
                     IsEquipped == input.IsEquipped ||
@@ -137,11 +138,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     EquipRequiredLevel == input.EquipRequiredLevel ||
-                    (EquipRequiredLevel != null && EquipRequiredLevel.Equals(input.EquipRequiredLevel))
+                    (EquipRequiredLevel.Equals(input.EquipRequiredLevel))
                 ) &&
                 (
                     UnlockHashesRequiredToEquip == input.UnlockHashesRequiredToEquip ||
-                    (UnlockHashesRequiredToEquip != null && UnlockHashesRequiredToEquip.Equals(input.UnlockHashesRequiredToEquip))
+                    (UnlockHashesRequiredToEquip != null && UnlockHashesRequiredToEquip.SequenceEqual(input.UnlockHashesRequiredToEquip))
                 ) &&
                 (
                     CannotEquipReason == input.CannotEquipReason ||
@@ -149,11 +150,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     BreakerType == input.BreakerType ||
-                    (BreakerType != null && BreakerType.Equals(input.BreakerType))
+                    (BreakerType.Equals(input.BreakerType))
                 ) &&
                 (
                     BreakerTypeHash == input.BreakerTypeHash ||
-                    (BreakerTypeHash != null && BreakerTypeHash.Equals(input.BreakerTypeHash))
+                    (BreakerTypeHash.Equals(input.BreakerTypeHash))
                 ) &&
                 (
                     Energy == input.Energy ||

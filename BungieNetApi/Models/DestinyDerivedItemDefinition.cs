@@ -57,7 +57,7 @@ namespace GhostSharper.Models
             return
                 (
                     ItemHash == input.ItemHash ||
-                    (ItemHash != null && ItemHash.Equals(input.ItemHash))
+                    (ItemHash.Equals(input.ItemHash))
                 ) &&
                 (
                     ItemName == input.ItemName ||
@@ -77,7 +77,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     VendorItemIndex == input.VendorItemIndex ||
-                    (VendorItemIndex != null && VendorItemIndex.Equals(input.VendorItemIndex))
+                    (VendorItemIndex.Equals(input.VendorItemIndex))
                 ) ;
         }
     }

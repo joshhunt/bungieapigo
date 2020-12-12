@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -126,15 +127,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     RequiredCooldownSeconds == input.RequiredCooldownSeconds ||
-                    (RequiredCooldownSeconds != null && RequiredCooldownSeconds.Equals(input.RequiredCooldownSeconds))
+                    (RequiredCooldownSeconds.Equals(input.RequiredCooldownSeconds))
                 ) &&
                 (
                     RequiredItems == input.RequiredItems ||
-                    (RequiredItems != null && RequiredItems.Equals(input.RequiredItems))
+                    (RequiredItems != null && RequiredItems.SequenceEqual(input.RequiredItems))
                 ) &&
                 (
                     ProgressionRewards == input.ProgressionRewards ||
-                    (ProgressionRewards != null && ProgressionRewards.Equals(input.ProgressionRewards))
+                    (ProgressionRewards != null && ProgressionRewards.SequenceEqual(input.ProgressionRewards))
                 ) &&
                 (
                     ActionTypeLabel == input.ActionTypeLabel ||
@@ -146,7 +147,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     RequiredCooldownHash == input.RequiredCooldownHash ||
-                    (RequiredCooldownHash != null && RequiredCooldownHash.Equals(input.RequiredCooldownHash))
+                    (RequiredCooldownHash.Equals(input.RequiredCooldownHash))
                 ) &&
                 (
                     DeleteOnAction == input.DeleteOnAction ||

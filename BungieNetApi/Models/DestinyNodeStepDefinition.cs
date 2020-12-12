@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -149,11 +150,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     StepIndex == input.StepIndex ||
-                    (StepIndex != null && StepIndex.Equals(input.StepIndex))
+                    (StepIndex.Equals(input.StepIndex))
                 ) &&
                 (
                     NodeStepHash == input.NodeStepHash ||
-                    (NodeStepHash != null && NodeStepHash.Equals(input.NodeStepHash))
+                    (NodeStepHash.Equals(input.NodeStepHash))
                 ) &&
                 (
                     InteractionDescription == input.InteractionDescription ||
@@ -165,7 +166,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     DamageTypeHash == input.DamageTypeHash ||
-                    (DamageTypeHash != null && DamageTypeHash.Equals(input.DamageTypeHash))
+                    (DamageTypeHash.Equals(input.DamageTypeHash))
                 ) &&
                 (
                     ActivationRequirement == input.ActivationRequirement ||
@@ -177,7 +178,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     NextStepIndex == input.NextStepIndex ||
-                    (NextStepIndex != null && NextStepIndex.Equals(input.NextStepIndex))
+                    (NextStepIndex.Equals(input.NextStepIndex))
                 ) &&
                 (
                     IsNextStepRandom == input.IsNextStepRandom ||
@@ -185,15 +186,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     PerkHashes == input.PerkHashes ||
-                    (PerkHashes != null && PerkHashes.Equals(input.PerkHashes))
+                    (PerkHashes != null && PerkHashes.SequenceEqual(input.PerkHashes))
                 ) &&
                 (
                     StartProgressionBarAtProgress == input.StartProgressionBarAtProgress ||
-                    (StartProgressionBarAtProgress != null && StartProgressionBarAtProgress.Equals(input.StartProgressionBarAtProgress))
+                    (StartProgressionBarAtProgress.Equals(input.StartProgressionBarAtProgress))
                 ) &&
                 (
                     StatHashes == input.StatHashes ||
-                    (StatHashes != null && StatHashes.Equals(input.StatHashes))
+                    (StatHashes != null && StatHashes.SequenceEqual(input.StatHashes))
                 ) &&
                 (
                     AffectsQuality == input.AffectsQuality ||
@@ -209,7 +210,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     SocketReplacements == input.SocketReplacements ||
-                    (SocketReplacements != null && SocketReplacements.Equals(input.SocketReplacements))
+                    (SocketReplacements != null && SocketReplacements.SequenceEqual(input.SocketReplacements))
                 ) ;
         }
     }

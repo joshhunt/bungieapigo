@@ -47,11 +47,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MembershipId == input.MembershipId ||
-                    (MembershipId != null && MembershipId.Equals(input.MembershipId))
+                    (MembershipId.Equals(input.MembershipId))
                 ) &&
                 (
                     MembershipType == input.MembershipType ||
-                    (MembershipType != null && MembershipType.Equals(input.MembershipType))
+                    (MembershipType.Equals(input.MembershipType))
                 ) &&
                 (
                     LocalizedName == input.LocalizedName ||
@@ -67,7 +67,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     QuantityApplied == input.QuantityApplied ||
-                    (QuantityApplied != null && QuantityApplied.Equals(input.QuantityApplied))
+                    (QuantityApplied.Equals(input.QuantityApplied))
                 ) &&
                 (
                     ApplyDate == input.ApplyDate ||

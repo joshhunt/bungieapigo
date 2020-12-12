@@ -48,7 +48,7 @@ namespace GhostSharper.Models
             return
                 (
                     EnergyTypeHash == input.EnergyTypeHash ||
-                    (EnergyTypeHash != null && EnergyTypeHash.Equals(input.EnergyTypeHash))
+                    (EnergyTypeHash.Equals(input.EnergyTypeHash))
                 ) &&
                 (
                     EnergyType == input.EnergyType ||
@@ -56,15 +56,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     EnergyCapacity == input.EnergyCapacity ||
-                    (EnergyCapacity != null && EnergyCapacity.Equals(input.EnergyCapacity))
+                    (EnergyCapacity.Equals(input.EnergyCapacity))
                 ) &&
                 (
                     EnergyUsed == input.EnergyUsed ||
-                    (EnergyUsed != null && EnergyUsed.Equals(input.EnergyUsed))
+                    (EnergyUsed.Equals(input.EnergyUsed))
                 ) &&
                 (
                     EnergyUnused == input.EnergyUnused ||
-                    (EnergyUnused != null && EnergyUnused.Equals(input.EnergyUnused))
+                    (EnergyUnused.Equals(input.EnergyUnused))
                 ) ;
         }
     }

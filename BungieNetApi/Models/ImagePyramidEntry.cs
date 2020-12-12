@@ -34,7 +34,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Factor == input.Factor ||
-                    (Factor != null && Factor.Equals(input.Factor))
+                    (Factor.Equals(input.Factor))
                 ) ;
         }
     }

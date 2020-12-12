@@ -45,7 +45,7 @@ namespace GhostSharper.Models
             return
                 (
                     ItemHash == input.ItemHash ||
-                    (ItemHash != null && ItemHash.Equals(input.ItemHash))
+                    (ItemHash.Equals(input.ItemHash))
                 ) &&
                 (
                     DeleteOnAction == input.DeleteOnAction ||
@@ -53,7 +53,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Count == input.Count ||
-                    (Count != null && Count.Equals(input.Count))
+                    (Count.Equals(input.Count))
                 ) &&
                 (
                     OmitFromRequirements == input.OmitFromRequirements ||

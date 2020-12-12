@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -49,11 +50,11 @@ namespace GhostSharper.Models
             return
                 (
                     Results == input.Results ||
-                    (Results != null && Results.Equals(input.Results))
+                    (Results != null && Results.SequenceEqual(input.Results))
                 ) &&
                 (
                     TotalResults == input.TotalResults ||
-                    (TotalResults != null && TotalResults.Equals(input.TotalResults))
+                    (TotalResults.Equals(input.TotalResults))
                 ) &&
                 (
                     HasMore == input.HasMore ||

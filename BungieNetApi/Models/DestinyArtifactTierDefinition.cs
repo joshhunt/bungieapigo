@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -49,7 +50,7 @@ namespace GhostSharper.Models
             return
                 (
                     TierHash == input.TierHash ||
-                    (TierHash != null && TierHash.Equals(input.TierHash))
+                    (TierHash.Equals(input.TierHash))
                 ) &&
                 (
                     DisplayTitle == input.DisplayTitle ||
@@ -61,11 +62,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Items == input.Items ||
-                    (Items != null && Items.Equals(input.Items))
+                    (Items != null && Items.SequenceEqual(input.Items))
                 ) &&
                 (
                     MinimumUnlockPointsUsedRequirement == input.MinimumUnlockPointsUsedRequirement ||
-                    (MinimumUnlockPointsUsedRequirement != null && MinimumUnlockPointsUsedRequirement.Equals(input.MinimumUnlockPointsUsedRequirement))
+                    (MinimumUnlockPointsUsedRequirement.Equals(input.MinimumUnlockPointsUsedRequirement))
                 ) ;
         }
     }

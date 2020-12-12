@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -95,31 +96,31 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     PlaceHash == input.PlaceHash ||
-                    (PlaceHash != null && PlaceHash.Equals(input.PlaceHash))
+                    (PlaceHash.Equals(input.PlaceHash))
                 ) &&
                 (
                     DefaultFreeroamActivityHash == input.DefaultFreeroamActivityHash ||
-                    (DefaultFreeroamActivityHash != null && DefaultFreeroamActivityHash.Equals(input.DefaultFreeroamActivityHash))
+                    (DefaultFreeroamActivityHash.Equals(input.DefaultFreeroamActivityHash))
                 ) &&
                 (
                     ActivityGraphEntries == input.ActivityGraphEntries ||
-                    (ActivityGraphEntries != null && ActivityGraphEntries.Equals(input.ActivityGraphEntries))
+                    (ActivityGraphEntries != null && ActivityGraphEntries.SequenceEqual(input.ActivityGraphEntries))
                 ) &&
                 (
                     BubbleSettings == input.BubbleSettings ||
-                    (BubbleSettings != null && BubbleSettings.Equals(input.BubbleSettings))
+                    (BubbleSettings != null && BubbleSettings.SequenceEqual(input.BubbleSettings))
                 ) &&
                 (
                     Bubbles == input.Bubbles ||
-                    (Bubbles != null && Bubbles.Equals(input.Bubbles))
+                    (Bubbles != null && Bubbles.SequenceEqual(input.Bubbles))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

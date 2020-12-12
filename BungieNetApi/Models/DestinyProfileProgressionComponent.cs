@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -40,7 +41,7 @@ namespace GhostSharper.Models
             return
                 (
                     Checklists == input.Checklists ||
-                    (Checklists != null && Checklists.Equals(input.Checklists))
+                    (Checklists != null && Checklists.SequenceEqual(input.Checklists))
                 ) &&
                 (
                     SeasonalArtifact == input.SeasonalArtifact ||

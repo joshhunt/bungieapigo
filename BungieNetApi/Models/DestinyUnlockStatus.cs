@@ -36,7 +36,7 @@ namespace GhostSharper.Models
             return
                 (
                     UnlockHash == input.UnlockHash ||
-                    (UnlockHash != null && UnlockHash.Equals(input.UnlockHash))
+                    (UnlockHash.Equals(input.UnlockHash))
                 ) &&
                 (
                     IsSet == input.IsSet ||

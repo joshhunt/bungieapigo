@@ -33,11 +33,11 @@ namespace GhostSharper.Models
             return
                 (
                     StatHash == input.StatHash ||
-                    (StatHash != null && StatHash.Equals(input.StatHash))
+                    (StatHash.Equals(input.StatHash))
                 ) &&
                 (
                     Value == input.Value ||
-                    (Value != null && Value.Equals(input.Value))
+                    (Value.Equals(input.Value))
                 ) ;
         }
     }

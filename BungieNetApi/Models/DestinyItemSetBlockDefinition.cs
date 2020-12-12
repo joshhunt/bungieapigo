@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -52,7 +53,7 @@ namespace GhostSharper.Models
             return
                 (
                     ItemList == input.ItemList ||
-                    (ItemList != null && ItemList.Equals(input.ItemList))
+                    (ItemList != null && ItemList.SequenceEqual(input.ItemList))
                 ) &&
                 (
                     RequireOrderedSetItemAdd == input.RequireOrderedSetItemAdd ||

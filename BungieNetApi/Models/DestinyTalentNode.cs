@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -82,11 +83,11 @@ namespace GhostSharper.Models
             return
                 (
                     NodeIndex == input.NodeIndex ||
-                    (NodeIndex != null && NodeIndex.Equals(input.NodeIndex))
+                    (NodeIndex.Equals(input.NodeIndex))
                 ) &&
                 (
                     NodeHash == input.NodeHash ||
-                    (NodeHash != null && NodeHash.Equals(input.NodeHash))
+                    (NodeHash.Equals(input.NodeHash))
                 ) &&
                 (
                     State == input.State ||
@@ -98,19 +99,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     StepIndex == input.StepIndex ||
-                    (StepIndex != null && StepIndex.Equals(input.StepIndex))
+                    (StepIndex.Equals(input.StepIndex))
                 ) &&
                 (
                     MaterialsToUpgrade == input.MaterialsToUpgrade ||
-                    (MaterialsToUpgrade != null && MaterialsToUpgrade.Equals(input.MaterialsToUpgrade))
+                    (MaterialsToUpgrade != null && MaterialsToUpgrade.SequenceEqual(input.MaterialsToUpgrade))
                 ) &&
                 (
                     ActivationGridLevel == input.ActivationGridLevel ||
-                    (ActivationGridLevel != null && ActivationGridLevel.Equals(input.ActivationGridLevel))
+                    (ActivationGridLevel.Equals(input.ActivationGridLevel))
                 ) &&
                 (
                     ProgressPercent == input.ProgressPercent ||
-                    (ProgressPercent != null && ProgressPercent.Equals(input.ProgressPercent))
+                    (ProgressPercent.Equals(input.ProgressPercent))
                 ) &&
                 (
                     Hidden == input.Hidden ||

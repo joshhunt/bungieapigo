@@ -50,7 +50,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     SelectItemCount == input.SelectItemCount ||
-                    (SelectItemCount != null && SelectItemCount.Equals(input.SelectItemCount))
+                    (SelectItemCount.Equals(input.SelectItemCount))
                 ) &&
                 (
                     VendorSackType == input.VendorSackType ||

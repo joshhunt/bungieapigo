@@ -24,7 +24,7 @@ namespace GhostSharper.Models
             return
                 (
                     Version == input.Version ||
-                    (Version != null && Version.Equals(input.Version))
+                    (Version.Equals(input.Version))
                 ) &&
                 (
                     Path == input.Path ||

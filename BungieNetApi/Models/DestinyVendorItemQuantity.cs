@@ -39,15 +39,15 @@ namespace GhostSharper.Models
             return
                 (
                     ItemHash == input.ItemHash ||
-                    (ItemHash != null && ItemHash.Equals(input.ItemHash))
+                    (ItemHash.Equals(input.ItemHash))
                 ) &&
                 (
                     ItemInstanceId == input.ItemInstanceId ||
-                    (ItemInstanceId != null && ItemInstanceId.Equals(input.ItemInstanceId))
+                    (ItemInstanceId.Equals(input.ItemInstanceId))
                 ) &&
                 (
                     Quantity == input.Quantity ||
-                    (Quantity != null && Quantity.Equals(input.Quantity))
+                    (Quantity.Equals(input.Quantity))
                 ) ;
         }
     }

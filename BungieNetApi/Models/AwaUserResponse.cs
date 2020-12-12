@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -45,7 +46,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Nonce == input.Nonce ||
-                    (Nonce != null && Nonce.Equals(input.Nonce))
+                    (Nonce != null && Nonce.SequenceEqual(input.Nonce))
                 ) ;
         }
     }

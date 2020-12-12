@@ -43,7 +43,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MembershipId == input.MembershipId ||
-                    (MembershipId != null && MembershipId.Equals(input.MembershipId))
+                    (MembershipId.Equals(input.MembershipId))
                 ) &&
                 (
                     DisplayName == input.DisplayName ||

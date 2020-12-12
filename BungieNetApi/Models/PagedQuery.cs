@@ -27,11 +27,11 @@ namespace GhostSharper.Models
             return
                 (
                     ItemsPerPage == input.ItemsPerPage ||
-                    (ItemsPerPage != null && ItemsPerPage.Equals(input.ItemsPerPage))
+                    (ItemsPerPage.Equals(input.ItemsPerPage))
                 ) &&
                 (
                     CurrentPage == input.CurrentPage ||
-                    (CurrentPage != null && CurrentPage.Equals(input.CurrentPage))
+                    (CurrentPage.Equals(input.CurrentPage))
                 ) &&
                 (
                     RequestContinuationToken == input.RequestContinuationToken ||

@@ -35,7 +35,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ChatSecurity == input.ChatSecurity ||
-                    (ChatSecurity != null && ChatSecurity.Equals(input.ChatSecurity))
+                    (ChatSecurity.Equals(input.ChatSecurity))
                 ) ;
         }
     }

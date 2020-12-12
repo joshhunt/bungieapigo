@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -47,23 +48,23 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     WeaponPatternHash == input.WeaponPatternHash ||
-                    (WeaponPatternHash != null && WeaponPatternHash.Equals(input.WeaponPatternHash))
+                    (WeaponPatternHash.Equals(input.WeaponPatternHash))
                 ) &&
                 (
                     DefaultDyes == input.DefaultDyes ||
-                    (DefaultDyes != null && DefaultDyes.Equals(input.DefaultDyes))
+                    (DefaultDyes != null && DefaultDyes.SequenceEqual(input.DefaultDyes))
                 ) &&
                 (
                     LockedDyes == input.LockedDyes ||
-                    (LockedDyes != null && LockedDyes.Equals(input.LockedDyes))
+                    (LockedDyes != null && LockedDyes.SequenceEqual(input.LockedDyes))
                 ) &&
                 (
                     CustomDyes == input.CustomDyes ||
-                    (CustomDyes != null && CustomDyes.Equals(input.CustomDyes))
+                    (CustomDyes != null && CustomDyes.SequenceEqual(input.CustomDyes))
                 ) &&
                 (
                     Arrangements == input.Arrangements ||
-                    (Arrangements != null && Arrangements.Equals(input.Arrangements))
+                    (Arrangements != null && Arrangements.SequenceEqual(input.Arrangements))
                 ) &&
                 (
                     HasGeometry == input.HasGeometry ||

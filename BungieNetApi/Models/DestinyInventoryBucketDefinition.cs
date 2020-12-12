@@ -123,11 +123,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     BucketOrder == input.BucketOrder ||
-                    (BucketOrder != null && BucketOrder.Equals(input.BucketOrder))
+                    (BucketOrder.Equals(input.BucketOrder))
                 ) &&
                 (
                     ItemCount == input.ItemCount ||
-                    (ItemCount != null && ItemCount.Equals(input.ItemCount))
+                    (ItemCount.Equals(input.ItemCount))
                 ) &&
                 (
                     Location == input.Location ||
@@ -147,11 +147,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

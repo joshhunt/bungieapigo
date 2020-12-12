@@ -1,6 +1,7 @@
 using System.Runtime.Serialization;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -54,7 +55,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     StartingPhaseIndex == input.StartingPhaseIndex ||
-                    (StartingPhaseIndex != null && StartingPhaseIndex.Equals(input.StartingPhaseIndex))
+                    (StartingPhaseIndex.Equals(input.StartingPhaseIndex))
                 ) &&
                 (
                     ActivityDetails == input.ActivityDetails ||
@@ -62,11 +63,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Entries == input.Entries ||
-                    (Entries != null && Entries.Equals(input.Entries))
+                    (Entries != null && Entries.SequenceEqual(input.Entries))
                 ) &&
                 (
                     Teams == input.Teams ||
-                    (Teams != null && Teams.Equals(input.Teams))
+                    (Teams != null && Teams.SequenceEqual(input.Teams))
                 ) ;
         }
     }

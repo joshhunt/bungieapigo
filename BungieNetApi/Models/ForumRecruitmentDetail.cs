@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -49,7 +50,7 @@ namespace GhostSharper.Models
             return
                 (
                     TopicId == input.TopicId ||
-                    (TopicId != null && TopicId.Equals(input.TopicId))
+                    (TopicId.Equals(input.TopicId))
                 ) &&
                 (
                     MicrophoneRequired == input.MicrophoneRequired ||
@@ -69,23 +70,23 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ConversationId == input.ConversationId ||
-                    (ConversationId != null && ConversationId.Equals(input.ConversationId))
+                    (ConversationId.Equals(input.ConversationId))
                 ) &&
                 (
                     PlayerSlotsTotal == input.PlayerSlotsTotal ||
-                    (PlayerSlotsTotal != null && PlayerSlotsTotal.Equals(input.PlayerSlotsTotal))
+                    (PlayerSlotsTotal.Equals(input.PlayerSlotsTotal))
                 ) &&
                 (
                     PlayerSlotsRemaining == input.PlayerSlotsRemaining ||
-                    (PlayerSlotsRemaining != null && PlayerSlotsRemaining.Equals(input.PlayerSlotsRemaining))
+                    (PlayerSlotsRemaining.Equals(input.PlayerSlotsRemaining))
                 ) &&
                 (
                     Fireteam == input.Fireteam ||
-                    (Fireteam != null && Fireteam.Equals(input.Fireteam))
+                    (Fireteam != null && Fireteam.SequenceEqual(input.Fireteam))
                 ) &&
                 (
                     KickedPlayerIds == input.KickedPlayerIds ||
-                    (KickedPlayerIds != null && KickedPlayerIds.Equals(input.KickedPlayerIds))
+                    (KickedPlayerIds != null && KickedPlayerIds.SequenceEqual(input.KickedPlayerIds))
                 ) ;
         }
     }

@@ -107,8 +107,5 @@ namespace GhostSharper.Models
         [EnumMember(Value = "16")]
         TrackedQuest = 16,
 
-        ///value not found fallback
-        [EnumMember(Value = "999999999")]
-        ProtectedInvalidEnumValue = 999999999
     }
 }

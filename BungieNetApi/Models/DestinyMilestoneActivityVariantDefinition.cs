@@ -42,11 +42,11 @@ namespace GhostSharper.Models
             return
                 (
                     ActivityHash == input.ActivityHash ||
-                    (ActivityHash != null && ActivityHash.Equals(input.ActivityHash))
+                    (ActivityHash.Equals(input.ActivityHash))
                 ) &&
                 (
                     Order == input.Order ||
-                    (Order != null && Order.Equals(input.Order))
+                    (Order.Equals(input.Order))
                 ) ;
         }
     }

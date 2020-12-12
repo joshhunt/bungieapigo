@@ -30,7 +30,7 @@ namespace GhostSharper.Models
             return
                 (
                     ActivityGraphHash == input.ActivityGraphHash ||
-                    (ActivityGraphHash != null && ActivityGraphHash.Equals(input.ActivityGraphHash))
+                    (ActivityGraphHash.Equals(input.ActivityGraphHash))
                 ) ;
         }
     }

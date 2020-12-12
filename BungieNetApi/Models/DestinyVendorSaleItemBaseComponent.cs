@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 using System;
 
 namespace GhostSharper.Models
@@ -71,23 +72,23 @@ namespace GhostSharper.Models
             return
                 (
                     VendorItemIndex == input.VendorItemIndex ||
-                    (VendorItemIndex != null && VendorItemIndex.Equals(input.VendorItemIndex))
+                    (VendorItemIndex.Equals(input.VendorItemIndex))
                 ) &&
                 (
                     ItemHash == input.ItemHash ||
-                    (ItemHash != null && ItemHash.Equals(input.ItemHash))
+                    (ItemHash.Equals(input.ItemHash))
                 ) &&
                 (
                     OverrideStyleItemHash == input.OverrideStyleItemHash ||
-                    (OverrideStyleItemHash != null && OverrideStyleItemHash.Equals(input.OverrideStyleItemHash))
+                    (OverrideStyleItemHash.Equals(input.OverrideStyleItemHash))
                 ) &&
                 (
                     Quantity == input.Quantity ||
-                    (Quantity != null && Quantity.Equals(input.Quantity))
+                    (Quantity.Equals(input.Quantity))
                 ) &&
                 (
                     Costs == input.Costs ||
-                    (Costs != null && Costs.Equals(input.Costs))
+                    (Costs != null && Costs.SequenceEqual(input.Costs))
                 ) &&
                 (
                     OverrideNextRefreshDate == input.OverrideNextRefreshDate ||

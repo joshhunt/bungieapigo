@@ -33,11 +33,11 @@ namespace GhostSharper.Models
             return
                 (
                     GroupId == input.GroupId ||
-                    (GroupId != null && GroupId.Equals(input.GroupId))
+                    (GroupId.Equals(input.GroupId))
                 ) &&
                 (
                     ConversationId == input.ConversationId ||
-                    (ConversationId != null && ConversationId.Equals(input.ConversationId))
+                    (ConversationId.Equals(input.ConversationId))
                 ) &&
                 (
                     ChatEnabled == input.ChatEnabled ||

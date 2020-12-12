@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -53,19 +54,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     TraitHashes == input.TraitHashes ||
-                    (TraitHashes != null && TraitHashes.Equals(input.TraitHashes))
+                    (TraitHashes != null && TraitHashes.SequenceEqual(input.TraitHashes))
                 ) &&
                 (
                     TraitIds == input.TraitIds ||
-                    (TraitIds != null && TraitIds.Equals(input.TraitIds))
+                    (TraitIds != null && TraitIds.SequenceEqual(input.TraitIds))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

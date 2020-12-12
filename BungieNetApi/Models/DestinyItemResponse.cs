@@ -120,7 +120,7 @@ namespace GhostSharper.Models
             return
                 (
                     CharacterId == input.CharacterId ||
-                    (CharacterId != null && CharacterId.Equals(input.CharacterId))
+                    (CharacterId.Equals(input.CharacterId))
                 ) &&
                 (
                     Item == input.Item ||

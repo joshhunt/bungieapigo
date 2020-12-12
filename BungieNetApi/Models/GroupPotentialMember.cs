@@ -41,7 +41,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     GroupId == input.GroupId ||
-                    (GroupId != null && GroupId.Equals(input.GroupId))
+                    (GroupId.Equals(input.GroupId))
                 ) &&
                 (
                     DestinyUserInfo == input.DestinyUserInfo ||

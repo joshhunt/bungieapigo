@@ -21,7 +21,7 @@ namespace GhostSharper.Models
             return
                 (
                     MetricHash == input.MetricHash ||
-                    (MetricHash != null && MetricHash.Equals(input.MetricHash))
+                    (MetricHash.Equals(input.MetricHash))
                 ) ;
         }
     }

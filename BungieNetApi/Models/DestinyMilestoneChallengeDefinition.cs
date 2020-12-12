@@ -24,7 +24,7 @@ namespace GhostSharper.Models
             return
                 (
                     ChallengeObjectiveHash == input.ChallengeObjectiveHash ||
-                    (ChallengeObjectiveHash != null && ChallengeObjectiveHash.Equals(input.ChallengeObjectiveHash))
+                    (ChallengeObjectiveHash.Equals(input.ChallengeObjectiveHash))
                 ) ;
         }
     }

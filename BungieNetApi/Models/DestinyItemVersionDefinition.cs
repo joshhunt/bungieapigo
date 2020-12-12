@@ -27,7 +27,7 @@ namespace GhostSharper.Models
             return
                 (
                     PowerCapHash == input.PowerCapHash ||
-                    (PowerCapHash != null && PowerCapHash.Equals(input.PowerCapHash))
+                    (PowerCapHash.Equals(input.PowerCapHash))
                 ) ;
         }
     }

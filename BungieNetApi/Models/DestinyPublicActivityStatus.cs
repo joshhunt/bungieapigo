@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -46,15 +47,15 @@ namespace GhostSharper.Models
             return
                 (
                     ChallengeObjectiveHashes == input.ChallengeObjectiveHashes ||
-                    (ChallengeObjectiveHashes != null && ChallengeObjectiveHashes.Equals(input.ChallengeObjectiveHashes))
+                    (ChallengeObjectiveHashes != null && ChallengeObjectiveHashes.SequenceEqual(input.ChallengeObjectiveHashes))
                 ) &&
                 (
                     ModifierHashes == input.ModifierHashes ||
-                    (ModifierHashes != null && ModifierHashes.Equals(input.ModifierHashes))
+                    (ModifierHashes != null && ModifierHashes.SequenceEqual(input.ModifierHashes))
                 ) &&
                 (
                     RewardTooltipItems == input.RewardTooltipItems ||
-                    (RewardTooltipItems != null && RewardTooltipItems.Equals(input.RewardTooltipItems))
+                    (RewardTooltipItems != null && RewardTooltipItems.SequenceEqual(input.RewardTooltipItems))
                 ) ;
         }
     }

@@ -33,11 +33,11 @@ namespace GhostSharper.Models
             return
                 (
                     TrackingValue == input.TrackingValue ||
-                    (TrackingValue != null && TrackingValue.Equals(input.TrackingValue))
+                    (TrackingValue.Equals(input.TrackingValue))
                 ) &&
                 (
                     ItemHash == input.ItemHash ||
-                    (ItemHash != null && ItemHash.Equals(input.ItemHash))
+                    (ItemHash.Equals(input.ItemHash))
                 ) ;
         }
     }

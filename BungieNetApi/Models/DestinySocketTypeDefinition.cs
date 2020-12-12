@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -108,11 +109,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     PlugWhitelist == input.PlugWhitelist ||
-                    (PlugWhitelist != null && PlugWhitelist.Equals(input.PlugWhitelist))
+                    (PlugWhitelist != null && PlugWhitelist.SequenceEqual(input.PlugWhitelist))
                 ) &&
                 (
                     SocketCategoryHash == input.SocketCategoryHash ||
-                    (SocketCategoryHash != null && SocketCategoryHash.Equals(input.SocketCategoryHash))
+                    (SocketCategoryHash.Equals(input.SocketCategoryHash))
                 ) &&
                 (
                     Visibility == input.Visibility ||
@@ -140,15 +141,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     CurrencyScalars == input.CurrencyScalars ||
-                    (CurrencyScalars != null && CurrencyScalars.Equals(input.CurrencyScalars))
+                    (CurrencyScalars != null && CurrencyScalars.SequenceEqual(input.CurrencyScalars))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

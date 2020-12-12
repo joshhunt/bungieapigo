@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -55,7 +56,7 @@ namespace GhostSharper.Models
             return
                 (
                     PartyMembers == input.PartyMembers ||
-                    (PartyMembers != null && PartyMembers.Equals(input.PartyMembers))
+                    (PartyMembers != null && PartyMembers.SequenceEqual(input.PartyMembers))
                 ) &&
                 (
                     CurrentActivity == input.CurrentActivity ||
@@ -67,11 +68,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Tracking == input.Tracking ||
-                    (Tracking != null && Tracking.Equals(input.Tracking))
+                    (Tracking != null && Tracking.SequenceEqual(input.Tracking))
                 ) &&
                 (
                     LastOrbitedDestinationHash == input.LastOrbitedDestinationHash ||
-                    (LastOrbitedDestinationHash != null && LastOrbitedDestinationHash.Equals(input.LastOrbitedDestinationHash))
+                    (LastOrbitedDestinationHash.Equals(input.LastOrbitedDestinationHash))
                 ) ;
         }
     }

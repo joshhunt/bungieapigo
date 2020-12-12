@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -98,7 +99,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Priority == input.Priority ||
-                    (Priority != null && Priority.Equals(input.Priority))
+                    (Priority.Equals(input.Priority))
                 ) &&
                 (
                     Reminder == input.Reminder ||
@@ -106,19 +107,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Properties == input.Properties ||
-                    (Properties != null && Properties.Equals(input.Properties))
+                    (Properties != null && Properties.SequenceEqual(input.Properties))
                 ) &&
                 (
                     TagMetadata == input.TagMetadata ||
-                    (TagMetadata != null && TagMetadata.Equals(input.TagMetadata))
+                    (TagMetadata != null && TagMetadata.SequenceEqual(input.TagMetadata))
                 ) &&
                 (
                     TagMetadataItems == input.TagMetadataItems ||
-                    (TagMetadataItems != null && TagMetadataItems.Equals(input.TagMetadataItems))
+                    (TagMetadataItems != null && TagMetadataItems.SequenceEqual(input.TagMetadataItems))
                 ) &&
                 (
                     UsageExamples == input.UsageExamples ||
-                    (UsageExamples != null && UsageExamples.Equals(input.UsageExamples))
+                    (UsageExamples != null && UsageExamples.SequenceEqual(input.UsageExamples))
                 ) &&
                 (
                     ShowInContentEditor == input.ShowInContentEditor ||
@@ -154,7 +155,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Previews == input.Previews ||
-                    (Previews != null && Previews.Equals(input.Previews))
+                    (Previews != null && Previews.SequenceEqual(input.Previews))
                 ) &&
                 (
                     SuppressCmsPath == input.SuppressCmsPath ||
@@ -162,7 +163,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     PropertySections == input.PropertySections ||
-                    (PropertySections != null && PropertySections.Equals(input.PropertySections))
+                    (PropertySections != null && PropertySections.SequenceEqual(input.PropertySections))
                 ) ;
         }
     }

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -31,11 +32,11 @@ namespace GhostSharper.Models
             return
                 (
                     Weapons == input.Weapons ||
-                    (Weapons != null && Weapons.Equals(input.Weapons))
+                    (Weapons != null && Weapons.SequenceEqual(input.Weapons))
                 ) &&
                 (
                     Values == input.Values ||
-                    (Values != null && Values.Equals(input.Values))
+                    (Values != null && Values.SequenceEqual(input.Values))
                 ) ;
         }
     }

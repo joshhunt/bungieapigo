@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -43,7 +44,7 @@ namespace GhostSharper.Models
             return
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     CanAcquire == input.CanAcquire ||
@@ -51,7 +52,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     FailureIndexes == input.FailureIndexes ||
-                    (FailureIndexes != null && FailureIndexes.Equals(input.FailureIndexes))
+                    (FailureIndexes != null && FailureIndexes.SequenceEqual(input.FailureIndexes))
                 ) &&
                 (
                     FlavorObjective == input.FlavorObjective ||

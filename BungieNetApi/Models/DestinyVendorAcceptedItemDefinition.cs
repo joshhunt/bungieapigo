@@ -39,11 +39,11 @@ namespace GhostSharper.Models
             return
                 (
                     AcceptedInventoryBucketHash == input.AcceptedInventoryBucketHash ||
-                    (AcceptedInventoryBucketHash != null && AcceptedInventoryBucketHash.Equals(input.AcceptedInventoryBucketHash))
+                    (AcceptedInventoryBucketHash.Equals(input.AcceptedInventoryBucketHash))
                 ) &&
                 (
                     DestinationInventoryBucketHash == input.DestinationInventoryBucketHash ||
-                    (DestinationInventoryBucketHash != null && DestinationInventoryBucketHash.Equals(input.DestinationInventoryBucketHash))
+                    (DestinationInventoryBucketHash.Equals(input.DestinationInventoryBucketHash))
                 ) ;
         }
     }

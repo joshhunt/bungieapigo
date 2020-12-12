@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -118,67 +119,67 @@ namespace GhostSharper.Models
             return
                 (
                     FactionHash == input.FactionHash ||
-                    (FactionHash != null && FactionHash.Equals(input.FactionHash))
+                    (FactionHash.Equals(input.FactionHash))
                 ) &&
                 (
                     FactionVendorIndex == input.FactionVendorIndex ||
-                    (FactionVendorIndex != null && FactionVendorIndex.Equals(input.FactionVendorIndex))
+                    (FactionVendorIndex.Equals(input.FactionVendorIndex))
                 ) &&
                 (
                     ProgressionHash == input.ProgressionHash ||
-                    (ProgressionHash != null && ProgressionHash.Equals(input.ProgressionHash))
+                    (ProgressionHash.Equals(input.ProgressionHash))
                 ) &&
                 (
                     DailyProgress == input.DailyProgress ||
-                    (DailyProgress != null && DailyProgress.Equals(input.DailyProgress))
+                    (DailyProgress.Equals(input.DailyProgress))
                 ) &&
                 (
                     DailyLimit == input.DailyLimit ||
-                    (DailyLimit != null && DailyLimit.Equals(input.DailyLimit))
+                    (DailyLimit.Equals(input.DailyLimit))
                 ) &&
                 (
                     WeeklyProgress == input.WeeklyProgress ||
-                    (WeeklyProgress != null && WeeklyProgress.Equals(input.WeeklyProgress))
+                    (WeeklyProgress.Equals(input.WeeklyProgress))
                 ) &&
                 (
                     WeeklyLimit == input.WeeklyLimit ||
-                    (WeeklyLimit != null && WeeklyLimit.Equals(input.WeeklyLimit))
+                    (WeeklyLimit.Equals(input.WeeklyLimit))
                 ) &&
                 (
                     CurrentProgress == input.CurrentProgress ||
-                    (CurrentProgress != null && CurrentProgress.Equals(input.CurrentProgress))
+                    (CurrentProgress.Equals(input.CurrentProgress))
                 ) &&
                 (
                     Level == input.Level ||
-                    (Level != null && Level.Equals(input.Level))
+                    (Level.Equals(input.Level))
                 ) &&
                 (
                     LevelCap == input.LevelCap ||
-                    (LevelCap != null && LevelCap.Equals(input.LevelCap))
+                    (LevelCap.Equals(input.LevelCap))
                 ) &&
                 (
                     StepIndex == input.StepIndex ||
-                    (StepIndex != null && StepIndex.Equals(input.StepIndex))
+                    (StepIndex.Equals(input.StepIndex))
                 ) &&
                 (
                     ProgressToNextLevel == input.ProgressToNextLevel ||
-                    (ProgressToNextLevel != null && ProgressToNextLevel.Equals(input.ProgressToNextLevel))
+                    (ProgressToNextLevel.Equals(input.ProgressToNextLevel))
                 ) &&
                 (
                     NextLevelAt == input.NextLevelAt ||
-                    (NextLevelAt != null && NextLevelAt.Equals(input.NextLevelAt))
+                    (NextLevelAt.Equals(input.NextLevelAt))
                 ) &&
                 (
                     CurrentResetCount == input.CurrentResetCount ||
-                    (CurrentResetCount != null && CurrentResetCount.Equals(input.CurrentResetCount))
+                    (CurrentResetCount.Equals(input.CurrentResetCount))
                 ) &&
                 (
                     SeasonResets == input.SeasonResets ||
-                    (SeasonResets != null && SeasonResets.Equals(input.SeasonResets))
+                    (SeasonResets != null && SeasonResets.SequenceEqual(input.SeasonResets))
                 ) &&
                 (
                     RewardItemStates == input.RewardItemStates ||
-                    (RewardItemStates != null && RewardItemStates.Equals(input.RewardItemStates))
+                    (RewardItemStates != null && RewardItemStates.SequenceEqual(input.RewardItemStates))
                 ) ;
         }
     }

@@ -112,6 +112,12 @@ export class ApiDocHelper {
     return null;
   }
 
+  static isSequenceType(typeName: string) {
+    return !!(
+      typeName.match(/List<\w+>/) || typeName.match(/Dictionary<[\w\s,]+>/)
+    );
+  }
+
   static isNativeType(
     obj: ReferenceObject | ParameterObject | SchemaObject
   ): boolean {

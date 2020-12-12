@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -91,11 +92,11 @@ namespace GhostSharper.Models
             return
                 (
                     ItemLevels == input.ItemLevels ||
-                    (ItemLevels != null && ItemLevels.Equals(input.ItemLevels))
+                    (ItemLevels != null && ItemLevels.SequenceEqual(input.ItemLevels))
                 ) &&
                 (
                     QualityLevel == input.QualityLevel ||
-                    (QualityLevel != null && QualityLevel.Equals(input.QualityLevel))
+                    (QualityLevel.Equals(input.QualityLevel))
                 ) &&
                 (
                     InfusionCategoryName == input.InfusionCategoryName ||
@@ -103,27 +104,27 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     InfusionCategoryHash == input.InfusionCategoryHash ||
-                    (InfusionCategoryHash != null && InfusionCategoryHash.Equals(input.InfusionCategoryHash))
+                    (InfusionCategoryHash.Equals(input.InfusionCategoryHash))
                 ) &&
                 (
                     InfusionCategoryHashes == input.InfusionCategoryHashes ||
-                    (InfusionCategoryHashes != null && InfusionCategoryHashes.Equals(input.InfusionCategoryHashes))
+                    (InfusionCategoryHashes != null && InfusionCategoryHashes.SequenceEqual(input.InfusionCategoryHashes))
                 ) &&
                 (
                     ProgressionLevelRequirementHash == input.ProgressionLevelRequirementHash ||
-                    (ProgressionLevelRequirementHash != null && ProgressionLevelRequirementHash.Equals(input.ProgressionLevelRequirementHash))
+                    (ProgressionLevelRequirementHash.Equals(input.ProgressionLevelRequirementHash))
                 ) &&
                 (
                     CurrentVersion == input.CurrentVersion ||
-                    (CurrentVersion != null && CurrentVersion.Equals(input.CurrentVersion))
+                    (CurrentVersion.Equals(input.CurrentVersion))
                 ) &&
                 (
                     Versions == input.Versions ||
-                    (Versions != null && Versions.Equals(input.Versions))
+                    (Versions != null && Versions.SequenceEqual(input.Versions))
                 ) &&
                 (
                     DisplayVersionWatermarkIcons == input.DisplayVersionWatermarkIcons ||
-                    (DisplayVersionWatermarkIcons != null && DisplayVersionWatermarkIcons.Equals(input.DisplayVersionWatermarkIcons))
+                    (DisplayVersionWatermarkIcons != null && DisplayVersionWatermarkIcons.SequenceEqual(input.DisplayVersionWatermarkIcons))
                 ) ;
         }
     }

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -37,11 +38,11 @@ namespace GhostSharper.Models
             return
                 (
                     ObjectiveHash == input.ObjectiveHash ||
-                    (ObjectiveHash != null && ObjectiveHash.Equals(input.ObjectiveHash))
+                    (ObjectiveHash.Equals(input.ObjectiveHash))
                 ) &&
                 (
                     DummyRewards == input.DummyRewards ||
-                    (DummyRewards != null && DummyRewards.Equals(input.DummyRewards))
+                    (DummyRewards != null && DummyRewards.SequenceEqual(input.DummyRewards))
                 ) ;
         }
     }

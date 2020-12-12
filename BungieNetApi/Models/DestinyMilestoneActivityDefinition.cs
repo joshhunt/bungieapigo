@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -49,11 +50,11 @@ namespace GhostSharper.Models
             return
                 (
                     ConceptualActivityHash == input.ConceptualActivityHash ||
-                    (ConceptualActivityHash != null && ConceptualActivityHash.Equals(input.ConceptualActivityHash))
+                    (ConceptualActivityHash.Equals(input.ConceptualActivityHash))
                 ) &&
                 (
                     Variants == input.Variants ||
-                    (Variants != null && Variants.Equals(input.Variants))
+                    (Variants != null && Variants.SequenceEqual(input.Variants))
                 ) ;
         }
     }

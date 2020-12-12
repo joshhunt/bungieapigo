@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -46,11 +47,11 @@ namespace GhostSharper.Models
             return
                 (
                     SourceHashes == input.SourceHashes ||
-                    (SourceHashes != null && SourceHashes.Equals(input.SourceHashes))
+                    (SourceHashes != null && SourceHashes.SequenceEqual(input.SourceHashes))
                 ) &&
                 (
                     Sources == input.Sources ||
-                    (Sources != null && Sources.Equals(input.Sources))
+                    (Sources != null && Sources.SequenceEqual(input.Sources))
                 ) &&
                 (
                     Exclusive == input.Exclusive ||
@@ -58,7 +59,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     VendorSources == input.VendorSources ||
-                    (VendorSources != null && VendorSources.Equals(input.VendorSources))
+                    (VendorSources != null && VendorSources.SequenceEqual(input.VendorSources))
                 ) ;
         }
     }

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -112,7 +113,7 @@ namespace GhostSharper.Models
             return
                 (
                     ActivityHash == input.ActivityHash ||
-                    (ActivityHash != null && ActivityHash.Equals(input.ActivityHash))
+                    (ActivityHash.Equals(input.ActivityHash))
                 ) &&
                 (
                     IsNew == input.IsNew ||
@@ -136,11 +137,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     DisplayLevel == input.DisplayLevel ||
-                    (DisplayLevel != null && DisplayLevel.Equals(input.DisplayLevel))
+                    (DisplayLevel.Equals(input.DisplayLevel))
                 ) &&
                 (
                     RecommendedLight == input.RecommendedLight ||
-                    (RecommendedLight != null && RecommendedLight.Equals(input.RecommendedLight))
+                    (RecommendedLight.Equals(input.RecommendedLight))
                 ) &&
                 (
                     DifficultyTier == input.DifficultyTier ||
@@ -148,19 +149,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Challenges == input.Challenges ||
-                    (Challenges != null && Challenges.Equals(input.Challenges))
+                    (Challenges != null && Challenges.SequenceEqual(input.Challenges))
                 ) &&
                 (
                     ModifierHashes == input.ModifierHashes ||
-                    (ModifierHashes != null && ModifierHashes.Equals(input.ModifierHashes))
+                    (ModifierHashes != null && ModifierHashes.SequenceEqual(input.ModifierHashes))
                 ) &&
                 (
                     BooleanActivityOptions == input.BooleanActivityOptions ||
-                    (BooleanActivityOptions != null && BooleanActivityOptions.Equals(input.BooleanActivityOptions))
+                    (BooleanActivityOptions != null && BooleanActivityOptions.SequenceEqual(input.BooleanActivityOptions))
                 ) &&
                 (
                     LoadoutRequirementIndex == input.LoadoutRequirementIndex ||
-                    (LoadoutRequirementIndex != null && LoadoutRequirementIndex.Equals(input.LoadoutRequirementIndex))
+                    (LoadoutRequirementIndex.Equals(input.LoadoutRequirementIndex))
                 ) ;
         }
     }

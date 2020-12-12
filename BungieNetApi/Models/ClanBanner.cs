@@ -39,31 +39,31 @@ namespace GhostSharper.Models
             return
                 (
                     DecalId == input.DecalId ||
-                    (DecalId != null && DecalId.Equals(input.DecalId))
+                    (DecalId.Equals(input.DecalId))
                 ) &&
                 (
                     DecalColorId == input.DecalColorId ||
-                    (DecalColorId != null && DecalColorId.Equals(input.DecalColorId))
+                    (DecalColorId.Equals(input.DecalColorId))
                 ) &&
                 (
                     DecalBackgroundColorId == input.DecalBackgroundColorId ||
-                    (DecalBackgroundColorId != null && DecalBackgroundColorId.Equals(input.DecalBackgroundColorId))
+                    (DecalBackgroundColorId.Equals(input.DecalBackgroundColorId))
                 ) &&
                 (
                     GonfalonId == input.GonfalonId ||
-                    (GonfalonId != null && GonfalonId.Equals(input.GonfalonId))
+                    (GonfalonId.Equals(input.GonfalonId))
                 ) &&
                 (
                     GonfalonColorId == input.GonfalonColorId ||
-                    (GonfalonColorId != null && GonfalonColorId.Equals(input.GonfalonColorId))
+                    (GonfalonColorId.Equals(input.GonfalonColorId))
                 ) &&
                 (
                     GonfalonDetailId == input.GonfalonDetailId ||
-                    (GonfalonDetailId != null && GonfalonDetailId.Equals(input.GonfalonDetailId))
+                    (GonfalonDetailId.Equals(input.GonfalonDetailId))
                 ) &&
                 (
                     GonfalonDetailColorId == input.GonfalonDetailColorId ||
-                    (GonfalonDetailColorId != null && GonfalonDetailColorId.Equals(input.GonfalonDetailColorId))
+                    (GonfalonDetailColorId.Equals(input.GonfalonDetailColorId))
                 ) ;
         }
     }

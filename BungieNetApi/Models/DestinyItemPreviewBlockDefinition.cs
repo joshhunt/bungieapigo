@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -59,11 +60,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     PreviewVendorHash == input.PreviewVendorHash ||
-                    (PreviewVendorHash != null && PreviewVendorHash.Equals(input.PreviewVendorHash))
+                    (PreviewVendorHash.Equals(input.PreviewVendorHash))
                 ) &&
                 (
                     ArtifactHash == input.ArtifactHash ||
-                    (ArtifactHash != null && ArtifactHash.Equals(input.ArtifactHash))
+                    (ArtifactHash.Equals(input.ArtifactHash))
                 ) &&
                 (
                     PreviewActionString == input.PreviewActionString ||
@@ -71,7 +72,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     DerivedItemCategories == input.DerivedItemCategories ||
-                    (DerivedItemCategories != null && DerivedItemCategories.Equals(input.DerivedItemCategories))
+                    (DerivedItemCategories != null && DerivedItemCategories.SequenceEqual(input.DerivedItemCategories))
                 ) ;
         }
     }

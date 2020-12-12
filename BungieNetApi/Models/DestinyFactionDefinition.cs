@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -86,31 +87,31 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ProgressionHash == input.ProgressionHash ||
-                    (ProgressionHash != null && ProgressionHash.Equals(input.ProgressionHash))
+                    (ProgressionHash.Equals(input.ProgressionHash))
                 ) &&
                 (
                     TokenValues == input.TokenValues ||
-                    (TokenValues != null && TokenValues.Equals(input.TokenValues))
+                    (TokenValues != null && TokenValues.SequenceEqual(input.TokenValues))
                 ) &&
                 (
                     RewardItemHash == input.RewardItemHash ||
-                    (RewardItemHash != null && RewardItemHash.Equals(input.RewardItemHash))
+                    (RewardItemHash.Equals(input.RewardItemHash))
                 ) &&
                 (
                     RewardVendorHash == input.RewardVendorHash ||
-                    (RewardVendorHash != null && RewardVendorHash.Equals(input.RewardVendorHash))
+                    (RewardVendorHash.Equals(input.RewardVendorHash))
                 ) &&
                 (
                     Vendors == input.Vendors ||
-                    (Vendors != null && Vendors.Equals(input.Vendors))
+                    (Vendors != null && Vendors.SequenceEqual(input.Vendors))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

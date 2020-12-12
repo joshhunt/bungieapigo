@@ -1,6 +1,7 @@
 using System.Runtime.Serialization;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -65,7 +66,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     SkuOffers == input.SkuOffers ||
-                    (SkuOffers != null && SkuOffers.Equals(input.SkuOffers))
+                    (SkuOffers != null && SkuOffers.SequenceEqual(input.SkuOffers))
                 ) ;
         }
     }

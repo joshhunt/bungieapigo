@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -37,27 +38,27 @@ namespace GhostSharper.Models
             return
                 (
                     AllTime == input.AllTime ||
-                    (AllTime != null && AllTime.Equals(input.AllTime))
+                    (AllTime != null && AllTime.SequenceEqual(input.AllTime))
                 ) &&
                 (
                     AllTimeTier1 == input.AllTimeTier1 ||
-                    (AllTimeTier1 != null && AllTimeTier1.Equals(input.AllTimeTier1))
+                    (AllTimeTier1 != null && AllTimeTier1.SequenceEqual(input.AllTimeTier1))
                 ) &&
                 (
                     AllTimeTier2 == input.AllTimeTier2 ||
-                    (AllTimeTier2 != null && AllTimeTier2.Equals(input.AllTimeTier2))
+                    (AllTimeTier2 != null && AllTimeTier2.SequenceEqual(input.AllTimeTier2))
                 ) &&
                 (
                     AllTimeTier3 == input.AllTimeTier3 ||
-                    (AllTimeTier3 != null && AllTimeTier3.Equals(input.AllTimeTier3))
+                    (AllTimeTier3 != null && AllTimeTier3.SequenceEqual(input.AllTimeTier3))
                 ) &&
                 (
                     Daily == input.Daily ||
-                    (Daily != null && Daily.Equals(input.Daily))
+                    (Daily != null && Daily.SequenceEqual(input.Daily))
                 ) &&
                 (
                     Monthly == input.Monthly ||
-                    (Monthly != null && Monthly.Equals(input.Monthly))
+                    (Monthly != null && Monthly.SequenceEqual(input.Monthly))
                 ) ;
         }
     }

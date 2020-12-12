@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -248,31 +249,31 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ReleaseTime == input.ReleaseTime ||
-                    (ReleaseTime != null && ReleaseTime.Equals(input.ReleaseTime))
+                    (ReleaseTime.Equals(input.ReleaseTime))
                 ) &&
                 (
                     ActivityLevel == input.ActivityLevel ||
-                    (ActivityLevel != null && ActivityLevel.Equals(input.ActivityLevel))
+                    (ActivityLevel.Equals(input.ActivityLevel))
                 ) &&
                 (
                     ActivityLightLevel == input.ActivityLightLevel ||
-                    (ActivityLightLevel != null && ActivityLightLevel.Equals(input.ActivityLightLevel))
+                    (ActivityLightLevel.Equals(input.ActivityLightLevel))
                 ) &&
                 (
                     DestinationHash == input.DestinationHash ||
-                    (DestinationHash != null && DestinationHash.Equals(input.DestinationHash))
+                    (DestinationHash.Equals(input.DestinationHash))
                 ) &&
                 (
                     PlaceHash == input.PlaceHash ||
-                    (PlaceHash != null && PlaceHash.Equals(input.PlaceHash))
+                    (PlaceHash.Equals(input.PlaceHash))
                 ) &&
                 (
                     ActivityTypeHash == input.ActivityTypeHash ||
-                    (ActivityTypeHash != null && ActivityTypeHash.Equals(input.ActivityTypeHash))
+                    (ActivityTypeHash.Equals(input.ActivityTypeHash))
                 ) &&
                 (
                     Tier == input.Tier ||
-                    (Tier != null && Tier.Equals(input.Tier))
+                    (Tier.Equals(input.Tier))
                 ) &&
                 (
                     PgcrImage == input.PgcrImage ||
@@ -280,11 +281,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Rewards == input.Rewards ||
-                    (Rewards != null && Rewards.Equals(input.Rewards))
+                    (Rewards != null && Rewards.SequenceEqual(input.Rewards))
                 ) &&
                 (
                     Modifiers == input.Modifiers ||
-                    (Modifiers != null && Modifiers.Equals(input.Modifiers))
+                    (Modifiers != null && Modifiers.SequenceEqual(input.Modifiers))
                 ) &&
                 (
                     IsPlaylist == input.IsPlaylist ||
@@ -292,19 +293,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Challenges == input.Challenges ||
-                    (Challenges != null && Challenges.Equals(input.Challenges))
+                    (Challenges != null && Challenges.SequenceEqual(input.Challenges))
                 ) &&
                 (
                     OptionalUnlockStrings == input.OptionalUnlockStrings ||
-                    (OptionalUnlockStrings != null && OptionalUnlockStrings.Equals(input.OptionalUnlockStrings))
+                    (OptionalUnlockStrings != null && OptionalUnlockStrings.SequenceEqual(input.OptionalUnlockStrings))
                 ) &&
                 (
                     PlaylistItems == input.PlaylistItems ||
-                    (PlaylistItems != null && PlaylistItems.Equals(input.PlaylistItems))
+                    (PlaylistItems != null && PlaylistItems.SequenceEqual(input.PlaylistItems))
                 ) &&
                 (
                     ActivityGraphList == input.ActivityGraphList ||
-                    (ActivityGraphList != null && ActivityGraphList.Equals(input.ActivityGraphList))
+                    (ActivityGraphList != null && ActivityGraphList.SequenceEqual(input.ActivityGraphList))
                 ) &&
                 (
                     Matchmaking == input.Matchmaking ||
@@ -316,23 +317,23 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     DirectActivityModeHash == input.DirectActivityModeHash ||
-                    (DirectActivityModeHash != null && DirectActivityModeHash.Equals(input.DirectActivityModeHash))
+                    (DirectActivityModeHash.Equals(input.DirectActivityModeHash))
                 ) &&
                 (
                     DirectActivityModeType == input.DirectActivityModeType ||
-                    (DirectActivityModeType != null && DirectActivityModeType.Equals(input.DirectActivityModeType))
+                    (DirectActivityModeType.Equals(input.DirectActivityModeType))
                 ) &&
                 (
                     Loadouts == input.Loadouts ||
-                    (Loadouts != null && Loadouts.Equals(input.Loadouts))
+                    (Loadouts != null && Loadouts.SequenceEqual(input.Loadouts))
                 ) &&
                 (
                     ActivityModeHashes == input.ActivityModeHashes ||
-                    (ActivityModeHashes != null && ActivityModeHashes.Equals(input.ActivityModeHashes))
+                    (ActivityModeHashes != null && ActivityModeHashes.SequenceEqual(input.ActivityModeHashes))
                 ) &&
                 (
                     ActivityModeTypes == input.ActivityModeTypes ||
-                    (ActivityModeTypes != null && ActivityModeTypes.Equals(input.ActivityModeTypes))
+                    (ActivityModeTypes != null && ActivityModeTypes.SequenceEqual(input.ActivityModeTypes))
                 ) &&
                 (
                     IsPvP == input.IsPvP ||
@@ -340,19 +341,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     InsertionPoints == input.InsertionPoints ||
-                    (InsertionPoints != null && InsertionPoints.Equals(input.InsertionPoints))
+                    (InsertionPoints != null && InsertionPoints.SequenceEqual(input.InsertionPoints))
                 ) &&
                 (
                     ActivityLocationMappings == input.ActivityLocationMappings ||
-                    (ActivityLocationMappings != null && ActivityLocationMappings.Equals(input.ActivityLocationMappings))
+                    (ActivityLocationMappings != null && ActivityLocationMappings.SequenceEqual(input.ActivityLocationMappings))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

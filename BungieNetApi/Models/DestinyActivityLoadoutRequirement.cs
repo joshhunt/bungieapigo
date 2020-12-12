@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -28,15 +29,15 @@ namespace GhostSharper.Models
             return
                 (
                     EquipmentSlotHash == input.EquipmentSlotHash ||
-                    (EquipmentSlotHash != null && EquipmentSlotHash.Equals(input.EquipmentSlotHash))
+                    (EquipmentSlotHash.Equals(input.EquipmentSlotHash))
                 ) &&
                 (
                     AllowedEquippedItemHashes == input.AllowedEquippedItemHashes ||
-                    (AllowedEquippedItemHashes != null && AllowedEquippedItemHashes.Equals(input.AllowedEquippedItemHashes))
+                    (AllowedEquippedItemHashes != null && AllowedEquippedItemHashes.SequenceEqual(input.AllowedEquippedItemHashes))
                 ) &&
                 (
                     AllowedWeaponSubTypes == input.AllowedWeaponSubTypes ||
-                    (AllowedWeaponSubTypes != null && AllowedWeaponSubTypes.Equals(input.AllowedWeaponSubTypes))
+                    (AllowedWeaponSubTypes != null && AllowedWeaponSubTypes.SequenceEqual(input.AllowedWeaponSubTypes))
                 ) ;
         }
     }

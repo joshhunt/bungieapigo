@@ -67,23 +67,23 @@ namespace GhostSharper.Models
             return
                 (
                     LocationHash == input.LocationHash ||
-                    (LocationHash != null && LocationHash.Equals(input.LocationHash))
+                    (LocationHash.Equals(input.LocationHash))
                 ) &&
                 (
                     ItemHash == input.ItemHash ||
-                    (ItemHash != null && ItemHash.Equals(input.ItemHash))
+                    (ItemHash.Equals(input.ItemHash))
                 ) &&
                 (
                     ObjectiveHash == input.ObjectiveHash ||
-                    (ObjectiveHash != null && ObjectiveHash.Equals(input.ObjectiveHash))
+                    (ObjectiveHash.Equals(input.ObjectiveHash))
                 ) &&
                 (
                     ActivityHash == input.ActivityHash ||
-                    (ActivityHash != null && ActivityHash.Equals(input.ActivityHash))
+                    (ActivityHash.Equals(input.ActivityHash))
                 ) &&
                 (
                     QuestlineItemHash == input.QuestlineItemHash ||
-                    (QuestlineItemHash != null && QuestlineItemHash.Equals(input.QuestlineItemHash))
+                    (QuestlineItemHash.Equals(input.QuestlineItemHash))
                 ) &&
                 (
                     TrackedDate == input.TrackedDate ||

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -190,23 +191,23 @@ namespace GhostSharper.Models
             return
                 (
                     VendorItemIndex == input.VendorItemIndex ||
-                    (VendorItemIndex != null && VendorItemIndex.Equals(input.VendorItemIndex))
+                    (VendorItemIndex.Equals(input.VendorItemIndex))
                 ) &&
                 (
                     ItemHash == input.ItemHash ||
-                    (ItemHash != null && ItemHash.Equals(input.ItemHash))
+                    (ItemHash.Equals(input.ItemHash))
                 ) &&
                 (
                     Quantity == input.Quantity ||
-                    (Quantity != null && Quantity.Equals(input.Quantity))
+                    (Quantity.Equals(input.Quantity))
                 ) &&
                 (
                     FailureIndexes == input.FailureIndexes ||
-                    (FailureIndexes != null && FailureIndexes.Equals(input.FailureIndexes))
+                    (FailureIndexes != null && FailureIndexes.SequenceEqual(input.FailureIndexes))
                 ) &&
                 (
                     Currencies == input.Currencies ||
-                    (Currencies != null && Currencies.Equals(input.Currencies))
+                    (Currencies != null && Currencies.SequenceEqual(input.Currencies))
                 ) &&
                 (
                     RefundPolicy == input.RefundPolicy ||
@@ -214,31 +215,31 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     RefundTimeLimit == input.RefundTimeLimit ||
-                    (RefundTimeLimit != null && RefundTimeLimit.Equals(input.RefundTimeLimit))
+                    (RefundTimeLimit.Equals(input.RefundTimeLimit))
                 ) &&
                 (
                     CreationLevels == input.CreationLevels ||
-                    (CreationLevels != null && CreationLevels.Equals(input.CreationLevels))
+                    (CreationLevels != null && CreationLevels.SequenceEqual(input.CreationLevels))
                 ) &&
                 (
                     DisplayCategoryIndex == input.DisplayCategoryIndex ||
-                    (DisplayCategoryIndex != null && DisplayCategoryIndex.Equals(input.DisplayCategoryIndex))
+                    (DisplayCategoryIndex.Equals(input.DisplayCategoryIndex))
                 ) &&
                 (
                     CategoryIndex == input.CategoryIndex ||
-                    (CategoryIndex != null && CategoryIndex.Equals(input.CategoryIndex))
+                    (CategoryIndex.Equals(input.CategoryIndex))
                 ) &&
                 (
                     OriginalCategoryIndex == input.OriginalCategoryIndex ||
-                    (OriginalCategoryIndex != null && OriginalCategoryIndex.Equals(input.OriginalCategoryIndex))
+                    (OriginalCategoryIndex.Equals(input.OriginalCategoryIndex))
                 ) &&
                 (
                     MinimumLevel == input.MinimumLevel ||
-                    (MinimumLevel != null && MinimumLevel.Equals(input.MinimumLevel))
+                    (MinimumLevel.Equals(input.MinimumLevel))
                 ) &&
                 (
                     MaximumLevel == input.MaximumLevel ||
-                    (MaximumLevel != null && MaximumLevel.Equals(input.MaximumLevel))
+                    (MaximumLevel.Equals(input.MaximumLevel))
                 ) &&
                 (
                     Action == input.Action ||
@@ -250,7 +251,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     InventoryBucketHash == input.InventoryBucketHash ||
-                    (InventoryBucketHash != null && InventoryBucketHash.Equals(input.InventoryBucketHash))
+                    (InventoryBucketHash.Equals(input.InventoryBucketHash))
                 ) &&
                 (
                     VisibilityScope == input.VisibilityScope ||
@@ -274,7 +275,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     SortValue == input.SortValue ||
-                    (SortValue != null && SortValue.Equals(input.SortValue))
+                    (SortValue.Equals(input.SortValue))
                 ) &&
                 (
                     ExpirationTooltip == input.ExpirationTooltip ||
@@ -282,11 +283,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     RedirectToSaleIndexes == input.RedirectToSaleIndexes ||
-                    (RedirectToSaleIndexes != null && RedirectToSaleIndexes.Equals(input.RedirectToSaleIndexes))
+                    (RedirectToSaleIndexes != null && RedirectToSaleIndexes.SequenceEqual(input.RedirectToSaleIndexes))
                 ) &&
                 (
                     SocketOverrides == input.SocketOverrides ||
-                    (SocketOverrides != null && SocketOverrides.Equals(input.SocketOverrides))
+                    (SocketOverrides != null && SocketOverrides.SequenceEqual(input.SocketOverrides))
                 ) &&
                 (
                     Unpurchasable == input.Unpurchasable ||

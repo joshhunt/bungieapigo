@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -127,11 +128,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     LoreHash == input.LoreHash ||
-                    (LoreHash != null && LoreHash.Equals(input.LoreHash))
+                    (LoreHash.Equals(input.LoreHash))
                 ) &&
                 (
                     ObjectiveHashes == input.ObjectiveHashes ||
-                    (ObjectiveHashes != null && ObjectiveHashes.Equals(input.ObjectiveHashes))
+                    (ObjectiveHashes != null && ObjectiveHashes.SequenceEqual(input.ObjectiveHashes))
                 ) &&
                 (
                     RecordValueStyle == input.RecordValueStyle ||
@@ -163,7 +164,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     RewardItems == input.RewardItems ||
-                    (RewardItems != null && RewardItems.Equals(input.RewardItems))
+                    (RewardItems != null && RewardItems.SequenceEqual(input.RewardItems))
                 ) &&
                 (
                     PresentationNodeType == input.PresentationNodeType ||
@@ -171,23 +172,23 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     TraitIds == input.TraitIds ||
-                    (TraitIds != null && TraitIds.Equals(input.TraitIds))
+                    (TraitIds != null && TraitIds.SequenceEqual(input.TraitIds))
                 ) &&
                 (
                     TraitHashes == input.TraitHashes ||
-                    (TraitHashes != null && TraitHashes.Equals(input.TraitHashes))
+                    (TraitHashes != null && TraitHashes.SequenceEqual(input.TraitHashes))
                 ) &&
                 (
                     ParentNodeHashes == input.ParentNodeHashes ||
-                    (ParentNodeHashes != null && ParentNodeHashes.Equals(input.ParentNodeHashes))
+                    (ParentNodeHashes != null && ParentNodeHashes.SequenceEqual(input.ParentNodeHashes))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

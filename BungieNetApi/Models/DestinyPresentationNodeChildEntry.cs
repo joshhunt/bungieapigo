@@ -21,7 +21,7 @@ namespace GhostSharper.Models
             return
                 (
                     PresentationNodeHash == input.PresentationNodeHash ||
-                    (PresentationNodeHash != null && PresentationNodeHash.Equals(input.PresentationNodeHash))
+                    (PresentationNodeHash.Equals(input.PresentationNodeHash))
                 ) ;
         }
     }

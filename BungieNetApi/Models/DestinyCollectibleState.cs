@@ -68,8 +68,5 @@ namespace GhostSharper.Models
         [EnumMember(Value = "64")]
         PurchaseDisabled = 64,
 
-        ///value not found fallback
-        [EnumMember(Value = "999999999")]
-        ProtectedInvalidEnumValue = 999999999
     }
 }

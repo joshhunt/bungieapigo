@@ -27,7 +27,7 @@ namespace GhostSharper.Models
             return
                 (
                     ObscuredOverrideItemHash == input.ObscuredOverrideItemHash ||
-                    (ObscuredOverrideItemHash != null && ObscuredOverrideItemHash.Equals(input.ObscuredOverrideItemHash))
+                    (ObscuredOverrideItemHash.Equals(input.ObscuredOverrideItemHash))
                 ) &&
                 (
                     Requirements == input.Requirements ||

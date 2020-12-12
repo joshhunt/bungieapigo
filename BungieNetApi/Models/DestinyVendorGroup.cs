@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -34,11 +35,11 @@ namespace GhostSharper.Models
             return
                 (
                     VendorGroupHash == input.VendorGroupHash ||
-                    (VendorGroupHash != null && VendorGroupHash.Equals(input.VendorGroupHash))
+                    (VendorGroupHash.Equals(input.VendorGroupHash))
                 ) &&
                 (
                     VendorHashes == input.VendorHashes ||
-                    (VendorHashes != null && VendorHashes.Equals(input.VendorHashes))
+                    (VendorHashes != null && VendorHashes.SequenceEqual(input.VendorHashes))
                 ) ;
         }
     }

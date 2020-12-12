@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -118,43 +119,43 @@ namespace GhostSharper.Models
             return
                 (
                     MaxGridLevel == input.MaxGridLevel ||
-                    (MaxGridLevel != null && MaxGridLevel.Equals(input.MaxGridLevel))
+                    (MaxGridLevel.Equals(input.MaxGridLevel))
                 ) &&
                 (
                     GridLevelPerColumn == input.GridLevelPerColumn ||
-                    (GridLevelPerColumn != null && GridLevelPerColumn.Equals(input.GridLevelPerColumn))
+                    (GridLevelPerColumn.Equals(input.GridLevelPerColumn))
                 ) &&
                 (
                     ProgressionHash == input.ProgressionHash ||
-                    (ProgressionHash != null && ProgressionHash.Equals(input.ProgressionHash))
+                    (ProgressionHash.Equals(input.ProgressionHash))
                 ) &&
                 (
                     Nodes == input.Nodes ||
-                    (Nodes != null && Nodes.Equals(input.Nodes))
+                    (Nodes != null && Nodes.SequenceEqual(input.Nodes))
                 ) &&
                 (
                     ExclusiveSets == input.ExclusiveSets ||
-                    (ExclusiveSets != null && ExclusiveSets.Equals(input.ExclusiveSets))
+                    (ExclusiveSets != null && ExclusiveSets.SequenceEqual(input.ExclusiveSets))
                 ) &&
                 (
                     IndependentNodeIndexes == input.IndependentNodeIndexes ||
-                    (IndependentNodeIndexes != null && IndependentNodeIndexes.Equals(input.IndependentNodeIndexes))
+                    (IndependentNodeIndexes != null && IndependentNodeIndexes.SequenceEqual(input.IndependentNodeIndexes))
                 ) &&
                 (
                     Groups == input.Groups ||
-                    (Groups != null && Groups.Equals(input.Groups))
+                    (Groups != null && Groups.SequenceEqual(input.Groups))
                 ) &&
                 (
                     NodeCategories == input.NodeCategories ||
-                    (NodeCategories != null && NodeCategories.Equals(input.NodeCategories))
+                    (NodeCategories != null && NodeCategories.SequenceEqual(input.NodeCategories))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

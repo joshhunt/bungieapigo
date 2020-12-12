@@ -53,8 +53,5 @@ namespace GhostSharper.Models
         [EnumMember(Value = "7")]
         MostUpvoted = 7,
 
-        ///value not found fallback
-        [EnumMember(Value = "999999999")]
-        ProtectedInvalidEnumValue = 999999999
     }
 }

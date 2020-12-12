@@ -31,7 +31,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     BungieNetMembershipId == input.BungieNetMembershipId ||
-                    (BungieNetMembershipId != null && BungieNetMembershipId.Equals(input.BungieNetMembershipId))
+                    (BungieNetMembershipId.Equals(input.BungieNetMembershipId))
                 ) &&
                 (
                     TransactionId == input.TransactionId ||

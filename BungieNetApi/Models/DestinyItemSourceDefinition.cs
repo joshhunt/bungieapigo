@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -67,31 +68,31 @@ namespace GhostSharper.Models
             return
                 (
                     Level == input.Level ||
-                    (Level != null && Level.Equals(input.Level))
+                    (Level.Equals(input.Level))
                 ) &&
                 (
                     MinQuality == input.MinQuality ||
-                    (MinQuality != null && MinQuality.Equals(input.MinQuality))
+                    (MinQuality.Equals(input.MinQuality))
                 ) &&
                 (
                     MaxQuality == input.MaxQuality ||
-                    (MaxQuality != null && MaxQuality.Equals(input.MaxQuality))
+                    (MaxQuality.Equals(input.MaxQuality))
                 ) &&
                 (
                     MinLevelRequired == input.MinLevelRequired ||
-                    (MinLevelRequired != null && MinLevelRequired.Equals(input.MinLevelRequired))
+                    (MinLevelRequired.Equals(input.MinLevelRequired))
                 ) &&
                 (
                     MaxLevelRequired == input.MaxLevelRequired ||
-                    (MaxLevelRequired != null && MaxLevelRequired.Equals(input.MaxLevelRequired))
+                    (MaxLevelRequired.Equals(input.MaxLevelRequired))
                 ) &&
                 (
                     ComputedStats == input.ComputedStats ||
-                    (ComputedStats != null && ComputedStats.Equals(input.ComputedStats))
+                    (ComputedStats != null && ComputedStats.SequenceEqual(input.ComputedStats))
                 ) &&
                 (
                     SourceHashes == input.SourceHashes ||
-                    (SourceHashes != null && SourceHashes.Equals(input.SourceHashes))
+                    (SourceHashes != null && SourceHashes.SequenceEqual(input.SourceHashes))
                 ) ;
         }
     }

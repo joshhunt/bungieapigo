@@ -21,7 +21,7 @@ namespace GhostSharper.Models
             return
                 (
                     ArtDyeChannelHash == input.ArtDyeChannelHash ||
-                    (ArtDyeChannelHash != null && ArtDyeChannelHash.Equals(input.ArtDyeChannelHash))
+                    (ArtDyeChannelHash.Equals(input.ArtDyeChannelHash))
                 ) ;
         }
     }

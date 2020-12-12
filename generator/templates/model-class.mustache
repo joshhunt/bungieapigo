@@ -36,8 +36,8 @@ namespace GhostSharper.Models
                 {{#properties}}
                 (
                     {{propertyName}} == input.{{propertyName}} ||
-                    ({{propertyName}} != null && {{propertyName}}.Equals(input.{{propertyName}}))
-                ) {{#notLast}}&&{{/notLast}}{{^notLast}};{{/notLast}}
+                    ({{&equals}})
+                ){{#notLast}} &&{{/notLast}}{{^notLast}} ;{{/notLast}}
                 {{/properties}}
         }
     }

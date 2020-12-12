@@ -24,11 +24,11 @@ namespace GhostSharper.Models
             return
                 (
                     AcquireMaterialRequirementHash == input.AcquireMaterialRequirementHash ||
-                    (AcquireMaterialRequirementHash != null && AcquireMaterialRequirementHash.Equals(input.AcquireMaterialRequirementHash))
+                    (AcquireMaterialRequirementHash.Equals(input.AcquireMaterialRequirementHash))
                 ) &&
                 (
                     AcquireTimestampUnlockValueHash == input.AcquireTimestampUnlockValueHash ||
-                    (AcquireTimestampUnlockValueHash != null && AcquireTimestampUnlockValueHash.Equals(input.AcquireTimestampUnlockValueHash))
+                    (AcquireTimestampUnlockValueHash.Equals(input.AcquireTimestampUnlockValueHash))
                 ) ;
         }
     }

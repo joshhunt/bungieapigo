@@ -52,19 +52,19 @@ export class ModelClass {
     const baseImports = ["System.Runtime.Serialization"];
 
     const propertyImports = this.properties()
-      .map((prop) => {
+      .flatMap((prop) => {
         const type = prop.typeName();
 
         if (type.includes("List<")) {
-          return "System.Collections.Generic";
+          return ["System.Collections.Generic", "System.Linq"];
         }
 
         if (type.includes("Dictionary<")) {
-          return "System.Collections.Generic";
+          return ["System.Collections.Generic", "System.Linq"];
         }
 
         if (type.includes("DateTime")) {
-          return "System";
+          return ["System"];
         }
 
         return null;

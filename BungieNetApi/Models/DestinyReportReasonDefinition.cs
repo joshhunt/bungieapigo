@@ -33,7 +33,7 @@ namespace GhostSharper.Models
             return
                 (
                     ReasonHash == input.ReasonHash ||
-                    (ReasonHash != null && ReasonHash.Equals(input.ReasonHash))
+                    (ReasonHash.Equals(input.ReasonHash))
                 ) &&
                 (
                     DisplayProperties == input.DisplayProperties ||

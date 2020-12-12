@@ -45,7 +45,7 @@ namespace GhostSharper.Models
             return
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     EntityType == input.EntityType ||
@@ -57,7 +57,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Weight == input.Weight ||
-                    (Weight != null && Weight.Equals(input.Weight))
+                    (Weight.Equals(input.Weight))
                 ) ;
         }
     }

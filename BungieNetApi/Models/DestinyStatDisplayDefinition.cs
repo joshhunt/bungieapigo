@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -55,11 +56,11 @@ namespace GhostSharper.Models
             return
                 (
                     StatHash == input.StatHash ||
-                    (StatHash != null && StatHash.Equals(input.StatHash))
+                    (StatHash.Equals(input.StatHash))
                 ) &&
                 (
                     MaximumValue == input.MaximumValue ||
-                    (MaximumValue != null && MaximumValue.Equals(input.MaximumValue))
+                    (MaximumValue.Equals(input.MaximumValue))
                 ) &&
                 (
                     DisplayAsNumeric == input.DisplayAsNumeric ||
@@ -67,7 +68,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     DisplayInterpolation == input.DisplayInterpolation ||
-                    (DisplayInterpolation != null && DisplayInterpolation.Equals(input.DisplayInterpolation))
+                    (DisplayInterpolation != null && DisplayInterpolation.SequenceEqual(input.DisplayInterpolation))
                 ) ;
         }
     }

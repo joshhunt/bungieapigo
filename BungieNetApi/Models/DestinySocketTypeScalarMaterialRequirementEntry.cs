@@ -24,11 +24,11 @@ namespace GhostSharper.Models
             return
                 (
                     CurrencyItemHash == input.CurrencyItemHash ||
-                    (CurrencyItemHash != null && CurrencyItemHash.Equals(input.CurrencyItemHash))
+                    (CurrencyItemHash.Equals(input.CurrencyItemHash))
                 ) &&
                 (
                     ScalarValue == input.ScalarValue ||
-                    (ScalarValue != null && ScalarValue.Equals(input.ScalarValue))
+                    (ScalarValue.Equals(input.ScalarValue))
                 ) ;
         }
     }

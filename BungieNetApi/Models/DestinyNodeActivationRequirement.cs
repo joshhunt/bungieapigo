@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -43,11 +44,11 @@ namespace GhostSharper.Models
             return
                 (
                     GridLevel == input.GridLevel ||
-                    (GridLevel != null && GridLevel.Equals(input.GridLevel))
+                    (GridLevel.Equals(input.GridLevel))
                 ) &&
                 (
                     MaterialRequirementHashes == input.MaterialRequirementHashes ||
-                    (MaterialRequirementHashes != null && MaterialRequirementHashes.Equals(input.MaterialRequirementHashes))
+                    (MaterialRequirementHashes != null && MaterialRequirementHashes.SequenceEqual(input.MaterialRequirementHashes))
                 ) ;
         }
     }

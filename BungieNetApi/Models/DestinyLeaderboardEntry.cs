@@ -42,7 +42,7 @@ namespace GhostSharper.Models
             return
                 (
                     Rank == input.Rank ||
-                    (Rank != null && Rank.Equals(input.Rank))
+                    (Rank.Equals(input.Rank))
                 ) &&
                 (
                     Player == input.Player ||
@@ -50,7 +50,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     CharacterId == input.CharacterId ||
-                    (CharacterId != null && CharacterId.Equals(input.CharacterId))
+                    (CharacterId.Equals(input.CharacterId))
                 ) &&
                 (
                     Value == input.Value ||

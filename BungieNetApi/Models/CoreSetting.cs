@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -57,7 +58,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ChildSettings == input.ChildSettings ||
-                    (ChildSettings != null && ChildSettings.Equals(input.ChildSettings))
+                    (ChildSettings != null && ChildSettings.SequenceEqual(input.ChildSettings))
                 ) ;
         }
     }

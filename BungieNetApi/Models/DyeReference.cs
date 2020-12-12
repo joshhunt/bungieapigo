@@ -24,11 +24,11 @@ namespace GhostSharper.Models
             return
                 (
                     ChannelHash == input.ChannelHash ||
-                    (ChannelHash != null && ChannelHash.Equals(input.ChannelHash))
+                    (ChannelHash.Equals(input.ChannelHash))
                 ) &&
                 (
                     DyeHash == input.DyeHash ||
-                    (DyeHash != null && DyeHash.Equals(input.DyeHash))
+                    (DyeHash.Equals(input.DyeHash))
                 ) ;
         }
     }

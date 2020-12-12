@@ -49,7 +49,7 @@ namespace GhostSharper.Models
             return
                 (
                     GroupId == input.GroupId ||
-                    (GroupId != null && GroupId.Equals(input.GroupId))
+                    (GroupId.Equals(input.GroupId))
                 ) &&
                 (
                     CreationDate == input.CreationDate ||
@@ -65,7 +65,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ResolvedByMembershipId == input.ResolvedByMembershipId ||
-                    (ResolvedByMembershipId != null && ResolvedByMembershipId.Equals(input.ResolvedByMembershipId))
+                    (ResolvedByMembershipId.Equals(input.ResolvedByMembershipId))
                 ) &&
                 (
                     RequestMessage == input.RequestMessage ||

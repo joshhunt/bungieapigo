@@ -39,15 +39,15 @@ namespace GhostSharper.Models
             return
                 (
                     ActivityHash == input.ActivityHash ||
-                    (ActivityHash != null && ActivityHash.Equals(input.ActivityHash))
+                    (ActivityHash.Equals(input.ActivityHash))
                 ) &&
                 (
                     ActivityModeHash == input.ActivityModeHash ||
-                    (ActivityModeHash != null && ActivityModeHash.Equals(input.ActivityModeHash))
+                    (ActivityModeHash.Equals(input.ActivityModeHash))
                 ) &&
                 (
                     ActivityModeType == input.ActivityModeType ||
-                    (ActivityModeType != null && ActivityModeType.Equals(input.ActivityModeType))
+                    (ActivityModeType.Equals(input.ActivityModeType))
                 ) ;
         }
     }

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -52,23 +53,23 @@ namespace GhostSharper.Models
             return
                 (
                     GroupHash == input.GroupHash ||
-                    (GroupHash != null && GroupHash.Equals(input.GroupHash))
+                    (GroupHash.Equals(input.GroupHash))
                 ) &&
                 (
                     LoreHash == input.LoreHash ||
-                    (LoreHash != null && LoreHash.Equals(input.LoreHash))
+                    (LoreHash.Equals(input.LoreHash))
                 ) &&
                 (
                     NodeHashes == input.NodeHashes ||
-                    (NodeHashes != null && NodeHashes.Equals(input.NodeHashes))
+                    (NodeHashes != null && NodeHashes.SequenceEqual(input.NodeHashes))
                 ) &&
                 (
                     OpposingGroupHashes == input.OpposingGroupHashes ||
-                    (OpposingGroupHashes != null && OpposingGroupHashes.Equals(input.OpposingGroupHashes))
+                    (OpposingGroupHashes != null && OpposingGroupHashes.SequenceEqual(input.OpposingGroupHashes))
                 ) &&
                 (
                     OpposingNodeHashes == input.OpposingNodeHashes ||
-                    (OpposingNodeHashes != null && OpposingNodeHashes.Equals(input.OpposingNodeHashes))
+                    (OpposingNodeHashes != null && OpposingNodeHashes.SequenceEqual(input.OpposingNodeHashes))
                 ) ;
         }
     }

@@ -24,7 +24,7 @@ namespace GhostSharper.Models
             return
                 (
                     PlugItemHash == input.PlugItemHash ||
-                    (PlugItemHash != null && PlugItemHash.Equals(input.PlugItemHash))
+                    (PlugItemHash.Equals(input.PlugItemHash))
                 ) ;
         }
     }

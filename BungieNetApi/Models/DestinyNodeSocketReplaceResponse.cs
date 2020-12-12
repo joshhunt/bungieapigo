@@ -33,11 +33,11 @@ namespace GhostSharper.Models
             return
                 (
                     SocketTypeHash == input.SocketTypeHash ||
-                    (SocketTypeHash != null && SocketTypeHash.Equals(input.SocketTypeHash))
+                    (SocketTypeHash.Equals(input.SocketTypeHash))
                 ) &&
                 (
                     PlugItemHash == input.PlugItemHash ||
-                    (PlugItemHash != null && PlugItemHash.Equals(input.PlugItemHash))
+                    (PlugItemHash.Equals(input.PlugItemHash))
                 ) ;
         }
     }

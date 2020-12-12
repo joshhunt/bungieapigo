@@ -80,7 +80,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MaximumNumberOfUses == input.MaximumNumberOfUses ||
-                    (MaximumNumberOfUses != null && MaximumNumberOfUses.Equals(input.MaximumNumberOfUses))
+                    (MaximumNumberOfUses.Equals(input.MaximumNumberOfUses))
                 ) &&
                 (
                     ValidUntil == input.ValidUntil ||

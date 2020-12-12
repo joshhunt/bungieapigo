@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -103,11 +104,11 @@ namespace GhostSharper.Models
             return
                 (
                     MaximumMembers == input.MaximumMembers ||
-                    (MaximumMembers != null && MaximumMembers.Equals(input.MaximumMembers))
+                    (MaximumMembers.Equals(input.MaximumMembers))
                 ) &&
                 (
                     MaximumMembershipsOfGroupType == input.MaximumMembershipsOfGroupType ||
-                    (MaximumMembershipsOfGroupType != null && MaximumMembershipsOfGroupType.Equals(input.MaximumMembershipsOfGroupType))
+                    (MaximumMembershipsOfGroupType.Equals(input.MaximumMembershipsOfGroupType))
                 ) &&
                 (
                     Capabilities == input.Capabilities ||
@@ -115,7 +116,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MembershipTypes == input.MembershipTypes ||
-                    (MembershipTypes != null && MembershipTypes.Equals(input.MembershipTypes))
+                    (MembershipTypes != null && MembershipTypes.SequenceEqual(input.MembershipTypes))
                 ) &&
                 (
                     InvitePermissionOverride == input.InvitePermissionOverride ||

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -52,23 +53,23 @@ namespace GhostSharper.Models
             return
                 (
                     ActivityHash == input.ActivityHash ||
-                    (ActivityHash != null && ActivityHash.Equals(input.ActivityHash))
+                    (ActivityHash.Equals(input.ActivityHash))
                 ) &&
                 (
                     ModifierHashes == input.ModifierHashes ||
-                    (ModifierHashes != null && ModifierHashes.Equals(input.ModifierHashes))
+                    (ModifierHashes != null && ModifierHashes.SequenceEqual(input.ModifierHashes))
                 ) &&
                 (
                     Variants == input.Variants ||
-                    (Variants != null && Variants.Equals(input.Variants))
+                    (Variants != null && Variants.SequenceEqual(input.Variants))
                 ) &&
                 (
                     ActivityModeHash == input.ActivityModeHash ||
-                    (ActivityModeHash != null && ActivityModeHash.Equals(input.ActivityModeHash))
+                    (ActivityModeHash.Equals(input.ActivityModeHash))
                 ) &&
                 (
                     ActivityModeType == input.ActivityModeType ||
-                    (ActivityModeType != null && ActivityModeType.Equals(input.ActivityModeType))
+                    (ActivityModeType.Equals(input.ActivityModeType))
                 ) ;
         }
     }

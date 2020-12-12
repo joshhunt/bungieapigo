@@ -33,11 +33,11 @@ namespace GhostSharper.Models
             return
                 (
                     Id == input.Id ||
-                    (Id != null && Id.Equals(input.Id))
+                    (Id.Equals(input.Id))
                 ) &&
                 (
                     ObjectiveHash == input.ObjectiveHash ||
-                    (ObjectiveHash != null && ObjectiveHash.Equals(input.ObjectiveHash))
+                    (ObjectiveHash.Equals(input.ObjectiveHash))
                 ) ;
         }
     }

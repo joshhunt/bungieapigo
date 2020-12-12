@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -89,71 +90,71 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Systems == input.Systems ||
-                    (Systems != null && Systems.Equals(input.Systems))
+                    (Systems != null && Systems.SequenceEqual(input.Systems))
                 ) &&
                 (
                     IgnoreReasons == input.IgnoreReasons ||
-                    (IgnoreReasons != null && IgnoreReasons.Equals(input.IgnoreReasons))
+                    (IgnoreReasons != null && IgnoreReasons.SequenceEqual(input.IgnoreReasons))
                 ) &&
                 (
                     ForumCategories == input.ForumCategories ||
-                    (ForumCategories != null && ForumCategories.Equals(input.ForumCategories))
+                    (ForumCategories != null && ForumCategories.SequenceEqual(input.ForumCategories))
                 ) &&
                 (
                     GroupAvatars == input.GroupAvatars ||
-                    (GroupAvatars != null && GroupAvatars.Equals(input.GroupAvatars))
+                    (GroupAvatars != null && GroupAvatars.SequenceEqual(input.GroupAvatars))
                 ) &&
                 (
                     DestinyMembershipTypes == input.DestinyMembershipTypes ||
-                    (DestinyMembershipTypes != null && DestinyMembershipTypes.Equals(input.DestinyMembershipTypes))
+                    (DestinyMembershipTypes != null && DestinyMembershipTypes.SequenceEqual(input.DestinyMembershipTypes))
                 ) &&
                 (
                     RecruitmentPlatformTags == input.RecruitmentPlatformTags ||
-                    (RecruitmentPlatformTags != null && RecruitmentPlatformTags.Equals(input.RecruitmentPlatformTags))
+                    (RecruitmentPlatformTags != null && RecruitmentPlatformTags.SequenceEqual(input.RecruitmentPlatformTags))
                 ) &&
                 (
                     RecruitmentMiscTags == input.RecruitmentMiscTags ||
-                    (RecruitmentMiscTags != null && RecruitmentMiscTags.Equals(input.RecruitmentMiscTags))
+                    (RecruitmentMiscTags != null && RecruitmentMiscTags.SequenceEqual(input.RecruitmentMiscTags))
                 ) &&
                 (
                     RecruitmentActivities == input.RecruitmentActivities ||
-                    (RecruitmentActivities != null && RecruitmentActivities.Equals(input.RecruitmentActivities))
+                    (RecruitmentActivities != null && RecruitmentActivities.SequenceEqual(input.RecruitmentActivities))
                 ) &&
                 (
                     UserContentLocales == input.UserContentLocales ||
-                    (UserContentLocales != null && UserContentLocales.Equals(input.UserContentLocales))
+                    (UserContentLocales != null && UserContentLocales.SequenceEqual(input.UserContentLocales))
                 ) &&
                 (
                     SystemContentLocales == input.SystemContentLocales ||
-                    (SystemContentLocales != null && SystemContentLocales.Equals(input.SystemContentLocales))
+                    (SystemContentLocales != null && SystemContentLocales.SequenceEqual(input.SystemContentLocales))
                 ) &&
                 (
                     ClanBannerDecals == input.ClanBannerDecals ||
-                    (ClanBannerDecals != null && ClanBannerDecals.Equals(input.ClanBannerDecals))
+                    (ClanBannerDecals != null && ClanBannerDecals.SequenceEqual(input.ClanBannerDecals))
                 ) &&
                 (
                     ClanBannerDecalColors == input.ClanBannerDecalColors ||
-                    (ClanBannerDecalColors != null && ClanBannerDecalColors.Equals(input.ClanBannerDecalColors))
+                    (ClanBannerDecalColors != null && ClanBannerDecalColors.SequenceEqual(input.ClanBannerDecalColors))
                 ) &&
                 (
                     ClanBannerGonfalons == input.ClanBannerGonfalons ||
-                    (ClanBannerGonfalons != null && ClanBannerGonfalons.Equals(input.ClanBannerGonfalons))
+                    (ClanBannerGonfalons != null && ClanBannerGonfalons.SequenceEqual(input.ClanBannerGonfalons))
                 ) &&
                 (
                     ClanBannerGonfalonColors == input.ClanBannerGonfalonColors ||
-                    (ClanBannerGonfalonColors != null && ClanBannerGonfalonColors.Equals(input.ClanBannerGonfalonColors))
+                    (ClanBannerGonfalonColors != null && ClanBannerGonfalonColors.SequenceEqual(input.ClanBannerGonfalonColors))
                 ) &&
                 (
                     ClanBannerGonfalonDetails == input.ClanBannerGonfalonDetails ||
-                    (ClanBannerGonfalonDetails != null && ClanBannerGonfalonDetails.Equals(input.ClanBannerGonfalonDetails))
+                    (ClanBannerGonfalonDetails != null && ClanBannerGonfalonDetails.SequenceEqual(input.ClanBannerGonfalonDetails))
                 ) &&
                 (
                     ClanBannerGonfalonDetailColors == input.ClanBannerGonfalonDetailColors ||
-                    (ClanBannerGonfalonDetailColors != null && ClanBannerGonfalonDetailColors.Equals(input.ClanBannerGonfalonDetailColors))
+                    (ClanBannerGonfalonDetailColors != null && ClanBannerGonfalonDetailColors.SequenceEqual(input.ClanBannerGonfalonDetailColors))
                 ) &&
                 (
                     ClanBannerStandards == input.ClanBannerStandards ||
-                    (ClanBannerStandards != null && ClanBannerStandards.Equals(input.ClanBannerStandards))
+                    (ClanBannerStandards != null && ClanBannerStandards.SequenceEqual(input.ClanBannerStandards))
                 ) &&
                 (
                     Destiny2CoreSettings == input.Destiny2CoreSettings ||
@@ -165,7 +166,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     FireteamActivities == input.FireteamActivities ||
-                    (FireteamActivities != null && FireteamActivities.Equals(input.FireteamActivities))
+                    (FireteamActivities != null && FireteamActivities.SequenceEqual(input.FireteamActivities))
                 ) ;
         }
     }

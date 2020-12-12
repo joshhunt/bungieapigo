@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -31,7 +32,7 @@ namespace GhostSharper.Models
             return
                 (
                     Sockets == input.Sockets ||
-                    (Sockets != null && Sockets.Equals(input.Sockets))
+                    (Sockets != null && Sockets.SequenceEqual(input.Sockets))
                 ) ;
         }
     }

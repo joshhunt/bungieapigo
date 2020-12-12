@@ -81,7 +81,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     SeasonNumber == input.SeasonNumber ||
-                    (SeasonNumber != null && SeasonNumber.Equals(input.SeasonNumber))
+                    (SeasonNumber.Equals(input.SeasonNumber))
                 ) &&
                 (
                     StartDate == input.StartDate ||
@@ -93,27 +93,27 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     SeasonPassHash == input.SeasonPassHash ||
-                    (SeasonPassHash != null && SeasonPassHash.Equals(input.SeasonPassHash))
+                    (SeasonPassHash.Equals(input.SeasonPassHash))
                 ) &&
                 (
                     SeasonPassProgressionHash == input.SeasonPassProgressionHash ||
-                    (SeasonPassProgressionHash != null && SeasonPassProgressionHash.Equals(input.SeasonPassProgressionHash))
+                    (SeasonPassProgressionHash.Equals(input.SeasonPassProgressionHash))
                 ) &&
                 (
                     ArtifactItemHash == input.ArtifactItemHash ||
-                    (ArtifactItemHash != null && ArtifactItemHash.Equals(input.ArtifactItemHash))
+                    (ArtifactItemHash.Equals(input.ArtifactItemHash))
                 ) &&
                 (
                     SealPresentationNodeHash == input.SealPresentationNodeHash ||
-                    (SealPresentationNodeHash != null && SealPresentationNodeHash.Equals(input.SealPresentationNodeHash))
+                    (SealPresentationNodeHash.Equals(input.SealPresentationNodeHash))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

@@ -24,7 +24,7 @@ namespace GhostSharper.Models
             return
                 (
                     Level == input.Level ||
-                    (Level != null && Level.Equals(input.Level))
+                    (Level.Equals(input.Level))
                 ) ;
         }
     }

@@ -39,11 +39,11 @@ namespace GhostSharper.Models
             return
                 (
                     PlugItemHash == input.PlugItemHash ||
-                    (PlugItemHash != null && PlugItemHash.Equals(input.PlugItemHash))
+                    (PlugItemHash.Equals(input.PlugItemHash))
                 ) &&
                 (
                     SocketTypeHash == input.SocketTypeHash ||
-                    (SocketTypeHash != null && SocketTypeHash.Equals(input.SocketTypeHash))
+                    (SocketTypeHash.Equals(input.SocketTypeHash))
                 ) &&
                 (
                     DefaultVisible == input.DefaultVisible ||

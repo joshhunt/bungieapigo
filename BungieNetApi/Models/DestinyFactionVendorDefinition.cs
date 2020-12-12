@@ -42,11 +42,11 @@ namespace GhostSharper.Models
             return
                 (
                     VendorHash == input.VendorHash ||
-                    (VendorHash != null && VendorHash.Equals(input.VendorHash))
+                    (VendorHash.Equals(input.VendorHash))
                 ) &&
                 (
                     DestinationHash == input.DestinationHash ||
-                    (DestinationHash != null && DestinationHash.Equals(input.DestinationHash))
+                    (DestinationHash.Equals(input.DestinationHash))
                 ) &&
                 (
                     BackgroundImagePath == input.BackgroundImagePath ||

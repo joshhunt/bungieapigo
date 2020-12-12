@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -52,7 +53,7 @@ namespace GhostSharper.Models
             return
                 (
                     CustomDyes == input.CustomDyes ||
-                    (CustomDyes != null && CustomDyes.Equals(input.CustomDyes))
+                    (CustomDyes != null && CustomDyes.SequenceEqual(input.CustomDyes))
                 ) &&
                 (
                     Customization == input.Customization ||

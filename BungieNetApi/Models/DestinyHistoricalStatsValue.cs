@@ -64,7 +64,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ActivityId == input.ActivityId ||
-                    (ActivityId != null && ActivityId.Equals(input.ActivityId))
+                    (ActivityId.Equals(input.ActivityId))
                 ) ;
         }
     }

@@ -27,7 +27,7 @@ namespace GhostSharper.Models
             return
                 (
                     SortPriority == input.SortPriority ||
-                    (SortPriority != null && SortPriority.Equals(input.SortPriority))
+                    (SortPriority.Equals(input.SortPriority))
                 ) ;
         }
     }

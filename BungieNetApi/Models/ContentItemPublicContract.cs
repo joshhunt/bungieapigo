@@ -1,6 +1,7 @@
 using System.Runtime.Serialization;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -74,7 +75,7 @@ namespace GhostSharper.Models
             return
                 (
                     ContentId == input.ContentId ||
-                    (ContentId != null && ContentId.Equals(input.ContentId))
+                    (ContentId.Equals(input.ContentId))
                 ) &&
                 (
                     CType == input.CType ||
@@ -102,7 +103,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MinimumAge == input.MinimumAge ||
-                    (MinimumAge != null && MinimumAge.Equals(input.MinimumAge))
+                    (MinimumAge.Equals(input.MinimumAge))
                 ) &&
                 (
                     RatingImagePath == input.RatingImagePath ||
@@ -118,15 +119,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Properties == input.Properties ||
-                    (Properties != null && Properties.Equals(input.Properties))
+                    (Properties != null && Properties.SequenceEqual(input.Properties))
                 ) &&
                 (
                     Representations == input.Representations ||
-                    (Representations != null && Representations.Equals(input.Representations))
+                    (Representations != null && Representations.SequenceEqual(input.Representations))
                 ) &&
                 (
                     Tags == input.Tags ||
-                    (Tags != null && Tags.Equals(input.Tags))
+                    (Tags != null && Tags.SequenceEqual(input.Tags))
                 ) &&
                 (
                     CommentSummary == input.CommentSummary ||

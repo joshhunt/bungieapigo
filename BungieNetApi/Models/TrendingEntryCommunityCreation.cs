@@ -51,11 +51,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     AuthorMembershipId == input.AuthorMembershipId ||
-                    (AuthorMembershipId != null && AuthorMembershipId.Equals(input.AuthorMembershipId))
+                    (AuthorMembershipId.Equals(input.AuthorMembershipId))
                 ) &&
                 (
                     PostId == input.PostId ||
-                    (PostId != null && PostId.Equals(input.PostId))
+                    (PostId.Equals(input.PostId))
                 ) &&
                 (
                     Body == input.Body ||
@@ -63,7 +63,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Upvotes == input.Upvotes ||
-                    (Upvotes != null && Upvotes.Equals(input.Upvotes))
+                    (Upvotes.Equals(input.Upvotes))
                 ) ;
         }
     }

@@ -166,7 +166,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     CompletionValue == input.CompletionValue ||
-                    (CompletionValue != null && CompletionValue.Equals(input.CompletionValue))
+                    (CompletionValue.Equals(input.CompletionValue))
                 ) &&
                 (
                     Scope == input.Scope ||
@@ -174,7 +174,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     LocationHash == input.LocationHash ||
-                    (LocationHash != null && LocationHash.Equals(input.LocationHash))
+                    (LocationHash.Equals(input.LocationHash))
                 ) &&
                 (
                     AllowNegativeValue == input.AllowNegativeValue ||
@@ -206,7 +206,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MinimumVisibilityThreshold == input.MinimumVisibilityThreshold ||
-                    (MinimumVisibilityThreshold != null && MinimumVisibilityThreshold.Equals(input.MinimumVisibilityThreshold))
+                    (MinimumVisibilityThreshold.Equals(input.MinimumVisibilityThreshold))
                 ) &&
                 (
                     AllowOvercompletion == input.AllowOvercompletion ||
@@ -226,11 +226,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

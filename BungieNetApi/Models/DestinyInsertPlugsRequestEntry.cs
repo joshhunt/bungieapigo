@@ -45,7 +45,7 @@ namespace GhostSharper.Models
             return
                 (
                     SocketIndex == input.SocketIndex ||
-                    (SocketIndex != null && SocketIndex.Equals(input.SocketIndex))
+                    (SocketIndex.Equals(input.SocketIndex))
                 ) &&
                 (
                     SocketArrayType == input.SocketArrayType ||
@@ -53,7 +53,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     PlugItemHash == input.PlugItemHash ||
-                    (PlugItemHash != null && PlugItemHash.Equals(input.PlugItemHash))
+                    (PlugItemHash.Equals(input.PlugItemHash))
                 ) ;
         }
     }

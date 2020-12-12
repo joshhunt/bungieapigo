@@ -21,7 +21,7 @@ namespace GhostSharper.Models
             return
                 (
                     RecordHash == input.RecordHash ||
-                    (RecordHash != null && RecordHash.Equals(input.RecordHash))
+                    (RecordHash.Equals(input.RecordHash))
                 ) ;
         }
     }

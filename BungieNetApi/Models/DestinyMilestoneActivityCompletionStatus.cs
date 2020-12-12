@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -38,7 +39,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Phases == input.Phases ||
-                    (Phases != null && Phases.Equals(input.Phases))
+                    (Phases != null && Phases.SequenceEqual(input.Phases))
                 ) ;
         }
     }

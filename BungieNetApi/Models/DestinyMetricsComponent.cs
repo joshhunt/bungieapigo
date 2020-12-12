@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -25,11 +26,11 @@ namespace GhostSharper.Models
             return
                 (
                     Metrics == input.Metrics ||
-                    (Metrics != null && Metrics.Equals(input.Metrics))
+                    (Metrics != null && Metrics.SequenceEqual(input.Metrics))
                 ) &&
                 (
                     MetricsRootNodeHash == input.MetricsRootNodeHash ||
-                    (MetricsRootNodeHash != null && MetricsRootNodeHash.Equals(input.MetricsRootNodeHash))
+                    (MetricsRootNodeHash.Equals(input.MetricsRootNodeHash))
                 ) ;
         }
     }

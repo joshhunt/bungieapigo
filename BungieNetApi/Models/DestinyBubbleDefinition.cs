@@ -33,7 +33,7 @@ namespace GhostSharper.Models
             return
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     DisplayProperties == input.DisplayProperties ||

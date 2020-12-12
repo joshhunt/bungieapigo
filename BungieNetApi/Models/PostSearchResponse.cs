@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -70,39 +71,39 @@ namespace GhostSharper.Models
             return
                 (
                     RelatedPosts == input.RelatedPosts ||
-                    (RelatedPosts != null && RelatedPosts.Equals(input.RelatedPosts))
+                    (RelatedPosts != null && RelatedPosts.SequenceEqual(input.RelatedPosts))
                 ) &&
                 (
                     Authors == input.Authors ||
-                    (Authors != null && Authors.Equals(input.Authors))
+                    (Authors != null && Authors.SequenceEqual(input.Authors))
                 ) &&
                 (
                     Groups == input.Groups ||
-                    (Groups != null && Groups.Equals(input.Groups))
+                    (Groups != null && Groups.SequenceEqual(input.Groups))
                 ) &&
                 (
                     SearchedTags == input.SearchedTags ||
-                    (SearchedTags != null && SearchedTags.Equals(input.SearchedTags))
+                    (SearchedTags != null && SearchedTags.SequenceEqual(input.SearchedTags))
                 ) &&
                 (
                     Polls == input.Polls ||
-                    (Polls != null && Polls.Equals(input.Polls))
+                    (Polls != null && Polls.SequenceEqual(input.Polls))
                 ) &&
                 (
                     RecruitmentDetails == input.RecruitmentDetails ||
-                    (RecruitmentDetails != null && RecruitmentDetails.Equals(input.RecruitmentDetails))
+                    (RecruitmentDetails != null && RecruitmentDetails.SequenceEqual(input.RecruitmentDetails))
                 ) &&
                 (
                     AvailablePages == input.AvailablePages ||
-                    (AvailablePages != null && AvailablePages.Equals(input.AvailablePages))
+                    (AvailablePages.Equals(input.AvailablePages))
                 ) &&
                 (
                     Results == input.Results ||
-                    (Results != null && Results.Equals(input.Results))
+                    (Results != null && Results.SequenceEqual(input.Results))
                 ) &&
                 (
                     TotalResults == input.TotalResults ||
-                    (TotalResults != null && TotalResults.Equals(input.TotalResults))
+                    (TotalResults.Equals(input.TotalResults))
                 ) &&
                 (
                     HasMore == input.HasMore ||

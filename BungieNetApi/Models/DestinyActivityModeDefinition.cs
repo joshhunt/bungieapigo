@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -139,7 +140,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ParentHashes == input.ParentHashes ||
-                    (ParentHashes != null && ParentHashes.Equals(input.ParentHashes))
+                    (ParentHashes != null && ParentHashes.SequenceEqual(input.ParentHashes))
                 ) &&
                 (
                     FriendlyName == input.FriendlyName ||
@@ -147,7 +148,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ActivityModeMappings == input.ActivityModeMappings ||
-                    (ActivityModeMappings != null && ActivityModeMappings.Equals(input.ActivityModeMappings))
+                    (ActivityModeMappings != null && ActivityModeMappings.SequenceEqual(input.ActivityModeMappings))
                 ) &&
                 (
                     Display == input.Display ||
@@ -155,15 +156,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Order == input.Order ||
-                    (Order != null && Order.Equals(input.Order))
+                    (Order.Equals(input.Order))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

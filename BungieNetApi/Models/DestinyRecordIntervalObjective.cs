@@ -24,11 +24,11 @@ namespace GhostSharper.Models
             return
                 (
                     IntervalObjectiveHash == input.IntervalObjectiveHash ||
-                    (IntervalObjectiveHash != null && IntervalObjectiveHash.Equals(input.IntervalObjectiveHash))
+                    (IntervalObjectiveHash.Equals(input.IntervalObjectiveHash))
                 ) &&
                 (
                     IntervalScoreValue == input.IntervalScoreValue ||
-                    (IntervalScoreValue != null && IntervalScoreValue.Equals(input.IntervalScoreValue))
+                    (IntervalScoreValue.Equals(input.IntervalScoreValue))
                 ) ;
         }
     }

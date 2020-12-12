@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -49,7 +50,7 @@ namespace GhostSharper.Models
             return
                 (
                     RewardedAtProgressionLevel == input.RewardedAtProgressionLevel ||
-                    (RewardedAtProgressionLevel != null && RewardedAtProgressionLevel.Equals(input.RewardedAtProgressionLevel))
+                    (RewardedAtProgressionLevel.Equals(input.RewardedAtProgressionLevel))
                 ) &&
                 (
                     AcquisitionBehavior == input.AcquisitionBehavior ||
@@ -61,19 +62,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ClaimUnlockDisplayStrings == input.ClaimUnlockDisplayStrings ||
-                    (ClaimUnlockDisplayStrings != null && ClaimUnlockDisplayStrings.Equals(input.ClaimUnlockDisplayStrings))
+                    (ClaimUnlockDisplayStrings != null && ClaimUnlockDisplayStrings.SequenceEqual(input.ClaimUnlockDisplayStrings))
                 ) &&
                 (
                     ItemHash == input.ItemHash ||
-                    (ItemHash != null && ItemHash.Equals(input.ItemHash))
+                    (ItemHash.Equals(input.ItemHash))
                 ) &&
                 (
                     ItemInstanceId == input.ItemInstanceId ||
-                    (ItemInstanceId != null && ItemInstanceId.Equals(input.ItemInstanceId))
+                    (ItemInstanceId.Equals(input.ItemInstanceId))
                 ) &&
                 (
                     Quantity == input.Quantity ||
-                    (Quantity != null && Quantity.Equals(input.Quantity))
+                    (Quantity.Equals(input.Quantity))
                 ) ;
         }
     }

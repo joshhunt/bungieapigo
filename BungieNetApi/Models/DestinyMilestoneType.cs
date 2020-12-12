@@ -49,8 +49,5 @@ namespace GhostSharper.Models
         [EnumMember(Value = "5")]
         Special = 5,
 
-        ///value not found fallback
-        [EnumMember(Value = "999999999")]
-        ProtectedInvalidEnumValue = 999999999
     }
 }

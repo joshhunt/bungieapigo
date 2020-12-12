@@ -55,7 +55,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     CurrencyItemHash == input.CurrencyItemHash ||
-                    (CurrencyItemHash != null && CurrencyItemHash.Equals(input.CurrencyItemHash))
+                    (CurrencyItemHash.Equals(input.CurrencyItemHash))
                 ) ;
         }
     }

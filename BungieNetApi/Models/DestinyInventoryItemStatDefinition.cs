@@ -69,23 +69,23 @@ namespace GhostSharper.Models
             return
                 (
                     StatHash == input.StatHash ||
-                    (StatHash != null && StatHash.Equals(input.StatHash))
+                    (StatHash.Equals(input.StatHash))
                 ) &&
                 (
                     Value == input.Value ||
-                    (Value != null && Value.Equals(input.Value))
+                    (Value.Equals(input.Value))
                 ) &&
                 (
                     Minimum == input.Minimum ||
-                    (Minimum != null && Minimum.Equals(input.Minimum))
+                    (Minimum.Equals(input.Minimum))
                 ) &&
                 (
                     Maximum == input.Maximum ||
-                    (Maximum != null && Maximum.Equals(input.Maximum))
+                    (Maximum.Equals(input.Maximum))
                 ) &&
                 (
                     DisplayMaximum == input.DisplayMaximum ||
-                    (DisplayMaximum != null && DisplayMaximum.Equals(input.DisplayMaximum))
+                    (DisplayMaximum.Equals(input.DisplayMaximum))
                 ) ;
         }
     }

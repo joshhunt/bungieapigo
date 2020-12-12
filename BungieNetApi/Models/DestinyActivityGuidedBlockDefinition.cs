@@ -39,15 +39,15 @@ namespace GhostSharper.Models
             return
                 (
                     GuidedMaxLobbySize == input.GuidedMaxLobbySize ||
-                    (GuidedMaxLobbySize != null && GuidedMaxLobbySize.Equals(input.GuidedMaxLobbySize))
+                    (GuidedMaxLobbySize.Equals(input.GuidedMaxLobbySize))
                 ) &&
                 (
                     GuidedMinLobbySize == input.GuidedMinLobbySize ||
-                    (GuidedMinLobbySize != null && GuidedMinLobbySize.Equals(input.GuidedMinLobbySize))
+                    (GuidedMinLobbySize.Equals(input.GuidedMinLobbySize))
                 ) &&
                 (
                     GuidedDisbandCount == input.GuidedDisbandCount ||
-                    (GuidedDisbandCount != null && GuidedDisbandCount.Equals(input.GuidedDisbandCount))
+                    (GuidedDisbandCount.Equals(input.GuidedDisbandCount))
                 ) ;
         }
     }

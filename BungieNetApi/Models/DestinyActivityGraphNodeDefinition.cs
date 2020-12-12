@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -58,7 +59,7 @@ namespace GhostSharper.Models
             return
                 (
                     NodeId == input.NodeId ||
-                    (NodeId != null && NodeId.Equals(input.NodeId))
+                    (NodeId.Equals(input.NodeId))
                 ) &&
                 (
                     OverrideDisplay == input.OverrideDisplay ||
@@ -70,15 +71,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     FeaturingStates == input.FeaturingStates ||
-                    (FeaturingStates != null && FeaturingStates.Equals(input.FeaturingStates))
+                    (FeaturingStates != null && FeaturingStates.SequenceEqual(input.FeaturingStates))
                 ) &&
                 (
                     Activities == input.Activities ||
-                    (Activities != null && Activities.Equals(input.Activities))
+                    (Activities != null && Activities.SequenceEqual(input.Activities))
                 ) &&
                 (
                     States == input.States ||
-                    (States != null && States.Equals(input.States))
+                    (States != null && States.SequenceEqual(input.States))
                 ) ;
         }
     }

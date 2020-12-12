@@ -46,7 +46,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     AffectedItemId == input.AffectedItemId ||
-                    (AffectedItemId != null && AffectedItemId.Equals(input.AffectedItemId))
+                    (AffectedItemId.Equals(input.AffectedItemId))
                 ) &&
                 (
                     MembershipType == input.MembershipType ||
@@ -54,7 +54,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     CharacterId == input.CharacterId ||
-                    (CharacterId != null && CharacterId.Equals(input.CharacterId))
+                    (CharacterId.Equals(input.CharacterId))
                 ) ;
         }
     }

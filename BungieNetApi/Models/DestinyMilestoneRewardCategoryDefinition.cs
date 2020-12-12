@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -52,7 +53,7 @@ namespace GhostSharper.Models
             return
                 (
                     CategoryHash == input.CategoryHash ||
-                    (CategoryHash != null && CategoryHash.Equals(input.CategoryHash))
+                    (CategoryHash.Equals(input.CategoryHash))
                 ) &&
                 (
                     CategoryIdentifier == input.CategoryIdentifier ||
@@ -64,11 +65,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     RewardEntries == input.RewardEntries ||
-                    (RewardEntries != null && RewardEntries.Equals(input.RewardEntries))
+                    (RewardEntries != null && RewardEntries.SequenceEqual(input.RewardEntries))
                 ) &&
                 (
                     Order == input.Order ||
-                    (Order != null && Order.Equals(input.Order))
+                    (Order.Equals(input.Order))
                 ) ;
         }
     }

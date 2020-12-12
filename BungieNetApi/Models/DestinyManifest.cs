@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -66,19 +67,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MobileGearAssetDataBases == input.MobileGearAssetDataBases ||
-                    (MobileGearAssetDataBases != null && MobileGearAssetDataBases.Equals(input.MobileGearAssetDataBases))
+                    (MobileGearAssetDataBases != null && MobileGearAssetDataBases.SequenceEqual(input.MobileGearAssetDataBases))
                 ) &&
                 (
                     MobileWorldContentPaths == input.MobileWorldContentPaths ||
-                    (MobileWorldContentPaths != null && MobileWorldContentPaths.Equals(input.MobileWorldContentPaths))
+                    (MobileWorldContentPaths != null && MobileWorldContentPaths.SequenceEqual(input.MobileWorldContentPaths))
                 ) &&
                 (
                     JsonWorldContentPaths == input.JsonWorldContentPaths ||
-                    (JsonWorldContentPaths != null && JsonWorldContentPaths.Equals(input.JsonWorldContentPaths))
+                    (JsonWorldContentPaths != null && JsonWorldContentPaths.SequenceEqual(input.JsonWorldContentPaths))
                 ) &&
                 (
                     JsonWorldComponentContentPaths == input.JsonWorldComponentContentPaths ||
-                    (JsonWorldComponentContentPaths != null && JsonWorldComponentContentPaths.Equals(input.JsonWorldComponentContentPaths))
+                    (JsonWorldComponentContentPaths != null && JsonWorldComponentContentPaths.SequenceEqual(input.JsonWorldComponentContentPaths))
                 ) &&
                 (
                     MobileClanBannerDatabasePath == input.MobileClanBannerDatabasePath ||
@@ -86,11 +87,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MobileGearCdn == input.MobileGearCdn ||
-                    (MobileGearCdn != null && MobileGearCdn.Equals(input.MobileGearCdn))
+                    (MobileGearCdn != null && MobileGearCdn.SequenceEqual(input.MobileGearCdn))
                 ) &&
                 (
                     IconImagePyramidInfo == input.IconImagePyramidInfo ||
-                    (IconImagePyramidInfo != null && IconImagePyramidInfo.Equals(input.IconImagePyramidInfo))
+                    (IconImagePyramidInfo != null && IconImagePyramidInfo.SequenceEqual(input.IconImagePyramidInfo))
                 ) ;
         }
     }

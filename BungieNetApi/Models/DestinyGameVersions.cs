@@ -51,8 +51,5 @@ namespace GhostSharper.Models
         [EnumMember(Value = "32")]
         Shadowkeep = 32,
 
-        ///value not found fallback
-        [EnumMember(Value = "999999999")]
-        ProtectedInvalidEnumValue = 999999999
     }
 }

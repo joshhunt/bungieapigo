@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -100,27 +101,27 @@ namespace GhostSharper.Models
             return
                 (
                     InteractionIndex == input.InteractionIndex ||
-                    (InteractionIndex != null && InteractionIndex.Equals(input.InteractionIndex))
+                    (InteractionIndex.Equals(input.InteractionIndex))
                 ) &&
                 (
                     Replies == input.Replies ||
-                    (Replies != null && Replies.Equals(input.Replies))
+                    (Replies != null && Replies.SequenceEqual(input.Replies))
                 ) &&
                 (
                     VendorCategoryIndex == input.VendorCategoryIndex ||
-                    (VendorCategoryIndex != null && VendorCategoryIndex.Equals(input.VendorCategoryIndex))
+                    (VendorCategoryIndex.Equals(input.VendorCategoryIndex))
                 ) &&
                 (
                     QuestlineItemHash == input.QuestlineItemHash ||
-                    (QuestlineItemHash != null && QuestlineItemHash.Equals(input.QuestlineItemHash))
+                    (QuestlineItemHash.Equals(input.QuestlineItemHash))
                 ) &&
                 (
                     SackInteractionList == input.SackInteractionList ||
-                    (SackInteractionList != null && SackInteractionList.Equals(input.SackInteractionList))
+                    (SackInteractionList != null && SackInteractionList.SequenceEqual(input.SackInteractionList))
                 ) &&
                 (
                     UiInteractionType == input.UiInteractionType ||
-                    (UiInteractionType != null && UiInteractionType.Equals(input.UiInteractionType))
+                    (UiInteractionType.Equals(input.UiInteractionType))
                 ) &&
                 (
                     InteractionType == input.InteractionType ||
@@ -132,7 +133,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     RewardVendorCategoryIndex == input.RewardVendorCategoryIndex ||
-                    (RewardVendorCategoryIndex != null && RewardVendorCategoryIndex.Equals(input.RewardVendorCategoryIndex))
+                    (RewardVendorCategoryIndex.Equals(input.RewardVendorCategoryIndex))
                 ) &&
                 (
                     FlavorLineOne == input.FlavorLineOne ||

@@ -1,6 +1,7 @@
 using System.Runtime.Serialization;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -86,19 +87,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     CharacterIds == input.CharacterIds ||
-                    (CharacterIds != null && CharacterIds.Equals(input.CharacterIds))
+                    (CharacterIds != null && CharacterIds.SequenceEqual(input.CharacterIds))
                 ) &&
                 (
                     SeasonHashes == input.SeasonHashes ||
-                    (SeasonHashes != null && SeasonHashes.Equals(input.SeasonHashes))
+                    (SeasonHashes != null && SeasonHashes.SequenceEqual(input.SeasonHashes))
                 ) &&
                 (
                     CurrentSeasonHash == input.CurrentSeasonHash ||
-                    (CurrentSeasonHash != null && CurrentSeasonHash.Equals(input.CurrentSeasonHash))
+                    (CurrentSeasonHash.Equals(input.CurrentSeasonHash))
                 ) &&
                 (
                     CurrentSeasonRewardPowerCap == input.CurrentSeasonRewardPowerCap ||
-                    (CurrentSeasonRewardPowerCap != null && CurrentSeasonRewardPowerCap.Equals(input.CurrentSeasonRewardPowerCap))
+                    (CurrentSeasonRewardPowerCap.Equals(input.CurrentSeasonRewardPowerCap))
                 ) ;
         }
     }

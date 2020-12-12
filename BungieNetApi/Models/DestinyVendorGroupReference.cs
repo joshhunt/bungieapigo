@@ -24,7 +24,7 @@ namespace GhostSharper.Models
             return
                 (
                     VendorGroupHash == input.VendorGroupHash ||
-                    (VendorGroupHash != null && VendorGroupHash.Equals(input.VendorGroupHash))
+                    (VendorGroupHash.Equals(input.VendorGroupHash))
                 ) ;
         }
     }

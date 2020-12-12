@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -227,11 +228,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Quests == input.Quests ||
-                    (Quests != null && Quests.Equals(input.Quests))
+                    (Quests != null && Quests.SequenceEqual(input.Quests))
                 ) &&
                 (
                     Rewards == input.Rewards ||
-                    (Rewards != null && Rewards.Equals(input.Rewards))
+                    (Rewards != null && Rewards.SequenceEqual(input.Rewards))
                 ) &&
                 (
                     VendorsDisplayTitle == input.VendorsDisplayTitle ||
@@ -239,11 +240,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Vendors == input.Vendors ||
-                    (Vendors != null && Vendors.Equals(input.Vendors))
+                    (Vendors != null && Vendors.SequenceEqual(input.Vendors))
                 ) &&
                 (
                     Values == input.Values ||
-                    (Values != null && Values.Equals(input.Values))
+                    (Values != null && Values.SequenceEqual(input.Values))
                 ) &&
                 (
                     IsInGameMilestone == input.IsInGameMilestone ||
@@ -251,19 +252,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Activities == input.Activities ||
-                    (Activities != null && Activities.Equals(input.Activities))
+                    (Activities != null && Activities.SequenceEqual(input.Activities))
                 ) &&
                 (
                     DefaultOrder == input.DefaultOrder ||
-                    (DefaultOrder != null && DefaultOrder.Equals(input.DefaultOrder))
+                    (DefaultOrder.Equals(input.DefaultOrder))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

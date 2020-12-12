@@ -34,7 +34,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MembershipId == input.MembershipId ||
-                    (MembershipId != null && MembershipId.Equals(input.MembershipId))
+                    (MembershipId.Equals(input.MembershipId))
                 ) &&
                 (
                     CrossSaveOverriddenType == input.CrossSaveOverriddenType ||
@@ -42,7 +42,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     CrossSaveOverriddenMembershipId == input.CrossSaveOverriddenMembershipId ||
-                    (CrossSaveOverriddenMembershipId != null && CrossSaveOverriddenMembershipId.Equals(input.CrossSaveOverriddenMembershipId))
+                    (CrossSaveOverriddenMembershipId.Equals(input.CrossSaveOverriddenMembershipId))
                 ) ;
         }
     }

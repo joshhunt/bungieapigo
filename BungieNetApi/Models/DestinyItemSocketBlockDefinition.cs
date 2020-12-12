@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -50,15 +51,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     SocketEntries == input.SocketEntries ||
-                    (SocketEntries != null && SocketEntries.Equals(input.SocketEntries))
+                    (SocketEntries != null && SocketEntries.SequenceEqual(input.SocketEntries))
                 ) &&
                 (
                     IntrinsicSockets == input.IntrinsicSockets ||
-                    (IntrinsicSockets != null && IntrinsicSockets.Equals(input.IntrinsicSockets))
+                    (IntrinsicSockets != null && IntrinsicSockets.SequenceEqual(input.IntrinsicSockets))
                 ) &&
                 (
                     SocketCategories == input.SocketCategories ||
-                    (SocketCategories != null && SocketCategories.Equals(input.SocketCategories))
+                    (SocketCategories != null && SocketCategories.SequenceEqual(input.SocketCategories))
                 ) ;
         }
     }

@@ -36,11 +36,11 @@ namespace GhostSharper.Models
             return
                 (
                     ItemReferenceHash == input.ItemReferenceHash ||
-                    (ItemReferenceHash != null && ItemReferenceHash.Equals(input.ItemReferenceHash))
+                    (ItemReferenceHash.Equals(input.ItemReferenceHash))
                 ) &&
                 (
                     StackSize == input.StackSize ||
-                    (StackSize != null && StackSize.Equals(input.StackSize))
+                    (StackSize.Equals(input.StackSize))
                 ) &&
                 (
                     TransferToVault == input.TransferToVault ||
@@ -48,11 +48,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ItemId == input.ItemId ||
-                    (ItemId != null && ItemId.Equals(input.ItemId))
+                    (ItemId.Equals(input.ItemId))
                 ) &&
                 (
                     CharacterId == input.CharacterId ||
-                    (CharacterId != null && CharacterId.Equals(input.CharacterId))
+                    (CharacterId.Equals(input.CharacterId))
                 ) &&
                 (
                     MembershipType == input.MembershipType ||

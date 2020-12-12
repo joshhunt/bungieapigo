@@ -24,7 +24,7 @@ namespace GhostSharper.Models
             return
                 (
                     ItemHash == input.ItemHash ||
-                    (ItemHash != null && ItemHash.Equals(input.ItemHash))
+                    (ItemHash.Equals(input.ItemHash))
                 ) &&
                 (
                     IsActive == input.IsActive ||

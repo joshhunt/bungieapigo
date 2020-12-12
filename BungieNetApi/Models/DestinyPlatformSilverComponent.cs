@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -25,7 +26,7 @@ namespace GhostSharper.Models
             return
                 (
                     PlatformSilver == input.PlatformSilver ||
-                    (PlatformSilver != null && PlatformSilver.Equals(input.PlatformSilver))
+                    (PlatformSilver != null && PlatformSilver.SequenceEqual(input.PlatformSilver))
                 ) ;
         }
     }

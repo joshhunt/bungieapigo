@@ -42,7 +42,7 @@ namespace GhostSharper.Models
             return
                 (
                     StatHash == input.StatHash ||
-                    (StatHash != null && StatHash.Equals(input.StatHash))
+                    (StatHash.Equals(input.StatHash))
                 ) &&
                 (
                     DisplayProperties == input.DisplayProperties ||

@@ -27,7 +27,7 @@ namespace GhostSharper.Models
             return
                 (
                     ExecuteSeconds == input.ExecuteSeconds ||
-                    (ExecuteSeconds != null && ExecuteSeconds.Equals(input.ExecuteSeconds))
+                    (ExecuteSeconds.Equals(input.ExecuteSeconds))
                 ) &&
                 (
                     IsPositive == input.IsPositive ||

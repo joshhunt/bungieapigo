@@ -27,15 +27,15 @@ namespace GhostSharper.Models
             return
                 (
                     X == input.X ||
-                    (X != null && X.Equals(input.X))
+                    (X.Equals(input.X))
                 ) &&
                 (
                     Y == input.Y ||
-                    (Y != null && Y.Equals(input.Y))
+                    (Y.Equals(input.Y))
                 ) &&
                 (
                     Z == input.Z ||
-                    (Z != null && Z.Equals(input.Z))
+                    (Z.Equals(input.Z))
                 ) ;
         }
     }

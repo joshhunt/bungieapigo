@@ -42,11 +42,11 @@ namespace GhostSharper.Models
             return
                 (
                     StatTypeHash == input.StatTypeHash ||
-                    (StatTypeHash != null && StatTypeHash.Equals(input.StatTypeHash))
+                    (StatTypeHash.Equals(input.StatTypeHash))
                 ) &&
                 (
                     Value == input.Value ||
-                    (Value != null && Value.Equals(input.Value))
+                    (Value.Equals(input.Value))
                 ) &&
                 (
                     IsConditionallyActive == input.IsConditionallyActive ||

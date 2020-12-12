@@ -39,11 +39,11 @@ namespace GhostSharper.Models
             return
                 (
                     EnergyCost == input.EnergyCost ||
-                    (EnergyCost != null && EnergyCost.Equals(input.EnergyCost))
+                    (EnergyCost.Equals(input.EnergyCost))
                 ) &&
                 (
                     EnergyTypeHash == input.EnergyTypeHash ||
-                    (EnergyTypeHash != null && EnergyTypeHash.Equals(input.EnergyTypeHash))
+                    (EnergyTypeHash.Equals(input.EnergyTypeHash))
                 ) &&
                 (
                     EnergyType == input.EnergyType ||

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -58,7 +59,7 @@ namespace GhostSharper.Models
             return
                 (
                     QuestItemHash == input.QuestItemHash ||
-                    (QuestItemHash != null && QuestItemHash.Equals(input.QuestItemHash))
+                    (QuestItemHash.Equals(input.QuestItemHash))
                 ) &&
                 (
                     DisplayProperties == input.DisplayProperties ||
@@ -74,11 +75,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Activities == input.Activities ||
-                    (Activities != null && Activities.Equals(input.Activities))
+                    (Activities != null && Activities.SequenceEqual(input.Activities))
                 ) &&
                 (
                     DestinationHash == input.DestinationHash ||
-                    (DestinationHash != null && DestinationHash.Equals(input.DestinationHash))
+                    (DestinationHash.Equals(input.DestinationHash))
                 ) ;
         }
     }

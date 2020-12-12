@@ -33,7 +33,7 @@ namespace GhostSharper.Models
             return
                 (
                     ActionExecuteSeconds == input.ActionExecuteSeconds ||
-                    (ActionExecuteSeconds != null && ActionExecuteSeconds.Equals(input.ActionExecuteSeconds))
+                    (ActionExecuteSeconds.Equals(input.ActionExecuteSeconds))
                 ) &&
                 (
                     ActionType == input.ActionType ||

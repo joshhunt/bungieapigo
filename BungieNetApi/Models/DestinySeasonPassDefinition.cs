@@ -64,19 +64,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     RewardProgressionHash == input.RewardProgressionHash ||
-                    (RewardProgressionHash != null && RewardProgressionHash.Equals(input.RewardProgressionHash))
+                    (RewardProgressionHash.Equals(input.RewardProgressionHash))
                 ) &&
                 (
                     PrestigeProgressionHash == input.PrestigeProgressionHash ||
-                    (PrestigeProgressionHash != null && PrestigeProgressionHash.Equals(input.PrestigeProgressionHash))
+                    (PrestigeProgressionHash.Equals(input.PrestigeProgressionHash))
                 ) &&
                 (
                     Hash == input.Hash ||
-                    (Hash != null && Hash.Equals(input.Hash))
+                    (Hash.Equals(input.Hash))
                 ) &&
                 (
                     Index == input.Index ||
-                    (Index != null && Index.Equals(input.Index))
+                    (Index.Equals(input.Index))
                 ) &&
                 (
                     Redacted == input.Redacted ||

@@ -76,11 +76,11 @@ namespace GhostSharper.Models
             return
                 (
                     FireteamId == input.FireteamId ||
-                    (FireteamId != null && FireteamId.Equals(input.FireteamId))
+                    (FireteamId.Equals(input.FireteamId))
                 ) &&
                 (
                     GroupId == input.GroupId ||
-                    (GroupId != null && GroupId.Equals(input.GroupId))
+                    (GroupId.Equals(input.GroupId))
                 ) &&
                 (
                     Platform == input.Platform ||
@@ -88,7 +88,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ActivityType == input.ActivityType ||
-                    (ActivityType != null && ActivityType.Equals(input.ActivityType))
+                    (ActivityType.Equals(input.ActivityType))
                 ) &&
                 (
                     IsImmediate == input.IsImmediate ||
@@ -100,23 +100,23 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     OwnerMembershipId == input.OwnerMembershipId ||
-                    (OwnerMembershipId != null && OwnerMembershipId.Equals(input.OwnerMembershipId))
+                    (OwnerMembershipId.Equals(input.OwnerMembershipId))
                 ) &&
                 (
                     PlayerSlotCount == input.PlayerSlotCount ||
-                    (PlayerSlotCount != null && PlayerSlotCount.Equals(input.PlayerSlotCount))
+                    (PlayerSlotCount.Equals(input.PlayerSlotCount))
                 ) &&
                 (
                     AlternateSlotCount == input.AlternateSlotCount ||
-                    (AlternateSlotCount != null && AlternateSlotCount.Equals(input.AlternateSlotCount))
+                    (AlternateSlotCount.Equals(input.AlternateSlotCount))
                 ) &&
                 (
                     AvailablePlayerSlotCount == input.AvailablePlayerSlotCount ||
-                    (AvailablePlayerSlotCount != null && AvailablePlayerSlotCount.Equals(input.AvailablePlayerSlotCount))
+                    (AvailablePlayerSlotCount.Equals(input.AvailablePlayerSlotCount))
                 ) &&
                 (
                     AvailableAlternateSlotCount == input.AvailableAlternateSlotCount ||
-                    (AvailableAlternateSlotCount != null && AvailableAlternateSlotCount.Equals(input.AvailableAlternateSlotCount))
+                    (AvailableAlternateSlotCount.Equals(input.AvailableAlternateSlotCount))
                 ) &&
                 (
                     Title == input.Title ||

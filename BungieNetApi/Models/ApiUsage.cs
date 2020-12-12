@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -41,11 +42,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ApiCalls == input.ApiCalls ||
-                    (ApiCalls != null && ApiCalls.Equals(input.ApiCalls))
+                    (ApiCalls != null && ApiCalls.SequenceEqual(input.ApiCalls))
                 ) &&
                 (
                     ThrottledRequests == input.ThrottledRequests ||
-                    (ThrottledRequests != null && ThrottledRequests.Equals(input.ThrottledRequests))
+                    (ThrottledRequests != null && ThrottledRequests.SequenceEqual(input.ThrottledRequests))
                 ) ;
         }
     }

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -49,23 +50,23 @@ namespace GhostSharper.Models
             return
                 (
                     RecentCollectibleHashes == input.RecentCollectibleHashes ||
-                    (RecentCollectibleHashes != null && RecentCollectibleHashes.Equals(input.RecentCollectibleHashes))
+                    (RecentCollectibleHashes != null && RecentCollectibleHashes.SequenceEqual(input.RecentCollectibleHashes))
                 ) &&
                 (
                     NewnessFlaggedCollectibleHashes == input.NewnessFlaggedCollectibleHashes ||
-                    (NewnessFlaggedCollectibleHashes != null && NewnessFlaggedCollectibleHashes.Equals(input.NewnessFlaggedCollectibleHashes))
+                    (NewnessFlaggedCollectibleHashes != null && NewnessFlaggedCollectibleHashes.SequenceEqual(input.NewnessFlaggedCollectibleHashes))
                 ) &&
                 (
                     Collectibles == input.Collectibles ||
-                    (Collectibles != null && Collectibles.Equals(input.Collectibles))
+                    (Collectibles != null && Collectibles.SequenceEqual(input.Collectibles))
                 ) &&
                 (
                     CollectionCategoriesRootNodeHash == input.CollectionCategoriesRootNodeHash ||
-                    (CollectionCategoriesRootNodeHash != null && CollectionCategoriesRootNodeHash.Equals(input.CollectionCategoriesRootNodeHash))
+                    (CollectionCategoriesRootNodeHash.Equals(input.CollectionCategoriesRootNodeHash))
                 ) &&
                 (
                     CollectionBadgesRootNodeHash == input.CollectionBadgesRootNodeHash ||
-                    (CollectionBadgesRootNodeHash != null && CollectionBadgesRootNodeHash.Equals(input.CollectionBadgesRootNodeHash))
+                    (CollectionBadgesRootNodeHash.Equals(input.CollectionBadgesRootNodeHash))
                 ) ;
         }
     }

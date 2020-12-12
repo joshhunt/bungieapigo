@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -58,27 +59,27 @@ namespace GhostSharper.Models
             return
                 (
                     ActivityHash == input.ActivityHash ||
-                    (ActivityHash != null && ActivityHash.Equals(input.ActivityHash))
+                    (ActivityHash.Equals(input.ActivityHash))
                 ) &&
                 (
                     ChallengeObjectiveHashes == input.ChallengeObjectiveHashes ||
-                    (ChallengeObjectiveHashes != null && ChallengeObjectiveHashes.Equals(input.ChallengeObjectiveHashes))
+                    (ChallengeObjectiveHashes != null && ChallengeObjectiveHashes.SequenceEqual(input.ChallengeObjectiveHashes))
                 ) &&
                 (
                     ModifierHashes == input.ModifierHashes ||
-                    (ModifierHashes != null && ModifierHashes.Equals(input.ModifierHashes))
+                    (ModifierHashes != null && ModifierHashes.SequenceEqual(input.ModifierHashes))
                 ) &&
                 (
                     LoadoutRequirementIndex == input.LoadoutRequirementIndex ||
-                    (LoadoutRequirementIndex != null && LoadoutRequirementIndex.Equals(input.LoadoutRequirementIndex))
+                    (LoadoutRequirementIndex.Equals(input.LoadoutRequirementIndex))
                 ) &&
                 (
                     PhaseHashes == input.PhaseHashes ||
-                    (PhaseHashes != null && PhaseHashes.Equals(input.PhaseHashes))
+                    (PhaseHashes != null && PhaseHashes.SequenceEqual(input.PhaseHashes))
                 ) &&
                 (
                     BooleanActivityOptions == input.BooleanActivityOptions ||
-                    (BooleanActivityOptions != null && BooleanActivityOptions.Equals(input.BooleanActivityOptions))
+                    (BooleanActivityOptions != null && BooleanActivityOptions.SequenceEqual(input.BooleanActivityOptions))
                 ) ;
         }
     }

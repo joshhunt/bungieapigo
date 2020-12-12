@@ -30,11 +30,11 @@ namespace GhostSharper.Models
             return
                 (
                     Season == input.Season ||
-                    (Season != null && Season.Equals(input.Season))
+                    (Season.Equals(input.Season))
                 ) &&
                 (
                     Resets == input.Resets ||
-                    (Resets != null && Resets.Equals(input.Resets))
+                    (Resets.Equals(input.Resets))
                 ) ;
         }
     }

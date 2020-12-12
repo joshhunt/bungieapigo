@@ -27,11 +27,11 @@ namespace GhostSharper.Models
             return
                 (
                     SourceNodeHash == input.SourceNodeHash ||
-                    (SourceNodeHash != null && SourceNodeHash.Equals(input.SourceNodeHash))
+                    (SourceNodeHash.Equals(input.SourceNodeHash))
                 ) &&
                 (
                     DestNodeHash == input.DestNodeHash ||
-                    (DestNodeHash != null && DestNodeHash.Equals(input.DestNodeHash))
+                    (DestNodeHash.Equals(input.DestNodeHash))
                 ) ;
         }
     }

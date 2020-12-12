@@ -52,11 +52,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     SetNesting == input.SetNesting ||
-                    (SetNesting != null && SetNesting.Equals(input.SetNesting))
+                    (SetNesting.Equals(input.SetNesting))
                 ) &&
                 (
                     UseSetId == input.UseSetId ||
-                    (UseSetId != null && UseSetId.Equals(input.UseSetId))
+                    (UseSetId.Equals(input.UseSetId))
                 ) ;
         }
     }

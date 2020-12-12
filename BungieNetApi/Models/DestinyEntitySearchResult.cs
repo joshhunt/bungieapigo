@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -34,7 +35,7 @@ namespace GhostSharper.Models
             return
                 (
                     SuggestedWords == input.SuggestedWords ||
-                    (SuggestedWords != null && SuggestedWords.Equals(input.SuggestedWords))
+                    (SuggestedWords != null && SuggestedWords.SequenceEqual(input.SuggestedWords))
                 ) &&
                 (
                     Results == input.Results ||

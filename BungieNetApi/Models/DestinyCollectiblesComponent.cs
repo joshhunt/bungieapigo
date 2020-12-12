@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -34,15 +35,15 @@ namespace GhostSharper.Models
             return
                 (
                     Collectibles == input.Collectibles ||
-                    (Collectibles != null && Collectibles.Equals(input.Collectibles))
+                    (Collectibles != null && Collectibles.SequenceEqual(input.Collectibles))
                 ) &&
                 (
                     CollectionCategoriesRootNodeHash == input.CollectionCategoriesRootNodeHash ||
-                    (CollectionCategoriesRootNodeHash != null && CollectionCategoriesRootNodeHash.Equals(input.CollectionCategoriesRootNodeHash))
+                    (CollectionCategoriesRootNodeHash.Equals(input.CollectionCategoriesRootNodeHash))
                 ) &&
                 (
                     CollectionBadgesRootNodeHash == input.CollectionBadgesRootNodeHash ||
-                    (CollectionBadgesRootNodeHash != null && CollectionBadgesRootNodeHash.Equals(input.CollectionBadgesRootNodeHash))
+                    (CollectionBadgesRootNodeHash.Equals(input.CollectionBadgesRootNodeHash))
                 ) ;
         }
     }

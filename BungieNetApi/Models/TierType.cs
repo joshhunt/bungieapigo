@@ -47,8 +47,5 @@ namespace GhostSharper.Models
         [EnumMember(Value = "6")]
         Exotic = 6,
 
-        ///value not found fallback
-        [EnumMember(Value = "999999999")]
-        ProtectedInvalidEnumValue = 999999999
     }
 }

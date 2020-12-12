@@ -118,7 +118,7 @@ namespace GhostSharper.Models
             return
                 (
                     MembershipId == input.MembershipId ||
-                    (MembershipId != null && MembershipId.Equals(input.MembershipId))
+                    (MembershipId.Equals(input.MembershipId))
                 ) &&
                 (
                     UniqueName == input.UniqueName ||
@@ -134,19 +134,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ProfilePicture == input.ProfilePicture ||
-                    (ProfilePicture != null && ProfilePicture.Equals(input.ProfilePicture))
+                    (ProfilePicture.Equals(input.ProfilePicture))
                 ) &&
                 (
                     ProfileTheme == input.ProfileTheme ||
-                    (ProfileTheme != null && ProfileTheme.Equals(input.ProfileTheme))
+                    (ProfileTheme.Equals(input.ProfileTheme))
                 ) &&
                 (
                     UserTitle == input.UserTitle ||
-                    (UserTitle != null && UserTitle.Equals(input.UserTitle))
+                    (UserTitle.Equals(input.UserTitle))
                 ) &&
                 (
                     SuccessMessageFlags == input.SuccessMessageFlags ||
-                    (SuccessMessageFlags != null && SuccessMessageFlags.Equals(input.SuccessMessageFlags))
+                    (SuccessMessageFlags.Equals(input.SuccessMessageFlags))
                 ) &&
                 (
                     IsDeleted == input.IsDeleted ||
@@ -166,7 +166,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     LegacyPortalUid == input.LegacyPortalUid ||
-                    (LegacyPortalUid != null && LegacyPortalUid.Equals(input.LegacyPortalUid))
+                    (LegacyPortalUid.Equals(input.LegacyPortalUid))
                 ) &&
                 (
                     Context == input.Context ||
@@ -198,7 +198,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     LastBanReportId == input.LastBanReportId ||
-                    (LastBanReportId != null && LastBanReportId.Equals(input.LastBanReportId))
+                    (LastBanReportId.Equals(input.LastBanReportId))
                 ) &&
                 (
                     ShowGroupMessaging == input.ShowGroupMessaging ||

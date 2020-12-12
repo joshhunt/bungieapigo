@@ -66,8 +66,5 @@ namespace GhostSharper.Models
         [EnumMember(Value = "256")]
         Careers = 256,
 
-        ///value not found fallback
-        [EnumMember(Value = "999999999")]
-        ProtectedInvalidEnumValue = 999999999
     }
 }

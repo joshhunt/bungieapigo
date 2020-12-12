@@ -24,7 +24,7 @@ namespace GhostSharper.Models
             return
                 (
                     EntityId == input.EntityId ||
-                    (EntityId != null && EntityId.Equals(input.EntityId))
+                    (EntityId.Equals(input.EntityId))
                 ) &&
                 (
                     Result == input.Result ||

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -37,11 +38,11 @@ namespace GhostSharper.Models
             return
                 (
                     DestinyMemberships == input.DestinyMemberships ||
-                    (DestinyMemberships != null && DestinyMemberships.Equals(input.DestinyMemberships))
+                    (DestinyMemberships != null && DestinyMemberships.SequenceEqual(input.DestinyMemberships))
                 ) &&
                 (
                     PrimaryMembershipId == input.PrimaryMembershipId ||
-                    (PrimaryMembershipId != null && PrimaryMembershipId.Equals(input.PrimaryMembershipId))
+                    (PrimaryMembershipId.Equals(input.PrimaryMembershipId))
                 ) &&
                 (
                     BungieNetUser == input.BungieNetUser ||

@@ -43,7 +43,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     InventoryBucketHash == input.InventoryBucketHash ||
-                    (InventoryBucketHash != null && InventoryBucketHash.Equals(input.InventoryBucketHash))
+                    (InventoryBucketHash.Equals(input.InventoryBucketHash))
                 ) &&
                 (
                     SortItemsBy == input.SortItemsBy ||

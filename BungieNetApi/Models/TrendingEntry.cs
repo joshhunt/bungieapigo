@@ -1,6 +1,7 @@
 using System.Runtime.Serialization;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -98,7 +99,7 @@ namespace GhostSharper.Models
             return
                 (
                     Weight == input.Weight ||
-                    (Weight != null && Weight.Equals(input.Weight))
+                    (Weight.Equals(input.Weight))
                 ) &&
                 (
                     IsFeatured == input.IsFeatured ||
@@ -150,7 +151,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Items == input.Items ||
-                    (Items != null && Items.Equals(input.Items))
+                    (Items != null && Items.SequenceEqual(input.Items))
                 ) &&
                 (
                     CreationDate == input.CreationDate ||

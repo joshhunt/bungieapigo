@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -46,15 +47,15 @@ namespace GhostSharper.Models
             return
                 (
                     ReasonCategoryHashes == input.ReasonCategoryHashes ||
-                    (ReasonCategoryHashes != null && ReasonCategoryHashes.Equals(input.ReasonCategoryHashes))
+                    (ReasonCategoryHashes != null && ReasonCategoryHashes.SequenceEqual(input.ReasonCategoryHashes))
                 ) &&
                 (
                     ReasonHashes == input.ReasonHashes ||
-                    (ReasonHashes != null && ReasonHashes.Equals(input.ReasonHashes))
+                    (ReasonHashes != null && ReasonHashes.SequenceEqual(input.ReasonHashes))
                 ) &&
                 (
                     OffendingCharacterId == input.OffendingCharacterId ||
-                    (OffendingCharacterId != null && OffendingCharacterId.Equals(input.OffendingCharacterId))
+                    (OffendingCharacterId.Equals(input.OffendingCharacterId))
                 ) ;
         }
     }

@@ -64,7 +64,7 @@ namespace GhostSharper.Models
             return
                 (
                     GroupId == input.GroupId ||
-                    (GroupId != null && GroupId.Equals(input.GroupId))
+                    (GroupId.Equals(input.GroupId))
                 ) &&
                 (
                     Name == input.Name ||
@@ -88,7 +88,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MemberCount == input.MemberCount ||
-                    (MemberCount != null && MemberCount.Equals(input.MemberCount))
+                    (MemberCount.Equals(input.MemberCount))
                 ) &&
                 (
                     Locale == input.Locale ||

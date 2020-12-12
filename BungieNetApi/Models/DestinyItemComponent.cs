@@ -1,6 +1,7 @@
 using System.Runtime.Serialization;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -125,15 +126,15 @@ namespace GhostSharper.Models
             return
                 (
                     ItemHash == input.ItemHash ||
-                    (ItemHash != null && ItemHash.Equals(input.ItemHash))
+                    (ItemHash.Equals(input.ItemHash))
                 ) &&
                 (
                     ItemInstanceId == input.ItemInstanceId ||
-                    (ItemInstanceId != null && ItemInstanceId.Equals(input.ItemInstanceId))
+                    (ItemInstanceId.Equals(input.ItemInstanceId))
                 ) &&
                 (
                     Quantity == input.Quantity ||
-                    (Quantity != null && Quantity.Equals(input.Quantity))
+                    (Quantity.Equals(input.Quantity))
                 ) &&
                 (
                     BindStatus == input.BindStatus ||
@@ -145,7 +146,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     BucketHash == input.BucketHash ||
-                    (BucketHash != null && BucketHash.Equals(input.BucketHash))
+                    (BucketHash.Equals(input.BucketHash))
                 ) &&
                 (
                     TransferStatus == input.TransferStatus ||
@@ -161,7 +162,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     OverrideStyleItemHash == input.OverrideStyleItemHash ||
-                    (OverrideStyleItemHash != null && OverrideStyleItemHash.Equals(input.OverrideStyleItemHash))
+                    (OverrideStyleItemHash.Equals(input.OverrideStyleItemHash))
                 ) &&
                 (
                     ExpirationDate == input.ExpirationDate ||
@@ -173,11 +174,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     TooltipNotificationIndexes == input.TooltipNotificationIndexes ||
-                    (TooltipNotificationIndexes != null && TooltipNotificationIndexes.Equals(input.TooltipNotificationIndexes))
+                    (TooltipNotificationIndexes != null && TooltipNotificationIndexes.SequenceEqual(input.TooltipNotificationIndexes))
                 ) &&
                 (
                     MetricHash == input.MetricHash ||
-                    (MetricHash != null && MetricHash.Equals(input.MetricHash))
+                    (MetricHash.Equals(input.MetricHash))
                 ) &&
                 (
                     MetricObjective == input.MetricObjective ||
@@ -185,7 +186,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     VersionNumber == input.VersionNumber ||
-                    (VersionNumber != null && VersionNumber.Equals(input.VersionNumber))
+                    (VersionNumber.Equals(input.VersionNumber))
                 ) ;
         }
     }

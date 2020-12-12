@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -34,11 +35,11 @@ namespace GhostSharper.Models
             return
                 (
                     CurrentStepStats == input.CurrentStepStats ||
-                    (CurrentStepStats != null && CurrentStepStats.Equals(input.CurrentStepStats))
+                    (CurrentStepStats != null && CurrentStepStats.SequenceEqual(input.CurrentStepStats))
                 ) &&
                 (
                     NextStepStats == input.NextStepStats ||
-                    (NextStepStats != null && NextStepStats.Equals(input.NextStepStats))
+                    (NextStepStats != null && NextStepStats.SequenceEqual(input.NextStepStats))
                 ) ;
         }
     }

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 using System;
 
 namespace GhostSharper.Models
@@ -89,31 +90,31 @@ namespace GhostSharper.Models
             return
                 (
                     MilestoneHash == input.MilestoneHash ||
-                    (MilestoneHash != null && MilestoneHash.Equals(input.MilestoneHash))
+                    (MilestoneHash.Equals(input.MilestoneHash))
                 ) &&
                 (
                     AvailableQuests == input.AvailableQuests ||
-                    (AvailableQuests != null && AvailableQuests.Equals(input.AvailableQuests))
+                    (AvailableQuests != null && AvailableQuests.SequenceEqual(input.AvailableQuests))
                 ) &&
                 (
                     Activities == input.Activities ||
-                    (Activities != null && Activities.Equals(input.Activities))
+                    (Activities != null && Activities.SequenceEqual(input.Activities))
                 ) &&
                 (
                     Values == input.Values ||
-                    (Values != null && Values.Equals(input.Values))
+                    (Values != null && Values.SequenceEqual(input.Values))
                 ) &&
                 (
                     VendorHashes == input.VendorHashes ||
-                    (VendorHashes != null && VendorHashes.Equals(input.VendorHashes))
+                    (VendorHashes != null && VendorHashes.SequenceEqual(input.VendorHashes))
                 ) &&
                 (
                     Vendors == input.Vendors ||
-                    (Vendors != null && Vendors.Equals(input.Vendors))
+                    (Vendors != null && Vendors.SequenceEqual(input.Vendors))
                 ) &&
                 (
                     Rewards == input.Rewards ||
-                    (Rewards != null && Rewards.Equals(input.Rewards))
+                    (Rewards != null && Rewards.SequenceEqual(input.Rewards))
                 ) &&
                 (
                     StartDate == input.StartDate ||
@@ -125,7 +126,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Order == input.Order ||
-                    (Order != null && Order.Equals(input.Order))
+                    (Order.Equals(input.Order))
                 ) ;
         }
     }

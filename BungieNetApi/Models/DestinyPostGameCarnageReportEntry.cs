@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -55,7 +56,7 @@ namespace GhostSharper.Models
             return
                 (
                     Standing == input.Standing ||
-                    (Standing != null && Standing.Equals(input.Standing))
+                    (Standing.Equals(input.Standing))
                 ) &&
                 (
                     Score == input.Score ||
@@ -67,11 +68,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     CharacterId == input.CharacterId ||
-                    (CharacterId != null && CharacterId.Equals(input.CharacterId))
+                    (CharacterId.Equals(input.CharacterId))
                 ) &&
                 (
                     Values == input.Values ||
-                    (Values != null && Values.Equals(input.Values))
+                    (Values != null && Values.SequenceEqual(input.Values))
                 ) &&
                 (
                     Extended == input.Extended ||

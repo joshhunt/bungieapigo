@@ -81,15 +81,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     VendorLocationIndex == input.VendorLocationIndex ||
-                    (VendorLocationIndex != null && VendorLocationIndex.Equals(input.VendorLocationIndex))
+                    (VendorLocationIndex.Equals(input.VendorLocationIndex))
                 ) &&
                 (
                     SeasonalRank == input.SeasonalRank ||
-                    (SeasonalRank != null && SeasonalRank.Equals(input.SeasonalRank))
+                    (SeasonalRank.Equals(input.SeasonalRank))
                 ) &&
                 (
                     VendorHash == input.VendorHash ||
-                    (VendorHash != null && VendorHash.Equals(input.VendorHash))
+                    (VendorHash.Equals(input.VendorHash))
                 ) &&
                 (
                     NextRefreshDate == input.NextRefreshDate ||

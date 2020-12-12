@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -113,35 +114,35 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     SpawnPoint == input.SpawnPoint ||
-                    (SpawnPoint != null && SpawnPoint.Equals(input.SpawnPoint))
+                    (SpawnPoint.Equals(input.SpawnPoint))
                 ) &&
                 (
                     DestinationHash == input.DestinationHash ||
-                    (DestinationHash != null && DestinationHash.Equals(input.DestinationHash))
+                    (DestinationHash.Equals(input.DestinationHash))
                 ) &&
                 (
                     ActivityHash == input.ActivityHash ||
-                    (ActivityHash != null && ActivityHash.Equals(input.ActivityHash))
+                    (ActivityHash.Equals(input.ActivityHash))
                 ) &&
                 (
                     ActivityGraphHash == input.ActivityGraphHash ||
-                    (ActivityGraphHash != null && ActivityGraphHash.Equals(input.ActivityGraphHash))
+                    (ActivityGraphHash.Equals(input.ActivityGraphHash))
                 ) &&
                 (
                     ActivityGraphNodeHash == input.ActivityGraphNodeHash ||
-                    (ActivityGraphNodeHash != null && ActivityGraphNodeHash.Equals(input.ActivityGraphNodeHash))
+                    (ActivityGraphNodeHash.Equals(input.ActivityGraphNodeHash))
                 ) &&
                 (
                     ActivityBubbleName == input.ActivityBubbleName ||
-                    (ActivityBubbleName != null && ActivityBubbleName.Equals(input.ActivityBubbleName))
+                    (ActivityBubbleName.Equals(input.ActivityBubbleName))
                 ) &&
                 (
                     ActivityPathBundle == input.ActivityPathBundle ||
-                    (ActivityPathBundle != null && ActivityPathBundle.Equals(input.ActivityPathBundle))
+                    (ActivityPathBundle.Equals(input.ActivityPathBundle))
                 ) &&
                 (
                     ActivityPathDestination == input.ActivityPathDestination ||
-                    (ActivityPathDestination != null && ActivityPathDestination.Equals(input.ActivityPathDestination))
+                    (ActivityPathDestination.Equals(input.ActivityPathDestination))
                 ) &&
                 (
                     NavPointType == input.NavPointType ||
@@ -149,7 +150,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     WorldPosition == input.WorldPosition ||
-                    (WorldPosition != null && WorldPosition.Equals(input.WorldPosition))
+                    (WorldPosition != null && WorldPosition.SequenceEqual(input.WorldPosition))
                 ) ;
         }
     }

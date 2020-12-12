@@ -39,11 +39,11 @@ namespace GhostSharper.Models
             return
                 (
                     CapacityValue == input.CapacityValue ||
-                    (CapacityValue != null && CapacityValue.Equals(input.CapacityValue))
+                    (CapacityValue.Equals(input.CapacityValue))
                 ) &&
                 (
                     EnergyTypeHash == input.EnergyTypeHash ||
-                    (EnergyTypeHash != null && EnergyTypeHash.Equals(input.EnergyTypeHash))
+                    (EnergyTypeHash.Equals(input.EnergyTypeHash))
                 ) &&
                 (
                     EnergyType == input.EnergyType ||

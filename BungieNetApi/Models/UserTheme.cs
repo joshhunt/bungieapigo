@@ -27,7 +27,7 @@ namespace GhostSharper.Models
             return
                 (
                     UserThemeId == input.UserThemeId ||
-                    (UserThemeId != null && UserThemeId.Equals(input.UserThemeId))
+                    (UserThemeId.Equals(input.UserThemeId))
                 ) &&
                 (
                     UserThemeName == input.UserThemeName ||

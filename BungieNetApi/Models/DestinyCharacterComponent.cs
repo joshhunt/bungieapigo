@@ -1,6 +1,7 @@
 using System.Runtime.Serialization;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -167,7 +168,7 @@ namespace GhostSharper.Models
             return
                 (
                     MembershipId == input.MembershipId ||
-                    (MembershipId != null && MembershipId.Equals(input.MembershipId))
+                    (MembershipId.Equals(input.MembershipId))
                 ) &&
                 (
                     MembershipType == input.MembershipType ||
@@ -175,7 +176,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     CharacterId == input.CharacterId ||
-                    (CharacterId != null && CharacterId.Equals(input.CharacterId))
+                    (CharacterId.Equals(input.CharacterId))
                 ) &&
                 (
                     DateLastPlayed == input.DateLastPlayed ||
@@ -183,31 +184,31 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MinutesPlayedThisSession == input.MinutesPlayedThisSession ||
-                    (MinutesPlayedThisSession != null && MinutesPlayedThisSession.Equals(input.MinutesPlayedThisSession))
+                    (MinutesPlayedThisSession.Equals(input.MinutesPlayedThisSession))
                 ) &&
                 (
                     MinutesPlayedTotal == input.MinutesPlayedTotal ||
-                    (MinutesPlayedTotal != null && MinutesPlayedTotal.Equals(input.MinutesPlayedTotal))
+                    (MinutesPlayedTotal.Equals(input.MinutesPlayedTotal))
                 ) &&
                 (
                     Light == input.Light ||
-                    (Light != null && Light.Equals(input.Light))
+                    (Light.Equals(input.Light))
                 ) &&
                 (
                     Stats == input.Stats ||
-                    (Stats != null && Stats.Equals(input.Stats))
+                    (Stats != null && Stats.SequenceEqual(input.Stats))
                 ) &&
                 (
                     RaceHash == input.RaceHash ||
-                    (RaceHash != null && RaceHash.Equals(input.RaceHash))
+                    (RaceHash.Equals(input.RaceHash))
                 ) &&
                 (
                     GenderHash == input.GenderHash ||
-                    (GenderHash != null && GenderHash.Equals(input.GenderHash))
+                    (GenderHash.Equals(input.GenderHash))
                 ) &&
                 (
                     ClassHash == input.ClassHash ||
-                    (ClassHash != null && ClassHash.Equals(input.ClassHash))
+                    (ClassHash.Equals(input.ClassHash))
                 ) &&
                 (
                     RaceType == input.RaceType ||
@@ -231,7 +232,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     EmblemHash == input.EmblemHash ||
-                    (EmblemHash != null && EmblemHash.Equals(input.EmblemHash))
+                    (EmblemHash.Equals(input.EmblemHash))
                 ) &&
                 (
                     EmblemColor == input.EmblemColor ||
@@ -243,15 +244,15 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     BaseCharacterLevel == input.BaseCharacterLevel ||
-                    (BaseCharacterLevel != null && BaseCharacterLevel.Equals(input.BaseCharacterLevel))
+                    (BaseCharacterLevel.Equals(input.BaseCharacterLevel))
                 ) &&
                 (
                     PercentToNextLevel == input.PercentToNextLevel ||
-                    (PercentToNextLevel != null && PercentToNextLevel.Equals(input.PercentToNextLevel))
+                    (PercentToNextLevel.Equals(input.PercentToNextLevel))
                 ) &&
                 (
                     TitleRecordHash == input.TitleRecordHash ||
-                    (TitleRecordHash != null && TitleRecordHash.Equals(input.TitleRecordHash))
+                    (TitleRecordHash.Equals(input.TitleRecordHash))
                 ) ;
         }
     }

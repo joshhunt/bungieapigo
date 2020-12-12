@@ -45,7 +45,7 @@ namespace GhostSharper.Models
             return
                 (
                     ArtifactHash == input.ArtifactHash ||
-                    (ArtifactHash != null && ArtifactHash.Equals(input.ArtifactHash))
+                    (ArtifactHash.Equals(input.ArtifactHash))
                 ) &&
                 (
                     PointProgression == input.PointProgression ||
@@ -53,7 +53,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     PointsAcquired == input.PointsAcquired ||
-                    (PointsAcquired != null && PointsAcquired.Equals(input.PointsAcquired))
+                    (PointsAcquired.Equals(input.PointsAcquired))
                 ) &&
                 (
                     PowerBonusProgression == input.PowerBonusProgression ||
@@ -61,7 +61,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     PowerBonus == input.PowerBonus ||
-                    (PowerBonus != null && PowerBonus.Equals(input.PowerBonus))
+                    (PowerBonus.Equals(input.PowerBonus))
                 ) ;
         }
     }

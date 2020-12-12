@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -74,11 +75,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     StatGroupHash == input.StatGroupHash ||
-                    (StatGroupHash != null && StatGroupHash.Equals(input.StatGroupHash))
+                    (StatGroupHash.Equals(input.StatGroupHash))
                 ) &&
                 (
                     Stats == input.Stats ||
-                    (Stats != null && Stats.Equals(input.Stats))
+                    (Stats != null && Stats.SequenceEqual(input.Stats))
                 ) &&
                 (
                     HasDisplayableStats == input.HasDisplayableStats ||
@@ -86,7 +87,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     PrimaryBaseStatHash == input.PrimaryBaseStatHash ||
-                    (PrimaryBaseStatHash != null && PrimaryBaseStatHash.Equals(input.PrimaryBaseStatHash))
+                    (PrimaryBaseStatHash.Equals(input.PrimaryBaseStatHash))
                 ) ;
         }
     }

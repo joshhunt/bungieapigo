@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -88,15 +89,15 @@ namespace GhostSharper.Models
             return
                 (
                     SocketTypeHash == input.SocketTypeHash ||
-                    (SocketTypeHash != null && SocketTypeHash.Equals(input.SocketTypeHash))
+                    (SocketTypeHash.Equals(input.SocketTypeHash))
                 ) &&
                 (
                     SingleInitialItemHash == input.SingleInitialItemHash ||
-                    (SingleInitialItemHash != null && SingleInitialItemHash.Equals(input.SingleInitialItemHash))
+                    (SingleInitialItemHash.Equals(input.SingleInitialItemHash))
                 ) &&
                 (
                     ReusablePlugItems == input.ReusablePlugItems ||
-                    (ReusablePlugItems != null && ReusablePlugItems.Equals(input.ReusablePlugItems))
+                    (ReusablePlugItems != null && ReusablePlugItems.SequenceEqual(input.ReusablePlugItems))
                 ) &&
                 (
                     PreventInitializationOnVendorPurchase == input.PreventInitializationOnVendorPurchase ||
@@ -112,11 +113,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ReusablePlugSetHash == input.ReusablePlugSetHash ||
-                    (ReusablePlugSetHash != null && ReusablePlugSetHash.Equals(input.ReusablePlugSetHash))
+                    (ReusablePlugSetHash.Equals(input.ReusablePlugSetHash))
                 ) &&
                 (
                     RandomizedPlugSetHash == input.RandomizedPlugSetHash ||
-                    (RandomizedPlugSetHash != null && RandomizedPlugSetHash.Equals(input.RandomizedPlugSetHash))
+                    (RandomizedPlugSetHash.Equals(input.RandomizedPlugSetHash))
                 ) &&
                 (
                     DefaultVisible == input.DefaultVisible ||

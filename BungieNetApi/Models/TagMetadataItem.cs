@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -42,7 +43,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Groups == input.Groups ||
-                    (Groups != null && Groups.Equals(input.Groups))
+                    (Groups != null && Groups.SequenceEqual(input.Groups))
                 ) &&
                 (
                     IsDefault == input.IsDefault ||

@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -63,7 +64,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     AlliedIds == input.AlliedIds ||
-                    (AlliedIds != null && AlliedIds.Equals(input.AlliedIds))
+                    (AlliedIds != null && AlliedIds.SequenceEqual(input.AlliedIds))
                 ) &&
                 (
                     ParentGroup == input.ParentGroup ||
@@ -75,7 +76,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     GroupJoinInviteCount == input.GroupJoinInviteCount ||
-                    (GroupJoinInviteCount != null && GroupJoinInviteCount.Equals(input.GroupJoinInviteCount))
+                    (GroupJoinInviteCount.Equals(input.GroupJoinInviteCount))
                 ) &&
                 (
                     CurrentUserMembershipsInactiveForDestiny == input.CurrentUserMembershipsInactiveForDestiny ||
@@ -83,11 +84,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     CurrentUserMemberMap == input.CurrentUserMemberMap ||
-                    (CurrentUserMemberMap != null && CurrentUserMemberMap.Equals(input.CurrentUserMemberMap))
+                    (CurrentUserMemberMap != null && CurrentUserMemberMap.SequenceEqual(input.CurrentUserMemberMap))
                 ) &&
                 (
                     CurrentUserPotentialMemberMap == input.CurrentUserPotentialMemberMap ||
-                    (CurrentUserPotentialMemberMap != null && CurrentUserPotentialMemberMap.Equals(input.CurrentUserPotentialMemberMap))
+                    (CurrentUserPotentialMemberMap != null && CurrentUserPotentialMemberMap.SequenceEqual(input.CurrentUserPotentialMemberMap))
                 ) ;
         }
     }

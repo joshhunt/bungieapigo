@@ -39,11 +39,11 @@ namespace GhostSharper.Models
             return
                 (
                     Count == input.Count ||
-                    (Count != null && Count.Equals(input.Count))
+                    (Count.Equals(input.Count))
                 ) &&
                 (
                     ItemHash == input.ItemHash ||
-                    (ItemHash != null && ItemHash.Equals(input.ItemHash))
+                    (ItemHash.Equals(input.ItemHash))
                 ) &&
                 (
                     DeleteOnAction == input.DeleteOnAction ||

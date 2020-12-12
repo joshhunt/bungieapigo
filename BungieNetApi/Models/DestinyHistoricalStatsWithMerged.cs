@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -25,7 +26,7 @@ namespace GhostSharper.Models
             return
                 (
                     Results == input.Results ||
-                    (Results != null && Results.Equals(input.Results))
+                    (Results != null && Results.SequenceEqual(input.Results))
                 ) &&
                 (
                     Merged == input.Merged ||

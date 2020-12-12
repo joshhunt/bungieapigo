@@ -34,7 +34,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ApiEulaVersion == input.ApiEulaVersion ||
-                    (ApiEulaVersion != null && ApiEulaVersion.Equals(input.ApiEulaVersion))
+                    (ApiEulaVersion.Equals(input.ApiEulaVersion))
                 ) &&
                 (
                     User == input.User ||

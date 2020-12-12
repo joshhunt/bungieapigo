@@ -33,7 +33,7 @@ namespace GhostSharper.Models
             return
                 (
                     ItemInstanceId == input.ItemInstanceId ||
-                    (ItemInstanceId != null && ItemInstanceId.Equals(input.ItemInstanceId))
+                    (ItemInstanceId.Equals(input.ItemInstanceId))
                 ) &&
                 (
                     EquipStatus == input.EquipStatus ||

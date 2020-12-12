@@ -1,6 +1,7 @@
 using System.Runtime.Serialization;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -93,7 +94,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ApplicationId == input.ApplicationId ||
-                    (ApplicationId != null && ApplicationId.Equals(input.ApplicationId))
+                    (ApplicationId.Equals(input.ApplicationId))
                 ) &&
                 (
                     Name == input.Name ||
@@ -109,7 +110,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Scope == input.Scope ||
-                    (Scope != null && Scope.Equals(input.Scope))
+                    (Scope.Equals(input.Scope))
                 ) &&
                 (
                     Origin == input.Origin ||
@@ -133,7 +134,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Team == input.Team ||
-                    (Team != null && Team.Equals(input.Team))
+                    (Team != null && Team.SequenceEqual(input.Team))
                 ) ;
         }
     }

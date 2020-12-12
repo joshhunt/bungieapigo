@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -35,11 +36,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     TitlesByGender == input.TitlesByGender ||
-                    (TitlesByGender != null && TitlesByGender.Equals(input.TitlesByGender))
+                    (TitlesByGender != null && TitlesByGender.SequenceEqual(input.TitlesByGender))
                 ) &&
                 (
                     TitlesByGenderHash == input.TitlesByGenderHash ||
-                    (TitlesByGenderHash != null && TitlesByGenderHash.Equals(input.TitlesByGenderHash))
+                    (TitlesByGenderHash != null && TitlesByGenderHash.SequenceEqual(input.TitlesByGenderHash))
                 ) ;
         }
     }

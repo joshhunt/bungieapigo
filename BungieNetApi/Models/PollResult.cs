@@ -38,7 +38,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     AnswerSlot == input.AnswerSlot ||
-                    (AnswerSlot != null && AnswerSlot.Equals(input.AnswerSlot))
+                    (AnswerSlot.Equals(input.AnswerSlot))
                 ) &&
                 (
                     LastVoteDate == input.LastVoteDate ||
@@ -46,7 +46,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Votes == input.Votes ||
-                    (Votes != null && Votes.Equals(input.Votes))
+                    (Votes.Equals(input.Votes))
                 ) &&
                 (
                     RequestingUserVoted == input.RequestingUserVoted ||

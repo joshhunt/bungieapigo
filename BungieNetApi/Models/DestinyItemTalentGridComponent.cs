@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -73,11 +74,11 @@ namespace GhostSharper.Models
             return
                 (
                     TalentGridHash == input.TalentGridHash ||
-                    (TalentGridHash != null && TalentGridHash.Equals(input.TalentGridHash))
+                    (TalentGridHash.Equals(input.TalentGridHash))
                 ) &&
                 (
                     Nodes == input.Nodes ||
-                    (Nodes != null && Nodes.Equals(input.Nodes))
+                    (Nodes != null && Nodes.SequenceEqual(input.Nodes))
                 ) &&
                 (
                     IsGridComplete == input.IsGridComplete ||

@@ -33,11 +33,11 @@ namespace GhostSharper.Models
             return
                 (
                     PartialCompletionObjectiveCountThreshold == input.PartialCompletionObjectiveCountThreshold ||
-                    (PartialCompletionObjectiveCountThreshold != null && PartialCompletionObjectiveCountThreshold.Equals(input.PartialCompletionObjectiveCountThreshold))
+                    (PartialCompletionObjectiveCountThreshold.Equals(input.PartialCompletionObjectiveCountThreshold))
                 ) &&
                 (
                     ScoreValue == input.ScoreValue ||
-                    (ScoreValue != null && ScoreValue.Equals(input.ScoreValue))
+                    (ScoreValue.Equals(input.ScoreValue))
                 ) &&
                 (
                     ShouldFireToast == input.ShouldFireToast ||

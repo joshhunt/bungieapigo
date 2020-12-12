@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -136,7 +137,7 @@ namespace GhostSharper.Models
             return
                 (
                     InsertionRules == input.InsertionRules ||
-                    (InsertionRules != null && InsertionRules.Equals(input.InsertionRules))
+                    (InsertionRules != null && InsertionRules.SequenceEqual(input.InsertionRules))
                 ) &&
                 (
                     PlugCategoryIdentifier == input.PlugCategoryIdentifier ||
@@ -144,7 +145,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     PlugCategoryHash == input.PlugCategoryHash ||
-                    (PlugCategoryHash != null && PlugCategoryHash.Equals(input.PlugCategoryHash))
+                    (PlugCategoryHash.Equals(input.PlugCategoryHash))
                 ) &&
                 (
                     OnActionRecreateSelf == input.OnActionRecreateSelf ||
@@ -152,19 +153,19 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     InsertionMaterialRequirementHash == input.InsertionMaterialRequirementHash ||
-                    (InsertionMaterialRequirementHash != null && InsertionMaterialRequirementHash.Equals(input.InsertionMaterialRequirementHash))
+                    (InsertionMaterialRequirementHash.Equals(input.InsertionMaterialRequirementHash))
                 ) &&
                 (
                     PreviewItemOverrideHash == input.PreviewItemOverrideHash ||
-                    (PreviewItemOverrideHash != null && PreviewItemOverrideHash.Equals(input.PreviewItemOverrideHash))
+                    (PreviewItemOverrideHash.Equals(input.PreviewItemOverrideHash))
                 ) &&
                 (
                     EnabledMaterialRequirementHash == input.EnabledMaterialRequirementHash ||
-                    (EnabledMaterialRequirementHash != null && EnabledMaterialRequirementHash.Equals(input.EnabledMaterialRequirementHash))
+                    (EnabledMaterialRequirementHash.Equals(input.EnabledMaterialRequirementHash))
                 ) &&
                 (
                     EnabledRules == input.EnabledRules ||
-                    (EnabledRules != null && EnabledRules.Equals(input.EnabledRules))
+                    (EnabledRules != null && EnabledRules.SequenceEqual(input.EnabledRules))
                 ) &&
                 (
                     UiPlugLabel == input.UiPlugLabel ||

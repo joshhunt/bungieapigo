@@ -36,7 +36,7 @@ namespace GhostSharper.Models
             return
                 (
                     PerkHash == input.PerkHash ||
-                    (PerkHash != null && PerkHash.Equals(input.PerkHash))
+                    (PerkHash.Equals(input.PerkHash))
                 ) &&
                 (
                     Style == input.Style ||

@@ -47,11 +47,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ProgressValue == input.ProgressValue ||
-                    (ProgressValue != null && ProgressValue.Equals(input.ProgressValue))
+                    (ProgressValue.Equals(input.ProgressValue))
                 ) &&
                 (
                     CompletionValue == input.CompletionValue ||
-                    (CompletionValue != null && CompletionValue.Equals(input.CompletionValue))
+                    (CompletionValue.Equals(input.CompletionValue))
                 ) ;
         }
     }

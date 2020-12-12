@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -111,11 +112,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     PeriodTypes == input.PeriodTypes ||
-                    (PeriodTypes != null && PeriodTypes.Equals(input.PeriodTypes))
+                    (PeriodTypes != null && PeriodTypes.SequenceEqual(input.PeriodTypes))
                 ) &&
                 (
                     Modes == input.Modes ||
-                    (Modes != null && Modes.Equals(input.Modes))
+                    (Modes != null && Modes.SequenceEqual(input.Modes))
                 ) &&
                 (
                     Category == input.Category ||
@@ -143,7 +144,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     MergeMethod == input.MergeMethod ||
-                    (MergeMethod != null && MergeMethod.Equals(input.MergeMethod))
+                    (MergeMethod.Equals(input.MergeMethod))
                 ) &&
                 (
                     UnitLabel == input.UnitLabel ||
@@ -151,11 +152,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Weight == input.Weight ||
-                    (Weight != null && Weight.Equals(input.Weight))
+                    (Weight.Equals(input.Weight))
                 ) &&
                 (
                     MedalTierHash == input.MedalTierHash ||
-                    (MedalTierHash != null && MedalTierHash.Equals(input.MedalTierHash))
+                    (MedalTierHash.Equals(input.MedalTierHash))
                 ) ;
         }
     }

@@ -52,7 +52,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ExecuteSeconds == input.ExecuteSeconds ||
-                    (ExecuteSeconds != null && ExecuteSeconds.Equals(input.ExecuteSeconds))
+                    (ExecuteSeconds.Equals(input.ExecuteSeconds))
                 ) &&
                 (
                     Icon == input.Icon ||
@@ -76,7 +76,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     ActionHash == input.ActionHash ||
-                    (ActionHash != null && ActionHash.Equals(input.ActionHash))
+                    (ActionHash.Equals(input.ActionHash))
                 ) &&
                 (
                     AutoPerformAction == input.AutoPerformAction ||

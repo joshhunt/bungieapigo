@@ -24,11 +24,11 @@ namespace GhostSharper.Models
             return
                 (
                     TopicId == input.TopicId ||
-                    (TopicId != null && TopicId.Equals(input.TopicId))
+                    (TopicId.Equals(input.TopicId))
                 ) &&
                 (
                     CommentCount == input.CommentCount ||
-                    (CommentCount != null && CommentCount.Equals(input.CommentCount))
+                    (CommentCount.Equals(input.CommentCount))
                 ) ;
         }
     }

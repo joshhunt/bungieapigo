@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -352,7 +353,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     CharacterUninstancedItemComponents == input.CharacterUninstancedItemComponents ||
-                    (CharacterUninstancedItemComponents != null && CharacterUninstancedItemComponents.Equals(input.CharacterUninstancedItemComponents))
+                    (CharacterUninstancedItemComponents != null && CharacterUninstancedItemComponents.SequenceEqual(input.CharacterUninstancedItemComponents))
                 ) &&
                 (
                     CharacterPresentationNodes == input.CharacterPresentationNodes ||

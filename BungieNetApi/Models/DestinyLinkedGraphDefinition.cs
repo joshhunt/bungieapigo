@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -58,11 +59,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     LinkedGraphId == input.LinkedGraphId ||
-                    (LinkedGraphId != null && LinkedGraphId.Equals(input.LinkedGraphId))
+                    (LinkedGraphId.Equals(input.LinkedGraphId))
                 ) &&
                 (
                     LinkedGraphs == input.LinkedGraphs ||
-                    (LinkedGraphs != null && LinkedGraphs.Equals(input.LinkedGraphs))
+                    (LinkedGraphs != null && LinkedGraphs.SequenceEqual(input.LinkedGraphs))
                 ) &&
                 (
                     Overview == input.Overview ||

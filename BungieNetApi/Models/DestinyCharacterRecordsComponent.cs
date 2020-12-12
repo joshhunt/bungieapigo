@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -37,19 +38,19 @@ namespace GhostSharper.Models
             return
                 (
                     FeaturedRecordHashes == input.FeaturedRecordHashes ||
-                    (FeaturedRecordHashes != null && FeaturedRecordHashes.Equals(input.FeaturedRecordHashes))
+                    (FeaturedRecordHashes != null && FeaturedRecordHashes.SequenceEqual(input.FeaturedRecordHashes))
                 ) &&
                 (
                     Records == input.Records ||
-                    (Records != null && Records.Equals(input.Records))
+                    (Records != null && Records.SequenceEqual(input.Records))
                 ) &&
                 (
                     RecordCategoriesRootNodeHash == input.RecordCategoriesRootNodeHash ||
-                    (RecordCategoriesRootNodeHash != null && RecordCategoriesRootNodeHash.Equals(input.RecordCategoriesRootNodeHash))
+                    (RecordCategoriesRootNodeHash.Equals(input.RecordCategoriesRootNodeHash))
                 ) &&
                 (
                     RecordSealsRootNodeHash == input.RecordSealsRootNodeHash ||
-                    (RecordSealsRootNodeHash != null && RecordSealsRootNodeHash.Equals(input.RecordSealsRootNodeHash))
+                    (RecordSealsRootNodeHash.Equals(input.RecordSealsRootNodeHash))
                 ) ;
         }
     }

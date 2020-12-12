@@ -1,6 +1,7 @@
 using System.Runtime.Serialization;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -81,35 +82,35 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     AvailableActivities == input.AvailableActivities ||
-                    (AvailableActivities != null && AvailableActivities.Equals(input.AvailableActivities))
+                    (AvailableActivities != null && AvailableActivities.SequenceEqual(input.AvailableActivities))
                 ) &&
                 (
                     CurrentActivityHash == input.CurrentActivityHash ||
-                    (CurrentActivityHash != null && CurrentActivityHash.Equals(input.CurrentActivityHash))
+                    (CurrentActivityHash.Equals(input.CurrentActivityHash))
                 ) &&
                 (
                     CurrentActivityModeHash == input.CurrentActivityModeHash ||
-                    (CurrentActivityModeHash != null && CurrentActivityModeHash.Equals(input.CurrentActivityModeHash))
+                    (CurrentActivityModeHash.Equals(input.CurrentActivityModeHash))
                 ) &&
                 (
                     CurrentActivityModeType == input.CurrentActivityModeType ||
-                    (CurrentActivityModeType != null && CurrentActivityModeType.Equals(input.CurrentActivityModeType))
+                    (CurrentActivityModeType.Equals(input.CurrentActivityModeType))
                 ) &&
                 (
                     CurrentActivityModeHashes == input.CurrentActivityModeHashes ||
-                    (CurrentActivityModeHashes != null && CurrentActivityModeHashes.Equals(input.CurrentActivityModeHashes))
+                    (CurrentActivityModeHashes != null && CurrentActivityModeHashes.SequenceEqual(input.CurrentActivityModeHashes))
                 ) &&
                 (
                     CurrentActivityModeTypes == input.CurrentActivityModeTypes ||
-                    (CurrentActivityModeTypes != null && CurrentActivityModeTypes.Equals(input.CurrentActivityModeTypes))
+                    (CurrentActivityModeTypes != null && CurrentActivityModeTypes.SequenceEqual(input.CurrentActivityModeTypes))
                 ) &&
                 (
                     CurrentPlaylistActivityHash == input.CurrentPlaylistActivityHash ||
-                    (CurrentPlaylistActivityHash != null && CurrentPlaylistActivityHash.Equals(input.CurrentPlaylistActivityHash))
+                    (CurrentPlaylistActivityHash.Equals(input.CurrentPlaylistActivityHash))
                 ) &&
                 (
                     LastCompletedStoryHash == input.LastCompletedStoryHash ||
-                    (LastCompletedStoryHash != null && LastCompletedStoryHash.Equals(input.LastCompletedStoryHash))
+                    (LastCompletedStoryHash.Equals(input.LastCompletedStoryHash))
                 ) ;
         }
     }

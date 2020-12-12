@@ -69,23 +69,23 @@ namespace GhostSharper.Models
             return
                 (
                     ObjectiveHash == input.ObjectiveHash ||
-                    (ObjectiveHash != null && ObjectiveHash.Equals(input.ObjectiveHash))
+                    (ObjectiveHash.Equals(input.ObjectiveHash))
                 ) &&
                 (
                     DestinationHash == input.DestinationHash ||
-                    (DestinationHash != null && DestinationHash.Equals(input.DestinationHash))
+                    (DestinationHash.Equals(input.DestinationHash))
                 ) &&
                 (
                     ActivityHash == input.ActivityHash ||
-                    (ActivityHash != null && ActivityHash.Equals(input.ActivityHash))
+                    (ActivityHash.Equals(input.ActivityHash))
                 ) &&
                 (
                     Progress == input.Progress ||
-                    (Progress != null && Progress.Equals(input.Progress))
+                    (Progress.Equals(input.Progress))
                 ) &&
                 (
                     CompletionValue == input.CompletionValue ||
-                    (CompletionValue != null && CompletionValue.Equals(input.CompletionValue))
+                    (CompletionValue.Equals(input.CompletionValue))
                 ) &&
                 (
                     Complete == input.Complete ||

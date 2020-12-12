@@ -24,11 +24,11 @@ namespace GhostSharper.Models
             return
                 (
                     ClassHash == input.ClassHash ||
-                    (ClassHash != null && ClassHash.Equals(input.ClassHash))
+                    (ClassHash.Equals(input.ClassHash))
                 ) &&
                 (
                     ArtArrangementHash == input.ArtArrangementHash ||
-                    (ArtArrangementHash != null && ArtArrangementHash.Equals(input.ArtArrangementHash))
+                    (ArtArrangementHash.Equals(input.ArtArrangementHash))
                 ) ;
         }
     }

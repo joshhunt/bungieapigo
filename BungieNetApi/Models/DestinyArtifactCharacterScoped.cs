@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -31,19 +32,19 @@ namespace GhostSharper.Models
             return
                 (
                     ArtifactHash == input.ArtifactHash ||
-                    (ArtifactHash != null && ArtifactHash.Equals(input.ArtifactHash))
+                    (ArtifactHash.Equals(input.ArtifactHash))
                 ) &&
                 (
                     PointsUsed == input.PointsUsed ||
-                    (PointsUsed != null && PointsUsed.Equals(input.PointsUsed))
+                    (PointsUsed.Equals(input.PointsUsed))
                 ) &&
                 (
                     ResetCount == input.ResetCount ||
-                    (ResetCount != null && ResetCount.Equals(input.ResetCount))
+                    (ResetCount.Equals(input.ResetCount))
                 ) &&
                 (
                     Tiers == input.Tiers ||
-                    (Tiers != null && Tiers.Equals(input.Tiers))
+                    (Tiers != null && Tiers.SequenceEqual(input.Tiers))
                 ) ;
         }
     }

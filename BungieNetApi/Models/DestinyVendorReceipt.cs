@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 using System;
 
 namespace GhostSharper.Models
@@ -71,7 +72,7 @@ namespace GhostSharper.Models
             return
                 (
                     CurrencyPaid == input.CurrencyPaid ||
-                    (CurrencyPaid != null && CurrencyPaid.Equals(input.CurrencyPaid))
+                    (CurrencyPaid != null && CurrencyPaid.SequenceEqual(input.CurrencyPaid))
                 ) &&
                 (
                     ItemReceived == input.ItemReceived ||
@@ -79,11 +80,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     LicenseUnlockHash == input.LicenseUnlockHash ||
-                    (LicenseUnlockHash != null && LicenseUnlockHash.Equals(input.LicenseUnlockHash))
+                    (LicenseUnlockHash.Equals(input.LicenseUnlockHash))
                 ) &&
                 (
                     PurchasedByCharacterId == input.PurchasedByCharacterId ||
-                    (PurchasedByCharacterId != null && PurchasedByCharacterId.Equals(input.PurchasedByCharacterId))
+                    (PurchasedByCharacterId.Equals(input.PurchasedByCharacterId))
                 ) &&
                 (
                     RefundPolicy == input.RefundPolicy ||
@@ -91,11 +92,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     SequenceNumber == input.SequenceNumber ||
-                    (SequenceNumber != null && SequenceNumber.Equals(input.SequenceNumber))
+                    (SequenceNumber.Equals(input.SequenceNumber))
                 ) &&
                 (
                     TimeToExpiration == input.TimeToExpiration ||
-                    (TimeToExpiration != null && TimeToExpiration.Equals(input.TimeToExpiration))
+                    (TimeToExpiration.Equals(input.TimeToExpiration))
                 ) &&
                 (
                     ExpiresOn == input.ExpiresOn ||

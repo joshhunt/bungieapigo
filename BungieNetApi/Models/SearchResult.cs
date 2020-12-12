@@ -45,7 +45,7 @@ namespace GhostSharper.Models
             return
                 (
                     TotalResults == input.TotalResults ||
-                    (TotalResults != null && TotalResults.Equals(input.TotalResults))
+                    (TotalResults.Equals(input.TotalResults))
                 ) &&
                 (
                     HasMore == input.HasMore ||

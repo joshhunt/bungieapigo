@@ -1,5 +1,6 @@
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GhostSharper.Models
 {
@@ -66,11 +67,11 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     Buckets == input.Buckets ||
-                    (Buckets != null && Buckets.Equals(input.Buckets))
+                    (Buckets != null && Buckets.SequenceEqual(input.Buckets))
                 ) &&
                 (
                     FlyoutId == input.FlyoutId ||
-                    (FlyoutId != null && FlyoutId.Equals(input.FlyoutId))
+                    (FlyoutId.Equals(input.FlyoutId))
                 ) &&
                 (
                     SuppressNewness == input.SuppressNewness ||
@@ -78,7 +79,7 @@ namespace GhostSharper.Models
                 ) &&
                 (
                     EquipmentSlotHash == input.EquipmentSlotHash ||
-                    (EquipmentSlotHash != null && EquipmentSlotHash.Equals(input.EquipmentSlotHash))
+                    (EquipmentSlotHash.Equals(input.EquipmentSlotHash))
                 ) ;
         }
     }
