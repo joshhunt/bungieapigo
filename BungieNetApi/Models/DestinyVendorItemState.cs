@@ -114,5 +114,12 @@ namespace GhostSharper.Models
         [EnumMember(Value = "8192")]
         Charity = 8192,
 
+        /// <summary>
+        /// SeasonalRewardExpiration = 16384
+        /// This indicates that the item has a seasonal reward expiration.
+        /// </summary>
+        [EnumMember(Value = "16384")]
+        SeasonalRewardExpiration = 16384,
+
     }
 }

@@ -31,6 +31,9 @@ namespace GhostSharper.Models
         [DataMember(Name = "recordValueStyle", EmitDefaultValue = false)]
         public DestinyRecordValueStyle RecordValueStyle { get; set; }
 
+        [DataMember(Name = "forTitleGilding", EmitDefaultValue = false)]
+        public bool ForTitleGilding { get; set; }
+
         [DataMember(Name = "titleInfo", EmitDefaultValue = false)]
         public DestinyRecordTitleBlock TitleInfo { get; set; }
 
@@ -137,6 +140,10 @@ namespace GhostSharper.Models
                 (
                     RecordValueStyle == input.RecordValueStyle ||
                     (RecordValueStyle != null && RecordValueStyle.Equals(input.RecordValueStyle))
+                ) &&
+                (
+                    ForTitleGilding == input.ForTitleGilding ||
+                    (ForTitleGilding != null && ForTitleGilding.Equals(input.ForTitleGilding))
                 ) &&
                 (
                     TitleInfo == input.TitleInfo ||

@@ -39,6 +39,15 @@ namespace GhostSharper.Models
         [DataMember(Name = "sealPresentationNodeHash", EmitDefaultValue = false)]
         public uint SealPresentationNodeHash { get; set; }
 
+        [DataMember(Name = "seasonalChallengesPresentationNodeHash", EmitDefaultValue = false)]
+        public uint SeasonalChallengesPresentationNodeHash { get; set; }
+
+        /// <summary>
+        /// Optional - Defines the promotional text, images, and links to preview this season.
+        /// </summary>
+        [DataMember(Name = "preview", EmitDefaultValue = false)]
+        public DestinySeasonPreviewDefinition Preview { get; set; }
+
         /// <summary>
         /// The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.
         /// </summary>
@@ -106,6 +115,14 @@ namespace GhostSharper.Models
                 (
                     SealPresentationNodeHash == input.SealPresentationNodeHash ||
                     (SealPresentationNodeHash.Equals(input.SealPresentationNodeHash))
+                ) &&
+                (
+                    SeasonalChallengesPresentationNodeHash == input.SeasonalChallengesPresentationNodeHash ||
+                    (SeasonalChallengesPresentationNodeHash.Equals(input.SeasonalChallengesPresentationNodeHash))
+                ) &&
+                (
+                    Preview == input.Preview ||
+                    (Preview != null && Preview.Equals(input.Preview))
                 ) &&
                 (
                     Hash == input.Hash ||

@@ -10,6 +10,9 @@ namespace GhostSharper.Models
         [DataMember(Name = "intervalObjectives", EmitDefaultValue = false)]
         public List<DestinyRecordIntervalObjective> IntervalObjectives { get; set; }
 
+        [DataMember(Name = "intervalRewards", EmitDefaultValue = false)]
+        public List<DestinyRecordIntervalRewards> IntervalRewards { get; set; }
+
         [DataMember(Name = "originalObjectiveArrayInsertionIndex", EmitDefaultValue = false)]
         public long OriginalObjectiveArrayInsertionIndex { get; set; }
 
@@ -27,6 +30,10 @@ namespace GhostSharper.Models
                 (
                     IntervalObjectives == input.IntervalObjectives ||
                     (IntervalObjectives != null && IntervalObjectives.SequenceEqual(input.IntervalObjectives))
+                ) &&
+                (
+                    IntervalRewards == input.IntervalRewards ||
+                    (IntervalRewards != null && IntervalRewards.SequenceEqual(input.IntervalRewards))
                 ) &&
                 (
                     OriginalObjectiveArrayInsertionIndex == input.OriginalObjectiveArrayInsertionIndex ||

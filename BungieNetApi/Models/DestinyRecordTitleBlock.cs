@@ -19,6 +19,9 @@ namespace GhostSharper.Models
         [DataMember(Name = "titlesByGenderHash", EmitDefaultValue = false)]
         public Dictionary<string, string> TitlesByGenderHash { get; set; }
 
+        [DataMember(Name = "gildingTrackingRecordHash", EmitDefaultValue = false)]
+        public uint GildingTrackingRecordHash { get; set; }
+
 
         public override bool Equals(object input)
         {
@@ -41,6 +44,10 @@ namespace GhostSharper.Models
                 (
                     TitlesByGenderHash == input.TitlesByGenderHash ||
                     (TitlesByGenderHash != null && TitlesByGenderHash.SequenceEqual(input.TitlesByGenderHash))
+                ) &&
+                (
+                    GildingTrackingRecordHash == input.GildingTrackingRecordHash ||
+                    (GildingTrackingRecordHash.Equals(input.GildingTrackingRecordHash))
                 ) ;
         }
     }

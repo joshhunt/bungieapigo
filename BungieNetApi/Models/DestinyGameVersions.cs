@@ -51,5 +51,11 @@ namespace GhostSharper.Models
         [EnumMember(Value = "32")]
         Shadowkeep = 32,
 
+        /// <summary>
+        /// BeyondLight = 64
+        /// </summary>
+        [EnumMember(Value = "64")]
+        BeyondLight = 64,
+
     }
 }

@@ -38,6 +38,12 @@ namespace GhostSharper.Models
         public DestinyVendorDisplayPropertiesDefinition DisplayProperties { get; set; }
 
         /// <summary>
+        /// The type of reward progression that this vendor has. Default - The original rank progression from token redemption. Ritual - Progression from ranks in ritual content. For example: Crucible (Shaxx), Gambit (Drifter), and Battlegrounds (War Table).
+        /// </summary>
+        [DataMember(Name = "vendorProgressionType", EmitDefaultValue = false)]
+        public DestinyVendorProgressionType VendorProgressionType { get; set; }
+
+        /// <summary>
         /// If the vendor has a custom localized string describing the "buy" action, that is returned here.
         /// </summary>
         [DataMember(Name = "buyString", EmitDefaultValue = false)]
@@ -276,6 +282,10 @@ namespace GhostSharper.Models
                 (
                     DisplayProperties == input.DisplayProperties ||
                     (DisplayProperties != null && DisplayProperties.Equals(input.DisplayProperties))
+                ) &&
+                (
+                    VendorProgressionType == input.VendorProgressionType ||
+                    (VendorProgressionType != null && VendorProgressionType.Equals(input.VendorProgressionType))
                 ) &&
                 (
                     BuyString == input.BuyString ||

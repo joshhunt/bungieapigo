@@ -41,5 +41,17 @@ namespace GhostSharper.Models
         [EnumMember(Value = "5")]
         MedalComplete = 5,
 
+        /// <summary>
+        /// SeasonChallengeComplete = 6
+        /// </summary>
+        [EnumMember(Value = "6")]
+        SeasonChallengeComplete = 6,
+
+        /// <summary>
+        /// GildedTitleComplete = 7
+        /// </summary>
+        [EnumMember(Value = "7")]
+        GildedTitleComplete = 7,
+
     }
 }

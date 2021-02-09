@@ -79,6 +79,9 @@ namespace GhostSharper.Models
         [DataMember(Name = "itemTypeDisplayName", EmitDefaultValue = false)]
         public string ItemTypeDisplayName { get; set; }
 
+        [DataMember(Name = "flavorText", EmitDefaultValue = false)]
+        public string FlavorText { get; set; }
+
         /// <summary>
         /// A string identifier that the game's UI uses to determine how the item should be rendered in inventory screens and the like. This could really be anything - at the moment, we don't have the time to really breakdown and maintain all the possible strings this could be, partly because new ones could be added ad hoc. But if you want to use it to dictate your own UI, or look for items with a certain display style, go for it!
         /// </summary>
@@ -481,6 +484,10 @@ namespace GhostSharper.Models
                 (
                     ItemTypeDisplayName == input.ItemTypeDisplayName ||
                     (ItemTypeDisplayName != null && ItemTypeDisplayName.Equals(input.ItemTypeDisplayName))
+                ) &&
+                (
+                    FlavorText == input.FlavorText ||
+                    (FlavorText != null && FlavorText.Equals(input.FlavorText))
                 ) &&
                 (
                     UiItemDisplayStyle == input.UiItemDisplayStyle ||

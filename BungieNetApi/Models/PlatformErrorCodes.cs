@@ -2341,6 +2341,12 @@ namespace GhostSharper.Models
         ClanNameRestricted = 751,
 
         /// <summary>
+        /// ClanCreationBan = 752
+        /// </summary>
+        [EnumMember(Value = "752")]
+        ClanCreationBan = 752,
+
+        /// <summary>
         /// ItemAlreadyFollowed = 801
         /// </summary>
         [EnumMember(Value = "801")]
@@ -2621,6 +2627,24 @@ namespace GhostSharper.Models
         /// </summary>
         [EnumMember(Value = "1239")]
         PsnApiTargetUserBlocked = 1239,
+
+        /// <summary>
+        /// PsnApiJwksMissing = 1240
+        /// </summary>
+        [EnumMember(Value = "1240")]
+        PsnApiJwksMissing = 1240,
+
+        /// <summary>
+        /// PsnApiJwtMalformedHeader = 1241
+        /// </summary>
+        [EnumMember(Value = "1241")]
+        PsnApiJwtMalformedHeader = 1241,
+
+        /// <summary>
+        /// PsnApiJwtMalformedPayload = 1242
+        /// </summary>
+        [EnumMember(Value = "1242")]
+        PsnApiJwtMalformedPayload = 1242,
 
         /// <summary>
         /// XblExSystemDisabled = 1300

@@ -56,12 +56,6 @@ namespace GhostSharper.Models
         public long ReleaseTime { get; set; }
 
         /// <summary>
-        /// The difficulty level of the activity.
-        /// </summary>
-        [DataMember(Name = "activityLevel", EmitDefaultValue = false)]
-        public long ActivityLevel { get; set; }
-
-        /// <summary>
         /// The recommended light level for this activity.
         /// </summary>
         [DataMember(Name = "activityLightLevel", EmitDefaultValue = false)]
@@ -250,10 +244,6 @@ namespace GhostSharper.Models
                 (
                     ReleaseTime == input.ReleaseTime ||
                     (ReleaseTime.Equals(input.ReleaseTime))
-                ) &&
-                (
-                    ActivityLevel == input.ActivityLevel ||
-                    (ActivityLevel.Equals(input.ActivityLevel))
                 ) &&
                 (
                     ActivityLightLevel == input.ActivityLightLevel ||

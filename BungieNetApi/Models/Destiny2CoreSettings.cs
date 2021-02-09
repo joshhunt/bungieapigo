@@ -64,6 +64,9 @@ namespace GhostSharper.Models
         [DataMember(Name = "currentSeasonHash", EmitDefaultValue = false)]
         public uint CurrentSeasonHash { get; set; }
 
+        [DataMember(Name = "seasonalChallengesPresentationNodeHash", EmitDefaultValue = false)]
+        public uint SeasonalChallengesPresentationNodeHash { get; set; }
+
         [DataMember(Name = "futureSeasonHashes", EmitDefaultValue = false)]
         public List<uint> FutureSeasonHashes { get; set; }
 
@@ -156,6 +159,10 @@ namespace GhostSharper.Models
                 (
                     CurrentSeasonHash == input.CurrentSeasonHash ||
                     (CurrentSeasonHash.Equals(input.CurrentSeasonHash))
+                ) &&
+                (
+                    SeasonalChallengesPresentationNodeHash == input.SeasonalChallengesPresentationNodeHash ||
+                    (SeasonalChallengesPresentationNodeHash.Equals(input.SeasonalChallengesPresentationNodeHash))
                 ) &&
                 (
                     FutureSeasonHashes == input.FutureSeasonHashes ||
