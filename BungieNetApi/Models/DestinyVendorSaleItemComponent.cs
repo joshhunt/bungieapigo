@@ -57,6 +57,12 @@ namespace GhostSharper.Models
         public DestinyVendorItemState Augments { get; set; }
 
         /// <summary>
+        /// If available, a list that describes which item values (rewards) should be shown (true) or hidden (false).
+        /// </summary>
+        [DataMember(Name = "itemValueVisibility", EmitDefaultValue = false)]
+        public List<bool> ItemValueVisibility { get; set; }
+
+        /// <summary>
         /// The index into the DestinyVendorDefinition.itemList property. Note that this means Vendor data *is* Content Version dependent: make sure you have the latest content before you use Vendor data, or these indexes may mismatch. 
         /// </summary>
         /// <summary>
@@ -137,6 +143,10 @@ namespace GhostSharper.Models
                 (
                     Augments == input.Augments ||
                     (Augments != null && Augments.Equals(input.Augments))
+                ) &&
+                (
+                    ItemValueVisibility == input.ItemValueVisibility ||
+                    (ItemValueVisibility != null && ItemValueVisibility.SequenceEqual(input.ItemValueVisibility))
                 ) &&
                 (
                     VendorItemIndex == input.VendorItemIndex ||

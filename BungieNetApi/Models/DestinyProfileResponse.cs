@@ -119,6 +119,12 @@ namespace GhostSharper.Models
         public SingleComponentResponseOfDestinyMetricsComponent Metrics { get; set; }
 
         /// <summary>
+        /// COMPONENT TYPE: StringVariables
+        /// </summary>
+        [DataMember(Name = "profileStringVariables", EmitDefaultValue = false)]
+        public SingleComponentResponseOfDestinyStringVariablesComponent ProfileStringVariables { get; set; }
+
+        /// <summary>
         /// Basic information about each character, keyed by the CharacterId.
         /// </summary>
         /// <summary>
@@ -239,6 +245,12 @@ namespace GhostSharper.Models
         public DictionaryComponentResponseOfint64AndDestinyCollectiblesComponent CharacterCollectibles { get; set; }
 
         /// <summary>
+        /// COMPONENT TYPE: StringVariables
+        /// </summary>
+        [DataMember(Name = "characterStringVariables", EmitDefaultValue = false)]
+        public DictionaryComponentResponseOfint64AndDestinyStringVariablesComponent CharacterStringVariables { get; set; }
+
+        /// <summary>
         /// Information about instanced items across all returned characters, keyed by the item's instance ID.
         /// </summary>
         /// <summary>
@@ -320,6 +332,10 @@ namespace GhostSharper.Models
                     (Metrics != null && Metrics.Equals(input.Metrics))
                 ) &&
                 (
+                    ProfileStringVariables == input.ProfileStringVariables ||
+                    (ProfileStringVariables != null && ProfileStringVariables.Equals(input.ProfileStringVariables))
+                ) &&
+                (
                     Characters == input.Characters ||
                     (Characters != null && Characters.Equals(input.Characters))
                 ) &&
@@ -366,6 +382,10 @@ namespace GhostSharper.Models
                 (
                     CharacterCollectibles == input.CharacterCollectibles ||
                     (CharacterCollectibles != null && CharacterCollectibles.Equals(input.CharacterCollectibles))
+                ) &&
+                (
+                    CharacterStringVariables == input.CharacterStringVariables ||
+                    (CharacterStringVariables != null && CharacterStringVariables.Equals(input.CharacterStringVariables))
                 ) &&
                 (
                     ItemComponents == input.ItemComponents ||

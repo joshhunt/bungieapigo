@@ -2347,6 +2347,12 @@ namespace GhostSharper.Models
         ClanCreationBan = 752,
 
         /// <summary>
+        /// ClanCreationTenureRequirementsNotMet = 753
+        /// </summary>
+        [EnumMember(Value = "753")]
+        ClanCreationTenureRequirementsNotMet = 753,
+
+        /// <summary>
         /// ItemAlreadyFollowed = 801
         /// </summary>
         [EnumMember(Value = "801")]
@@ -4394,6 +4400,24 @@ namespace GhostSharper.Models
         ClanFireteamInvalidAuthProviderXuid = 3028,
 
         /// <summary>
+        /// ClanFireteamThrottle = 3029
+        /// </summary>
+        [EnumMember(Value = "3029")]
+        ClanFireteamThrottle = 3029,
+
+        /// <summary>
+        /// ClanFireteamTooManyOpenScheduledFireteams = 3030
+        /// </summary>
+        [EnumMember(Value = "3030")]
+        ClanFireteamTooManyOpenScheduledFireteams = 3030,
+
+        /// <summary>
+        /// ClanFireteamCannotReopenScheduledFireteams = 3031
+        /// </summary>
+        [EnumMember(Value = "3031")]
+        ClanFireteamCannotReopenScheduledFireteams = 3031,
+
+        /// <summary>
         /// CrossSaveOverriddenAccountNotFound = 3200
         /// </summary>
         [EnumMember(Value = "3200")]
@@ -4656,6 +4680,78 @@ namespace GhostSharper.Models
         /// </summary>
         [EnumMember(Value = "3706")]
         ErrorPhoneValidationBanned = 3706,
+
+        /// <summary>
+        /// ErrorPhoneValidationCodeTooRecentlySent = 3707
+        /// </summary>
+        [EnumMember(Value = "3707")]
+        ErrorPhoneValidationCodeTooRecentlySent = 3707,
+
+        /// <summary>
+        /// ErrorPhoneValidationCodeExpired = 3708
+        /// </summary>
+        [EnumMember(Value = "3708")]
+        ErrorPhoneValidationCodeExpired = 3708,
+
+        /// <summary>
+        /// ErrorPhoneValidationInvalidNumberType = 3709
+        /// </summary>
+        [EnumMember(Value = "3709")]
+        ErrorPhoneValidationInvalidNumberType = 3709,
+
+        /// <summary>
+        /// ErrorPhoneValidationCodeTooRecentlyChecked = 3710
+        /// </summary>
+        [EnumMember(Value = "3710")]
+        ErrorPhoneValidationCodeTooRecentlyChecked = 3710,
+
+        /// <summary>
+        /// ApplePushErrorUnknown = 3800
+        /// </summary>
+        [EnumMember(Value = "3800")]
+        ApplePushErrorUnknown = 3800,
+
+        /// <summary>
+        /// ApplePushErrorNull = 3801
+        /// </summary>
+        [EnumMember(Value = "3801")]
+        ApplePushErrorNull = 3801,
+
+        /// <summary>
+        /// ApplePushErrorTimeout = 3802
+        /// </summary>
+        [EnumMember(Value = "3802")]
+        ApplePushErrorTimeout = 3802,
+
+        /// <summary>
+        /// ApplePushBadRequest = 3803
+        /// </summary>
+        [EnumMember(Value = "3803")]
+        ApplePushBadRequest = 3803,
+
+        /// <summary>
+        /// ApplePushFailedAuth = 3804
+        /// </summary>
+        [EnumMember(Value = "3804")]
+        ApplePushFailedAuth = 3804,
+
+        /// <summary>
+        /// ApplePushThrottled = 3805
+        /// </summary>
+        [EnumMember(Value = "3805")]
+        ApplePushThrottled = 3805,
+
+        /// <summary>
+        /// ApplePushServiceUnavailable = 3806
+        /// </summary>
+        [EnumMember(Value = "3806")]
+        ApplePushServiceUnavailable = 3806,
+
+        /// <summary>
+        /// NotAnImageOrVideo = 3807
+        /// </summary>
+        [EnumMember(Value = "3807")]
+        NotAnImageOrVideo = 3807,
 
     }
 }

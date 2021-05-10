@@ -97,5 +97,12 @@ namespace GhostSharper.Models
         [EnumMember(Value = "4096")]
         PartnerOfferGrant = 4096,
 
+        /// <summary>
+        /// DestinyUnlockValueQuery = 8192
+        /// Allows an app to query sensitive information like unlock flags and values not available through normal methods.
+        /// </summary>
+        [EnumMember(Value = "8192")]
+        DestinyUnlockValueQuery = 8192,
+
     }
 }

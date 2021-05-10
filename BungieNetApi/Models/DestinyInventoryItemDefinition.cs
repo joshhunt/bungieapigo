@@ -410,6 +410,12 @@ namespace GhostSharper.Models
         public List<string> TraitIds { get; set; }
 
         /// <summary>
+        /// These are the corresponding trait definition hashes for the entries in traitIds.
+        /// </summary>
+        [DataMember(Name = "traitHashes", EmitDefaultValue = false)]
+        public List<uint> TraitHashes { get; set; }
+
+        /// <summary>
         /// The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.
         /// </summary>
         /// <summary>
@@ -676,6 +682,10 @@ namespace GhostSharper.Models
                 (
                     TraitIds == input.TraitIds ||
                     (TraitIds != null && TraitIds.SequenceEqual(input.TraitIds))
+                ) &&
+                (
+                    TraitHashes == input.TraitHashes ||
+                    (TraitHashes != null && TraitHashes.SequenceEqual(input.TraitHashes))
                 ) &&
                 (
                     Hash == input.Hash ||

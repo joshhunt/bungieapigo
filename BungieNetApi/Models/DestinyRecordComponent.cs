@@ -19,6 +19,12 @@ namespace GhostSharper.Models
         [DataMember(Name = "intervalsRedeemedCount", EmitDefaultValue = false)]
         public long IntervalsRedeemedCount { get; set; }
 
+        /// <summary>
+        /// If available, a list that describes which reward rewards should be shown (true) or hidden (false). This property is for regular record rewards, and not for interval objective rewards.
+        /// </summary>
+        [DataMember(Name = "rewardVisibilty", EmitDefaultValue = false)]
+        public List<bool> RewardVisibilty { get; set; }
+
 
         public override bool Equals(object input)
         {
@@ -45,6 +51,10 @@ namespace GhostSharper.Models
                 (
                     IntervalsRedeemedCount == input.IntervalsRedeemedCount ||
                     (IntervalsRedeemedCount.Equals(input.IntervalsRedeemedCount))
+                ) &&
+                (
+                    RewardVisibilty == input.RewardVisibilty ||
+                    (RewardVisibilty != null && RewardVisibilty.SequenceEqual(input.RewardVisibilty))
                 ) ;
         }
     }

@@ -252,5 +252,12 @@ namespace GhostSharper.Models
         [EnumMember(Value = "1100")]
         Metrics = 1100,
 
+        /// <summary>
+        /// StringVariables = 1200
+        /// Returns a mapping of localized string variable hashes to values, on a per-account or per-character basis.
+        /// </summary>
+        [EnumMember(Value = "1200")]
+        StringVariables = 1200,
+
     }
 }

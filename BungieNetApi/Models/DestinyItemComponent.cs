@@ -113,6 +113,12 @@ namespace GhostSharper.Models
         [DataMember(Name = "versionNumber", EmitDefaultValue = false)]
         public long VersionNumber { get; set; }
 
+        /// <summary>
+        /// If available, a list that describes which item values (rewards) should be shown (true) or hidden (false).
+        /// </summary>
+        [DataMember(Name = "itemValueVisibility", EmitDefaultValue = false)]
+        public List<bool> ItemValueVisibility { get; set; }
+
 
         public override bool Equals(object input)
         {
@@ -187,6 +193,10 @@ namespace GhostSharper.Models
                 (
                     VersionNumber == input.VersionNumber ||
                     (VersionNumber.Equals(input.VersionNumber))
+                ) &&
+                (
+                    ItemValueVisibility == input.ItemValueVisibility ||
+                    (ItemValueVisibility != null && ItemValueVisibility.SequenceEqual(input.ItemValueVisibility))
                 ) ;
         }
     }

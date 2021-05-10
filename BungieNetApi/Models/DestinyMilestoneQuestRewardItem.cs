@@ -41,6 +41,12 @@ namespace GhostSharper.Models
         [DataMember(Name = "quantity", EmitDefaultValue = false)]
         public long Quantity { get; set; }
 
+        /// <summary>
+        /// Indicates that this item quantity may be conditionally shown or hidden, based on various sources of state. For example: server flags, account state, or character progress.
+        /// </summary>
+        [DataMember(Name = "hasConditionalVisibility", EmitDefaultValue = false)]
+        public bool HasConditionalVisibility { get; set; }
+
 
         public override bool Equals(object input)
         {
@@ -71,6 +77,10 @@ namespace GhostSharper.Models
                 (
                     Quantity == input.Quantity ||
                     (Quantity.Equals(input.Quantity))
+                ) &&
+                (
+                    HasConditionalVisibility == input.HasConditionalVisibility ||
+                    (HasConditionalVisibility != null && HasConditionalVisibility.Equals(input.HasConditionalVisibility))
                 ) ;
         }
     }
