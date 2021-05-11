@@ -3,7 +3,7 @@ name: Scheduled checks
 on:
   push:
   schedule:
-    - cron: "*/5 * * * *" # Every hour
+    - cron: "0 * * * *" # Every hour
 
 jobs:
   check-for-api-update:
