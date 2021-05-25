@@ -104,5 +104,12 @@ namespace GhostSharper.Models
         [EnumMember(Value = "8192")]
         DestinyUnlockValueQuery = 8192,
 
+        /// <summary>
+        /// UserPiiRead = 16384
+        /// Allows an app to query sensitive user PII, most notably email information.
+        /// </summary>
+        [EnumMember(Value = "16384")]
+        UserPiiRead = 16384,
+
     }
 }

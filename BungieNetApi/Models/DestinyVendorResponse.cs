@@ -53,6 +53,15 @@ namespace GhostSharper.Models
         [DataMember(Name = "currencyLookups", EmitDefaultValue = false)]
         public SingleComponentResponseOfDestinyCurrenciesComponent CurrencyLookups { get; set; }
 
+        /// <summary>
+        /// A map of string variable values by hash for this character context.
+        /// </summary>
+        /// <summary>
+        /// COMPONENT TYPE: StringVariables
+        /// </summary>
+        [DataMember(Name = "stringVariables", EmitDefaultValue = false)]
+        public SingleComponentResponseOfDestinyStringVariablesComponent StringVariables { get; set; }
+
 
         public override bool Equals(object input)
         {
@@ -83,6 +92,10 @@ namespace GhostSharper.Models
                 (
                     CurrencyLookups == input.CurrencyLookups ||
                     (CurrencyLookups != null && CurrencyLookups.Equals(input.CurrencyLookups))
+                ) &&
+                (
+                    StringVariables == input.StringVariables ||
+                    (StringVariables != null && StringVariables.Equals(input.StringVariables))
                 ) ;
         }
     }

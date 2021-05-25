@@ -53,6 +53,15 @@ namespace GhostSharper.Models
         [DataMember(Name = "sales", EmitDefaultValue = false)]
         public DictionaryComponentResponseOfuint32AndPublicDestinyVendorSaleItemSetComponent Sales { get; set; }
 
+        /// <summary>
+        /// A set of string variable values by hash for a public vendors context.
+        /// </summary>
+        /// <summary>
+        /// COMPONENT TYPE: StringVariables
+        /// </summary>
+        [DataMember(Name = "stringVariables", EmitDefaultValue = false)]
+        public SingleComponentResponseOfDestinyStringVariablesComponent StringVariables { get; set; }
+
 
         public override bool Equals(object input)
         {
@@ -79,6 +88,10 @@ namespace GhostSharper.Models
                 (
                     Sales == input.Sales ||
                     (Sales != null && Sales.Equals(input.Sales))
+                ) &&
+                (
+                    StringVariables == input.StringVariables ||
+                    (StringVariables != null && StringVariables.Equals(input.StringVariables))
                 ) ;
         }
     }
