@@ -1099,6 +1099,18 @@ namespace GhostSharper.Models
         NonTransactionalEmailSendFailure = 235,
 
         /// <summary>
+        /// UnknownErrorSettingGlobalDisplayName = 236
+        /// </summary>
+        [EnumMember(Value = "236")]
+        UnknownErrorSettingGlobalDisplayName = 236,
+
+        /// <summary>
+        /// DuplicateGlobalDisplayName = 237
+        /// </summary>
+        [EnumMember(Value = "237")]
+        DuplicateGlobalDisplayName = 237,
+
+        /// <summary>
         /// MessagingUnknownError = 300
         /// </summary>
         [EnumMember(Value = "300")]
@@ -4226,6 +4238,18 @@ namespace GhostSharper.Models
         SteamWebNullResponseError = 2901,
 
         /// <summary>
+        /// SteamAccountRequired = 2902
+        /// </summary>
+        [EnumMember(Value = "2902")]
+        SteamAccountRequired = 2902,
+
+        /// <summary>
+        /// SteamNotAuthorized = 2903
+        /// </summary>
+        [EnumMember(Value = "2903")]
+        SteamNotAuthorized = 2903,
+
+        /// <summary>
         /// ClanFireteamNotFound = 3000
         /// </summary>
         [EnumMember(Value = "3000")]
@@ -4416,6 +4440,12 @@ namespace GhostSharper.Models
         /// </summary>
         [EnumMember(Value = "3031")]
         ClanFireteamCannotReopenScheduledFireteams = 3031,
+
+        /// <summary>
+        /// ClanFireteamJoinNoAccountSpecified = 3032
+        /// </summary>
+        [EnumMember(Value = "3032")]
+        ClanFireteamJoinNoAccountSpecified = 3032,
 
         /// <summary>
         /// CrossSaveOverriddenAccountNotFound = 3200
@@ -4752,6 +4782,48 @@ namespace GhostSharper.Models
         /// </summary>
         [EnumMember(Value = "3807")]
         NotAnImageOrVideo = 3807,
+
+        /// <summary>
+        /// ErrorBungieFriendsBlockFailed = 3900
+        /// </summary>
+        [EnumMember(Value = "3900")]
+        ErrorBungieFriendsBlockFailed = 3900,
+
+        /// <summary>
+        /// ErrorBungieFriendsAutoReject = 3901
+        /// </summary>
+        [EnumMember(Value = "3901")]
+        ErrorBungieFriendsAutoReject = 3901,
+
+        /// <summary>
+        /// ErrorBungieFriendsNoRequestFound = 3902
+        /// </summary>
+        [EnumMember(Value = "3902")]
+        ErrorBungieFriendsNoRequestFound = 3902,
+
+        /// <summary>
+        /// ErrorBungieFriendsAlreadyFriends = 3903
+        /// </summary>
+        [EnumMember(Value = "3903")]
+        ErrorBungieFriendsAlreadyFriends = 3903,
+
+        /// <summary>
+        /// ErrorBungieFriendsUnableToRemoveRequest = 3904
+        /// </summary>
+        [EnumMember(Value = "3904")]
+        ErrorBungieFriendsUnableToRemoveRequest = 3904,
+
+        /// <summary>
+        /// ErrorBungieFriendsUnableToRemove = 3905
+        /// </summary>
+        [EnumMember(Value = "3905")]
+        ErrorBungieFriendsUnableToRemove = 3905,
+
+        /// <summary>
+        /// ErrorBungieFriendsIdenticalSourceTarget = 3906
+        /// </summary>
+        [EnumMember(Value = "3906")]
+        ErrorBungieFriendsIdenticalSourceTarget = 3906,
 
     }
 }

@@ -6,10 +6,10 @@ namespace GhostSharper.Models
     public enum FireteamPlatform
     {
         /// <summary>
-        /// Unknown = 0
+        /// Any = 0
         /// </summary>
         [EnumMember(Value = "0")]
-        Unknown = 0,
+        Any = 0,
 
         /// <summary>
         /// Playstation4 = 1

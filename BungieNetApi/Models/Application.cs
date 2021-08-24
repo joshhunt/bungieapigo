@@ -74,6 +74,12 @@ namespace GhostSharper.Models
         [DataMember(Name = "team", EmitDefaultValue = false)]
         public List<ApplicationDeveloper> Team { get; set; }
 
+        /// <summary>
+        /// An optional override for the Authorize view name.
+        /// </summary>
+        [DataMember(Name = "overrideAuthorizeViewName", EmitDefaultValue = false)]
+        public string OverrideAuthorizeViewName { get; set; }
+
 
         public override bool Equals(object input)
         {
@@ -128,6 +134,10 @@ namespace GhostSharper.Models
                 (
                     Team == input.Team ||
                     (Team != null && Team.SequenceEqual(input.Team))
+                ) &&
+                (
+                    OverrideAuthorizeViewName == input.OverrideAuthorizeViewName ||
+                    (OverrideAuthorizeViewName != null && OverrideAuthorizeViewName.Equals(input.OverrideAuthorizeViewName))
                 ) ;
         }
     }

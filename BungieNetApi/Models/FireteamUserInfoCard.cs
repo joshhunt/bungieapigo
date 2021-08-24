@@ -13,12 +13,6 @@ namespace GhostSharper.Models
         [DataMember(Name = "FireteamMembershipType", EmitDefaultValue = false)]
         public BungieMembershipType FireteamMembershipType { get; set; }
 
-        [DataMember(Name = "FireteamPlatformProfileUrl", EmitDefaultValue = false)]
-        public string FireteamPlatformProfileUrl { get; set; }
-
-        [DataMember(Name = "FireteamPlatformUniqueIdentifier", EmitDefaultValue = false)]
-        public string FireteamPlatformUniqueIdentifier { get; set; }
-
         /// <summary>
         /// A platform specific additional display name - ex: psn Real Name, bnet Unique Name, etc.
         /// </summary>
@@ -70,6 +64,18 @@ namespace GhostSharper.Models
         [DataMember(Name = "displayName", EmitDefaultValue = false)]
         public string DisplayName { get; set; }
 
+        /// <summary>
+        /// The bungie global display name, if set.
+        /// </summary>
+        [DataMember(Name = "bungieGlobalDisplayName", EmitDefaultValue = false)]
+        public string BungieGlobalDisplayName { get; set; }
+
+        /// <summary>
+        /// The bungie global display name code, if set.
+        /// </summary>
+        [DataMember(Name = "bungieGlobalDisplayNameCode", EmitDefaultValue = false)]
+        public long BungieGlobalDisplayNameCode { get; set; }
+
 
         public override bool Equals(object input)
         {
@@ -88,14 +94,6 @@ namespace GhostSharper.Models
                 (
                     FireteamMembershipType == input.FireteamMembershipType ||
                     (FireteamMembershipType != null && FireteamMembershipType.Equals(input.FireteamMembershipType))
-                ) &&
-                (
-                    FireteamPlatformProfileUrl == input.FireteamPlatformProfileUrl ||
-                    (FireteamPlatformProfileUrl != null && FireteamPlatformProfileUrl.Equals(input.FireteamPlatformProfileUrl))
-                ) &&
-                (
-                    FireteamPlatformUniqueIdentifier == input.FireteamPlatformUniqueIdentifier ||
-                    (FireteamPlatformUniqueIdentifier != null && FireteamPlatformUniqueIdentifier.Equals(input.FireteamPlatformUniqueIdentifier))
                 ) &&
                 (
                     SupplementalDisplayName == input.SupplementalDisplayName ||
@@ -128,6 +126,14 @@ namespace GhostSharper.Models
                 (
                     DisplayName == input.DisplayName ||
                     (DisplayName != null && DisplayName.Equals(input.DisplayName))
+                ) &&
+                (
+                    BungieGlobalDisplayName == input.BungieGlobalDisplayName ||
+                    (BungieGlobalDisplayName != null && BungieGlobalDisplayName.Equals(input.BungieGlobalDisplayName))
+                ) &&
+                (
+                    BungieGlobalDisplayNameCode == input.BungieGlobalDisplayNameCode ||
+                    (BungieGlobalDisplayNameCode.Equals(input.BungieGlobalDisplayNameCode))
                 ) ;
         }
     }

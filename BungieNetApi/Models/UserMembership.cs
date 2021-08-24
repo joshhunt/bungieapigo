@@ -26,6 +26,18 @@ namespace GhostSharper.Models
         [DataMember(Name = "displayName", EmitDefaultValue = false)]
         public string DisplayName { get; set; }
 
+        /// <summary>
+        /// The bungie global display name, if set.
+        /// </summary>
+        [DataMember(Name = "bungieGlobalDisplayName", EmitDefaultValue = false)]
+        public string BungieGlobalDisplayName { get; set; }
+
+        /// <summary>
+        /// The bungie global display name code, if set.
+        /// </summary>
+        [DataMember(Name = "bungieGlobalDisplayNameCode", EmitDefaultValue = false)]
+        public long BungieGlobalDisplayNameCode { get; set; }
+
 
         public override bool Equals(object input)
         {
@@ -48,6 +60,14 @@ namespace GhostSharper.Models
                 (
                     DisplayName == input.DisplayName ||
                     (DisplayName != null && DisplayName.Equals(input.DisplayName))
+                ) &&
+                (
+                    BungieGlobalDisplayName == input.BungieGlobalDisplayName ||
+                    (BungieGlobalDisplayName != null && BungieGlobalDisplayName.Equals(input.BungieGlobalDisplayName))
+                ) &&
+                (
+                    BungieGlobalDisplayNameCode == input.BungieGlobalDisplayNameCode ||
+                    (BungieGlobalDisplayNameCode.Equals(input.BungieGlobalDisplayNameCode))
                 ) ;
         }
     }

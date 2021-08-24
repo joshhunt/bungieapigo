@@ -121,5 +121,19 @@ namespace GhostSharper.Models
         [EnumMember(Value = "16384")]
         SeasonalRewardExpiration = 16384,
 
+        /// <summary>
+        /// BestDeal = 32768
+        /// This indicates that the sale item is the best deal among different choices.
+        /// </summary>
+        [EnumMember(Value = "32768")]
+        BestDeal = 32768,
+
+        /// <summary>
+        /// Popular = 65536
+        /// This indicates that the sale item is popular.
+        /// </summary>
+        [EnumMember(Value = "65536")]
+        Popular = 65536,
+
     }
 }

@@ -105,6 +105,12 @@ namespace GhostSharper.Models
         [DataMember(Name = "twitchDisplayName", EmitDefaultValue = false)]
         public string TwitchDisplayName { get; set; }
 
+        [DataMember(Name = "cachedBungieGlobalDisplayName", EmitDefaultValue = false)]
+        public string CachedBungieGlobalDisplayName { get; set; }
+
+        [DataMember(Name = "cachedBungieGlobalDisplayNameCode", EmitDefaultValue = false)]
+        public long CachedBungieGlobalDisplayNameCode { get; set; }
+
 
         public override bool Equals(object input)
         {
@@ -247,6 +253,14 @@ namespace GhostSharper.Models
                 (
                     TwitchDisplayName == input.TwitchDisplayName ||
                     (TwitchDisplayName != null && TwitchDisplayName.Equals(input.TwitchDisplayName))
+                ) &&
+                (
+                    CachedBungieGlobalDisplayName == input.CachedBungieGlobalDisplayName ||
+                    (CachedBungieGlobalDisplayName != null && CachedBungieGlobalDisplayName.Equals(input.CachedBungieGlobalDisplayName))
+                ) &&
+                (
+                    CachedBungieGlobalDisplayNameCode == input.CachedBungieGlobalDisplayNameCode ||
+                    (CachedBungieGlobalDisplayNameCode.Equals(input.CachedBungieGlobalDisplayNameCode))
                 ) ;
         }
     }
