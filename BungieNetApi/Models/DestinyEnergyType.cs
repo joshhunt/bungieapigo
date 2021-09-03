@@ -44,5 +44,11 @@ namespace GhostSharper.Models
         [EnumMember(Value = "5")]
         Subclass = 5,
 
+        /// <summary>
+        /// Stasis = 6
+        /// </summary>
+        [EnumMember(Value = "6")]
+        Stasis = 6,
+
     }
 }
