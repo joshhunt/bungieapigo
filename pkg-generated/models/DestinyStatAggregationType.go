@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // When a Stat (DestinyStatDefinition) is aggregated, this is the rules used for determining the
 // level and formula used for aggregation.
@@ -10,7 +10,7 @@ package bungieAPI
 type DestinyStatAggregationType int
 
 const (
-	DestinyStatAggregationTypeCharacterAverage = 0
-	DestinyStatAggregationTypeCharacter        = 1
-	DestinyStatAggregationTypeItem             = 2
+    DestinyStatAggregationTypeCharacterAverage = 0
+    DestinyStatAggregationTypeCharacter = 1
+    DestinyStatAggregationTypeItem = 2
 )

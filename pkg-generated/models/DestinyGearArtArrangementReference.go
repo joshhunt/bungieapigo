@@ -1,6 +1,7 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyGearArtArrangementReference struct {
-	ClassHash          int `json:"classHash"`
-	ArtArrangementHash int `json:"artArrangementHash"`
+    ClassHash int `json:"classHash"`
+    ArtArrangementHash int `json:"artArrangementHash"`
 }
+

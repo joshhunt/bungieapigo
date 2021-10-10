@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyPresentationNodeCollectibleChildEntry struct {
-	CollectibleHash int `json:"collectibleHash"`
+    CollectibleHash int `json:"collectibleHash"`
 }
+

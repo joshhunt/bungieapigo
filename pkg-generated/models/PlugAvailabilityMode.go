@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // This enum determines whether the plug is available to be inserted.
 // - Normal means that all existing rules for plug insertion apply.
@@ -10,7 +10,7 @@ package bungieAPI
 type PlugAvailabilityMode int
 
 const (
-	PlugAvailabilityModeNormal                                          = 0
-	PlugAvailabilityModeUnavailableIfSocketContainsMatchingPlugCategory = 1
-	PlugAvailabilityModeAvailableIfSocketContainsMatchingPlugCategory   = 2
+    PlugAvailabilityModeNormal = 0
+    PlugAvailabilityModeUnavailableIfSocketContainsMatchingPlugCategory = 1
+    PlugAvailabilityModeAvailableIfSocketContainsMatchingPlugCategory = 2
 )

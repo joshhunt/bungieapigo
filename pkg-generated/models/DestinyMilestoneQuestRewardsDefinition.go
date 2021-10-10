@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // If rewards are given in a quest - as opposed to overall in the entire Milestone - there's way less
 // to track. We're going to simplify this contract as a result. However, this also gives us the
@@ -7,11 +7,13 @@ package bungieAPI
 // items nested inside of their own class?"
 type DestinyMilestoneQuestRewardsDefinition struct {
 
-	// The items that represent your reward for completing the quest.
-	// Be warned, these could be "dummy" items: items that are only used to render a good-looking
-	// in-game tooltip, but aren't the actual items themselves.
-	// For instance, when experience is given there's often a dummy item representing "experience",
-	// with quantity being the amount of experience you got. We don't have a programmatic association
-	// between those and whatever Progression is actually getting that experience... yet.
-	Items []DestinyMilestoneQuestRewardItem `json:"items"`
+    // The items that represent your reward for completing the quest.
+    // Be warned, these could be "dummy" items: items that are only used to render a good-looking
+    // in-game tooltip, but aren't the actual items themselves.
+    // For instance, when experience is given there's often a dummy item representing "experience",
+    // with quantity being the amount of experience you got. We don't have a programmatic association
+    // between those and whatever Progression is actually getting that experience... yet.
+    Items []DestinyMilestoneQuestRewardItem `json:"items"`
+
 }
+

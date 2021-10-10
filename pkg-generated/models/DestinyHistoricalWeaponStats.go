@@ -1,10 +1,13 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyHistoricalWeaponStats struct {
 
-	// The hash ID of the item definition that describes the weapon.
-	ReferenceId int `json:"referenceId"`
+    // The hash ID of the item definition that describes the weapon.
+    ReferenceId int `json:"referenceId"`
 
-	// Collection of stats for the period.
-	Values map[string]DestinyHistoricalStatsValue `json:"values"`
+
+    // Collection of stats for the period.
+    Values map[string]DestinyHistoricalStatsValue `json:"values"`
+
 }
+

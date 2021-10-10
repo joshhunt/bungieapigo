@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyIconSequenceDefinition struct {
-	Frames []string `json:"frames"`
+    Frames []string `json:"frames"`
 }
+

@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // If you want to report a player causing trouble in a game, this request will let you report that
 // player and the specific PGCR in which the trouble was caused, along with why.
@@ -10,17 +10,21 @@ package bungieAPI
 // you pass into the URL of the reporting endpoint itself.
 type DestinyReportOffensePgcrRequest struct {
 
-	// So you've decided to report someone instead of cursing them and their descendants. Well, okay
-	// then. This is the category or categorie(s) of infractions for which you are reporting the user.
-	// These are hash identifiers that map to DestinyReportReasonCategoryDefinition entries.
-	ReasonCategoryHashes []int `json:"reasonCategoryHashes"`
+    // So you've decided to report someone instead of cursing them and their descendants. Well, okay
+    // then. This is the category or categorie(s) of infractions for which you are reporting the user.
+    // These are hash identifiers that map to DestinyReportReasonCategoryDefinition entries.
+    ReasonCategoryHashes []int `json:"reasonCategoryHashes"`
 
-	// If applicable, provide a more specific reason(s) within the general category of problems
-	// provided by the reasonHash. This is also an identifier for a reason. All reasonHashes provided
-	// must be children of at least one the reasonCategoryHashes provided.
-	ReasonHashes []int `json:"reasonHashes"`
 
-	// Within the PGCR provided when calling the Reporting endpoint, this should be the character ID
-	// of the user that you thought was violating terms of use. They must exist in the PGCR provided.
-	OffendingCharacterId int64 `json:"offendingCharacterId"`
+    // If applicable, provide a more specific reason(s) within the general category of problems
+    // provided by the reasonHash. This is also an identifier for a reason. All reasonHashes provided
+    // must be children of at least one the reasonCategoryHashes provided.
+    ReasonHashes []int `json:"reasonHashes"`
+
+
+    // Within the PGCR provided when calling the Reporting endpoint, this should be the character ID
+    // of the user that you thought was violating terms of use. They must exist in the PGCR provided.
+    OffendingCharacterId int64 `json:"offendingCharacterId"`
+
 }
+

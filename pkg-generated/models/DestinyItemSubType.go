@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // This Enumeration further classifies items by more specific categorizations than
 // DestinyItemType. The "Sub-Type" is where we classify and categorize items one step further in
@@ -15,44 +15,46 @@ package bungieAPI
 type DestinyItemSubType int
 
 const (
-	DestinyItemSubTypeNone = 0
+    DestinyItemSubTypeNone = 0
 
-	// DEPRECATED. Items can be both "Crucible" and something else interesting.
-	DestinyItemSubTypeCrucible = 1
+    // DEPRECATED. Items can be both "Crucible" and something else interesting.
+    DestinyItemSubTypeCrucible = 1
 
-	// DEPRECATED. An item can both be "Vanguard" and something else.
-	DestinyItemSubTypeVanguard = 2
 
-	// DEPRECATED. An item can both be Exotic and something else.
-	DestinyItemSubTypeExotic = 5
+    // DEPRECATED. An item can both be "Vanguard" and something else.
+    DestinyItemSubTypeVanguard = 2
 
-	DestinyItemSubTypeAutoRifle      = 6
-	DestinyItemSubTypeShotgun        = 7
-	DestinyItemSubTypeMachinegun     = 8
-	DestinyItemSubTypeHandCannon     = 9
-	DestinyItemSubTypeRocketLauncher = 10
-	DestinyItemSubTypeFusionRifle    = 11
-	DestinyItemSubTypeSniperRifle    = 12
-	DestinyItemSubTypePulseRifle     = 13
-	DestinyItemSubTypeScoutRifle     = 14
 
-	// DEPRECATED. An item can both be CRM and something else.
-	DestinyItemSubTypeCrm = 16
+    // DEPRECATED. An item can both be Exotic and something else.
+    DestinyItemSubTypeExotic = 5
 
-	DestinyItemSubTypeSidearm               = 17
-	DestinyItemSubTypeSword                 = 18
-	DestinyItemSubTypeMask                  = 19
-	DestinyItemSubTypeShader                = 20
-	DestinyItemSubTypeOrnament              = 21
-	DestinyItemSubTypeFusionRifleLine       = 22
-	DestinyItemSubTypeGrenadeLauncher       = 23
-	DestinyItemSubTypeSubmachineGun         = 24
-	DestinyItemSubTypeTraceRifle            = 25
-	DestinyItemSubTypeHelmetArmor           = 26
-	DestinyItemSubTypeGauntletsArmor        = 27
-	DestinyItemSubTypeChestArmor            = 28
-	DestinyItemSubTypeLegArmor              = 29
-	DestinyItemSubTypeClassArmor            = 30
-	DestinyItemSubTypeBow                   = 31
-	DestinyItemSubTypeDummyRepeatableBounty = 32
+    DestinyItemSubTypeAutoRifle = 6
+    DestinyItemSubTypeShotgun = 7
+    DestinyItemSubTypeMachinegun = 8
+    DestinyItemSubTypeHandCannon = 9
+    DestinyItemSubTypeRocketLauncher = 10
+    DestinyItemSubTypeFusionRifle = 11
+    DestinyItemSubTypeSniperRifle = 12
+    DestinyItemSubTypePulseRifle = 13
+    DestinyItemSubTypeScoutRifle = 14
+
+    // DEPRECATED. An item can both be CRM and something else.
+    DestinyItemSubTypeCrm = 16
+
+    DestinyItemSubTypeSidearm = 17
+    DestinyItemSubTypeSword = 18
+    DestinyItemSubTypeMask = 19
+    DestinyItemSubTypeShader = 20
+    DestinyItemSubTypeOrnament = 21
+    DestinyItemSubTypeFusionRifleLine = 22
+    DestinyItemSubTypeGrenadeLauncher = 23
+    DestinyItemSubTypeSubmachineGun = 24
+    DestinyItemSubTypeTraceRifle = 25
+    DestinyItemSubTypeHelmetArmor = 26
+    DestinyItemSubTypeGauntletsArmor = 27
+    DestinyItemSubTypeChestArmor = 28
+    DestinyItemSubTypeLegArmor = 29
+    DestinyItemSubTypeClassArmor = 30
+    DestinyItemSubTypeBow = 31
+    DestinyItemSubTypeDummyRepeatableBounty = 32
 )

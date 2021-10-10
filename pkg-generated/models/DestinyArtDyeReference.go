@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyArtDyeReference struct {
-	ArtDyeChannelHash int `json:"artDyeChannelHash"`
+    ArtDyeChannelHash int `json:"artDyeChannelHash"`
 }
+

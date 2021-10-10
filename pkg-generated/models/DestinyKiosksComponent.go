@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // A Kiosk is a Vendor (DestinyVendorDefinition) that sells items based on whether you have
 // already acquired that item before.
@@ -12,8 +12,10 @@ package bungieAPI
 // using this data.
 type DestinyKiosksComponent struct {
 
-	// A dictionary keyed by the Kiosk Vendor's hash identifier (use it to look up the
-	// DestinyVendorDefinition for the relevant kiosk vendor), and whose value is a list of all the
-	// items that the user can "see" in the Kiosk, and any other interesting metadata.
-	KioskItems map[int][]DestinyKioskItem `json:"kioskItems"`
+    // A dictionary keyed by the Kiosk Vendor's hash identifier (use it to look up the
+    // DestinyVendorDefinition for the relevant kiosk vendor), and whose value is a list of all the
+    // items that the user can "see" in the Kiosk, and any other interesting metadata.
+    KioskItems map[int][]DestinyKioskItem `json:"kioskItems"`
+
 }
+

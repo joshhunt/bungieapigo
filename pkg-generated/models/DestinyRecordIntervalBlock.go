@@ -1,7 +1,8 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyRecordIntervalBlock struct {
-	IntervalObjectives                   []DestinyRecordIntervalObjective `json:"intervalObjectives"`
-	IntervalRewards                      []DestinyRecordIntervalRewards   `json:"intervalRewards"`
-	OriginalObjectiveArrayInsertionIndex int                              `json:"originalObjectiveArrayInsertionIndex"`
+    IntervalObjectives []DestinyRecordIntervalObjective `json:"intervalObjectives"`
+    IntervalRewards []DestinyRecordIntervalRewards `json:"intervalRewards"`
+    OriginalObjectiveArrayInsertionIndex int `json:"originalObjectiveArrayInsertionIndex"`
 }
+

@@ -1,6 +1,7 @@
-package bungieAPI
+package bungieapigo
 
 type GearAssetDataBaseDefinition struct {
-	Version int    `json:"version"`
-	Path    string `json:"path"`
+    Version int `json:"version"`
+    Path string `json:"path"`
 }
+

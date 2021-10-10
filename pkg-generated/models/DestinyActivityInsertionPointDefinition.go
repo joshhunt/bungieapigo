@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // A point of entry into an activity, gated by an unlock flag and with some more-or-less useless
 // (for our purposes) phase information. I'm including it in case we end up being able to bolt more
@@ -9,7 +9,9 @@ package bungieAPI
 // phases have been completed on a weekly achievement.
 type DestinyActivityInsertionPointDefinition struct {
 
-	// A unique hash value representing the phase. This can be useful for, for example, comparing how
-	// different instances of Raids have phases in different orders!
-	PhaseHash int `json:"phaseHash"`
+    // A unique hash value representing the phase. This can be useful for, for example, comparing how
+    // different instances of Raids have phases in different orders!
+    PhaseHash int `json:"phaseHash"`
+
 }
+

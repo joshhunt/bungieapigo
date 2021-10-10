@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // A vendor can have many categories of items that they sell. This component will return the
 // category information for available items, as well as the index into those items in the user's
@@ -8,8 +8,10 @@ package bungieAPI
 // unfortunate, but permanent, limitation of Vendor data.
 type DestinyVendorCategoriesComponent struct {
 
-	// The list of categories for items that the vendor sells, in rendering order.
-	// These categories each point to a "display category" in the displayCategories property of the
-	// DestinyVendorDefinition, as opposed to the other categories.
-	Categories []DestinyVendorCategory `json:"categories"`
+    // The list of categories for items that the vendor sells, in rendering order.
+    // These categories each point to a "display category" in the displayCategories property of the
+    // DestinyVendorDefinition, as opposed to the other categories.
+    Categories []DestinyVendorCategory `json:"categories"`
+
 }
+

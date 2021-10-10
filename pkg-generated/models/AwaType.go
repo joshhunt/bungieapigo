@@ -1,10 +1,11 @@
-package bungieAPI
+package bungieapigo
 
 type AwaType int
 
 const (
-	AwaTypeNone = 0
+    AwaTypeNone = 0
 
-	// Insert plugs into sockets.
-	AwaTypeInsertPlugs = 1
+    // Insert plugs into sockets.
+    AwaTypeInsertPlugs = 1
+
 )

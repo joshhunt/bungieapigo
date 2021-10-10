@@ -1,7 +1,8 @@
-package bungieAPI
+package bungieapigo
 
 type GroupTheme struct {
-	Name        string `json:"name"`
-	Folder      string `json:"folder"`
-	Description string `json:"description"`
+    Name string `json:"name"`
+    Folder string `json:"folder"`
+    Description string `json:"description"`
 }
+

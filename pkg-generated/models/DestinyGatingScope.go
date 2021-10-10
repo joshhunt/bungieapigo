@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // This enumeration represents the most restrictive type of gating that is being performed by an
 // entity. This is useful as a shortcut to avoid a lot of lookups when determining whether the
@@ -26,11 +26,11 @@ package bungieAPI
 type DestinyGatingScope int
 
 const (
-	DestinyGatingScopeNone             = 0
-	DestinyGatingScopeGlobal           = 1
-	DestinyGatingScopeClan             = 2
-	DestinyGatingScopeProfile          = 3
-	DestinyGatingScopeCharacter        = 4
-	DestinyGatingScopeItem             = 5
-	DestinyGatingScopeAssumedWorstCase = 6
+    DestinyGatingScopeNone = 0
+    DestinyGatingScopeGlobal = 1
+    DestinyGatingScopeClan = 2
+    DestinyGatingScopeProfile = 3
+    DestinyGatingScopeCharacter = 4
+    DestinyGatingScopeItem = 5
+    DestinyGatingScopeAssumedWorstCase = 6
 )

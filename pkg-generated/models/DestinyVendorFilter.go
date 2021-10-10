@@ -1,9 +1,9 @@
-package bungieAPI
+package bungieapigo
 
 // Indicates the type of filter to apply to Vendor results.
 type DestinyVendorFilter int
 
 const (
-	DestinyVendorFilterNone           = 0
-	DestinyVendorFilterApiPurchasable = 1
+    DestinyVendorFilterNone = 0
+    DestinyVendorFilterApiPurchasable = 1
 )

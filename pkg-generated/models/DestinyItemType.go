@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // An enumeration that indicates the high-level "type" of the item, attempting to iron out the
 // context specific differences for specific instances of an entity. For instance, though a
@@ -16,31 +16,31 @@ package bungieAPI
 type DestinyItemType int
 
 const (
-	DestinyItemTypeNone              = 0
-	DestinyItemTypeCurrency          = 1
-	DestinyItemTypeArmor             = 2
-	DestinyItemTypeWeapon            = 3
-	DestinyItemTypeMessage           = 7
-	DestinyItemTypeEngram            = 8
-	DestinyItemTypeConsumable        = 9
-	DestinyItemTypeExchangeMaterial  = 10
-	DestinyItemTypeMissionReward     = 11
-	DestinyItemTypeQuestStep         = 12
-	DestinyItemTypeQuestStepComplete = 13
-	DestinyItemTypeEmblem            = 14
-	DestinyItemTypeQuest             = 15
-	DestinyItemTypeSubclass          = 16
-	DestinyItemTypeClanBanner        = 17
-	DestinyItemTypeAura              = 18
-	DestinyItemTypeMod               = 19
-	DestinyItemTypeDummy             = 20
-	DestinyItemTypeShip              = 21
-	DestinyItemTypeVehicle           = 22
-	DestinyItemTypeEmote             = 23
-	DestinyItemTypeGhost             = 24
-	DestinyItemTypePackage           = 25
-	DestinyItemTypeBounty            = 26
-	DestinyItemTypeWrapper           = 27
-	DestinyItemTypeSeasonalArtifact  = 28
-	DestinyItemTypeFinisher          = 29
+    DestinyItemTypeNone = 0
+    DestinyItemTypeCurrency = 1
+    DestinyItemTypeArmor = 2
+    DestinyItemTypeWeapon = 3
+    DestinyItemTypeMessage = 7
+    DestinyItemTypeEngram = 8
+    DestinyItemTypeConsumable = 9
+    DestinyItemTypeExchangeMaterial = 10
+    DestinyItemTypeMissionReward = 11
+    DestinyItemTypeQuestStep = 12
+    DestinyItemTypeQuestStepComplete = 13
+    DestinyItemTypeEmblem = 14
+    DestinyItemTypeQuest = 15
+    DestinyItemTypeSubclass = 16
+    DestinyItemTypeClanBanner = 17
+    DestinyItemTypeAura = 18
+    DestinyItemTypeMod = 19
+    DestinyItemTypeDummy = 20
+    DestinyItemTypeShip = 21
+    DestinyItemTypeVehicle = 22
+    DestinyItemTypeEmote = 23
+    DestinyItemTypeGhost = 24
+    DestinyItemTypePackage = 25
+    DestinyItemTypeBounty = 26
+    DestinyItemTypeWrapper = 27
+    DestinyItemTypeSeasonalArtifact = 28
+    DestinyItemTypeFinisher = 29
 )

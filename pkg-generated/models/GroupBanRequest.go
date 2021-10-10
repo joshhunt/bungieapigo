@@ -1,6 +1,7 @@
-package bungieAPI
+package bungieapigo
 
 type GroupBanRequest struct {
-	Comment string       `json:"comment"`
-	Length  IgnoreLength `json:"length"`
+    Comment string `json:"comment"`
+    Length IgnoreLength `json:"length"`
 }
+

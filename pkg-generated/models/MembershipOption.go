@@ -1,9 +1,9 @@
-package bungieAPI
+package bungieapigo
 
 type MembershipOption int
 
 const (
-	MembershipOptionReviewed = 0
-	MembershipOptionOpen     = 1
-	MembershipOptionClosed   = 2
+    MembershipOptionReviewed = 0
+    MembershipOptionOpen = 1
+    MembershipOptionClosed = 2
 )

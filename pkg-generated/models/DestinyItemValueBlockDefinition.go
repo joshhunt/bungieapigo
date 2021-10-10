@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // This defines an item's "Value". Unfortunately, this appears to be used in different ways
 // depending on the way that the item itself is used.
@@ -11,9 +11,12 @@ package bungieAPI
 // put arbitrary items and quantities into the item.
 type DestinyItemValueBlockDefinition struct {
 
-	// References to the items that make up this item's "value", and the quantity.
-	ItemValue []DestinyItemQuantity `json:"itemValue"`
+    // References to the items that make up this item's "value", and the quantity.
+    ItemValue []DestinyItemQuantity `json:"itemValue"`
 
-	// If there's a localized text description of the value provided, this will be said description.
-	ValueDescription string `json:"valueDescription"`
+
+    // If there's a localized text description of the value provided, this will be said description.
+    ValueDescription string `json:"valueDescription"`
+
 }
+

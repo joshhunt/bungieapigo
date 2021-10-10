@@ -1,8 +1,8 @@
-package bungieAPI
+package bungieapigo
 
 type EquippingItemBlockAttributes int
 
 const (
-	EquippingItemBlockAttributesNone           = 0
-	EquippingItemBlockAttributesEquipOnAcquire = 1
+    EquippingItemBlockAttributesNone = 0
+    EquippingItemBlockAttributesEquipOnAcquire = 1
 )

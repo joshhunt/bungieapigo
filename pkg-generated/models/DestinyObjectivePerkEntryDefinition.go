@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // Defines the conditions under which an intrinsic perk is applied while participating in an
 // Objective.
@@ -6,11 +6,14 @@ package bungieAPI
 // gameplay in some interesting way.
 type DestinyObjectivePerkEntryDefinition struct {
 
-	// The hash identifier of the DestinySandboxPerkDefinition that will be applied to the
-	// character.
-	PerkHash int `json:"perkHash"`
+    // The hash identifier of the DestinySandboxPerkDefinition that will be applied to the
+    // character.
+    PerkHash int `json:"perkHash"`
 
-	// An enumeration indicating whether it will be applied as long as the Objective is active, when
-	// it's completed, or until it's completed.
-	Style DestinyObjectiveGrantStyle `json:"style"`
+
+    // An enumeration indicating whether it will be applied as long as the Objective is active, when
+    // it's completed, or until it's completed.
+    Style DestinyObjectiveGrantStyle `json:"style"`
+
 }
+

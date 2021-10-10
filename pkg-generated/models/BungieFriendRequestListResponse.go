@@ -1,6 +1,7 @@
-package bungieAPI
+package bungieapigo
 
 type BungieFriendRequestListResponse struct {
-	IncomingRequests []BungieFriend `json:"incomingRequests"`
-	OutgoingRequests []BungieFriend `json:"outgoingRequests"`
+    IncomingRequests []BungieFriend `json:"incomingRequests"`
+    OutgoingRequests []BungieFriend `json:"outgoingRequests"`
 }
+

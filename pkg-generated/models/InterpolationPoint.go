@@ -1,6 +1,7 @@
-package bungieAPI
+package bungieapigo
 
 type InterpolationPoint struct {
-	Value  int `json:"value"`
-	Weight int `json:"weight"`
+    Value int `json:"value"`
+    Weight int `json:"weight"`
 }
+

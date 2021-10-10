@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // Milestones are an in-game concept where they're attempting to tell you what you can do next
 // in-game.
@@ -31,104 +31,124 @@ package bungieAPI
 // nonexistant) milestone-level names and descriptions.
 type DestinyMilestoneDefinition struct {
 
-	// Many Destiny*Definition contracts - the "first order" entities of Destiny that have their own
-	// tables in the Manifest Database - also have displayable information. This is the base class for
-	// that display information.
-	DisplayProperties DestinyDisplayPropertiesDefinition `json:"displayProperties"`
+    // Many Destiny*Definition contracts - the "first order" entities of Destiny that have their own
+    // tables in the Manifest Database - also have displayable information. This is the base class for
+    // that display information.
+    DisplayProperties DestinyDisplayPropertiesDefinition `json:"displayProperties"`
 
-	// A hint to the UI to indicate what to show as the display properties for this Milestone when
-	// showing "Live" milestone data. Feel free to show more than this if desired: this hint is meant to
-	// simplify our own UI, but it may prove useful to you as well.
-	DisplayPreference DestinyMilestoneDisplayPreference `json:"displayPreference"`
 
-	// A custom image someone made just for the milestone. Isn't that special?
-	Image string `json:"image"`
+    // A hint to the UI to indicate what to show as the display properties for this Milestone when
+    // showing "Live" milestone data. Feel free to show more than this if desired: this hint is meant to
+    // simplify our own UI, but it may prove useful to you as well.
+    DisplayPreference DestinyMilestoneDisplayPreference `json:"displayPreference"`
 
-	// An enumeration listing one of the possible types of milestones. Check out the
-	// DestinyMilestoneType enum for more info!
-	MilestoneType DestinyMilestoneType `json:"milestoneType"`
 
-	// If True, then the Milestone has been integrated with BNet's recruiting feature.
-	Recruitable bool `json:"recruitable"`
+    // A custom image someone made just for the milestone. Isn't that special?
+    Image string `json:"image"`
 
-	// If the milestone has a friendly identifier for association with other features - such as
-	// Recruiting - that identifier can be found here. This is "friendly" in that it looks better in a
-	// URL than whatever the identifier for the Milestone actually is.
-	FriendlyName string `json:"friendlyName"`
 
-	// If TRUE, this entry should be returned in the list of milestones for the "Explore Destiny" (i.e.
-	// new BNet homepage) features of Bungie.net (as long as the underlying event is active) Note that
-	// this is a property specifically used by BNet and the companion app for the "Live Events" feature
-	// of the front page/welcome view: it's not a reflection of what you see in-game.
-	ShowInExplorer bool `json:"showInExplorer"`
+    // An enumeration listing one of the possible types of milestones. Check out the
+    // DestinyMilestoneType enum for more info!
+    MilestoneType DestinyMilestoneType `json:"milestoneType"`
 
-	// Determines whether we'll show this Milestone in the user's personal Milestones list.
-	ShowInMilestones bool `json:"showInMilestones"`
 
-	// If TRUE, "Explore Destiny" (the front page of BNet and the companion app) prioritize using the
-	// activity image over any overriding Quest or Milestone image provided. This unfortunate hack
-	// is brought to you by Trials of The Nine.
-	ExplorePrioritizesActivityImage bool `json:"explorePrioritizesActivityImage"`
+    // If True, then the Milestone has been integrated with BNet's recruiting feature.
+    Recruitable bool `json:"recruitable"`
 
-	// A shortcut for clients - and the server - to understand whether we can predict the start and end
-	// dates for this event. In practice, there are multiple ways that an event could have predictable
-	// date ranges, but not all events will be able to be predicted via any mechanism (for instance,
-	// events that are manually triggered on and off)
-	HasPredictableDates bool `json:"hasPredictableDates"`
 
-	// The full set of possible Quests that give the overview of the Milestone event/activity in
-	// question. Only one of these can be active at a time for a given Conceptual Milestone, but many of
-	// them may be "available" for the user to choose from. (for instance, with Milestones you can
-	// choose from the three available Quests, but only one can be active at a time) Keyed by the quest
-	// item.
-	// As of Forsaken (~September 2018), Quest-style Milestones are being removed for many types of
-	// activities. There will likely be further revisions to the Milestone concept in the future.
-	Quests map[int]DestinyMilestoneQuestDefinition `json:"quests"`
+    // If the milestone has a friendly identifier for association with other features - such as
+    // Recruiting - that identifier can be found here. This is "friendly" in that it looks better in a
+    // URL than whatever the identifier for the Milestone actually is.
+    FriendlyName string `json:"friendlyName"`
 
-	// If this milestone can provide rewards, this will define the categories into which the
-	// individual reward entries are placed.
-	// This is keyed by the Category's hash, which is only guaranteed to be unique within a given
-	// Milestone.
-	Rewards map[int]DestinyMilestoneRewardCategoryDefinition `json:"rewards"`
 
-	// If you're going to show Vendors for the Milestone, you can use this as a localized "header" for
-	// the section where you show that vendor data. It'll provide a more context-relevant clue about
-	// what the vendor's role is in the Milestone.
-	VendorsDisplayTitle string `json:"vendorsDisplayTitle"`
+    // If TRUE, this entry should be returned in the list of milestones for the "Explore Destiny" (i.e.
+    // new BNet homepage) features of Bungie.net (as long as the underlying event is active) Note that
+    // this is a property specifically used by BNet and the companion app for the "Live Events" feature
+    // of the front page/welcome view: it's not a reflection of what you see in-game.
+    ShowInExplorer bool `json:"showInExplorer"`
 
-	// Sometimes, milestones will have rewards provided by Vendors. This definition gives the
-	// information needed to understand which vendors are relevant, the order in which they should be
-	// returned if order matters, and the conditions under which the Vendor is relevant to the user.
-	Vendors []DestinyMilestoneVendorDefinition `json:"vendors"`
 
-	// Sometimes, milestones will have arbitrary values associated with them that are of interest to
-	// us or to third party developers. This is the collection of those values' definitions, keyed by
-	// the identifier of the value and providing useful definition information such as localizable
-	// names and descriptions for the value.
-	Values map[string]DestinyMilestoneValueDefinition `json:"values"`
+    // Determines whether we'll show this Milestone in the user's personal Milestones list.
+    ShowInMilestones bool `json:"showInMilestones"`
 
-	// Some milestones are explicit objectives that you can see and interact with in the game. Some
-	// milestones are more conceptual, built by BNet to help advise you on activities and events that
-	// happen in-game but that aren't explicitly shown in game as Milestones. If this is TRUE, you can
-	// see this as a milestone in the game. If this is FALSE, it's an event or activity you can
-	// participate in, but you won't see it as a Milestone in the game's UI.
-	IsInGameMilestone bool `json:"isInGameMilestone"`
 
-	// A Milestone can now be represented by one or more activities directly (without a backing
-	// Quest), and that activity can have many challenges, modifiers, and related to it.
-	Activities []DestinyMilestoneChallengeActivityDefinition `json:"activities"`
+    // If TRUE, "Explore Destiny" (the front page of BNet and the companion app) prioritize using the
+    // activity image over any overriding Quest or Milestone image provided. This unfortunate hack
+    // is brought to you by Trials of The Nine.
+    ExplorePrioritizesActivityImage bool `json:"explorePrioritizesActivityImage"`
 
-	DefaultOrder int `json:"defaultOrder"`
 
-	// The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not
-	// globally.
-	// When entities refer to each other in Destiny content, it is this hash that they are referring to.
-	Hash int `json:"hash"`
+    // A shortcut for clients - and the server - to understand whether we can predict the start and end
+    // dates for this event. In practice, there are multiple ways that an event could have predictable
+    // date ranges, but not all events will be able to be predicted via any mechanism (for instance,
+    // events that are manually triggered on and off)
+    HasPredictableDates bool `json:"hasPredictableDates"`
 
-	// The index of the entity as it was found in the investment tables.
-	Index int `json:"index"`
 
-	// If this is true, then there is an entity with this identifier/type combination, but BNet is not
-	// yet allowed to show it. Sorry!
-	Redacted bool `json:"redacted"`
+    // The full set of possible Quests that give the overview of the Milestone event/activity in
+    // question. Only one of these can be active at a time for a given Conceptual Milestone, but many of
+    // them may be "available" for the user to choose from. (for instance, with Milestones you can
+    // choose from the three available Quests, but only one can be active at a time) Keyed by the quest
+    // item.
+    // As of Forsaken (~September 2018), Quest-style Milestones are being removed for many types of
+    // activities. There will likely be further revisions to the Milestone concept in the future.
+    Quests map[int]DestinyMilestoneQuestDefinition `json:"quests"`
+
+
+    // If this milestone can provide rewards, this will define the categories into which the
+    // individual reward entries are placed.
+    // This is keyed by the Category's hash, which is only guaranteed to be unique within a given
+    // Milestone.
+    Rewards map[int]DestinyMilestoneRewardCategoryDefinition `json:"rewards"`
+
+
+    // If you're going to show Vendors for the Milestone, you can use this as a localized "header" for
+    // the section where you show that vendor data. It'll provide a more context-relevant clue about
+    // what the vendor's role is in the Milestone.
+    VendorsDisplayTitle string `json:"vendorsDisplayTitle"`
+
+
+    // Sometimes, milestones will have rewards provided by Vendors. This definition gives the
+    // information needed to understand which vendors are relevant, the order in which they should be
+    // returned if order matters, and the conditions under which the Vendor is relevant to the user.
+    Vendors []DestinyMilestoneVendorDefinition `json:"vendors"`
+
+
+    // Sometimes, milestones will have arbitrary values associated with them that are of interest to
+    // us or to third party developers. This is the collection of those values' definitions, keyed by
+    // the identifier of the value and providing useful definition information such as localizable
+    // names and descriptions for the value.
+    Values map[string]DestinyMilestoneValueDefinition `json:"values"`
+
+
+    // Some milestones are explicit objectives that you can see and interact with in the game. Some
+    // milestones are more conceptual, built by BNet to help advise you on activities and events that
+    // happen in-game but that aren't explicitly shown in game as Milestones. If this is TRUE, you can
+    // see this as a milestone in the game. If this is FALSE, it's an event or activity you can
+    // participate in, but you won't see it as a Milestone in the game's UI.
+    IsInGameMilestone bool `json:"isInGameMilestone"`
+
+
+    // A Milestone can now be represented by one or more activities directly (without a backing
+    // Quest), and that activity can have many challenges, modifiers, and related to it.
+    Activities []DestinyMilestoneChallengeActivityDefinition `json:"activities"`
+
+    DefaultOrder int `json:"defaultOrder"`
+
+    // The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not
+    // globally.
+    // When entities refer to each other in Destiny content, it is this hash that they are referring to.
+    Hash int `json:"hash"`
+
+
+    // The index of the entity as it was found in the investment tables.
+    Index int `json:"index"`
+
+
+    // If this is true, then there is an entity with this identifier/type combination, but BNet is not
+    // yet allowed to show it. Sorry!
+    Redacted bool `json:"redacted"`
+
 }
+

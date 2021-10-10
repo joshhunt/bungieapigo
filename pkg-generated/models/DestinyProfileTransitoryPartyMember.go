@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // This is some bare minimum information about a party member in a Fireteam. Unfortunately,
 // without great computational expense on our side we can only get at the data contained here. I'd
@@ -10,16 +10,21 @@ package bungieAPI
 // the character ID of the currently playing character. Pretty please with sugar on top.
 type DestinyProfileTransitoryPartyMember struct {
 
-	// The Membership ID that matches the party member.
-	MembershipId int64 `json:"membershipId"`
+    // The Membership ID that matches the party member.
+    MembershipId int64 `json:"membershipId"`
 
-	// The identifier for the DestinyInventoryItemDefinition of the player's emblem.
-	EmblemHash int `json:"emblemHash"`
 
-	// The player's last known display name.
-	DisplayName string `json:"displayName"`
+    // The identifier for the DestinyInventoryItemDefinition of the player's emblem.
+    EmblemHash int `json:"emblemHash"`
 
-	// A Flags Enumeration value indicating the states that the player is in relevant to being on a
-	// fireteam.
-	Status DestinyPartyMemberStates `json:"status"`
+
+    // The player's last known display name.
+    DisplayName string `json:"displayName"`
+
+
+    // A Flags Enumeration value indicating the states that the player is in relevant to being on a
+    // fireteam.
+    Status DestinyPartyMemberStates `json:"status"`
+
 }
+

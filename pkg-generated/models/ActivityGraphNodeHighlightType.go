@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // The various known UI styles in which an item can be highlighted. It'll be up to you to determine
 // what you want to show based on this highlighting, BNet doesn't have any assets that correspond
@@ -7,9 +7,9 @@ package bungieAPI
 type ActivityGraphNodeHighlightType int
 
 const (
-	ActivityGraphNodeHighlightTypeNone       = 0
-	ActivityGraphNodeHighlightTypeNormal     = 1
-	ActivityGraphNodeHighlightTypeHyper      = 2
-	ActivityGraphNodeHighlightTypeComet      = 3
-	ActivityGraphNodeHighlightTypeRiseOfIron = 4
+    ActivityGraphNodeHighlightTypeNone = 0
+    ActivityGraphNodeHighlightTypeNormal = 1
+    ActivityGraphNodeHighlightTypeHyper = 2
+    ActivityGraphNodeHighlightTypeComet = 3
+    ActivityGraphNodeHighlightTypeRiseOfIron = 4
 )

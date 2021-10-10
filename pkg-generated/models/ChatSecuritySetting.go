@@ -1,8 +1,8 @@
-package bungieAPI
+package bungieapigo
 
 type ChatSecuritySetting int
 
 const (
-	ChatSecuritySettingGroup  = 0
-	ChatSecuritySettingAdmins = 1
+    ChatSecuritySettingGroup = 0
+    ChatSecuritySettingAdmins = 1
 )

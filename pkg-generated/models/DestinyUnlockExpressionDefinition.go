@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // Where the sausage gets made. Unlock Expressions are the foundation of the game's gating
 // mechanics and investment-related restrictions. They can test Unlock Flags and Unlock Values
@@ -8,7 +8,9 @@ package bungieAPI
 // Babel.
 type DestinyUnlockExpressionDefinition struct {
 
-	// A shortcut for determining the most restrictive gating that this expression performs. See the
-	// DestinyGatingScope enum's documentation for more details.
-	Scope DestinyGatingScope `json:"scope"`
+    // A shortcut for determining the most restrictive gating that this expression performs. See the
+    // DestinyGatingScope enum's documentation for more details.
+    Scope DestinyGatingScope `json:"scope"`
+
 }
+

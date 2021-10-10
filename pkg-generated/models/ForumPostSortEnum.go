@@ -1,8 +1,8 @@
-package bungieAPI
+package bungieapigo
 
 type ForumPostSortEnum int
 
 const (
-	ForumPostSortEnumDefault     = 0
-	ForumPostSortEnumOldestFirst = 1
+    ForumPostSortEnumDefault = 0
+    ForumPostSortEnumOldestFirst = 1
 )

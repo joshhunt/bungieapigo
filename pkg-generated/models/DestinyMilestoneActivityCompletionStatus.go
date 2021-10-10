@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // Represents this player's personal completion status for the Activity under a Milestone, if
 // the activity has trackable completion and progress information. (most activities won't, or
@@ -7,11 +7,14 @@ package bungieAPI
 // those terms.
 type DestinyMilestoneActivityCompletionStatus struct {
 
-	// If the activity has been "completed", that information will be returned here.
-	Completed bool `json:"completed"`
+    // If the activity has been "completed", that information will be returned here.
+    Completed bool `json:"completed"`
 
-	// If the Activity has discrete "phases" that we can track, that info will be here. Otherwise, this
-	// value will be NULL. Note that this is a list and not a dictionary: the order implies the ascending
-	// order of phases or progression in this activity.
-	Phases []DestinyMilestoneActivityPhase `json:"phases"`
+
+    // If the Activity has discrete "phases" that we can track, that info will be here. Otherwise, this
+    // value will be NULL. Note that this is a list and not a dictionary: the order implies the ascending
+    // order of phases or progression in this activity.
+    Phases []DestinyMilestoneActivityPhase `json:"phases"`
+
 }
+

@@ -1,7 +1,8 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyPresentationChildBlock struct {
-	PresentationNodeType         DestinyPresentationNodeType     `json:"presentationNodeType"`
-	ParentPresentationNodeHashes []int                           `json:"parentPresentationNodeHashes"`
-	DisplayStyle                 DestinyPresentationDisplayStyle `json:"displayStyle"`
+    PresentationNodeType DestinyPresentationNodeType `json:"presentationNodeType"`
+    ParentPresentationNodeHashes []int `json:"parentPresentationNodeHashes"`
+    DisplayStyle DestinyPresentationDisplayStyle `json:"displayStyle"`
 }
+

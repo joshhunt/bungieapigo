@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyStringVariablesComponent struct {
-	IntegerValuesByHash map[int]int `json:"integerValuesByHash"`
+    IntegerValuesByHash map[int]int `json:"integerValuesByHash"`
 }
+

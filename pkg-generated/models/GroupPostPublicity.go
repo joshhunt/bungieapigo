@@ -1,9 +1,9 @@
-package bungieAPI
+package bungieapigo
 
 type GroupPostPublicity int
 
 const (
-	GroupPostPublicityPublic   = 0
-	GroupPostPublicityAlliance = 1
-	GroupPostPublicityPrivate  = 2
+    GroupPostPublicityPublic = 0
+    GroupPostPublicityAlliance = 1
+    GroupPostPublicityPrivate = 2
 )

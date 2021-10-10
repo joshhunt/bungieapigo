@@ -1,10 +1,13 @@
-package bungieAPI
+package bungieapigo
 
 type Series struct {
 
-	// Collection of samples with time and value.
-	Datapoints []Datapoint `json:"datapoints"`
+    // Collection of samples with time and value.
+    Datapoints []Datapoint `json:"datapoints"`
 
-	// Target to which to datapoints apply.
-	Target string `json:"target"`
+
+    // Target to which to datapoints apply.
+    Target string `json:"target"`
+
 }
+

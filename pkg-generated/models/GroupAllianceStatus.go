@@ -1,9 +1,9 @@
-package bungieAPI
+package bungieapigo
 
 type GroupAllianceStatus int
 
 const (
-	GroupAllianceStatusUnallied = 0
-	GroupAllianceStatusParent   = 1
-	GroupAllianceStatusChild    = 2
+    GroupAllianceStatusUnallied = 0
+    GroupAllianceStatusParent = 1
+    GroupAllianceStatusChild = 2
 )

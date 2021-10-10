@@ -1,6 +1,7 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyArtifactTierItem struct {
-	ItemHash int  `json:"itemHash"`
-	IsActive bool `json:"isActive"`
+    ItemHash int `json:"itemHash"`
+    IsActive bool `json:"isActive"`
 }
+

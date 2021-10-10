@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type GroupApplicationRequest struct {
-	Message string `json:"message"`
+    Message string `json:"message"`
 }
+

@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyCollectibleComponent struct {
-	State DestinyCollectibleState `json:"state"`
+    State DestinyCollectibleState `json:"state"`
 }
+

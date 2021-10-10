@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyPresentationNodesComponent struct {
-	Nodes map[int]DestinyPresentationNodeComponent `json:"nodes"`
+    Nodes map[int]DestinyPresentationNodeComponent `json:"nodes"`
 }
+

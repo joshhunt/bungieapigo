@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // Stat Groups (DestinyStatGroupDefinition) has the ability to override the localized text
 // associated with stats that are to be shown on the items with which they are associated.
@@ -12,10 +12,13 @@ package bungieAPI
 // Group. Other items will still show the default stat's name/description.
 type DestinyStatOverrideDefinition struct {
 
-	// The hash identifier of the stat whose display properties are being overridden.
-	StatHash int `json:"statHash"`
+    // The hash identifier of the stat whose display properties are being overridden.
+    StatHash int `json:"statHash"`
 
-	// The display properties to show instead of the base DestinyStatDefinition display
-	// properties.
-	DisplayProperties DestinyDisplayPropertiesDefinition `json:"displayProperties"`
+
+    // The display properties to show instead of the base DestinyStatDefinition display
+    // properties.
+    DisplayProperties DestinyDisplayPropertiesDefinition `json:"displayProperties"`
+
 }
+

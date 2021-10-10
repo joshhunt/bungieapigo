@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyPresentationNodeMetricChildEntry struct {
-	MetricHash int `json:"metricHash"`
+    MetricHash int `json:"metricHash"`
 }
+

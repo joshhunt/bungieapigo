@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyLinkedGraphEntryDefinition struct {
-	ActivityGraphHash int `json:"activityGraphHash"`
+    ActivityGraphHash int `json:"activityGraphHash"`
 }
+

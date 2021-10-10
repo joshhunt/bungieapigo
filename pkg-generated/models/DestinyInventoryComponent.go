@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // A list of minimal information for items in an inventory: be it a character's inventory, or a
 // Profile's inventory. (Note that the Vault is a collection of inventory buckets in the
@@ -9,7 +9,9 @@ package bungieAPI
 // See DestinyInventoryBucketDefinition for more info.
 type DestinyInventoryComponent struct {
 
-	// The items in this inventory. If you care to bucket them, use the item's bucketHash property to
-	// group them.
-	Items []DestinyItemComponent `json:"items"`
+    // The items in this inventory. If you care to bucket them, use the item's bucketHash property to
+    // group them.
+    Items []DestinyItemComponent `json:"items"`
+
 }
+

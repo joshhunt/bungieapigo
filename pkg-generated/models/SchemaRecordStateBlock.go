@@ -1,6 +1,7 @@
-package bungieAPI
+package bungieapigo
 
 type SchemaRecordStateBlock struct {
-	FeaturedPriority int    `json:"featuredPriority"`
-	ObscuredString   string `json:"obscuredString"`
+    FeaturedPriority int `json:"featuredPriority"`
+    ObscuredString string `json:"obscuredString"`
 }
+

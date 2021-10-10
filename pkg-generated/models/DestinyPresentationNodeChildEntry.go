@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyPresentationNodeChildEntry struct {
-	PresentationNodeHash int `json:"presentationNodeHash"`
+    PresentationNodeHash int `json:"presentationNodeHash"`
 }
+

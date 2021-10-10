@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type TrendingEntrySupportArticle struct {
-	Article ContentItemPublicContract `json:"article"`
+    Article ContentItemPublicContract `json:"article"`
 }
+

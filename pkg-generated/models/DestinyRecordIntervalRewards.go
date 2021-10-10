@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyRecordIntervalRewards struct {
-	IntervalRewardItems []DestinyItemQuantity `json:"intervalRewardItems"`
+    IntervalRewardItems []DestinyItemQuantity `json:"intervalRewardItems"`
 }
+

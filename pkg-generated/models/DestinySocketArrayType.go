@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // If you look in the DestinyInventoryItemDefinition's "sockets" property, you'll see that
 // there are two types of sockets: intrinsic, and "socketEntry."
@@ -8,6 +8,6 @@ package bungieAPI
 type DestinySocketArrayType int
 
 const (
-	DestinySocketArrayTypeDefault   = 0
-	DestinySocketArrayTypeIntrinsic = 1
+    DestinySocketArrayTypeDefault = 0
+    DestinySocketArrayTypeIntrinsic = 1
 )

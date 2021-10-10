@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type StreamInfo struct {
-	ChannelName string `json:"ChannelName"`
+    ChannelName string `json:"ChannelName"`
 }
+

@@ -1,6 +1,7 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyHistoricalStatsWithMerged struct {
-	Results map[string]DestinyHistoricalStatsByPeriod `json:"results"`
-	Merged  DestinyHistoricalStatsByPeriod            `json:"merged"`
+    Results map[string]DestinyHistoricalStatsByPeriod `json:"results"`
+    Merged DestinyHistoricalStatsByPeriod `json:"merged"`
 }
+

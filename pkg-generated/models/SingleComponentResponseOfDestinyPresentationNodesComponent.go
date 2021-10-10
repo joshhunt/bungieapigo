@@ -1,9 +1,11 @@
-package bungieAPI
+package bungieapigo
 
 type SingleComponentResponseOfDestinyPresentationNodesComponent struct {
-	Data    DestinyPresentationNodesComponent `json:"data"`
-	Privacy ComponentPrivacySetting           `json:"privacy"`
+    Data DestinyPresentationNodesComponent `json:"data"`
+    Privacy ComponentPrivacySetting `json:"privacy"`
 
-	// If true, this component is disabled.
-	Disabled bool `json:"disabled"`
+    // If true, this component is disabled.
+    Disabled bool `json:"disabled"`
+
 }
+

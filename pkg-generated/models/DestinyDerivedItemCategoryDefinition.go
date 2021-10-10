@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // A shortcut for the fact that some items have a "Preview Vendor" - See
 // DestinyInventoryItemDefinition.preview.previewVendorHash - that is intended to be used
@@ -10,11 +10,14 @@ package bungieAPI
 // and aggregation manually.
 type DestinyDerivedItemCategoryDefinition struct {
 
-	// The localized string for the category title. This will be something describing the items you
-	// can get as a group, or your likelihood/the quantity you'll get.
-	CategoryDescription string `json:"categoryDescription"`
+    // The localized string for the category title. This will be something describing the items you
+    // can get as a group, or your likelihood/the quantity you'll get.
+    CategoryDescription string `json:"categoryDescription"`
 
-	// This is the list of all of the items for this category and the basic properties we'll know about
-	// them.
-	Items []DestinyDerivedItemDefinition `json:"items"`
+
+    // This is the list of all of the items for this category and the basic properties we'll know about
+    // them.
+    Items []DestinyDerivedItemDefinition `json:"items"`
+
 }
+

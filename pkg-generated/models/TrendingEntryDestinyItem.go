@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type TrendingEntryDestinyItem struct {
-	ItemHash int `json:"itemHash"`
+    ItemHash int `json:"itemHash"`
 }
+

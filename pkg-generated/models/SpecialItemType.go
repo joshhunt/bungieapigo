@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // As you run into items that need to be classified for Milestone purposes in ways that we cannot
 // infer via direct data, add a new classification here and use a string constant to represent it in
@@ -8,13 +8,13 @@ package bungieAPI
 type SpecialItemType int
 
 const (
-	SpecialItemTypeNone             = 0
-	SpecialItemTypeSpecialCurrency  = 1
-	SpecialItemTypeArmor            = 8
-	SpecialItemTypeWeapon           = 9
-	SpecialItemTypeEngram           = 23
-	SpecialItemTypeConsumable       = 24
-	SpecialItemTypeExchangeMaterial = 25
-	SpecialItemTypeMissionReward    = 27
-	SpecialItemTypeCurrency         = 29
+    SpecialItemTypeNone = 0
+    SpecialItemTypeSpecialCurrency = 1
+    SpecialItemTypeArmor = 8
+    SpecialItemTypeWeapon = 9
+    SpecialItemTypeEngram = 23
+    SpecialItemTypeConsumable = 24
+    SpecialItemTypeExchangeMaterial = 25
+    SpecialItemTypeMissionReward = 27
+    SpecialItemTypeCurrency = 29
 )

@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // If you want the stats on an item's instanced data, get this component.
 // These are stats like Attack, Defense etc... and *not* historical stats.
@@ -7,6 +7,8 @@ package bungieAPI
 // stats. I know, it sucks. I hate it too.
 type DestinyItemStatsComponent struct {
 
-	// If the item has stats that it provides (damage, defense, etc...), it will be given here.
-	Stats map[int]DestinyStat `json:"stats"`
+    // If the item has stats that it provides (damage, defense, etc...), it will be given here.
+    Stats map[int]DestinyStat `json:"stats"`
+
 }
+

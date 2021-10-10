@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // By public demand, Checklists are loose sets of "things to do/things you have done" in Destiny
 // that we were actually able to track. They include easter eggs you find in the world, unique
@@ -15,29 +15,37 @@ package bungieAPI
 // Checklists will still exist even after the release of D2: Forsaken.
 type DestinyChecklistDefinition struct {
 
-	// Many Destiny*Definition contracts - the "first order" entities of Destiny that have their own
-	// tables in the Manifest Database - also have displayable information. This is the base class for
-	// that display information.
-	DisplayProperties DestinyDisplayPropertiesDefinition `json:"displayProperties"`
+    // Many Destiny*Definition contracts - the "first order" entities of Destiny that have their own
+    // tables in the Manifest Database - also have displayable information. This is the base class for
+    // that display information.
+    DisplayProperties DestinyDisplayPropertiesDefinition `json:"displayProperties"`
 
-	// A localized string prompting you to view the checklist.
-	ViewActionString string `json:"viewActionString"`
 
-	// Indicates whether you will find this checklist on the Profile or Character components.
-	Scope DestinyScope `json:"scope"`
+    // A localized string prompting you to view the checklist.
+    ViewActionString string `json:"viewActionString"`
 
-	// The individual checklist items. Gotta catch 'em all.
-	Entries []DestinyChecklistEntryDefinition `json:"entries"`
 
-	// The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not
-	// globally.
-	// When entities refer to each other in Destiny content, it is this hash that they are referring to.
-	Hash int `json:"hash"`
+    // Indicates whether you will find this checklist on the Profile or Character components.
+    Scope DestinyScope `json:"scope"`
 
-	// The index of the entity as it was found in the investment tables.
-	Index int `json:"index"`
 
-	// If this is true, then there is an entity with this identifier/type combination, but BNet is not
-	// yet allowed to show it. Sorry!
-	Redacted bool `json:"redacted"`
+    // The individual checklist items. Gotta catch 'em all.
+    Entries []DestinyChecklistEntryDefinition `json:"entries"`
+
+
+    // The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not
+    // globally.
+    // When entities refer to each other in Destiny content, it is this hash that they are referring to.
+    Hash int `json:"hash"`
+
+
+    // The index of the entity as it was found in the investment tables.
+    Index int `json:"index"`
+
+
+    // If this is true, then there is an entity with this identifier/type combination, but BNet is not
+    // yet allowed to show it. Sorry!
+    Redacted bool `json:"redacted"`
+
 }
+

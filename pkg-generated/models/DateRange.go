@@ -1,8 +1,8 @@
-package bungieAPI
-
+package bungieapigo
 import "time"
 
 type DateRange struct {
-	Start time.Time `json:"start"`
-	End   time.Time `json:"end"`
+    Start time.Time `json:"start"`
+    End time.Time `json:"end"`
 }
+

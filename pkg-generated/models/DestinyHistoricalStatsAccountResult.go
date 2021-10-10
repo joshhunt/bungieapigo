@@ -1,7 +1,8 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyHistoricalStatsAccountResult struct {
-	MergedDeletedCharacters DestinyHistoricalStatsWithMerged     `json:"mergedDeletedCharacters"`
-	MergedAllCharacters     DestinyHistoricalStatsWithMerged     `json:"mergedAllCharacters"`
-	Characters              []DestinyHistoricalStatsPerCharacter `json:"characters"`
+    MergedDeletedCharacters DestinyHistoricalStatsWithMerged `json:"mergedDeletedCharacters"`
+    MergedAllCharacters DestinyHistoricalStatsWithMerged `json:"mergedAllCharacters"`
+    Characters []DestinyHistoricalStatsPerCharacter `json:"characters"`
 }
+

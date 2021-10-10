@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // The member levels used by all V2 Groups API. Individual group types use their own mappings in
 // their native storage (general uses BnetDbGroupMemberType and D2 clans use
@@ -7,10 +7,10 @@ package bungieAPI
 type RuntimeGroupMemberType int
 
 const (
-	RuntimeGroupMemberTypeNone          = 0
-	RuntimeGroupMemberTypeBeginner      = 1
-	RuntimeGroupMemberTypeMember        = 2
-	RuntimeGroupMemberTypeAdmin         = 3
-	RuntimeGroupMemberTypeActingFounder = 4
-	RuntimeGroupMemberTypeFounder       = 5
+    RuntimeGroupMemberTypeNone = 0
+    RuntimeGroupMemberTypeBeginner = 1
+    RuntimeGroupMemberTypeMember = 2
+    RuntimeGroupMemberTypeAdmin = 3
+    RuntimeGroupMemberTypeActingFounder = 4
+    RuntimeGroupMemberTypeFounder = 5
 )

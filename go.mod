@@ -1,3 +1,3 @@
-module github.com/joshhunt/bungie-api-golang
+module github.com/joshhunt/bungieapigo
 
 go 1.16

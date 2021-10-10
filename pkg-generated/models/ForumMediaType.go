@@ -1,10 +1,10 @@
-package bungieAPI
+package bungieapigo
 
 type ForumMediaType int
 
 const (
-	ForumMediaTypeNone    = 0
-	ForumMediaTypeImage   = 1
-	ForumMediaTypeVideo   = 2
-	ForumMediaTypeYoutube = 3
+    ForumMediaTypeNone = 0
+    ForumMediaTypeImage = 1
+    ForumMediaTypeVideo = 2
+    ForumMediaTypeYoutube = 3
 )

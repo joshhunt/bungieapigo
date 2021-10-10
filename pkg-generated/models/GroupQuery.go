@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // NOTE: GroupQuery, as of Destiny 2, has essentially two totally different and incompatible
 // "modes".
@@ -8,14 +8,15 @@ package bungieAPI
 // - groupMemberCountFilter - localeFilter - tagText
 // If you pass these, you will get a useless InvalidParameters error.
 type GroupQuery struct {
-	Name                     string         `json:"name"`
-	GroupType                GroupType      `json:"groupType"`
-	CreationDate             GroupDateRange `json:"creationDate"`
-	SortBy                   GroupSortBy    `json:"sortBy"`
-	GroupMemberCountFilter   int            `json:"groupMemberCountFilter"`
-	LocaleFilter             string         `json:"localeFilter"`
-	TagText                  string         `json:"tagText"`
-	ItemsPerPage             int            `json:"itemsPerPage"`
-	CurrentPage              int            `json:"currentPage"`
-	RequestContinuationToken string         `json:"requestContinuationToken"`
+    Name string `json:"name"`
+    GroupType GroupType `json:"groupType"`
+    CreationDate GroupDateRange `json:"creationDate"`
+    SortBy GroupSortBy `json:"sortBy"`
+    GroupMemberCountFilter int `json:"groupMemberCountFilter"`
+    LocaleFilter string `json:"localeFilter"`
+    TagText string `json:"tagText"`
+    ItemsPerPage int `json:"itemsPerPage"`
+    CurrentPage int `json:"currentPage"`
+    RequestContinuationToken string `json:"requestContinuationToken"`
 }
+

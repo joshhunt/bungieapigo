@@ -1,6 +1,7 @@
-package bungieAPI
+package bungieapigo
 
 type CoreSystem struct {
-	Enabled    bool              `json:"enabled"`
-	Parameters map[string]string `json:"parameters"`
+    Enabled bool `json:"enabled"`
+    Parameters map[string]string `json:"parameters"`
 }
+

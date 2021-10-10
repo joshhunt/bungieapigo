@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // Sockets may refer to a "Plug Set": a set of reusable plugs that may be shared across multiple
 // sockets (or even, in theory, multiple sockets over multiple items).
@@ -9,7 +9,9 @@ package bungieAPI
 // component itself, as they cannot be reused)
 type DestinyPlugSetsComponent struct {
 
-	// The shared list of plugs for each relevant PlugSet, keyed by the hash identifier of the PlugSet
-	// (DestinyPlugSetDefinition).
-	Plugs map[int][]DestinyItemPlug `json:"plugs"`
+    // The shared list of plugs for each relevant PlugSet, keyed by the hash identifier of the PlugSet
+    // (DestinyPlugSetDefinition).
+    Plugs map[int][]DestinyItemPlug `json:"plugs"`
+
 }
+

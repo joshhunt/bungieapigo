@@ -1,6 +1,7 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyParentItemOverride struct {
-	AdditionalEquipRequirementsDisplayStrings []string `json:"additionalEquipRequirementsDisplayStrings"`
-	PipIcon                                   string   `json:"pipIcon"`
+    AdditionalEquipRequirementsDisplayStrings []string `json:"additionalEquipRequirementsDisplayStrings"`
+    PipIcon string `json:"pipIcon"`
 }
+

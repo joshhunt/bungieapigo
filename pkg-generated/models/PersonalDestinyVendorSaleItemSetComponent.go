@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type PersonalDestinyVendorSaleItemSetComponent struct {
-	SaleItems map[int]DestinyVendorSaleItemComponent `json:"saleItems"`
+    SaleItems map[int]DestinyVendorSaleItemComponent `json:"saleItems"`
 }
+

@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // BNet attempts to group vendors into similar collections. These groups aren't technically
 // game canonical, but they are helpful for filtering vendors or showing them organized into a
@@ -10,21 +10,27 @@ package bungieAPI
 // in the Companion.
 type DestinyVendorGroupDefinition struct {
 
-	// The recommended order in which to render the groups, Ascending order.
-	Order int `json:"order"`
+    // The recommended order in which to render the groups, Ascending order.
+    Order int `json:"order"`
 
-	// For now, a group just has a name.
-	CategoryName string `json:"categoryName"`
 
-	// The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not
-	// globally.
-	// When entities refer to each other in Destiny content, it is this hash that they are referring to.
-	Hash int `json:"hash"`
+    // For now, a group just has a name.
+    CategoryName string `json:"categoryName"`
 
-	// The index of the entity as it was found in the investment tables.
-	Index int `json:"index"`
 
-	// If this is true, then there is an entity with this identifier/type combination, but BNet is not
-	// yet allowed to show it. Sorry!
-	Redacted bool `json:"redacted"`
+    // The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not
+    // globally.
+    // When entities refer to each other in Destiny content, it is this hash that they are referring to.
+    Hash int `json:"hash"`
+
+
+    // The index of the entity as it was found in the investment tables.
+    Index int `json:"index"`
+
+
+    // If this is true, then there is an entity with this identifier/type combination, but BNet is not
+    // yet allowed to show it. Sorry!
+    Redacted bool `json:"redacted"`
+
 }
+

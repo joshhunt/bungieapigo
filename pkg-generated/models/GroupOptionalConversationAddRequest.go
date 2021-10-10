@@ -1,6 +1,7 @@
-package bungieAPI
+package bungieapigo
 
 type GroupOptionalConversationAddRequest struct {
-	ChatName     string              `json:"chatName"`
-	ChatSecurity ChatSecuritySetting `json:"chatSecurity"`
+    ChatName string `json:"chatName"`
+    ChatSecurity ChatSecuritySetting `json:"chatSecurity"`
 }
+

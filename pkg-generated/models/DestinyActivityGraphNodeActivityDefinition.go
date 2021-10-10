@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // The actual activity to be redirected to when you click on the node. Note that a node can have many
 // Activities attached to it: but only one will be active at any given time. The list of Node
@@ -8,12 +8,15 @@ package bungieAPI
 // active for the week.
 type DestinyActivityGraphNodeActivityDefinition struct {
 
-	// An identifier for this node activity. It is only guaranteed to be unique within the Activity
-	// Graph.
-	NodeActivityId int `json:"nodeActivityId"`
+    // An identifier for this node activity. It is only guaranteed to be unique within the Activity
+    // Graph.
+    NodeActivityId int `json:"nodeActivityId"`
 
-	// The activity that will be activated if the user clicks on this node. Controls all
-	// activity-related information displayed on the node if it is active (the text shown in the
-	// tooltip etc)
-	ActivityHash int `json:"activityHash"`
+
+    // The activity that will be activated if the user clicks on this node. Controls all
+    // activity-related information displayed on the node if it is active (the text shown in the
+    // tooltip etc)
+    ActivityHash int `json:"activityHash"`
+
 }
+

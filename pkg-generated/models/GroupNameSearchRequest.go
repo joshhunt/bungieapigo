@@ -1,6 +1,7 @@
-package bungieAPI
+package bungieapigo
 
 type GroupNameSearchRequest struct {
-	GroupName string    `json:"groupName"`
-	GroupType GroupType `json:"groupType"`
+    GroupName string `json:"groupName"`
+    GroupType GroupType `json:"groupType"`
 }
+

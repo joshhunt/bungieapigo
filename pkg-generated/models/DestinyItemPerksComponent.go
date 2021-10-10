@@ -1,4 +1,4 @@
-package bungieAPI
+package bungieapigo
 
 // Instanced items can have perks: benefits that the item bestows.
 // These are related to DestinySandboxPerkDefinition, and sometimes - but not always - have
@@ -7,6 +7,8 @@ package bungieAPI
 // your convenience.
 type DestinyItemPerksComponent struct {
 
-	// The list of perks to display in an item tooltip - and whether or not they have been activated.
-	Perks []DestinyPerkReference `json:"perks"`
+    // The list of perks to display in an item tooltip - and whether or not they have been activated.
+    Perks []DestinyPerkReference `json:"perks"`
+
 }
+

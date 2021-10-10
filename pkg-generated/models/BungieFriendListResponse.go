@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type BungieFriendListResponse struct {
-	Friends []BungieFriend `json:"friends"`
+    Friends []BungieFriend `json:"friends"`
 }
+

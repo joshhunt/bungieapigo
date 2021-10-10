@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type GroupApplicationResponse struct {
-	Resolution GroupApplicationResolveState `json:"resolution"`
+    Resolution GroupApplicationResolveState `json:"resolution"`
 }
+

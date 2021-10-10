@@ -1,5 +1,6 @@
-package bungieAPI
+package bungieapigo
 
 type DestinyPresentationNodeRecordChildEntry struct {
-	RecordHash int `json:"recordHash"`
+    RecordHash int `json:"recordHash"`
 }
+
