@@ -62,7 +62,7 @@ export class ModelProperty {
   }
 
   jsonKey(): string {
-    return `[DataMember(Name = "${this.name}", EmitDefaultValue = false)]`;
+    return this.name;
   }
 
   comparisonFnName(): string {
@@ -89,7 +89,7 @@ export class ModelProperty {
   description(): string[] | null {
     var d = this._description();
     if (!d) return null;
-    return d.split("\r\n");
+    return ApiDocHelper.formatDescription(d);
   }
 
   _description(): string | null {

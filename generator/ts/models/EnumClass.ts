@@ -18,11 +18,20 @@ export class EnumClass {
     return ApiDocHelper.propertyName(this.className);
   }
 
-  get description(): string[] {
+  get description(): string[] | null {
     if (this.data.description) {
-      return this.data.description.split("\r\n") || [];
+      return ApiDocHelper.formatDescription(this.data.description);
     }
-    return [];
+
+    return null;
+  }
+
+  get baseEnumTypeName(): string {
+    return `${this.className}`;
+  }
+
+  get baseEnumType(): string {
+    return ApiDocHelper.getObjectType(this.data);
   }
 
   values() {
@@ -30,11 +39,11 @@ export class EnumClass {
     return enumValues.map((enumValue) => {
       return {
         type: "int",
-        name: enumValue.identifier,
+        name: `${this.baseEnumTypeName}${enumValue.identifier}`,
+
         value: enumValue.numericValue,
-        description: enumValue.description
-          ? enumValue.description.split("\n")
-          : [],
+
+        description: ApiDocHelper.formatDescription(enumValue.description),
       };
     });
   }

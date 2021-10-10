@@ -172,7 +172,7 @@ export class ApiDocHelper {
     }
 
     if (param.type == "array") {
-      return `List<${this.getObjectType(param.items)}>`;
+      return `[]${this.getObjectType(param.items)}`;
     }
 
     if (param.type == "object" && param.allOf) {
@@ -186,14 +186,17 @@ export class ApiDocHelper {
     ) {
       let keyType = this.getObjectType(param["x-dictionary-key"]);
       let valueType = this.getObjectType(param.additionalProperties);
-      return `Dictionary<string, ${valueType}>`;
+      return `map[${keyType}]${valueType}`;
     }
+
     if (param.type == "object") {
-      return `Dictionary<string, string>`;
+      return `map[string]string`;
     }
+
     if (param.type) {
       return this.parseType(param);
     }
+
     return param.name;
   }
 
@@ -243,7 +246,7 @@ export class ApiDocHelper {
         }
 
         if (format == "date-time") {
-          return "DateTime";
+          return "time.Time";
         }
 
         return "string";
@@ -257,16 +260,16 @@ export class ApiDocHelper {
           return type;
         }
         if (format == "int64") {
-          return "long";
+          return "int64";
         }
         if (format == "float" || format == "double") {
-          return "double";
+          return "float64";
         }
         if (format == "uint32") {
-          return "uint";
+          return "int";
         }
 
-        return "long";
+        return "int";
 
       case "boolean":
         return "bool";
@@ -288,5 +291,12 @@ export class ApiDocHelper {
       res = res[path.shift()!];
     }
     return res;
+  }
+
+  static formatDescription(description: string | null): string[] | null {
+    if (!description) {
+      return null;
+    }
+    return ["", ...description.split("\r\n").map((v) => `// ${v}`)];
   }
 }

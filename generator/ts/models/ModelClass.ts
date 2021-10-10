@@ -31,7 +31,7 @@ export class ModelClass {
       }
     );
 
-    const fixedProperties = (props as any) as ModelProperty[];
+    const fixedProperties = props as any as ModelProperty[];
     fixedProperties.forEach((prop, index) => {
       prop.notLast = index !== fixedProperties.length - 1;
     });
@@ -49,22 +49,14 @@ export class ModelClass {
   }
 
   imports() {
-    const baseImports = ["System.Runtime.Serialization"];
+    const baseImports = [];
 
     const propertyImports = this.properties()
       .flatMap((prop) => {
         const type = prop.typeName();
 
-        if (type.includes("List<")) {
-          return ["System.Collections.Generic", "System.Linq"];
-        }
-
-        if (type.includes("Dictionary<")) {
-          return ["System.Collections.Generic", "System.Linq"];
-        }
-
-        if (type.includes("DateTime")) {
-          return ["System"];
+        if (type.includes("time.")) {
+          return ["time"];
         }
 
         return null;

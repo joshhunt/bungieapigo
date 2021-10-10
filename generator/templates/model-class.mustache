@@ -1,45 +1,17 @@
+package bungieAPI
 {{#imports}}
-using {{{.}}};
+import "{{{.}}}"
 {{/imports}}
 
-namespace GhostSharper.Models
-{
+{{#description}}
+// {{&.}}
+{{/description}}
+type {{className}} struct {
+    {{#properties}}
     {{#description}}
-    /// <summary>
-    /// {{&.}}
-    /// </summary>
+    {{{.}}}
     {{/description}}
-    [DataContract]
-    public class {{className}}
-    {
-        {{#properties}}
-        {{#description}}
-        /// <summary>
-        /// {{{.}}}
-        /// </summary>
-        {{/description}}
-        {{{jsonKey}}}
-        {{keywords}} {{{typeName}}} {{propertyName}} { get; set; }
-
-        {{/properties}}
-
-        public override bool Equals(object input)
-        {
-            return this.Equals(input as {{className}});
-        }
-
-        public bool Equals({{className}} input)
-        {
-            if (input == null) return false;
-
-            return
-                {{#properties}}
-                (
-                    {{propertyName}} == input.{{propertyName}} ||
-                    ({{&equals}})
-                ){{#notLast}} &&{{/notLast}}{{^notLast}} ;{{/notLast}}
-                {{/properties}}
-        }
-    }
+    {{propertyName}} {{{typeName}}} `json:"{{{jsonKey}}}"`
+    {{/properties}}
 }
 

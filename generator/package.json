@@ -1,5 +1,5 @@
 {
-  "name": "bungie-api-dart",
+  "name": "bungie-api-golang",
   "version": "1.13.0",
   "description": "Dart mappings for the Bungie.net API",
   "main": "./dist/index.ts",
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/marquesinijatinha/bungie-api-dart.git"
+    "url": "https://github.com/joshhunt/bungie-api-golang.git"
   },
-  "author": "Ben Hollis, João Paulo Marquesini",
+  "author": "Ben Hollis, João Paulo Marquesini, Josh Hunt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marquesinijatinha/bungie-api-dart/issues"
+    "url": "https://github.com/joshhunt/bungie-api-golang/issues"
   },
   "keywords": [
     "Destiny",
@@ -25,7 +25,7 @@
     "Bungie.net",
     "Dart"
   ],
-  "homepage": "https://github.com/marquesinijatinha/bungie-api-dart",
+  "homepage": "https://github.com/joshhunt/bungie-api-golang",
   "devDependencies": {
     "@types/lodash": "^4.14.134",
     "@types/mustache": "^0.8.32",

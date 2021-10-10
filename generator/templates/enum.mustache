@@ -1,24 +1,15 @@
-using System.Runtime.Serialization;{{#isBitMask}}
-using System;{{/isBitMask}}
+package bungieAPI
 
-namespace GhostSharper.Models
-{
+{{#description}}
+{{{.}}}
+{{/description}}
+type {{baseEnumTypeName}} {{baseEnumType}}
+
+const (
+    {{#values}}
     {{#description}}
-    /// <summary>
-    /// {{&.}}
-    /// </summary>
+    {{{.}}}
     {{/description}}
-    {{#isBitMask}}[Flags]{{/isBitMask}}
-    public enum {{className}}
-    {
-        {{#values}}
-        /// <summary>
-        /// {{name}} = {{value}}{{#description}}
-        /// {{.}}{{/description}}
-        /// </summary>
-        [EnumMember(Value = "{{value}}")]
-        {{name}} = {{value}},
-
-        {{/values}}
-    }
-}
+    {{name}} = {{value}}
+    {{/values}}
+)
