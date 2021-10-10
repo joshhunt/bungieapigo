@@ -14,6 +14,7 @@ const (
 	// PvP activities, where you shoot your "friends".
 	DestinyActivityModeCategoryPvP = 2
 
-	// PVE competitive activities, where you shoot whoever you want whenever you want. Or run around collecting small glowing triangles.
+	// PVE competitive activities, where you shoot whoever you want whenever you want. Or run around
+	// collecting small glowing triangles.
 	DestinyActivityModeCategoryPvECompetitive = 3
 )

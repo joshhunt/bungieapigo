@@ -9,7 +9,8 @@ type UserMembership struct {
 	// Membership ID as they user is known in the Accounts service
 	MembershipId int64 `json:"membershipId"`
 
-	// Display Name the player has chosen for themselves. The display name is optional when the data type is used as input to a platform API.
+	// Display Name the player has chosen for themselves. The display name is optional when the data
+	// type is used as input to a platform API.
 	DisplayName string `json:"displayName"`
 
 	// The bungie global display name, if set.

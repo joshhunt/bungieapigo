@@ -19,7 +19,8 @@ const (
 	PlatformErrorCodesDuplicate                                 = 13
 
 	// Deprecated, please do not check for this value anywhere.
-	PlatformErrorCodesUnknownSqlResult                                      = 14
+	PlatformErrorCodesUnknownSqlResult = 14
+
 	PlatformErrorCodesValidationError                                       = 15
 	PlatformErrorCodesValidationMissingFieldError                           = 16
 	PlatformErrorCodesValidationInvalidInputError                           = 17
@@ -511,8 +512,10 @@ const (
 	PlatformErrorCodesDestinyItemAlreadyInInventory                         = 1632
 	PlatformErrorCodesDestinyBucketNotFound                                 = 1633
 
-	// Note: This is one of those holdovers from Destiny 1. We didn't change the enum because I am lazy, but in Destiny 2 this would read "DestinyCharacterNotInSocialSpace"
-	PlatformErrorCodesDestinyCharacterNotInTower                             = 1634
+	// Note: This is one of those holdovers from Destiny 1. We didn't change the enum because I am lazy,
+	// but in Destiny 2 this would read "DestinyCharacterNotInSocialSpace"
+	PlatformErrorCodesDestinyCharacterNotInTower = 1634
+
 	PlatformErrorCodesDestinyCharacterNotLoggedIn                            = 1635
 	PlatformErrorCodesDestinyDefinitionsNotLoaded                            = 1636
 	PlatformErrorCodesDestinyInventoryFull                                   = 1637

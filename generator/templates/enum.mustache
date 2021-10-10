@@ -1,15 +1,21 @@
 package bungieAPI
 
 {{#description}}
-{{{.}}}
+// {{{.}}}
 {{/description}}
 type {{baseEnumTypeName}} {{baseEnumType}}
 
 const (
     {{#values}}
+    {{#hasDescription}}
+
+    {{/hasDescription}}
     {{#description}}
-    {{{.}}}
+    // {{{.}}}
     {{/description}}
     {{name}} = {{value}}
+    {{#hasDescription}}
+
+    {{/hasDescription}}
     {{/values}}
 )

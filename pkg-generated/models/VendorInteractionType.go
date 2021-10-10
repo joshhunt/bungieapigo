@@ -27,7 +27,9 @@ const (
 	// An interaction shown when you're accepting a new quest.
 	VendorInteractionTypeQuestAccept = 7
 
-	// Honestly, this doesn't seem consistent to me. It is used to give you choices in the Cryptarch as well as some reward prompts by the Eververse vendor. I'll have to look into that further at some point.
+	// Honestly, this doesn't seem consistent to me. It is used to give you choices in the Cryptarch as
+	// well as some reward prompts by the Eververse vendor. I'll have to look into that further at some
+	// point.
 	VendorInteractionTypeProgressTab = 8
 
 	// These seem even less consistent. I don't know what these are.

@@ -19,7 +19,8 @@ type DestinyVendorResponse struct {
 	// COMPONENT TYPE: [See inside the DestinyItemComponentSet contract for component types.]
 	ItemComponents DestinyItemComponentSetOfint32 `json:"itemComponents"`
 
-	// A "lookup" convenience component that can be used to quickly check if the character has access to items that can be used for purchasing.
+	// A "lookup" convenience component that can be used to quickly check if the character has access
+	// to items that can be used for purchasing.
 	// COMPONENT TYPE: CurrencyLookups
 	CurrencyLookups SingleComponentResponseOfDestinyCurrenciesComponent `json:"currencyLookups"`
 

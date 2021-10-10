@@ -1,6 +1,7 @@
 package bungieAPI
 
-// For historical reasons, this list will have both D1 and D2-relevant Activity Modes in it. Please don't take this to mean that some D1-only feature is coming back!
+// For historical reasons, this list will have both D1 and D2-relevant Activity Modes in it.
+// Please don't take this to mean that some D1-only feature is coming back!
 type DestinyActivityModeType int
 
 const (
@@ -15,8 +16,10 @@ const (
 	DestinyActivityModeTypeControl    = 10
 	DestinyActivityModeTypeReserved11 = 11
 
-	// Clash -> Destiny's name for Team Deathmatch. 4v4 combat, the team with the highest kills at the end of time wins.
-	DestinyActivityModeTypeClash                   = 12
+	// Clash -> Destiny's name for Team Deathmatch. 4v4 combat, the team with the highest kills at the
+	// end of time wins.
+	DestinyActivityModeTypeClash = 12
+
 	DestinyActivityModeTypeReserved13              = 13
 	DestinyActivityModeTypeCrimsonDoubles          = 15
 	DestinyActivityModeTypeNightfall               = 16

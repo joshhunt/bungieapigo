@@ -1,6 +1,7 @@
 package bungieAPI
 
-// Used for setting the guided game permission level override (admins and founders can always host guided games).
+// Used for setting the guided game permission level override (admins and founders can always
+// host guided games).
 type HostGuidedGamesPermissionLevel int
 
 const (

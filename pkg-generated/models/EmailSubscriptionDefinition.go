@@ -1,6 +1,7 @@
 package bungieAPI
 
-// Defines a single subscription: permission to send emails for a specific, focused subject (generally timeboxed, such as for a specific release of a product or feature).
+// Defines a single subscription: permission to send emails for a specific, focused subject
+// (generally timeboxed, such as for a specific release of a product or feature).
 type EmailSubscriptionDefinition struct {
 
 	// The unique identifier for this subscription.

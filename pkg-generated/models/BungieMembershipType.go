@@ -1,6 +1,7 @@
 package bungieAPI
 
-// The types of membership the Accounts system supports. This is the external facing enum used in place of the internal-only Bungie.SharedDefinitions.MembershipType.
+// The types of membership the Accounts system supports. This is the external facing enum used in
+// place of the internal-only Bungie.SharedDefinitions.MembershipType.
 type BungieMembershipType int
 
 const (
@@ -13,6 +14,7 @@ const (
 	BungieMembershipTypeTigerDemon    = 10
 	BungieMembershipTypeBungieNext    = 254
 
-	// "All" is only valid for searching capabilities: you need to pass the actual matching BungieMembershipType for any query where you pass a known membershipId.
+	// "All" is only valid for searching capabilities: you need to pass the actual matching
+	// BungieMembershipType for any query where you pass a known membershipId.
 	BungieMembershipTypeAll = -1
 )

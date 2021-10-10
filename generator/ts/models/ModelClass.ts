@@ -41,7 +41,11 @@ export class ModelClass {
 
   description() {
     if (!this.data.description) return null;
-    return this.data.description.split("\r\n");
+    return ApiDocHelper.formatDescription(this.data.description);
+  }
+
+  get hasDescription() {
+    return (this.description()?.length ?? 0) > 0;
   }
 
   get filename(): String {

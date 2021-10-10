@@ -14,6 +14,7 @@ type DestinyArtifactTierDefinition struct {
 	// The items that can be earned within this tier.
 	Items []DestinyArtifactTierItemDefinition `json:"items"`
 
-	// The minimum number of "unlock points" that you must have used before you can unlock items from this tier.
+	// The minimum number of "unlock points" that you must have used before you can unlock items from
+	// this tier.
 	MinimumUnlockPointsUsedRequirement int `json:"minimumUnlockPointsUsedRequirement"`
 }

@@ -11,9 +11,11 @@ const (
 	// You can't transfer the item because it is equipped on a character.
 	TransferStatusesItemIsEquipped = 1
 
-	// The item is defined as not transferrable in its DestinyInventoryItemDefinition.nonTransferrable property.
+	// The item is defined as not transferrable in its
+	// DestinyInventoryItemDefinition.nonTransferrable property.
 	TransferStatusesNotTransferrable = 2
 
-	// You could transfer the item, but the place you're trying to put it has run out of room! Check your remaining Vault and/or character space.
+	// You could transfer the item, but the place you're trying to put it has run out of room! Check your
+	// remaining Vault and/or character space.
 	TransferStatusesNoRoomInDestination = 4
 )

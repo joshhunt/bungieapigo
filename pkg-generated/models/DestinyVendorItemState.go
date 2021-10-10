@@ -1,6 +1,8 @@
 package bungieAPI
 
-// The possible states of Destiny Profile Records. IMPORTANT: Any given item can theoretically have many of these states simultaneously: as a result, this was altered to be a flags enumeration/bitmask for v3.2.0.
+// The possible states of Destiny Profile Records. IMPORTANT: Any given item can theoretically
+// have many of these states simultaneously: as a result, this was altered to be a flags
+// enumeration/bitmask for v3.2.0.
 type DestinyVendorItemState int
 
 const (
@@ -8,19 +10,24 @@ const (
 	// There are no augments on the item.
 	DestinyVendorItemStateNone = 0
 
-	// Deprecated forever (probably). There was a time when Records were going to be implemented through Vendors, and this field was relevant. Now they're implemented through Presentation Nodes, and this field doesn't matter anymore.
+	// Deprecated forever (probably). There was a time when Records were going to be implemented
+	// through Vendors, and this field was relevant. Now they're implemented through Presentation
+	// Nodes, and this field doesn't matter anymore.
 	DestinyVendorItemStateIncomplete = 1
 
-	// Deprecated forever (probably). See the description of the "Incomplete" value for the juicy scoop.
+	// Deprecated forever (probably). See the description of the "Incomplete" value for the juicy
+	// scoop.
 	DestinyVendorItemStateRewardAvailable = 2
 
-	// Deprecated forever (probably). See the description of the "Incomplete" value for the juicy scoop.
+	// Deprecated forever (probably). See the description of the "Incomplete" value for the juicy
+	// scoop.
 	DestinyVendorItemStateComplete = 4
 
 	// This item is considered to be "newly available", and should have some UI showing how shiny it is.
 	DestinyVendorItemStateNew = 8
 
-	// This item is being "featured", and should be shiny in a different way from items that are merely new.
+	// This item is being "featured", and should be shiny in a different way from items that are merely
+	// new.
 	DestinyVendorItemStateFeatured = 16
 
 	// This item is only available for a limited time, and that time is approaching.
@@ -35,7 +42,8 @@ const (
 	// This item should be shown with a "wide view" instead of normal icon view.
 	DestinyVendorItemStateWideView = 256
 
-	// This indicates that you should show some kind of attention-requesting indicator on the item, in a similar manner to items in the nexus that have such notifications.
+	// This indicates that you should show some kind of attention-requesting indicator on the item,
+	// in a similar manner to items in the nexus that have such notifications.
 	DestinyVendorItemStateNexusAttention = 512
 
 	// This indicates that the item has some sort of a 'set' discount.

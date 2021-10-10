@@ -1,6 +1,7 @@
 package bungieAPI
 
-// A flags enumeration/bitmask indicating the versions of the game that a given user has purchased.
+// A flags enumeration/bitmask indicating the versions of the game that a given user has
+// purchased.
 type DestinyGameVersions int
 
 const (

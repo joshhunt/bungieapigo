@@ -92,6 +92,10 @@ export class ModelProperty {
     return ApiDocHelper.formatDescription(d);
   }
 
+  get hasDescription() {
+    return (this.description()?.length ?? 0) > 0;
+  }
+
   _description(): string | null {
     if ("$ref" in this.info) {
       let info = this.info as ReferenceObject;

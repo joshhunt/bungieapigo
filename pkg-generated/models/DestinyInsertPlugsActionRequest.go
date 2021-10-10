@@ -9,7 +9,8 @@ type DestinyInsertPlugsActionRequest struct {
 	ItemInstanceId int64 `json:"itemInstanceId"`
 
 	// The plugs being inserted.
-	Plug           DestinyInsertPlugsRequestEntry `json:"plug"`
-	CharacterId    int64                          `json:"characterId"`
-	MembershipType BungieMembershipType           `json:"membershipType"`
+	Plug DestinyInsertPlugsRequestEntry `json:"plug"`
+
+	CharacterId    int64                `json:"characterId"`
+	MembershipType BungieMembershipType `json:"membershipType"`
 }

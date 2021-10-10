@@ -1,6 +1,7 @@
 package bungieAPI
 
-// If progression is earned, this determines whether the progression shows visual effects on the character or its item - or neither.
+// If progression is earned, this determines whether the progression shows visual effects on the
+// character or its item - or neither.
 type DestinyProgressionStepDisplayEffect int
 
 const (

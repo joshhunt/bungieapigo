@@ -1,6 +1,7 @@
 package bungieAPI
 
-// Localized text relevant to a given EMail setting in a given localization. Extra settings specifically for subscriptions.
+// Localized text relevant to a given EMail setting in a given localization. Extra settings
+// specifically for subscriptions.
 type EMailSettingSubscriptionLocalization struct {
 	UnknownUserDescription      string `json:"unknownUserDescription"`
 	RegisteredUserDescription   string `json:"registeredUserDescription"`

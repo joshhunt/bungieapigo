@@ -294,9 +294,27 @@ export class ApiDocHelper {
   }
 
   static formatDescription(description: string | null): string[] | null {
+    const LINE_CHAR_LIMIT = 80;
     if (!description) {
       return null;
     }
-    return ["", ...description.split("\r\n").map((v) => `// ${v}`)];
+    return description.split("\r\n").flatMap((line) => {
+      const newLines: string[][] = [[]];
+
+      let currentLineLength = 0;
+      const words = line.split(" ");
+
+      for (const word of words) {
+        if (currentLineLength + word.length > LINE_CHAR_LIMIT) {
+          currentLineLength = 0;
+          newLines.push([]);
+        }
+
+        currentLineLength += word.length;
+        newLines[newLines.length - 1].push(word);
+      }
+
+      return newLines.map((v) => v.join(" "));
+    });
   }
 }

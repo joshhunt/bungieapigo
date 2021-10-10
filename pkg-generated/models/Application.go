@@ -34,7 +34,8 @@ type Application struct {
 	// Date the first time the application status entered the 'Public' status.
 	FirstPublished time.Time `json:"firstPublished"`
 
-	// List of team members who manage this application on Bungie.net. Will always consist of at least the application owner.
+	// List of team members who manage this application on Bungie.net. Will always consist of at least
+	// the application owner.
 	Team []ApplicationDeveloper `json:"team"`
 
 	// An optional override for the Authorize view name.

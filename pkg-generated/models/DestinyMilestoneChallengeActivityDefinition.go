@@ -3,8 +3,9 @@ package bungieAPI
 type DestinyMilestoneChallengeActivityDefinition struct {
 
 	// The activity for which this challenge is active.
-	ActivityHash int                                   `json:"activityHash"`
-	Challenges   []DestinyMilestoneChallengeDefinition `json:"challenges"`
+	ActivityHash int `json:"activityHash"`
+
+	Challenges []DestinyMilestoneChallengeDefinition `json:"challenges"`
 
 	// If the activity and its challenge is visible on any of these nodes, it will be returned.
 	ActivityGraphNodes []DestinyMilestoneChallengeActivityGraphNodeEntry `json:"activityGraphNodes"`

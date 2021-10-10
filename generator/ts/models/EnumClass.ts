@@ -37,13 +37,15 @@ export class EnumClass {
   values() {
     let enumValues = this.data["x-enum-values"];
     return enumValues.map((enumValue) => {
+      const description = ApiDocHelper.formatDescription(enumValue.description);
       return {
         type: "int",
         name: `${this.baseEnumTypeName}${enumValue.identifier}`,
 
         value: enumValue.numericValue,
 
-        description: ApiDocHelper.formatDescription(enumValue.description),
+        description: description,
+        hasDescription: (description?.length ?? 0) > 0,
       };
     });
   }

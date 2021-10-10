@@ -1,6 +1,7 @@
 package bungieAPI
 
-// When a Vendor Interaction provides rewards, they'll either let you choose one or let you have all of them. This determines which it will be.
+// When a Vendor Interaction provides rewards, they'll either let you choose one or let you have
+// all of them. This determines which it will be.
 type DestinyVendorInteractionRewardSelection int
 
 const (

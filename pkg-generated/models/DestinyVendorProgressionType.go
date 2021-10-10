@@ -8,6 +8,7 @@ const (
 	// The original rank progression from token redemption.
 	DestinyVendorProgressionTypeDefault = 0
 
-	// Progression from ranks in ritual content. For example: Crucible (Shaxx), Gambit (Drifter), and Season 13 Battlegrounds (War Table).
+	// Progression from ranks in ritual content. For example: Crucible (Shaxx), Gambit (Drifter),
+	// and Season 13 Battlegrounds (War Table).
 	DestinyVendorProgressionTypeRitual = 1
 )

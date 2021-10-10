@@ -1,6 +1,7 @@
 package bungieAPI
 
-// The response contract for GetDestinyCharacter, with components that can be returned for character and item-level data.
+// The response contract for GetDestinyCharacter, with components that can be returned for
+// character and item-level data.
 type DestinyCharacterResponse struct {
 
 	// The character-level non-equipped inventory items.
@@ -15,7 +16,8 @@ type DestinyCharacterResponse struct {
 	// COMPONENT TYPE: CharacterProgressions
 	Progressions SingleComponentResponseOfDestinyCharacterProgressionComponent `json:"progressions"`
 
-	// Character rendering data - a minimal set of information about equipment and dyes used for rendering.
+	// Character rendering data - a minimal set of information about equipment and dyes used for
+	// rendering.
 	// COMPONENT TYPE: CharacterRenderData
 	RenderData SingleComponentResponseOfDestinyCharacterRenderComponent `json:"renderData"`
 
@@ -31,8 +33,10 @@ type DestinyCharacterResponse struct {
 	// COMPONENT TYPE: Kiosks
 	Kiosks SingleComponentResponseOfDestinyKiosksComponent `json:"kiosks"`
 
-	// When sockets refer to reusable Plug Sets (see DestinyPlugSetDefinition for more info), this is the set of plugs and their states that are scoped to this character.
-	// This comes back with ItemSockets, as it is needed for a complete picture of the sockets on requested items.
+	// When sockets refer to reusable Plug Sets (see DestinyPlugSetDefinition for more info), this
+	// is the set of plugs and their states that are scoped to this character.
+	// This comes back with ItemSockets, as it is needed for a complete picture of the sockets on
+	// requested items.
 	// COMPONENT TYPE: ItemSockets
 	PlugSets SingleComponentResponseOfDestinyPlugSetsComponent `json:"plugSets"`
 
@@ -49,11 +53,13 @@ type DestinyCharacterResponse struct {
 	// COMPONENT TYPE: [See inside the DestinyItemComponentSet contract for component types.]
 	ItemComponents DestinyItemComponentSetOfint64 `json:"itemComponents"`
 
-	// The set of components belonging to the player's UNinstanced items. Because apparently now those too can have information relevant to the character's state.
+	// The set of components belonging to the player's UNinstanced items. Because apparently now
+	// those too can have information relevant to the character's state.
 	// COMPONENT TYPE: [See inside the DestinyItemComponentSet contract for component types.]
 	UninstancedItemComponents DestinyBaseItemComponentSetOfuint32 `json:"uninstancedItemComponents"`
 
-	// A "lookup" convenience component that can be used to quickly check if the character has access to items that can be used for purchasing.
+	// A "lookup" convenience component that can be used to quickly check if the character has access
+	// to items that can be used for purchasing.
 	// COMPONENT TYPE: CurrencyLookups
 	CurrencyLookups SingleComponentResponseOfDestinyCurrenciesComponent `json:"currencyLookups"`
 }

@@ -15,8 +15,10 @@ type GroupV2Card struct {
 	MembershipOption MembershipOption `json:"membershipOption"`
 	Capabilities     Capabilities     `json:"capabilities"`
 
-	// This contract contains clan-specific group information. It does not include any investment data.
-	ClanInfo   GroupV2ClanInfo `json:"clanInfo"`
-	AvatarPath string          `json:"avatarPath"`
-	Theme      string          `json:"theme"`
+	// This contract contains clan-specific group information. It does not include any investment
+	// data.
+	ClanInfo GroupV2ClanInfo `json:"clanInfo"`
+
+	AvatarPath string `json:"avatarPath"`
+	Theme      string `json:"theme"`
 }

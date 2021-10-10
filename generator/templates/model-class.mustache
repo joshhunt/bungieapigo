@@ -4,14 +4,20 @@ import "{{{.}}}"
 {{/imports}}
 
 {{#description}}
-// {{&.}}
+// {{{.}}}
 {{/description}}
 type {{className}} struct {
     {{#properties}}
+    {{#hasDescription}}
+
+    {{/hasDescription}}
     {{#description}}
-    {{{.}}}
+    // {{{.}}}
     {{/description}}
     {{propertyName}} {{{typeName}}} `json:"{{{jsonKey}}}"`
+    {{#hasDescription}}
+
+    {{/hasDescription}}
     {{/properties}}
 }
 

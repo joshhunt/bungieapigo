@@ -22,6 +22,7 @@ type CoreSettingsConfiguration struct {
 	Destiny2CoreSettings           Destiny2CoreSettings  `json:"destiny2CoreSettings"`
 
 	// The set of all email subscription/opt-in settings and definitions.
-	EmailSettings      EmailSettings `json:"emailSettings"`
+	EmailSettings EmailSettings `json:"emailSettings"`
+
 	FireteamActivities []CoreSetting `json:"fireteamActivities"`
 }

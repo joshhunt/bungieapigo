@@ -3,10 +3,13 @@ package bungieAPI
 type GroupFeatures struct {
 	MaximumMembers int `json:"maximumMembers"`
 
-	// Maximum number of groups of this type a typical membership may join. For example, a user may join about 50 General groups with their Bungie.net account. They may join one clan per Destiny membership.
-	MaximumMembershipsOfGroupType int                    `json:"maximumMembershipsOfGroupType"`
-	Capabilities                  Capabilities           `json:"capabilities"`
-	MembershipTypes               []BungieMembershipType `json:"membershipTypes"`
+	// Maximum number of groups of this type a typical membership may join. For example, a user may join
+	// about 50 General groups with their Bungie.net account. They may join one clan per Destiny
+	// membership.
+	MaximumMembershipsOfGroupType int `json:"maximumMembershipsOfGroupType"`
+
+	Capabilities    Capabilities           `json:"capabilities"`
+	MembershipTypes []BungieMembershipType `json:"membershipTypes"`
 
 	// Minimum Member Level allowed to invite new members to group
 	// Always Allowed: Founder, Acting Founder
