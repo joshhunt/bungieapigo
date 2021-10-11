@@ -11,5 +11,5 @@ type EmailSubscriptionDefinition struct {
 	Localization map[string]EMailSettingSubscriptionLocalization `json:"localization"`
 
 	// The bitflag value for this subscription. Should be a unique power of two value.
-	Value int64 `json:"value"`
+	Value int64 `json:"value,string"`
 }

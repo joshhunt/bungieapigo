@@ -1,7 +1,7 @@
 package bungieapigo
 
 type BungieFriend struct {
-	LastSeenAsMembershipId         int64                    `json:"lastSeenAsMembershipId"`
+	LastSeenAsMembershipId         int64                    `json:"lastSeenAsMembershipId,string"`
 	LastSeenAsBungieMembershipType BungieMembershipType     `json:"lastSeenAsBungieMembershipType"`
 	BungieGlobalDisplayName        string                   `json:"bungieGlobalDisplayName"`
 	BungieGlobalDisplayNameCode    int                      `json:"bungieGlobalDisplayNameCode"`

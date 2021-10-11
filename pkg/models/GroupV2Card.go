@@ -4,7 +4,7 @@ import "time"
 
 // A small infocard of group information, usually used for when a list of groups are returned
 type GroupV2Card struct {
-	GroupId          int64            `json:"groupId"`
+	GroupId          int64            `json:"groupId,string"`
 	Name             string           `json:"name"`
 	GroupType        GroupType        `json:"groupType"`
 	CreationDate     time.Time        `json:"creationDate"`

@@ -19,7 +19,7 @@ type DestinyVendorReceipt struct {
 	LicenseUnlockHash int `json:"licenseUnlockHash"`
 
 	// The ID of the character who made the purchase.
-	PurchasedByCharacterId int64 `json:"purchasedByCharacterId"`
+	PurchasedByCharacterId int64 `json:"purchasedByCharacterId,string"`
 
 	// Whether you can get a refund, and what happens in order for the refund to be received. See the
 	// DestinyVendorItemRefundPolicy enum for details.
@@ -29,7 +29,7 @@ type DestinyVendorReceipt struct {
 	SequenceNumber int `json:"sequenceNumber"`
 
 	// The seconds since epoch at which this receipt is rendered invalid.
-	TimeToExpiration int64 `json:"timeToExpiration"`
+	TimeToExpiration int64 `json:"timeToExpiration,string"`
 
 	// The date at which this receipt is rendered invalid.
 	ExpiresOn time.Time `json:"expiresOn"`

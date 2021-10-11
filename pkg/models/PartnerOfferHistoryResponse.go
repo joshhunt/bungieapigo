@@ -4,7 +4,7 @@ import "time"
 
 type PartnerOfferHistoryResponse struct {
 	PartnerOfferKey      string    `json:"PartnerOfferKey"`
-	MembershipId         int64     `json:"MembershipId"`
+	MembershipId         int64     `json:"MembershipId,string"`
 	MembershipType       int       `json:"MembershipType"`
 	LocalizedName        string    `json:"LocalizedName"`
 	LocalizedDescription string    `json:"LocalizedDescription"`

@@ -3,7 +3,7 @@ package bungieapigo
 import "time"
 
 type GroupUserBase struct {
-	GroupId         int64             `json:"groupId"`
+	GroupId         int64             `json:"groupId,string"`
 	DestinyUserInfo GroupUserInfoCard `json:"destinyUserInfo"`
 
 	// This contract supplies basic information commonly used to display a minimal amount of

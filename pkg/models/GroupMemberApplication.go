@@ -3,11 +3,11 @@ package bungieapigo
 import "time"
 
 type GroupMemberApplication struct {
-	GroupId                int64                        `json:"groupId"`
+	GroupId                int64                        `json:"groupId,string"`
 	CreationDate           time.Time                    `json:"creationDate"`
 	ResolveState           GroupApplicationResolveState `json:"resolveState"`
 	ResolveDate            time.Time                    `json:"resolveDate"`
-	ResolvedByMembershipId int64                        `json:"resolvedByMembershipId"`
+	ResolvedByMembershipId int64                        `json:"resolvedByMembershipId,string"`
 	RequestMessage         string                       `json:"requestMessage"`
 	ResolveMessage         string                       `json:"resolveMessage"`
 	DestinyUserInfo        GroupUserInfoCard            `json:"destinyUserInfo"`

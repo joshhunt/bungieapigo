@@ -3,19 +3,19 @@ package bungieapigo
 import "time"
 
 type GeneralUser struct {
-	MembershipId                      int64             `json:"membershipId"`
+	MembershipId                      int64             `json:"membershipId,string"`
 	UniqueName                        string            `json:"uniqueName"`
 	NormalizedName                    string            `json:"normalizedName"`
 	DisplayName                       string            `json:"displayName"`
 	ProfilePicture                    int               `json:"profilePicture"`
 	ProfileTheme                      int               `json:"profileTheme"`
 	UserTitle                         int               `json:"userTitle"`
-	SuccessMessageFlags               int64             `json:"successMessageFlags"`
+	SuccessMessageFlags               int64             `json:"successMessageFlags,string"`
 	IsDeleted                         bool              `json:"isDeleted"`
 	About                             string            `json:"about"`
 	FirstAccess                       time.Time         `json:"firstAccess"`
 	LastUpdate                        time.Time         `json:"lastUpdate"`
-	LegacyPortalUid                   int64             `json:"legacyPortalUID"`
+	LegacyPortalUid                   int64             `json:"legacyPortalUID,string"`
 	Context                           UserToUserContext `json:"context"`
 	PsnDisplayName                    string            `json:"psnDisplayName"`
 	XboxDisplayName                   string            `json:"xboxDisplayName"`
@@ -23,7 +23,7 @@ type GeneralUser struct {
 	ShowActivity                      bool              `json:"showActivity"`
 	Locale                            string            `json:"locale"`
 	LocaleInheritDefault              bool              `json:"localeInheritDefault"`
-	LastBanReportId                   int64             `json:"lastBanReportId"`
+	LastBanReportId                   int64             `json:"lastBanReportId,string"`
 	ShowGroupMessaging                bool              `json:"showGroupMessaging"`
 	ProfilePicturePath                string            `json:"profilePicturePath"`
 	ProfilePictureWidePath            string            `json:"profilePictureWidePath"`

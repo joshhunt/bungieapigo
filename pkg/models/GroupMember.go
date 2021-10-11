@@ -5,8 +5,8 @@ import "time"
 type GroupMember struct {
 	MemberType             RuntimeGroupMemberType `json:"memberType"`
 	IsOnline               bool                   `json:"isOnline"`
-	LastOnlineStatusChange int64                  `json:"lastOnlineStatusChange"`
-	GroupId                int64                  `json:"groupId"`
+	LastOnlineStatusChange int64                  `json:"lastOnlineStatusChange,string"`
+	GroupId                int64                  `json:"groupId,string"`
 	DestinyUserInfo        GroupUserInfoCard      `json:"destinyUserInfo"`
 
 	// This contract supplies basic information commonly used to display a minimal amount of

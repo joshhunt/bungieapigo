@@ -8,25 +8,25 @@ type DestinyCharacterComponent struct {
 
 	// Every Destiny Profile has a membershipId. This is provided on the character as well for
 	// convenience.
-	MembershipId int64 `json:"membershipId"`
+	MembershipId int64 `json:"membershipId,string"`
 
 	// membershipType tells you the platform on which the character plays. Examine the
 	// BungieMembershipType enumeration for possible values.
 	MembershipType BungieMembershipType `json:"membershipType"`
 
 	// The unique identifier for the character.
-	CharacterId int64 `json:"characterId"`
+	CharacterId int64 `json:"characterId,string"`
 
 	// The last date that the user played Destiny.
 	DateLastPlayed time.Time `json:"dateLastPlayed"`
 
 	// If the user is currently playing, this is how long they've been playing.
-	MinutesPlayedThisSession int64 `json:"minutesPlayedThisSession"`
+	MinutesPlayedThisSession int64 `json:"minutesPlayedThisSession,string"`
 
 	// If this value is 525,600, then they played Destiny for a year. Or they're a very dedicated Rent
 	// fan. Note that this includes idle time, not just time spent actually in activities shooting
 	// things.
-	MinutesPlayedTotal int64 `json:"minutesPlayedTotal"`
+	MinutesPlayedTotal int64 `json:"minutesPlayedTotal,string"`
 
 	// The user's calculated "Light Level". Light level is an indicator of your power that mostly
 	// matters in the end game, once you've reached the maximum character level: it's a level that's

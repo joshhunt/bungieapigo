@@ -22,5 +22,5 @@ type DestinyReportOffensePgcrRequest struct {
 
 	// Within the PGCR provided when calling the Reporting endpoint, this should be the character ID
 	// of the user that you thought was violating terms of use. They must exist in the PGCR provided.
-	OffendingCharacterId int64 `json:"offendingCharacterId"`
+	OffendingCharacterId int64 `json:"offendingCharacterId,string"`
 }

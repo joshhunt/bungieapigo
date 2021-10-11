@@ -3,13 +3,13 @@ package bungieapigo
 import "time"
 
 type FireteamSummary struct {
-	FireteamId                  int64            `json:"fireteamId"`
-	GroupId                     int64            `json:"groupId"`
+	FireteamId                  int64            `json:"fireteamId,string"`
+	GroupId                     int64            `json:"groupId,string"`
 	Platform                    FireteamPlatform `json:"platform"`
 	ActivityType                int              `json:"activityType"`
 	IsImmediate                 bool             `json:"isImmediate"`
 	ScheduledTime               time.Time        `json:"scheduledTime"`
-	OwnerMembershipId           int64            `json:"ownerMembershipId"`
+	OwnerMembershipId           int64            `json:"ownerMembershipId,string"`
 	PlayerSlotCount             int              `json:"playerSlotCount"`
 	AlternateSlotCount          int              `json:"alternateSlotCount"`
 	AvailablePlayerSlotCount    int              `json:"availablePlayerSlotCount"`

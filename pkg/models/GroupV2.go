@@ -3,10 +3,10 @@ package bungieapigo
 import "time"
 
 type GroupV2 struct {
-	GroupId                            int64               `json:"groupId"`
+	GroupId                            int64               `json:"groupId,string"`
 	Name                               string              `json:"name"`
 	GroupType                          GroupType           `json:"groupType"`
-	MembershipIdCreated                int64               `json:"membershipIdCreated"`
+	MembershipIdCreated                int64               `json:"membershipIdCreated,string"`
 	CreationDate                       time.Time           `json:"creationDate"`
 	ModificationDate                   time.Time           `json:"modificationDate"`
 	About                              string              `json:"about"`
@@ -26,7 +26,7 @@ type GroupV2 struct {
 	Theme                              string              `json:"theme"`
 	BannerPath                         string              `json:"bannerPath"`
 	AvatarPath                         string              `json:"avatarPath"`
-	ConversationId                     int64               `json:"conversationId"`
+	ConversationId                     int64               `json:"conversationId,string"`
 	EnableInvitationMessagingForAdmins bool                `json:"enableInvitationMessagingForAdmins"`
 	BanExpireDate                      time.Time           `json:"banExpireDate"`
 	Features                           GroupFeatures       `json:"features"`

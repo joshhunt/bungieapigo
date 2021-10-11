@@ -12,7 +12,7 @@ type FireteamMember struct {
 	// data needed in a contract, use UserInfoCard as a property of other contracts.
 	BungieNetUserInfo UserInfoCard `json:"bungieNetUserInfo"`
 
-	CharacterId                     int64                        `json:"characterId"`
+	CharacterId                     int64                        `json:"characterId,string"`
 	DateJoined                      time.Time                    `json:"dateJoined"`
 	HasMicrophone                   bool                         `json:"hasMicrophone"`
 	LastPlatformInviteAttemptDate   time.Time                    `json:"lastPlatformInviteAttemptDate"`

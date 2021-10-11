@@ -4,7 +4,7 @@ import "time"
 
 type GroupPotentialMember struct {
 	PotentialStatus GroupPotentialMemberStatus `json:"potentialStatus"`
-	GroupId         int64                      `json:"groupId"`
+	GroupId         int64                      `json:"groupId,string"`
 	DestinyUserInfo GroupUserInfoCard          `json:"destinyUserInfo"`
 
 	// This contract supplies basic information commonly used to display a minimal amount of

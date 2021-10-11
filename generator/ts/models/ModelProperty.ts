@@ -62,6 +62,11 @@ export class ModelProperty {
   }
 
   jsonKey(): string {
+    if (this.typeName() === "int64") {
+      // int64 are returned as strings in the API
+      return `${this.name},string`;
+    }
+
     return this.name;
   }
 

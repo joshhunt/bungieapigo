@@ -12,7 +12,7 @@ type DestinyPostGameCarnageReportEntry struct {
 	Player DestinyPlayer `json:"player"`
 
 	// ID of the player's character used in the activity.
-	CharacterId int64 `json:"characterId"`
+	CharacterId int64 `json:"characterId,string"`
 
 	// Collection of stats for the player in this activity.
 	Values map[string]DestinyHistoricalStatsValue `json:"values"`

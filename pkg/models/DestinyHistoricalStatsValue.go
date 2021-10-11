@@ -16,5 +16,5 @@ type DestinyHistoricalStatsValue struct {
 
 	// When a stat represents the best, most, longest, fastest or some other personal best, the actual
 	// activity ID where that personal best was established is available on this property.
-	ActivityId int64 `json:"activityId"`
+	ActivityId int64 `json:"activityId,string"`
 }

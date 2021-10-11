@@ -9,7 +9,7 @@ type UserMembershipData struct {
 	// If this property is populated, it will have the membership ID of the account considered to be
 	// "primary" in this user's cross save relationship.
 	//  If null, this user has no cross save relationship, nor primary account.
-	PrimaryMembershipId int64 `json:"primaryMembershipId"`
+	PrimaryMembershipId int64 `json:"primaryMembershipId,string"`
 
 	BungieNetUser GeneralUser `json:"bungieNetUser"`
 }

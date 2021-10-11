@@ -13,8 +13,8 @@ type PostResponse struct {
 	UserRating          int                 `json:"userRating"`
 	UserHasRated        bool                `json:"userHasRated"`
 	UserHasMutedPost    bool                `json:"userHasMutedPost"`
-	LatestReplyPostId   int64               `json:"latestReplyPostId"`
-	LatestReplyAuthorId int64               `json:"latestReplyAuthorId"`
+	LatestReplyPostId   int64               `json:"latestReplyPostId,string"`
+	LatestReplyAuthorId int64               `json:"latestReplyAuthorId,string"`
 	IgnoreStatus        IgnoreResponse      `json:"ignoreStatus"`
 	Locale              string              `json:"locale"`
 }

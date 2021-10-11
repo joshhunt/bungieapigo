@@ -26,7 +26,7 @@ type DestinyQuestStatus struct {
 
 	// The current Quest Step will be an instanced item in the player's inventory. If you care about
 	// that, this is the instance ID of that item.
-	ItemInstanceId int64 `json:"itemInstanceId"`
+	ItemInstanceId int64 `json:"itemInstanceId,string"`
 
 	// Whether or not the whole quest has been completed, regardless of whether or not you have
 	// redeemed the rewards for the quest.

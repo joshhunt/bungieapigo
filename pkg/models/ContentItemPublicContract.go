@@ -3,7 +3,7 @@ package bungieapigo
 import "time"
 
 type ContentItemPublicContract struct {
-	ContentId                   int64       `json:"contentId"`
+	ContentId                   int64       `json:"contentId,string"`
 	CType                       string      `json:"cType"`
 	CmsPath                     string      `json:"cmsPath"`
 	CreationDate                time.Time   `json:"creationDate"`

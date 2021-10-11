@@ -12,7 +12,7 @@ type DestinyItemComponent struct {
 
 	// If the item is instanced, it will have an instance ID. Lack of an instance ID implies that the item
 	// has no distinct local qualities aside from stack size.
-	ItemInstanceId int64 `json:"itemInstanceId"`
+	ItemInstanceId int64 `json:"itemInstanceId,string"`
 
 	// The quantity of the item in this stack. Note that Instanced items cannot stack. If an instanced
 	// item, this value will always be 1 (as the stack has exactly one item in it)

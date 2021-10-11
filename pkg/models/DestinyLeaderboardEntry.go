@@ -9,7 +9,7 @@ type DestinyLeaderboardEntry struct {
 	Player DestinyPlayer `json:"player"`
 
 	// ID of the player's best character for the reported stat.
-	CharacterId int64 `json:"characterId"`
+	CharacterId int64 `json:"characterId,string"`
 
 	// Value of the stat for this player
 	Value DestinyHistoricalStatsValue `json:"value"`

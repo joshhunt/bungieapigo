@@ -11,7 +11,7 @@ package bungieapigo
 type DestinyProfileTransitoryPartyMember struct {
 
 	// The Membership ID that matches the party member.
-	MembershipId int64 `json:"membershipId"`
+	MembershipId int64 `json:"membershipId,string"`
 
 	// The identifier for the DestinyInventoryItemDefinition of the player's emblem.
 	EmblemHash int `json:"emblemHash"`

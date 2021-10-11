@@ -13,7 +13,7 @@ type DestinyHistoricalStatsActivity struct {
 	// The unique identifier for this *specific* match that was played.
 	// This value can be used to get additional data about this activity such as who else was playing via
 	// the GetPostGameCarnageReport endpoint.
-	InstanceId int64 `json:"instanceId"`
+	InstanceId int64 `json:"instanceId,string"`
 
 	// Indicates the most specific game mode of the activity that we could find.
 	Mode DestinyActivityModeType `json:"mode"`

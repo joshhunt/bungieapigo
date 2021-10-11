@@ -3,7 +3,7 @@ package bungieapigo
 import "time"
 
 type GroupBan struct {
-	GroupId int64 `json:"groupId"`
+	GroupId int64 `json:"groupId,string"`
 
 	// This contract supplies basic information commonly used to display a minimal amount of
 	// information about a user. Take care to not add more properties here unless the property applies

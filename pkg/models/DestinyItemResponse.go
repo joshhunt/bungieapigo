@@ -6,7 +6,7 @@ package bungieapigo
 type DestinyItemResponse struct {
 
 	// If the item is on a character, this will return the ID of the character that is holding the item.
-	CharacterId int64 `json:"characterId"`
+	CharacterId int64 `json:"characterId,string"`
 
 	// Common data for the item relevant to its non-instanced properties.
 	// COMPONENT TYPE: ItemCommonData

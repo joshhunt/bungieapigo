@@ -26,7 +26,7 @@ type FireteamUserInfoCard struct {
 	MembershipType BungieMembershipType `json:"membershipType"`
 
 	// Membership ID as they user is known in the Accounts service
-	MembershipId int64 `json:"membershipId"`
+	MembershipId int64 `json:"membershipId,string"`
 
 	// Display Name the player has chosen for themselves. The display name is optional when the data
 	// type is used as input to a platform API.
