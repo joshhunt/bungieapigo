@@ -9,12 +9,12 @@ import { readFileSync, writeFileSync } from "fs-extra";
 import { ModelClass } from "../models/ModelClass";
 
 export function generateModelClass(model: ModelClass) {
-  if (!shell.test("-d", "../pkg-generated/models")) {
-    shell.mkdir("-p", "../pkg-generated/models");
+  if (!shell.test("-d", "../pkg/models")) {
+    shell.mkdir("-p", "../pkg/models");
   }
 
   let template = readFileSync("templates/model-class.mustache").toString();
   let rendered = mustache.render(template, model);
 
-  writeFileSync(`../pkg-generated/models/${model.filename}.go`, rendered);
+  writeFileSync(`../pkg/models/${model.filename}.go`, rendered);
 }

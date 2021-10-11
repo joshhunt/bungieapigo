@@ -9,12 +9,12 @@ import { readFileSync, writeFileSync } from "fs";
 import { EnumClass } from "../models/EnumClass";
 
 export function generateEnumClass(enumClass: EnumClass) {
-  if (!shell.test("-d", "../pkg-generated/models")) {
-    shell.mkdir("-p", "../pkg-generated/models");
+  if (!shell.test("-d", "../pkg/models")) {
+    shell.mkdir("-p", "../pkg/models");
   }
 
   let template = readFileSync("templates/enum.mustache").toString();
   let rendered = mustache.render(template, enumClass);
 
-  writeFileSync(`../pkg-generated/models/${enumClass.filename}.go`, rendered);
+  writeFileSync(`../pkg/models/${enumClass.filename}.go`, rendered);
 }
